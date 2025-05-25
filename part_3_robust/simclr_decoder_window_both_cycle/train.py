@@ -1,7 +1,19 @@
-import torch
 import numpy as np
+import torch
 
-def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler, device, loss_fn, cycle_loss, model_save_path="barlow_twins.pth"):
+
+def train_model(
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn,
+    cycle_loss,
+    model_save_path="barlow_twins.pth",
+):
     for epoch in range(num_epochs):
         con_train_loss_1 = []
         con_train_loss_2 = []
@@ -22,7 +34,9 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
             Z_prime_2 = model(X_prime_2)
             loss_1 = loss_fn(Z, Z_prime)
             loss_2 = loss_fn(Z, Z_prime_2)
-            loss_cycle = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+            loss_cycle = cycle_loss(
+                Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+            )
             loss_batch = loss_1 + loss_2 + loss_cycle
             loss_batch.backward()
             optimizer.step()
@@ -43,7 +57,9 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 Z_prime_2 = model(X_prime_2)
                 loss_1 = loss_fn(Z, Z_prime)
                 loss_2 = loss_fn(Z, Z_prime_2)
-                loss_cycle = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+                loss_cycle = cycle_loss(
+                    Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+                )
                 loss_batch = loss_1 + loss_2 + loss_cycle
                 valid_cycle_loss.append(loss_cycle.item())
                 con_valid_loss_1.append(loss_1.item())
@@ -51,6 +67,8 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 valid_loss.append(loss_batch.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
-        print(f'Epoch: {epoch}, Con Train Loss 1: {np.mean(con_train_loss_1):.2f}, Con Train Loss 2: {np.mean(con_train_loss_2):.2f}, Train Cycle Loss: {np.mean(train_cycle_loss):.2f}, Train Loss: {np.mean(train_loss):.2f}, Con Valid Loss 1: {np.mean(con_valid_loss_1):.2f}, Con Valid Loss 2: {np.mean(con_valid_loss_2):.2f}, Valid Cycle Loss: {np.mean(valid_cycle_loss):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}')
+        lr = optimizer.param_groups[0]["lr"]
+        print(
+            f"Epoch: {epoch}, Con Train Loss 1: {np.mean(con_train_loss_1):.2f}, Con Train Loss 2: {np.mean(con_train_loss_2):.2f}, Train Cycle Loss: {np.mean(train_cycle_loss):.2f}, Train Loss: {np.mean(train_loss):.2f}, Con Valid Loss 1: {np.mean(con_valid_loss_1):.2f}, Con Valid Loss 2: {np.mean(con_valid_loss_2):.2f}, Valid Cycle Loss: {np.mean(valid_cycle_loss):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}"
+        )
         scheduler.step(np.mean(valid_loss))

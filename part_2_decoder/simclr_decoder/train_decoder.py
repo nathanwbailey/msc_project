@@ -1,9 +1,22 @@
-import torch
-import numpy as np
 import math
 
+import numpy as np
+import torch
 
-def train_encoder_decoder(model, num_epochs, trainloader, testloader, optimizer, scheduler, device, loss_fn_contrastive, loss_fn_reconstruct, model_save_path="barlow_twins.pth", alpha=0.5):
+
+def train_encoder_decoder(
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn_contrastive,
+    loss_fn_reconstruct,
+    model_save_path="barlow_twins.pth",
+    alpha=0.5,
+):
     alpha_start = 1.0
     alpha_end = 0.0
     k = 0.01
@@ -25,14 +38,16 @@ def train_encoder_decoder(model, num_epochs, trainloader, testloader, optimizer,
             X_enc = data[3].to(device)
             X_masked = data[5].to(device)
 
-            z1, recon_X =  model(X_augment)
-            z2, recon_X_prime =  model(X_prime_augment)
+            z1, recon_X = model(X_augment)
+            z2, recon_X_prime = model(X_prime_augment)
             _, recon_masked = model(X_masked)
             loss_contrastive = loss_fn_contrastive(z1, z2)
 
             loss_recon_X = loss_fn_reconstruct(recon_masked, X)
 
-            loss_batch = alpha * loss_contrastive + (1-alpha) * (loss_recon_X)
+            loss_batch = alpha * loss_contrastive + (1 - alpha) * (
+                loss_recon_X
+            )
             loss_batch.backward()
             optimizer.step()
             total_train_loss.append(loss_batch.item())
@@ -50,20 +65,24 @@ def train_encoder_decoder(model, num_epochs, trainloader, testloader, optimizer,
                 X_enc = data[3].to(device)
                 X_masked = data[5].to(device)
 
-                z1, recon_X =  model(X_augment)
-                z2, recon_X_prime =  model(X_prime_augment)
+                z1, recon_X = model(X_augment)
+                z2, recon_X_prime = model(X_prime_augment)
                 _, recon_masked = model(X_masked)
 
                 loss_contrastive = loss_fn_contrastive(z1, z2)
 
                 loss_recon_X = loss_fn_reconstruct(recon_masked, X)
 
-                loss_batch = alpha * loss_contrastive + (1-alpha) * (loss_recon_X)
+                loss_batch = alpha * loss_contrastive + (1 - alpha) * (
+                    loss_recon_X
+                )
                 total_valid_loss.append(loss_batch.item())
                 recon_valid_loss.append(loss_recon_X.item())
                 contrastive_valid_loss.append(loss_contrastive.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
-        print(f'Epoch: {epoch}, Alpha: {alpha:.2f}, Total Train Loss: {np.mean(total_train_loss):.2f}, Contrastive Train Loss: {np.mean(contrastive_train_loss):.2f}, Recon Train Loss: {np.mean(recon_train_loss):.2f}, Total Valid Loss: {np.mean(total_valid_loss):.2f}, Contrastive Valid Loss: {np.mean(contrastive_valid_loss):.2f}, Recon Valid Loss: {np.mean(recon_valid_loss):.2f}, Learning Rate: {lr}')
+        lr = optimizer.param_groups[0]["lr"]
+        print(
+            f"Epoch: {epoch}, Alpha: {alpha:.2f}, Total Train Loss: {np.mean(total_train_loss):.2f}, Contrastive Train Loss: {np.mean(contrastive_train_loss):.2f}, Recon Train Loss: {np.mean(recon_train_loss):.2f}, Total Valid Loss: {np.mean(total_valid_loss):.2f}, Contrastive Valid Loss: {np.mean(contrastive_valid_loss):.2f}, Recon Valid Loss: {np.mean(recon_valid_loss):.2f}, Learning Rate: {lr}"
+        )
         scheduler.step(np.mean(total_valid_loss))

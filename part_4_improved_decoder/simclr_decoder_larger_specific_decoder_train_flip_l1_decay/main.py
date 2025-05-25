@@ -1,28 +1,33 @@
+import os
+import sys
 
 import torch
+from dataset import WeatherBenchDataset
+from model_decoder import SIMCLR, SIMCLRDecoder
+from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 from torch.utils.data import DataLoader
 from torchsummary import summary
-from dataset import WeatherBenchDataset
-from model_decoder import SIMCLRDecoder, SIMCLR
-from train_decoder import train_encoder_decoder, train_decoder
-from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
+from train_decoder import train_decoder, train_encoder_decoder
 
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from downstream_model_lstm_no_decoder.downstream_task_main import downstream_task as downstream_task_lstm
-from latent_diffusion_model_conditional_attn.latent_model_main import downstream_task as downstream_task_latent_diffusion_conditional_attn
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+from downstream_model_lstm_no_decoder.downstream_task_main import \
+    downstream_task as downstream_task_lstm
+from latent_diffusion_model_conditional_attn.latent_model_main import \
+    downstream_task as downstream_task_latent_diffusion_conditional_attn
+
 
 def main():
 
-    BATCH_SIZE = 128//3
-    data = torch.load('/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt')
+    BATCH_SIZE = 128 // 3
+    data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")
     n_samples = data.shape[0]
     n_train = int(n_samples * 0.6)
     n_valid = int(n_samples * 0.2)
     train_data = data[:n_train]
-    valid_data = data[n_train:n_train+n_valid]
-    test_data = data[n_train+n_valid:]
+    valid_data = data[n_train : n_train + n_valid]
+    test_data = data[n_train + n_valid :]
 
     mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
     std = train_data.std(dim=(0, 2, 3), keepdim=True)
@@ -35,8 +40,12 @@ def main():
     print(valid_data.shape)
     print(test_data.shape)
 
-    train_dataset = WeatherBenchDataset(data=train_data, mask_prob_low=0.5, mask_prob_high=0.9)
-    valid_dataset = WeatherBenchDataset(data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9)
+    train_dataset = WeatherBenchDataset(
+        data=train_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
+    valid_dataset = WeatherBenchDataset(
+        data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
 
     trainloader = DataLoader(
         train_dataset,
@@ -46,7 +55,7 @@ def main():
         num_workers=6,
         persistent_workers=True,
         prefetch_factor=5,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
 
     validloader = DataLoader(
@@ -57,9 +66,8 @@ def main():
         num_workers=6,
         persistent_workers=True,
         prefetch_factor=5,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
-
 
     loss_fn_contrastive = NTXentLoss(temperature=0.3)
     loss_fn_contrastive = SelfSupervisedLoss(loss_fn_contrastive)
@@ -70,10 +78,10 @@ def main():
     learning_rate_fine_tune = 1e-4
     latent_dim = 128
 
-    DEVICE = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+    DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
     DEVICE = torch.device(DEVICE)
     C, H, W = next(iter(trainloader))[0].shape[2:]
-    print(f'Shape: {C, H, W}')
+    print(f"Shape: {C, H, W}")
 
     model = SIMCLR(in_channels=C, latent_dim=latent_dim)
     model = model.to(DEVICE)
@@ -84,48 +92,67 @@ def main():
     for param in model_decoder.model.projector.parameters():
         param.requires_grad = False
 
-    optimizer = torch.optim.Adam(model_decoder.parameters(), lr=learning_rate_decoder, weight_decay=1e-6)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.parameters(),
+        lr=learning_rate_decoder,
+        weight_decay=1e-6,
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
-    print('Training Decoder')
+    print("Training Decoder")
 
-    #train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
-
+    # train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
 
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
     # Un freeze the projector
     for param in model_decoder.parameters():
         param.requires_grad = True
-    
-    optimizer = torch.optim.Adam(model_decoder.parameters(), lr=learning_rate_fine_tune, weight_decay=0)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
-    print('Fine Tuning Both')
 
-    #train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder_fine_tune.pth', add_l1=False)
+    optimizer = torch.optim.Adam(
+        model_decoder.parameters(), lr=learning_rate_fine_tune, weight_decay=0
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
+    print("Fine Tuning Both")
 
-    model_decoder = torch.load("simclr_decoder_fine_tune.pth", weights_only=False)
+    # train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder_fine_tune.pth', add_l1=False)
 
+    model_decoder = torch.load(
+        "simclr_decoder_fine_tune.pth", weights_only=False
+    )
 
     # print('Starting Downstream Task')
     # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_s_10_cw_30.pth', weight_decay=1e-5)
 
-    #downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_s_10_cw_5.pth', weight_decay=1e-5)
+    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_s_10_cw_5.pth', weight_decay=1e-5)
 
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
-    print('Starting Downstream Task')
-    downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=100, stride=1, batch_size=16, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_cw_30_t_100.pth', weight_decay=1e-5)
+    print("Starting Downstream Task")
+    downstream_task_lstm(
+        num_epochs=100,
+        data=test_data,
+        encoder_model=model_decoder.model.encoder,
+        latent_dim=1000,
+        context_window=30,
+        target_length=100,
+        stride=1,
+        batch_size=16,
+        model_save_path="downstream_model_no_decoder_weight_decay_autoencoder_cw_30_t_100.pth",
+        weight_decay=1e-5,
+    )
 
     # print('Starting Downstream Task')
-    #downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_5_cw_5.pth', weight_decay=1e-5)
+    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_5_cw_5.pth', weight_decay=1e-5)
 
+    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_10_cw_30.pth', weight_decay=1e-5)
 
-    #downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_10_cw_30.pth', weight_decay=1e-5)
-
-    print('Starting Latent Downstream Task')
+    print("Starting Latent Downstream Task")
     # downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model.encoder, model_decoder=model_decoder.decoder)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

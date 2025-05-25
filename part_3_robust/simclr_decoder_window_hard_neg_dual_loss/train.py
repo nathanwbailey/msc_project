@@ -1,8 +1,19 @@
-import torch
 import numpy as np
 import pytorch_metric_learning.utils.loss_and_miner_utils as lmu
+import torch
 
-def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler, device, loss_fn, model_save_path="barlow_twins.pth"):
+
+def train_model(
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn,
+    model_save_path="barlow_twins.pth",
+):
     for epoch in range(num_epochs):
         con_train_loss_1 = []
         con_train_loss_2 = []
@@ -17,9 +28,9 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
             X_prime = data[1].to(device)
             X_prime_mask = data[2].to(device)
             B, T, C, H, W = X.shape
-            X = X.reshape(B*T, C, H, W)
-            X_prime = X_prime.reshape(B*T, C, H, W)
-            X_prime_mask = X_prime_mask.reshape(B*T, C, H, W)
+            X = X.reshape(B * T, C, H, W)
+            X_prime = X_prime.reshape(B * T, C, H, W)
+            X_prime_mask = X_prime_mask.reshape(B * T, C, H, W)
             Z = model(X)
             Z_prime = model(X_prime)
             Z_prime_mask = model(X_prime_mask)
@@ -39,9 +50,9 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 X_prime = data[1].to(device)
                 X_prime_mask = data[2].to(device)
                 B, T, C, H, W = X.shape
-                X = X.reshape(B*T, C, H, W)
-                X_prime = X_prime.reshape(B*T, C, H, W)
-                X_prime_mask = X_prime_mask.reshape(B*T, C, H, W)
+                X = X.reshape(B * T, C, H, W)
+                X_prime = X_prime.reshape(B * T, C, H, W)
+                X_prime_mask = X_prime_mask.reshape(B * T, C, H, W)
                 Z = model(X)
                 Z_prime = model(X_prime)
                 Z_prime_mask = model(X_prime_mask)
@@ -53,6 +64,8 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 valid_loss.append(loss_batch.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
-        print(f'Epoch: {epoch}, Con Train Loss 1: {np.mean(con_train_loss_1):.2f}, Con Train Loss 2: {np.mean(con_train_loss_2):.2f}, Train Loss: {np.mean(train_loss):.2f}, Con Valid Loss 1: {np.mean(con_valid_loss_1):.2f}, Con Valid Loss 2: {np.mean(con_valid_loss_2):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}')
+        lr = optimizer.param_groups[0]["lr"]
+        print(
+            f"Epoch: {epoch}, Con Train Loss 1: {np.mean(con_train_loss_1):.2f}, Con Train Loss 2: {np.mean(con_train_loss_2):.2f}, Train Loss: {np.mean(train_loss):.2f}, Con Valid Loss 1: {np.mean(con_valid_loss_1):.2f}, Con Valid Loss 2: {np.mean(con_valid_loss_2):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}"
+        )
         scheduler.step(np.mean(valid_loss))

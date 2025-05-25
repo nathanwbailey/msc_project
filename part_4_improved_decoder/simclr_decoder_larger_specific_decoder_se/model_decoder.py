@@ -1,14 +1,16 @@
-from torch import nn
+import torch
 import torch.nn.functional as F
 import torchvision
-import torch
+from torch import nn
 
 
 def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
-            gn = nn.GroupNorm(num_groups=num_channels, num_channels=num_channels)
+            gn = nn.GroupNorm(
+                num_groups=num_channels, num_channels=num_channels
+            )
             setattr(module, name, gn)
         else:
             replace_bn_with_gn(child)
@@ -18,7 +20,9 @@ class ResNet18Encoder(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
-        resnet.conv1 = nn.Conv2d(in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False)
+        resnet.conv1 = nn.Conv2d(
+            in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False
+        )
         self.stem = nn.Sequential(resnet.conv1, resnet.bn1, resnet.relu)
         self.maxpool = resnet.maxpool
         self.layer1 = resnet.layer1
@@ -29,6 +33,7 @@ class ResNet18Encoder(nn.Module):
         self.avgpool = resnet.avgpool
         self.fc = resnet.fc
         replace_bn_with_gn(resnet)
+
     def forward(self, x):
         x0 = self.stem(x)
         x = self.maxpool(x0)
@@ -41,58 +46,79 @@ class ResNet18Encoder(nn.Module):
         x = self.fc(x)
         return x, [x3, x2, x1, x0]
 
+
 class ResidualBlock(nn.Module):
     def __init__(self, channels):
         super().__init__()
         self.block = nn.Sequential(
-            nn.Conv2d(channels, channels*2, kernel_size=3, padding=1),
+            nn.Conv2d(channels, channels * 2, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.Conv2d(channels*2, channels, kernel_size=3, padding=1),
+            nn.Conv2d(channels * 2, channels, kernel_size=3, padding=1),
         )
         self.relu = nn.ReLU()
 
     def forward(self, x):
         return self.relu(x + self.block(x))
 
+
 class DecoderBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, kernel_size=2, stride=2, padding=0, output_padding=0):
+    def __init__(
+        self,
+        in_channels,
+        out_channels,
+        kernel_size=2,
+        stride=2,
+        padding=0,
+        output_padding=0,
+    ):
         super().__init__()
         self.block = nn.Sequential(
-            nn.ConvTranspose2d(in_channels, out_channels, kernel_size=kernel_size, stride=stride, padding=padding, output_padding=output_padding),
+            nn.ConvTranspose2d(
+                in_channels,
+                out_channels,
+                kernel_size=kernel_size,
+                stride=stride,
+                padding=padding,
+                output_padding=output_padding,
+            ),
         )
         self.res_block = ResidualBlock(out_channels)
         self.activation = nn.ReLU()
+
     def forward(self, x):
         x = self.block(x)
         x = self.res_block(x)
         return x
-    
+
+
 class DecoderHeadSEBlock(nn.Module):
     def __init__(self, in_channels, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.conv1 = nn.Sequential(
-            nn.Conv2d(in_channels, in_channels*2, kernel_size=3, padding=1),
-            nn.BatchNorm2d(in_channels*2),
-            nn.ReLU()
+            nn.Conv2d(in_channels, in_channels * 2, kernel_size=3, padding=1),
+            nn.BatchNorm2d(in_channels * 2),
+            nn.ReLU(),
         )
         self.se = nn.Sequential(
             nn.AdaptiveAvgPool2d(1),
             nn.Flatten(),
-            nn.Linear(in_features=in_channels*2, out_features=in_channels),
+            nn.Linear(in_features=in_channels * 2, out_features=in_channels),
             nn.ReLU(),
-            nn.Linear(in_features=in_channels, out_features=in_channels*2),
-            nn.Sigmoid()
+            nn.Linear(in_features=in_channels, out_features=in_channels * 2),
+            nn.Sigmoid(),
         )
         self.conv2 = nn.Sequential(
-            nn.Conv2d(in_channels*2, in_channels, kernel_size=3, padding=1),
+            nn.Conv2d(in_channels * 2, in_channels, kernel_size=3, padding=1),
             nn.BatchNorm2d(in_channels),
-            nn.ReLU()
+            nn.ReLU(),
         )
+
     def forward(self, x):
         f = self.conv1(x)
         w = self.se(f)
         w = w.view(w.size(0), w.size(1), 1, 1)
-        return self.conv2(f*w)
+        return self.conv2(f * w)
+
 
 class Decoder(nn.Module):
     def __init__(self, in_channels, latent_dim, *args, **kwargs):
@@ -100,11 +126,26 @@ class Decoder(nn.Module):
         self.in_channels = in_channels
         self.project_dim = latent_dim // 2
         self.decoder = nn.Sequential(
-            DecoderBlock(in_channels=self.project_dim, out_channels=self.project_dim//2), # 2x1 -> 4x2
-            DecoderBlock(in_channels=self.project_dim//2, out_channels=self.project_dim//4), # 4x2 -> 8x4
-            DecoderBlock(in_channels=self.project_dim//4, out_channels=self.project_dim//8), # 8x4 -> 16x8
-            DecoderBlock(in_channels=self.project_dim//8, out_channels=self.project_dim//16), # 16x8 -> 32x16
-            DecoderBlock(in_channels=self.project_dim//16, out_channels=self.project_dim//32), # 32x16 -> 64x32
+            DecoderBlock(
+                in_channels=self.project_dim,
+                out_channels=self.project_dim // 2,
+            ),  # 2x1 -> 4x2
+            DecoderBlock(
+                in_channels=self.project_dim // 2,
+                out_channels=self.project_dim // 4,
+            ),  # 4x2 -> 8x4
+            DecoderBlock(
+                in_channels=self.project_dim // 4,
+                out_channels=self.project_dim // 8,
+            ),  # 8x4 -> 16x8
+            DecoderBlock(
+                in_channels=self.project_dim // 8,
+                out_channels=self.project_dim // 16,
+            ),  # 16x8 -> 32x16
+            DecoderBlock(
+                in_channels=self.project_dim // 16,
+                out_channels=self.project_dim // 32,
+            ),  # 32x16 -> 64x32
         )
 
         mode_heads = []
@@ -112,13 +153,25 @@ class Decoder(nn.Module):
             if c == 1 or c == 2:
                 mode_heads.append(
                     nn.Sequential(
-                        DecoderHeadSEBlock(in_channels=self.project_dim//32),
-                        nn.Conv2d(in_channels=self.project_dim//32, out_channels=1, kernel_size=1, stride=1)
+                        DecoderHeadSEBlock(
+                            in_channels=self.project_dim // 32
+                        ),
+                        nn.Conv2d(
+                            in_channels=self.project_dim // 32,
+                            out_channels=1,
+                            kernel_size=1,
+                            stride=1,
+                        ),
                     )
                 )
             else:
                 mode_heads.append(
-                    nn.Conv2d(in_channels=self.project_dim//32, out_channels=1, kernel_size=1, stride=1)
+                    nn.Conv2d(
+                        in_channels=self.project_dim // 32,
+                        out_channels=1,
+                        kernel_size=1,
+                        stride=1,
+                    )
                 )
 
         self.mode_heads = nn.ModuleList(mode_heads)
@@ -148,11 +201,10 @@ class SIMCLR(nn.Module):
             nn.Linear(latent_dim, latent_dim),
         )
 
-
     def encode(self, x):
         z, skip = self.encoder(x)
         return z, skip
-    
+
     def forward(self, x):
         z, skip = self.encode(x)
         z = self.projector(z)
@@ -165,8 +217,6 @@ class SIMCLRDecoder(nn.Module):
         self.model = model
         self.in_channels = in_channels
         self.decoder = Decoder(in_channels=in_channels, latent_dim=1000)
-
-
 
     def forward(self, x):
         z, skip = self.model.encode(x)

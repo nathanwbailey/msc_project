@@ -1,11 +1,12 @@
-import torch
 import numpy as np
+import torch
 
 
 def variance_loss(z, gamma=1.0, eps=1e-4):
     std = torch.sqrt(z.var(dim=0) + eps)
     loss = torch.mean(torch.relu(gamma - std))
     return loss
+
 
 def covariance_loss(z):
     z = z - z.mean(dim=0)
@@ -15,10 +16,22 @@ def covariance_loss(z):
     diag = torch.eye(z.size(1), device=z.device)
     off_diag = cov * (1 - diag)
 
-    loss = (off_diag ** 2).sum() / z.size(1)
+    loss = (off_diag**2).sum() / z.size(1)
     return loss
 
-def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler, device, loss_fn, cycle_loss, model_save_path="barlow_twins.pth"):
+
+def train_model(
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn,
+    cycle_loss,
+    model_save_path="barlow_twins.pth",
+):
     for epoch in range(num_epochs):
         con_train_loss_1 = []
         con_train_loss_2 = []
@@ -39,21 +52,32 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
             X_prime = data[1].to(device)
             X_prime_2 = data[2].to(device)
             B, T, C, H, W = X.shape
-            X = X.reshape(B*T, C, H, W)
-            X_prime = X_prime.reshape(B*T, C, H, W)
-            X_prime_2 = X_prime_2.reshape(B*T, C, H, W)
+            X = X.reshape(B * T, C, H, W)
+            X_prime = X_prime.reshape(B * T, C, H, W)
+            X_prime_2 = X_prime_2.reshape(B * T, C, H, W)
             Z, Z_X = model(X)
             Z_prime, Z_prime_X = model(X_prime)
             Z_prime_2, Z_prime_2_X = model(X_prime_2)
             loss_1 = loss_fn(Z, Z_prime)
             loss_2 = loss_fn(Z, Z_prime_2)
-            loss_cycle = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+            loss_cycle = cycle_loss(
+                Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+            )
 
-            var_loss = variance_loss(Z_X) + variance_loss(Z_prime_X) + variance_loss(Z_prime_2_X)
-            cov_loss = covariance_loss(Z_X) + covariance_loss(Z_prime_X) + covariance_loss(Z_prime_2_X)
+            var_loss = (
+                variance_loss(Z_X)
+                + variance_loss(Z_prime_X)
+                + variance_loss(Z_prime_2_X)
+            )
+            cov_loss = (
+                covariance_loss(Z_X)
+                + covariance_loss(Z_prime_X)
+                + covariance_loss(Z_prime_2_X)
+            )
 
-
-            loss_batch = loss_1 + loss_2 + loss_cycle + 1 * var_loss + 1 * cov_loss
+            loss_batch = (
+                loss_1 + loss_2 + loss_cycle + 1 * var_loss + 1 * cov_loss
+            )
             loss_batch.backward()
             optimizer.step()
             con_train_loss_1.append(loss_1.item())
@@ -70,20 +94,31 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 X_prime = data[1].to(device)
                 X_prime_2 = data[2].to(device)
                 B, T, C, H, W = X.shape
-                X = X.reshape(B*T, C, H, W)
-                X_prime = X_prime.reshape(B*T, C, H, W)
-                X_prime_2 = X_prime_2.reshape(B*T, C, H, W)
+                X = X.reshape(B * T, C, H, W)
+                X_prime = X_prime.reshape(B * T, C, H, W)
+                X_prime_2 = X_prime_2.reshape(B * T, C, H, W)
                 Z, Z_X = model(X)
                 Z_prime, Z_prime_X = model(X_prime)
                 Z_prime_2, Z_prime_2_X = model(X_prime_2)
                 loss_1 = loss_fn(Z, Z_prime)
                 loss_2 = loss_fn(Z, Z_prime_2)
-                loss_cycle = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
-                var_loss = variance_loss(Z_X) + variance_loss(Z_prime_X) + variance_loss(Z_prime_2_X)
-                cov_loss = covariance_loss(Z_X) + covariance_loss(Z_prime_X) + covariance_loss(Z_prime_2_X)
+                loss_cycle = cycle_loss(
+                    Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+                )
+                var_loss = (
+                    variance_loss(Z_X)
+                    + variance_loss(Z_prime_X)
+                    + variance_loss(Z_prime_2_X)
+                )
+                cov_loss = (
+                    covariance_loss(Z_X)
+                    + covariance_loss(Z_prime_X)
+                    + covariance_loss(Z_prime_2_X)
+                )
 
-
-                loss_batch = loss_1 + loss_2 + loss_cycle + 1 * var_loss + 1 * cov_loss
+                loss_batch = (
+                    loss_1 + loss_2 + loss_cycle + 1 * var_loss + 1 * cov_loss
+                )
                 con_valid_loss_1.append(loss_1.item())
                 con_valid_loss_2.append(loss_2.item())
                 valid_loss.append(loss_batch.item())
@@ -92,7 +127,7 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler
                 valid_cov_loss.append(cov_loss.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
+        lr = optimizer.param_groups[0]["lr"]
         print(
             f"Epoch: {epoch}\n"
             f"  Training:\n"

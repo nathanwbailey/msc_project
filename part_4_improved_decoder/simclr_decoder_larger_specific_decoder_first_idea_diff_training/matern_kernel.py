@@ -8,8 +8,10 @@ def matern_kernel(x, lengthscale=1.0, nu=2.5, sigma=1.0):
     # See : https://gaussianprocess.org/gpml/chapters/RW4.pdf
     # See : https://en.wikipedia.org/wiki/Mat%C3%A9rn_covariance_function
     # Distance from each point to itself
-    dist = torch.cdist(x, x, p=2) + 1e-6 # Avoid zero distance
-    sqrt = torch.sqrt(2*torch.tensor(nu, device=x.device)) * dist / lengthscale
+    dist = torch.cdist(x, x, p=2) + 1e-6  # Avoid zero distance
+    sqrt = (
+        torch.sqrt(2 * torch.tensor(nu, device=x.device)) * dist / lengthscale
+    )
     if nu == 0.5:
         K = torch.exp(-sqrt)
     elif nu == 1.5:
@@ -19,6 +21,7 @@ def matern_kernel(x, lengthscale=1.0, nu=2.5, sigma=1.0):
     else:
         raise NotImplementedError("Only ν = 0.5, 1.5, 2.5 are implemented")
     return sigma**2 * K
+
 
 def matern_kernel_noise(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
     C, H, W = sample.shape
@@ -34,7 +37,10 @@ def matern_kernel_noise(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
     noise = (z @ L.T).reshape(C, H, W)
     return sample + noise
 
-def matern_kernel_noise_time_batch(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
+
+def matern_kernel_noise_time_batch(
+    sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
+):
     B, T, C, H, W = sample.shape
     N = H * W
     # Matern kernel gives the co-variance
@@ -48,7 +54,10 @@ def matern_kernel_noise_time_batch(sample, coords, lengthscale=1.0, nu=2.5, sigm
     noise = (z @ L.T).reshape(B, T, C, H, W)
     return sample + noise
 
-def matern_kernel_noise_batch(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
+
+def matern_kernel_noise_batch(
+    sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
+):
     B, C, H, W = sample.shape
     N = H * W
     # Matern kernel gives the co-variance
@@ -61,6 +70,7 @@ def matern_kernel_noise_batch(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
     # Covariance of Cov
     noise = (z @ L.T).reshape(B, C, H, W)
     return sample + noise, cov
+
 
 # C, H, W = 5, 64, 32
 # sample = torch.zeros(C, H, W)

@@ -1,35 +1,43 @@
+import math
+
 import torch
 from torch import nn
-import math
+
 
 class SinusoidalPositionEmbeddings(nn.Module):
     def __init__(self, dim):
         super().__init__()
         frequencies = torch.exp(
             torch.linspace(
-                torch.math.log(1.0),
-                torch.math.log(1000),
-                dim//2
+                torch.math.log(1.0), torch.math.log(1000), dim // 2
             )
         )
         self.register_buffer("ang_speeds", 2.0 * math.pi * frequencies)
+
     def forward(self, time):
         if isinstance(time, float):
             time = torch.tensor([time])
         if time.dim() == 1:
             time = time.unsqueeze(-1)
         time = time.to(self.ang_speeds.device)
-        embeddings = torch.cat([torch.sin(time*self.ang_speeds), torch.cos(time*self.ang_speeds)], dim=-1)
+        embeddings = torch.cat(
+            [
+                torch.sin(time * self.ang_speeds),
+                torch.cos(time * self.ang_speeds),
+            ],
+            dim=-1,
+        )
         return embeddings
+
 
 class ResidualBlock(nn.Module):
     def __init__(self, in_dim, out_dim):
         super().__init__()
         self.block = nn.Sequential(
-            nn.Linear(in_dim, in_dim*2),
-            nn.BatchNorm1d(in_dim*2),
+            nn.Linear(in_dim, in_dim * 2),
+            nn.BatchNorm1d(in_dim * 2),
             nn.ReLU(),
-            nn.Linear(in_dim*2, out_dim),
+            nn.Linear(in_dim * 2, out_dim),
         )
         self.norm = nn.BatchNorm1d(out_dim)
         self.activation = nn.ReLU()
@@ -37,7 +45,6 @@ class ResidualBlock(nn.Module):
         self.bottleneck = None
         if in_dim != out_dim:
             self.bottleneck = nn.Linear(in_dim, out_dim)
-
 
     def forward(self, x):
         x_add = x
@@ -47,7 +54,6 @@ class ResidualBlock(nn.Module):
         x = self.norm(x)
         x = self.activation(x)
         return x
-
 
 
 class CrossAttention1D(nn.Module):
@@ -70,7 +76,8 @@ class CrossAttention1D(nn.Module):
         x = self.norm1(x + y)
         x = self.norm2(x + self.mlp(x))
         return x
-    
+
+
 # class CrossAttention1D_v2(nn.Module):
 #     def __init__(self, *args, **kwargs):
 #         super().__init__(*args, **kwargs)
@@ -97,7 +104,6 @@ class CrossAttention1D(nn.Module):
 #         return x + out
 
 
-
 class LatentNetwork(nn.Module):
     def __init__(self, latent_dim, time_emb_dim, emb_dim, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -105,20 +111,20 @@ class LatentNetwork(nn.Module):
             SinusoidalPositionEmbeddings(time_emb_dim),
             nn.Linear(time_emb_dim, time_emb_dim),
             nn.ReLU(),
-            nn.Linear(time_emb_dim, latent_dim)
+            nn.Linear(time_emb_dim, latent_dim),
         )
 
         self.cond_projs_enc = nn.ModuleList(
             [
                 nn.Linear(latent_dim, emb_dim),
-                nn.Linear(latent_dim, emb_dim//2),
-                nn.Linear(latent_dim, emb_dim//4)
+                nn.Linear(latent_dim, emb_dim // 2),
+                nn.Linear(latent_dim, emb_dim // 4),
             ]
         )
 
         self.cond_projs_dec = nn.ModuleList(
             [
-                nn.Linear(latent_dim, emb_dim//2),
+                nn.Linear(latent_dim, emb_dim // 2),
                 nn.Linear(latent_dim, emb_dim),
                 nn.Linear(latent_dim, latent_dim),
             ]
@@ -127,16 +133,16 @@ class LatentNetwork(nn.Module):
         self.cross_atts_enc = nn.ModuleList(
             [
                 CrossAttention1D(emb_dim),
-                CrossAttention1D(emb_dim//2),
-                CrossAttention1D(emb_dim//4)
+                CrossAttention1D(emb_dim // 2),
+                CrossAttention1D(emb_dim // 4),
             ]
         )
 
         self.cross_atts_dec = nn.ModuleList(
             [
-                CrossAttention1D(emb_dim//2),
+                CrossAttention1D(emb_dim // 2),
                 CrossAttention1D(emb_dim),
-                CrossAttention1D(latent_dim)
+                CrossAttention1D(latent_dim),
             ]
         )
 
@@ -148,15 +154,15 @@ class LatentNetwork(nn.Module):
         self.enc = nn.ModuleList(
             [
                 initial_layer,
-                ResidualBlock(emb_dim, emb_dim//2),
-                ResidualBlock(emb_dim//2, emb_dim//4),
+                ResidualBlock(emb_dim, emb_dim // 2),
+                ResidualBlock(emb_dim // 2, emb_dim // 4),
             ]
         )
-        self.bottleneck = ResidualBlock(emb_dim//4, emb_dim//4)
+        self.bottleneck = ResidualBlock(emb_dim // 4, emb_dim // 4)
         self.dec = nn.ModuleList(
             [
-                ResidualBlock(emb_dim//4, emb_dim//2),
-                ResidualBlock(emb_dim//2, emb_dim),
+                ResidualBlock(emb_dim // 4, emb_dim // 2),
+                ResidualBlock(emb_dim // 2, emb_dim),
                 nn.Linear(emb_dim, latent_dim),
             ]
         )
@@ -176,16 +182,19 @@ class LatentNetwork(nn.Module):
             cond_tokens_list_dec.append(feats)
 
         skips = []
-        for layer, cond_tokens, cross in zip(self.enc, cond_tokens_list_enc, self.cross_atts_enc):
+        for layer, cond_tokens, cross in zip(
+            self.enc, cond_tokens_list_enc, self.cross_atts_enc
+        ):
             x_attn = layer(x)
             x = cross(x_attn, cond_tokens)
             skips.append(x)
 
         x = self.bottleneck(x)
 
-        for layer, cond_tokens, cross in zip(self.dec, cond_tokens_list_dec, self.cross_atts_dec):
+        for layer, cond_tokens, cross in zip(
+            self.dec, cond_tokens_list_dec, self.cross_atts_dec
+        ):
             x = x + skips.pop()
             x_attn = layer(x)
             x = cross(x_attn, cond_tokens)
         return x
-    

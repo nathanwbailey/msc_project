@@ -1,7 +1,7 @@
-from torch import nn
+import torch
 import torch.nn.functional as F
 import torchvision
-import torch
+from torch import nn
 
 # def replace_bn_with_gn(module, num_groups=8):
 #     for name, child in module.named_children():
@@ -11,8 +11,8 @@ import torch
 #             setattr(module, name, gn)
 #         else:
 #             replace_bn_with_gn(child, num_groups)
-            
-            
+
+
 def replace_bn_with_gn(module, num_groups=8):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
@@ -27,7 +27,9 @@ class ResNet18Encoder(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
-        resnet.conv1 = nn.Conv2d(in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False)
+        resnet.conv1 = nn.Conv2d(
+            in_channels, 64, kernel_size=7, stride=2, padding=3, bias=False
+        )
         self.stem = nn.Sequential(resnet.conv1, resnet.bn1, resnet.relu)
         self.maxpool = resnet.maxpool
         self.layer1 = resnet.layer1
@@ -38,6 +40,7 @@ class ResNet18Encoder(nn.Module):
         self.avgpool = resnet.avgpool
         self.fc = resnet.fc
         replace_bn_with_gn(resnet, num_groups=8)
+
     def forward(self, x):
         x0 = self.stem(x)
         x = self.maxpool(x0)
@@ -49,6 +52,7 @@ class ResNet18Encoder(nn.Module):
         x = torch.flatten(x, 1)
         x = self.fc(x)
         return x, [x3, x2, x1, x0]
+
 
 class ResidualBlock(nn.Module):
     def __init__(self, channels):
@@ -63,18 +67,35 @@ class ResidualBlock(nn.Module):
     def forward(self, x):
         return self.relu(x + self.block(x))
 
+
 class DecoderBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, kernel_size=2, stride=2, padding=0, output_padding=0):
+    def __init__(
+        self,
+        in_channels,
+        out_channels,
+        kernel_size=2,
+        stride=2,
+        padding=0,
+        output_padding=0,
+    ):
         super().__init__()
         self.block = nn.Sequential(
-            nn.ConvTranspose2d(in_channels, out_channels, kernel_size=kernel_size, stride=stride, padding=padding, output_padding=output_padding),
+            nn.ConvTranspose2d(
+                in_channels,
+                out_channels,
+                kernel_size=kernel_size,
+                stride=stride,
+                padding=padding,
+                output_padding=output_padding,
+            ),
         )
         self.res_block = ResidualBlock(out_channels)
+
     def forward(self, x):
         x = self.block(x)
         x = self.res_block(x)
         return x
-    
+
 
 class Decoder(nn.Module):
     def __init__(self, in_channels, latent_dim, *args, **kwargs):
@@ -83,12 +104,29 @@ class Decoder(nn.Module):
         self.project_dim = 128
         self.project_layer = nn.Linear(latent_dim, 1024)
         self.decoder = nn.Sequential(
-            DecoderBlock(in_channels=self.project_dim, out_channels=self.project_dim//2), # 4x2 -> 8x4
-            DecoderBlock(in_channels=self.project_dim//2, out_channels=self.project_dim//4), # 8x4 -> 16x8
-            DecoderBlock(in_channels=self.project_dim//4, out_channels=self.project_dim//8), # 16x8 -> 32x16
-            DecoderBlock(in_channels=self.project_dim//8, out_channels=self.project_dim//16), # 32x16 -> 64x32
+            DecoderBlock(
+                in_channels=self.project_dim,
+                out_channels=self.project_dim // 2,
+            ),  # 4x2 -> 8x4
+            DecoderBlock(
+                in_channels=self.project_dim // 2,
+                out_channels=self.project_dim // 4,
+            ),  # 8x4 -> 16x8
+            DecoderBlock(
+                in_channels=self.project_dim // 4,
+                out_channels=self.project_dim // 8,
+            ),  # 16x8 -> 32x16
+            DecoderBlock(
+                in_channels=self.project_dim // 8,
+                out_channels=self.project_dim // 16,
+            ),  # 32x16 -> 64x32
         )
-        self.channel_layer = nn.Conv2d(in_channels=self.project_dim//16, out_channels=in_channels, kernel_size=1, stride=1)
+        self.channel_layer = nn.Conv2d(
+            in_channels=self.project_dim // 16,
+            out_channels=in_channels,
+            kernel_size=1,
+            stride=1,
+        )
 
     def forward(self, x):
         x = self.project_layer(x)
@@ -112,13 +150,14 @@ class BarlowTwins(nn.Module):
             nn.ReLU(),
             nn.Linear(latent_dim, latent_dim),
         )
-        self.bn = nn.BatchNorm1d(latent_dim, affine=False, track_running_stats=False)
-
+        self.bn = nn.BatchNorm1d(
+            latent_dim, affine=False, track_running_stats=False
+        )
 
     def encode(self, x):
         z, skip = self.encoder(x)
         return z, skip
-    
+
     def forward(self, x):
         z, skip = self.encode(x)
         z = self.projector(z)

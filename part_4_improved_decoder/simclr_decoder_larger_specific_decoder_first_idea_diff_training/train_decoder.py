@@ -1,9 +1,17 @@
-import torch
 import numpy as np
+import torch
+
 
 def train_decoder(
-    model, num_epochs, trainloader, testloader, optimizer, scheduler, device,
-    loss_fn_reconstruct, model_save_path="simclr.pth"
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn_reconstruct,
+    model_save_path="simclr.pth",
 ):
     for epoch in range(num_epochs):
         train_losses, valid_losses = [], []
@@ -47,14 +55,16 @@ def train_decoder(
 
                 _, recon_masked = model(X_masked)
                 loss = sum(
-                    loss_fn_reconstruct(recon_masked[:, c, :, :], X[:, c, :, :])
+                    loss_fn_reconstruct(
+                        recon_masked[:, c, :, :], X[:, c, :, :]
+                    )
                     for c in range(C)
                 )
                 batch_loss = loss_fn_reconstruct(recon_masked, X)
                 valid_losses.append(batch_loss.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
+        lr = optimizer.param_groups[0]["lr"]
         print(
             f"Epoch: {epoch}, "
             f"Train Loss: {np.mean(train_losses):.2f}, "
@@ -65,9 +75,23 @@ def train_decoder(
 
 
 def train_encoder_decoder(
-    model, num_epochs, trainloader_outer, testloader_outer, trainloader_inner, testloader_inner,
-    optimizer_simclr, optimizer_mae, device, loss_fn_contrastive, loss_fn_reconstruct, cycle_loss,
-    model_save_path="barlow_twins.pth", add_l1=False, l1_lambda=1e-6, add_l2=False, l2_lambda=1e-6
+    model,
+    num_epochs,
+    trainloader_outer,
+    testloader_outer,
+    trainloader_inner,
+    testloader_inner,
+    optimizer_simclr,
+    optimizer_mae,
+    device,
+    loss_fn_contrastive,
+    loss_fn_reconstruct,
+    cycle_loss,
+    model_save_path="barlow_twins.pth",
+    add_l1=False,
+    l1_lambda=1e-6,
+    add_l2=False,
+    l2_lambda=1e-6,
 ):
     for epoch in range(num_epochs):
         recon_train_losses, contrastive_train_losses = [], []
@@ -76,7 +100,9 @@ def train_encoder_decoder(
         model.train()
 
         # Outer batch (contrastive training)
-        for data_outer, data_inner in zip(trainloader_outer, trainloader_inner):
+        for data_outer, data_inner in zip(
+            trainloader_outer, trainloader_inner
+        ):
             # Un Freeze the projector
             for param in model.model.projector:
                 param.requires_grad = True
@@ -132,20 +158,30 @@ def train_encoder_decoder(
                 for c in range(C)
             )
             loss_recon_X_prime = sum(
-                loss_fn_reconstruct(x_prime_recon[:, c, :, :], X_prime_recon[:, c, :, :])
+                loss_fn_reconstruct(
+                    x_prime_recon[:, c, :, :], X_prime_recon[:, c, :, :]
+                )
                 for c in range(C)
             )
             loss_recon_X_prime_2 = sum(
-                loss_fn_reconstruct(x_prime_2_recon[:, c, :, :], X_prime_2_recon[:, c, :, :])
+                loss_fn_reconstruct(
+                    x_prime_2_recon[:, c, :, :], X_prime_2_recon[:, c, :, :]
+                )
                 for c in range(C)
             )
-            loss_recon = loss_recon_X + loss_recon_X_prime + loss_recon_X_prime_2
+            loss_recon = (
+                loss_recon_X + loss_recon_X_prime + loss_recon_X_prime_2
+            )
             if add_l1:
-                l1_norm = sum(p.abs().sum() for p in model.decoder.parameters())
+                l1_norm = sum(
+                    p.abs().sum() for p in model.decoder.parameters()
+                )
                 loss_recon += l1_lambda * l1_norm
 
             if add_l2:
-                l1_norm = sum((p ** 2).sum() for p in model.decoder.parameters())
+                l1_norm = sum(
+                    (p**2).sum() for p in model.decoder.parameters()
+                )
                 loss_recon += l2_lambda * l1_norm
             loss_recon.backward()
             optimizer_mae.step()
@@ -155,7 +191,9 @@ def train_encoder_decoder(
         # Validation
         model.eval()
         with torch.no_grad():
-            for data_outer, data_inner in zip(testloader_outer, testloader_inner):
+            for data_outer, data_inner in zip(
+                testloader_outer, testloader_inner
+            ):
                 X_aug = data_outer[0].to(device)
                 X_prime_aug = data_outer[1].to(device)
                 X_prime_2 = data_outer[2].to(device)
@@ -169,7 +207,9 @@ def train_encoder_decoder(
                 z2, _ = model(X_prime_aug)
                 z3, _ = model(X_prime_2)
 
-                loss_cycle = cycle_loss(z2 - 2 * z1 + z3, torch.zeros_like(z1))
+                loss_cycle = cycle_loss(
+                    z2 - 2 * z1 + z3, torch.zeros_like(z1)
+                )
                 loss_contrastive = (
                     loss_fn_contrastive(z1, z2)
                     + loss_fn_contrastive(z1, z3)
@@ -188,12 +228,15 @@ def train_encoder_decoder(
                 batch_loss = loss_fn_reconstruct(recon_masked, X)
                 recon_valid_losses.append(batch_loss.item())
 
-        torch.save({
-            'epoch': epoch,
-            'model_state_dict': model.state_dict(),
-            'optimizer_mae_state_dict': optimizer_mae.state_dict(),
-            'optimizer_simclr_state_dict': optimizer_simclr.state_dict(),
-        }, model_save_path)
+        torch.save(
+            {
+                "epoch": epoch,
+                "model_state_dict": model.state_dict(),
+                "optimizer_mae_state_dict": optimizer_mae.state_dict(),
+                "optimizer_simclr_state_dict": optimizer_simclr.state_dict(),
+            },
+            model_save_path,
+        )
         print(
             f"Epoch: {epoch}, "
             f"Contrastive Train Loss: {np.mean(contrastive_train_losses):.2f}, "

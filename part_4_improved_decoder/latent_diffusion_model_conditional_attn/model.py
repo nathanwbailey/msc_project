@@ -1,35 +1,43 @@
+import math
+
 import torch
 from torch import nn
-import math
+
 
 class SinusoidalPositionEmbeddings(nn.Module):
     def __init__(self, dim):
         super().__init__()
         frequencies = torch.exp(
             torch.linspace(
-                torch.math.log(1.0),
-                torch.math.log(1000),
-                dim//2
+                torch.math.log(1.0), torch.math.log(1000), dim // 2
             )
         )
         self.register_buffer("ang_speeds", 2.0 * math.pi * frequencies)
+
     def forward(self, time):
         if isinstance(time, float):
             time = torch.tensor([time])
         if time.dim() == 1:
             time = time.unsqueeze(-1)
         time = time.to(self.ang_speeds.device)
-        embeddings = torch.cat([torch.sin(time*self.ang_speeds), torch.cos(time*self.ang_speeds)], dim=-1)
+        embeddings = torch.cat(
+            [
+                torch.sin(time * self.ang_speeds),
+                torch.cos(time * self.ang_speeds),
+            ],
+            dim=-1,
+        )
         return embeddings
+
 
 class ResidualBlock(nn.Module):
     def __init__(self, in_dim, out_dim):
         super().__init__()
         self.block = nn.Sequential(
-            nn.Linear(in_dim, in_dim*2),
-            nn.BatchNorm1d(in_dim*2),
+            nn.Linear(in_dim, in_dim * 2),
+            nn.BatchNorm1d(in_dim * 2),
             nn.ReLU(),
-            nn.Linear(in_dim*2, out_dim),
+            nn.Linear(in_dim * 2, out_dim),
         )
         self.norm = nn.BatchNorm1d(out_dim)
         self.activation = nn.ReLU()
@@ -37,7 +45,6 @@ class ResidualBlock(nn.Module):
         self.bottleneck = None
         if in_dim != out_dim:
             self.bottleneck = nn.Linear(in_dim, out_dim)
-
 
     def forward(self, x):
         x_add = x
@@ -47,7 +54,6 @@ class ResidualBlock(nn.Module):
         x = self.norm(x)
         x = self.activation(x)
         return x
-
 
 
 class CrossAttention1D(nn.Module):
@@ -71,6 +77,7 @@ class CrossAttention1D(nn.Module):
         x = self.norm2(x + self.mlp(x))
         return x
 
+
 class Block(nn.Module):
     def __init__(self, in_dim, out_dim, time_emb, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -86,7 +93,6 @@ class Block(nn.Module):
         x = self.cross_attn(x, cond_tokens)
         x = self.layer_out(x)
         return x
-    
 
 
 class LatentNetwork(nn.Module):
@@ -100,15 +106,15 @@ class LatentNetwork(nn.Module):
 
         self.cond_projs_enc = nn.ModuleList(
             [
-                nn.Linear(latent_dim, emb_dim//2),
-                nn.Linear(latent_dim, emb_dim//4),
-                nn.Linear(latent_dim, emb_dim//4)
+                nn.Linear(latent_dim, emb_dim // 2),
+                nn.Linear(latent_dim, emb_dim // 4),
+                nn.Linear(latent_dim, emb_dim // 4),
             ]
         )
 
         self.cond_projs_dec = nn.ModuleList(
             [
-                nn.Linear(latent_dim, emb_dim//2),
+                nn.Linear(latent_dim, emb_dim // 2),
                 nn.Linear(latent_dim, emb_dim),
             ]
         )
@@ -122,19 +128,19 @@ class LatentNetwork(nn.Module):
         self.initial_time_layer = nn.Linear(time_emb_dim, latent_dim)
         self.enc = nn.ModuleList(
             [
-                Block(emb_dim, emb_dim//2, time_emb_dim),
-                Block(emb_dim//2, emb_dim//4, time_emb_dim),
+                Block(emb_dim, emb_dim // 2, time_emb_dim),
+                Block(emb_dim // 2, emb_dim // 4, time_emb_dim),
             ]
         )
-        self.bottleneck = Block(emb_dim//4, emb_dim//4, time_emb_dim)
+        self.bottleneck = Block(emb_dim // 4, emb_dim // 4, time_emb_dim)
         self.dec = nn.ModuleList(
             [
-                Block(emb_dim//2, emb_dim//2, time_emb_dim),
-                Block(emb_dim, emb_dim, time_emb_dim)
+                Block(emb_dim // 2, emb_dim // 2, time_emb_dim),
+                Block(emb_dim, emb_dim, time_emb_dim),
             ]
         )
-        self.out_time_layer = nn.Linear(time_emb_dim, emb_dim*2)
-        self.out_layer = nn.Linear(emb_dim*2, latent_dim)
+        self.out_time_layer = nn.Linear(time_emb_dim, emb_dim * 2)
+        self.out_layer = nn.Linear(emb_dim * 2, latent_dim)
 
     def forward(self, x, time, condition):
         time_emb = self.time_model(time)
@@ -169,4 +175,3 @@ class LatentNetwork(nn.Module):
         x = x + time_emb_out
         x = self.out_layer(x)
         return x
-    
