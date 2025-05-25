@@ -5,8 +5,6 @@ from torchsummary import summary
 from dataset import WeatherBenchDataset
 from model import AutoEncoder
 from train import train_autoencoder
-from eval_sim import eval_model
-from tsne import plot_tsne
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
