@@ -1,0 +1,291 @@
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss = 0.64, Train Recon Loss = 0.64, Train Masked Recon Loss = 0.64, Valid loss = 0.50, Valid Recon Loss = 0.48, Valid Masked Recon Loss = 0.51, lr = 0.00100
+Epoch: 1, Train Loss = 0.42, Train Recon Loss = 0.42, Train Masked Recon Loss = 0.42, Valid loss = 0.46, Valid Recon Loss = 0.41, Valid Masked Recon Loss = 0.52, lr = 0.00100
+Epoch: 2, Train Loss = 0.38, Train Recon Loss = 0.38, Train Masked Recon Loss = 0.38, Valid loss = 0.43, Valid Recon Loss = 0.39, Valid Masked Recon Loss = 0.48, lr = 0.00100
+Epoch: 3, Train Loss = 0.35, Train Recon Loss = 0.35, Train Masked Recon Loss = 0.35, Valid loss = 0.41, Valid Recon Loss = 0.38, Valid Masked Recon Loss = 0.45, lr = 0.00100
+Epoch: 4, Train Loss = 0.34, Train Recon Loss = 0.34, Train Masked Recon Loss = 0.34, Valid loss = 0.44, Valid Recon Loss = 0.38, Valid Masked Recon Loss = 0.50, lr = 0.00100
+Epoch: 5, Train Loss = 0.34, Train Recon Loss = 0.34, Train Masked Recon Loss = 0.34, Valid loss = 0.41, Valid Recon Loss = 0.36, Valid Masked Recon Loss = 0.47, lr = 0.00100
+Epoch: 6, Train Loss = 0.33, Train Recon Loss = 0.33, Train Masked Recon Loss = 0.33, Valid loss = 0.41, Valid Recon Loss = 0.35, Valid Masked Recon Loss = 0.46, lr = 0.00100
+Epoch: 7, Train Loss = 0.33, Train Recon Loss = 0.33, Train Masked Recon Loss = 0.33, Valid loss = 0.39, Valid Recon Loss = 0.34, Valid Masked Recon Loss = 0.44, lr = 0.00100
+Epoch: 8, Train Loss = 0.32, Train Recon Loss = 0.32, Train Masked Recon Loss = 0.32, Valid loss = 0.39, Valid Recon Loss = 0.33, Valid Masked Recon Loss = 0.45, lr = 0.00100
+Epoch: 9, Train Loss = 0.31, Train Recon Loss = 0.31, Train Masked Recon Loss = 0.31, Valid loss = 0.38, Valid Recon Loss = 0.32, Valid Masked Recon Loss = 0.45, lr = 0.00100
+Epoch: 10, Train Loss = 0.29, Train Recon Loss = 0.29, Train Masked Recon Loss = 0.30, Valid loss = 0.38, Valid Recon Loss = 0.31, Valid Masked Recon Loss = 0.45, lr = 0.00100
+Epoch: 11, Train Loss = 0.29, Train Recon Loss = 0.29, Train Masked Recon Loss = 0.29, Valid loss = 0.37, Valid Recon Loss = 0.32, Valid Masked Recon Loss = 0.42, lr = 0.00100
+Epoch: 12, Train Loss = 0.28, Train Recon Loss = 0.28, Train Masked Recon Loss = 0.28, Valid loss = 0.36, Valid Recon Loss = 0.31, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 13, Train Loss = 0.27, Train Recon Loss = 0.27, Train Masked Recon Loss = 0.27, Valid loss = 0.36, Valid Recon Loss = 0.29, Valid Masked Recon Loss = 0.43, lr = 0.00100
+Epoch: 14, Train Loss = 0.27, Train Recon Loss = 0.27, Train Masked Recon Loss = 0.27, Valid loss = 0.36, Valid Recon Loss = 0.29, Valid Masked Recon Loss = 0.42, lr = 0.00100
+Epoch: 15, Train Loss = 0.26, Train Recon Loss = 0.26, Train Masked Recon Loss = 0.26, Valid loss = 0.35, Valid Recon Loss = 0.27, Valid Masked Recon Loss = 0.43, lr = 0.00100
+Epoch: 16, Train Loss = 0.25, Train Recon Loss = 0.25, Train Masked Recon Loss = 0.25, Valid loss = 0.35, Valid Recon Loss = 0.28, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 17, Train Loss = 0.25, Train Recon Loss = 0.25, Train Masked Recon Loss = 0.25, Valid loss = 0.34, Valid Recon Loss = 0.27, Valid Masked Recon Loss = 0.42, lr = 0.00100
+Epoch: 18, Train Loss = 0.24, Train Recon Loss = 0.24, Train Masked Recon Loss = 0.24, Valid loss = 0.35, Valid Recon Loss = 0.26, Valid Masked Recon Loss = 0.43, lr = 0.00100
+Epoch: 19, Train Loss = 0.23, Train Recon Loss = 0.23, Train Masked Recon Loss = 0.24, Valid loss = 0.34, Valid Recon Loss = 0.25, Valid Masked Recon Loss = 0.43, lr = 0.00100
+Epoch: 20, Train Loss = 0.23, Train Recon Loss = 0.23, Train Masked Recon Loss = 0.23, Valid loss = 0.34, Valid Recon Loss = 0.26, Valid Masked Recon Loss = 0.42, lr = 0.00100
+Epoch: 21, Train Loss = 0.22, Train Recon Loss = 0.22, Train Masked Recon Loss = 0.23, Valid loss = 0.33, Valid Recon Loss = 0.24, Valid Masked Recon Loss = 0.43, lr = 0.00100
+Epoch: 22, Train Loss = 0.22, Train Recon Loss = 0.22, Train Masked Recon Loss = 0.22, Valid loss = 0.34, Valid Recon Loss = 0.24, Valid Masked Recon Loss = 0.45, lr = 0.00100
+Epoch: 23, Train Loss = 0.21, Train Recon Loss = 0.21, Train Masked Recon Loss = 0.22, Valid loss = 0.34, Valid Recon Loss = 0.23, Valid Masked Recon Loss = 0.44, lr = 0.00100
+Epoch: 24, Train Loss = 0.21, Train Recon Loss = 0.21, Train Masked Recon Loss = 0.21, Valid loss = 0.33, Valid Recon Loss = 0.23, Valid Masked Recon Loss = 0.44, lr = 0.00100
+Epoch: 25, Train Loss = 0.21, Train Recon Loss = 0.21, Train Masked Recon Loss = 0.21, Valid loss = 0.32, Valid Recon Loss = 0.23, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 26, Train Loss = 0.20, Train Recon Loss = 0.20, Train Masked Recon Loss = 0.21, Valid loss = 0.32, Valid Recon Loss = 0.23, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 27, Train Loss = 0.20, Train Recon Loss = 0.20, Train Masked Recon Loss = 0.20, Valid loss = 0.32, Valid Recon Loss = 0.23, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 28, Train Loss = 0.20, Train Recon Loss = 0.20, Train Masked Recon Loss = 0.20, Valid loss = 0.31, Valid Recon Loss = 0.22, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 29, Train Loss = 0.20, Train Recon Loss = 0.19, Train Masked Recon Loss = 0.20, Valid loss = 0.32, Valid Recon Loss = 0.22, Valid Masked Recon Loss = 0.42, lr = 0.00100
+Epoch: 30, Train Loss = 0.19, Train Recon Loss = 0.19, Train Masked Recon Loss = 0.19, Valid loss = 0.31, Valid Recon Loss = 0.22, Valid Masked Recon Loss = 0.40, lr = 0.00100
+Epoch: 31, Train Loss = 0.19, Train Recon Loss = 0.19, Train Masked Recon Loss = 0.19, Valid loss = 0.31, Valid Recon Loss = 0.21, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 32, Train Loss = 0.19, Train Recon Loss = 0.18, Train Masked Recon Loss = 0.19, Valid loss = 0.28, Valid Recon Loss = 0.21, Valid Masked Recon Loss = 0.36, lr = 0.00100
+Epoch: 33, Train Loss = 0.18, Train Recon Loss = 0.18, Train Masked Recon Loss = 0.19, Valid loss = 0.29, Valid Recon Loss = 0.20, Valid Masked Recon Loss = 0.39, lr = 0.00100
+Epoch: 34, Train Loss = 0.18, Train Recon Loss = 0.18, Train Masked Recon Loss = 0.18, Valid loss = 0.31, Valid Recon Loss = 0.21, Valid Masked Recon Loss = 0.41, lr = 0.00100
+Epoch: 35, Train Loss = 0.18, Train Recon Loss = 0.18, Train Masked Recon Loss = 0.18, Valid loss = 0.29, Valid Recon Loss = 0.20, Valid Masked Recon Loss = 0.39, lr = 0.00100
+Epoch: 36, Train Loss = 0.18, Train Recon Loss = 0.18, Train Masked Recon Loss = 0.18, Valid loss = 0.29, Valid Recon Loss = 0.20, Valid Masked Recon Loss = 0.39, lr = 0.00100
+Epoch: 37, Train Loss = 0.18, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.18, Valid loss = 0.29, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.39, lr = 0.00100
+Epoch: 38, Train Loss = 0.17, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.18, Valid loss = 0.29, Valid Recon Loss = 0.20, Valid Masked Recon Loss = 0.38, lr = 0.00100
+Epoch: 39, Train Loss = 0.17, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.17, Valid loss = 0.28, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.37, lr = 0.00100
+Epoch: 40, Train Loss = 0.17, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.17, Valid loss = 0.28, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.38, lr = 0.00100
+Epoch: 41, Train Loss = 0.17, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.17, Valid loss = 0.28, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.36, lr = 0.00100
+Epoch: 42, Train Loss = 0.17, Train Recon Loss = 0.17, Train Masked Recon Loss = 0.17, Valid loss = 0.27, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.35, lr = 0.00100
+Epoch: 43, Train Loss = 0.17, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.17, Valid loss = 0.26, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.33, lr = 0.00100
+Epoch: 44, Train Loss = 0.17, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.17, Valid loss = 0.26, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.34, lr = 0.00100
+Epoch: 45, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.17, Valid loss = 0.26, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.33, lr = 0.00100
+Epoch: 46, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.25, Valid Recon Loss = 0.19, Valid Masked Recon Loss = 0.32, lr = 0.00100
+Epoch: 47, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.25, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.32, lr = 0.00100
+Epoch: 48, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.25, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.32, lr = 0.00100
+Epoch: 49, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.25, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.32, lr = 0.00100
+Epoch: 50, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.23, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.29, lr = 0.00100
+Epoch: 51, Train Loss = 0.16, Train Recon Loss = 0.16, Train Masked Recon Loss = 0.16, Valid loss = 0.23, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.29, lr = 0.00100
+Epoch: 52, Train Loss = 0.16, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.16, Valid loss = 0.23, Valid Recon Loss = 0.18, Valid Masked Recon Loss = 0.29, lr = 0.00100
+Epoch: 53, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.23, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.28, lr = 0.00100
+Epoch: 54, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.22, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.27, lr = 0.00100
+Epoch: 55, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.22, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.26, lr = 0.00100
+Epoch: 56, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.21, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.25, lr = 0.00100
+Epoch: 57, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.21, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.25, lr = 0.00100
+Epoch: 58, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.24, lr = 0.00100
+Epoch: 59, Train Loss = 0.15, Train Recon Loss = 0.15, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.23, lr = 0.00100
+Epoch: 60, Train Loss = 0.15, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.24, lr = 0.00100
+Epoch: 61, Train Loss = 0.15, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.22, lr = 0.00100
+Epoch: 62, Train Loss = 0.15, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.23, lr = 0.00100
+Epoch: 63, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.17, Valid Masked Recon Loss = 0.23, lr = 0.00100
+Epoch: 64, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.15, Valid loss = 0.20, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.23, lr = 0.00100
+Epoch: 65, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.19, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.22, lr = 0.00100
+Epoch: 66, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.20, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.23, lr = 0.00100
+Epoch: 67, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.19, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 68, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.19, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.22, lr = 0.00100
+Epoch: 69, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.19, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.22, lr = 0.00100
+Epoch: 70, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.19, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 71, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 72, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 73, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 74, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 75, Train Loss = 0.14, Train Recon Loss = 0.14, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 76, Train Loss = 0.14, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 77, Train Loss = 0.14, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 78, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.14, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 79, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 80, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 81, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 82, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 83, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.21, lr = 0.00100
+Epoch: 84, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 85, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 86, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 87, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 88, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.18, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 89, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 90, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 91, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 92, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 93, Train Loss = 0.13, Train Recon Loss = 0.13, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 94, Train Loss = 0.13, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 95, Train Loss = 0.13, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 96, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 97, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 98, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.13, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 99, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.18, Valid Recon Loss = 0.16, Valid Masked Recon Loss = 0.20, lr = 0.00100
+Epoch: 100, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 101, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 102, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 103, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 104, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 105, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 106, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 107, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 108, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 109, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 110, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 111, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 112, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 113, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 114, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.15, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 115, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 116, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 117, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 118, Train Loss = 0.12, Train Recon Loss = 0.12, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 119, Train Loss = 0.12, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.17, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.19, lr = 0.00100
+Epoch: 120, Train Loss = 0.12, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 121, Train Loss = 0.12, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 122, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 123, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 124, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 125, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.12, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00100
+Epoch: 126, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 127, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 128, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 129, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 130, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 131, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00100
+Epoch: 132, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 133, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00100
+Epoch: 134, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 135, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 136, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 137, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 138, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 139, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 140, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 141, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00100
+Epoch: 142, Train Loss = 0.11, Train Recon Loss = 0.11, Train Masked Recon Loss = 0.11, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00100
+Epoch: 143, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.11, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 144, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.13, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 145, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 146, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 147, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 148, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 149, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 150, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 151, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 152, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 153, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 154, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 155, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 156, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 157, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 158, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 159, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.16, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.18, lr = 0.00010
+Epoch: 160, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00010
+Epoch: 161, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 162, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 163, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 164, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 165, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 166, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 167, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 168, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 169, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 170, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 171, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00001
+Epoch: 172, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 173, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 174, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 175, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 176, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 177, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 178, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Epoch: 179, Train Loss = 0.10, Train Recon Loss = 0.10, Train Masked Recon Loss = 0.10, Valid loss = 0.15, Valid Recon Loss = 0.14, Valid Masked Recon Loss = 0.17, lr = 0.00000
+Starting Downstream Task
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.15281, Valid Loss: 0.11599
+Epoch: 1, Train Loss: 0.09998, Valid Loss: 0.10437
+Epoch: 2, Train Loss: 0.08940, Valid Loss: 0.10068
+Epoch: 3, Train Loss: 0.08436, Valid Loss: 0.09846
+Epoch: 4, Train Loss: 0.08145, Valid Loss: 0.09967
+Epoch: 5, Train Loss: 0.07958, Valid Loss: 0.09838
+Epoch: 6, Train Loss: 0.07766, Valid Loss: 0.09916
+Epoch: 7, Train Loss: 0.07677, Valid Loss: 0.09947
+Epoch: 8, Train Loss: 0.07545, Valid Loss: 0.09826
+Epoch: 9, Train Loss: 0.07418, Valid Loss: 0.09844
+Epoch: 10, Train Loss: 0.07355, Valid Loss: 0.09946
+Epoch: 11, Train Loss: 0.07291, Valid Loss: 0.10094
+Epoch: 12, Train Loss: 0.07229, Valid Loss: 0.09901
+Epoch: 13, Train Loss: 0.07203, Valid Loss: 0.10016
+Epoch: 14, Train Loss: 0.07072, Valid Loss: 0.10033
+Epoch: 15, Train Loss: 0.07013, Valid Loss: 0.09957
+Epoch: 16, Train Loss: 0.06950, Valid Loss: 0.09974
+Epoch: 17, Train Loss: 0.06883, Valid Loss: 0.09950
+Epoch: 18, Train Loss: 0.06877, Valid Loss: 0.10090
+Epoch: 19, Train Loss: 0.06807, Valid Loss: 0.10168
+Epoch: 20, Train Loss: 0.06118, Valid Loss: 0.09518
+Epoch: 21, Train Loss: 0.05724, Valid Loss: 0.09454
+Epoch: 22, Train Loss: 0.05606, Valid Loss: 0.09421
+Epoch: 23, Train Loss: 0.05519, Valid Loss: 0.09416
+Epoch: 24, Train Loss: 0.05484, Valid Loss: 0.09434
+Epoch: 25, Train Loss: 0.05435, Valid Loss: 0.09322
+Epoch: 26, Train Loss: 0.05408, Valid Loss: 0.09368
+Epoch: 27, Train Loss: 0.05366, Valid Loss: 0.09390
+Epoch: 28, Train Loss: 0.05354, Valid Loss: 0.09351
+Epoch: 29, Train Loss: 0.05294, Valid Loss: 0.09391
+Epoch: 30, Train Loss: 0.05275, Valid Loss: 0.09383
+Epoch: 31, Train Loss: 0.05263, Valid Loss: 0.09351
+Epoch: 32, Train Loss: 0.05214, Valid Loss: 0.09326
+Epoch: 33, Train Loss: 0.05222, Valid Loss: 0.09363
+Epoch: 34, Train Loss: 0.05184, Valid Loss: 0.09344
+Epoch: 35, Train Loss: 0.05157, Valid Loss: 0.09344
+Epoch: 36, Train Loss: 0.05141, Valid Loss: 0.09306
+Epoch: 37, Train Loss: 0.05110, Valid Loss: 0.09261
+Epoch: 38, Train Loss: 0.05111, Valid Loss: 0.09305
+Epoch: 39, Train Loss: 0.05088, Valid Loss: 0.09288
+Epoch: 40, Train Loss: 0.05078, Valid Loss: 0.09338
+Epoch: 41, Train Loss: 0.05047, Valid Loss: 0.09294
+Epoch: 42, Train Loss: 0.05035, Valid Loss: 0.09323
+Epoch: 43, Train Loss: 0.05007, Valid Loss: 0.09287
+Epoch: 44, Train Loss: 0.04998, Valid Loss: 0.09358
+Epoch: 45, Train Loss: 0.04983, Valid Loss: 0.09281
+Epoch: 46, Train Loss: 0.04960, Valid Loss: 0.09352
+Epoch: 47, Train Loss: 0.04941, Valid Loss: 0.09348
+Epoch: 48, Train Loss: 0.04931, Valid Loss: 0.09294
+Epoch: 49, Train Loss: 0.04822, Valid Loss: 0.09253
+Epoch: 50, Train Loss: 0.04804, Valid Loss: 0.09223
+Epoch: 51, Train Loss: 0.04801, Valid Loss: 0.09265
+Epoch: 52, Train Loss: 0.04790, Valid Loss: 0.09277
+Epoch: 53, Train Loss: 0.04794, Valid Loss: 0.09265
+Epoch: 54, Train Loss: 0.04785, Valid Loss: 0.09247
+Epoch: 55, Train Loss: 0.04784, Valid Loss: 0.09238
+Epoch: 56, Train Loss: 0.04769, Valid Loss: 0.09292
+Epoch: 57, Train Loss: 0.04774, Valid Loss: 0.09263
+Epoch: 58, Train Loss: 0.04770, Valid Loss: 0.09267
+Epoch: 59, Train Loss: 0.04760, Valid Loss: 0.09219
+Epoch: 60, Train Loss: 0.04776, Valid Loss: 0.09270
+Epoch: 61, Train Loss: 0.04757, Valid Loss: 0.09257
+Epoch: 62, Train Loss: 0.04763, Valid Loss: 0.09209
+Epoch: 63, Train Loss: 0.04749, Valid Loss: 0.09224
+Epoch: 64, Train Loss: 0.04768, Valid Loss: 0.09232
+Epoch: 65, Train Loss: 0.04762, Valid Loss: 0.09255
+Epoch: 66, Train Loss: 0.04748, Valid Loss: 0.09225
+Epoch: 67, Train Loss: 0.04738, Valid Loss: 0.09231
+Epoch: 68, Train Loss: 0.04750, Valid Loss: 0.09217
+Epoch: 69, Train Loss: 0.04740, Valid Loss: 0.09262
+Epoch: 70, Train Loss: 0.04732, Valid Loss: 0.09255
+Epoch: 71, Train Loss: 0.04742, Valid Loss: 0.09246
+Epoch: 72, Train Loss: 0.04736, Valid Loss: 0.09255
+Epoch: 73, Train Loss: 0.04746, Valid Loss: 0.09266
+Epoch: 74, Train Loss: 0.04720, Valid Loss: 0.09239
+Epoch: 75, Train Loss: 0.04717, Valid Loss: 0.09227
+Epoch: 76, Train Loss: 0.04727, Valid Loss: 0.09224
+Epoch: 77, Train Loss: 0.04720, Valid Loss: 0.09253
+Epoch: 78, Train Loss: 0.04726, Valid Loss: 0.09256
+Epoch: 79, Train Loss: 0.04725, Valid Loss: 0.09236
+Epoch: 80, Train Loss: 0.04725, Valid Loss: 0.09240
+Epoch: 81, Train Loss: 0.04732, Valid Loss: 0.09263
+Epoch: 82, Train Loss: 0.04709, Valid Loss: 0.09233
+Epoch: 83, Train Loss: 0.04724, Valid Loss: 0.09265
+Epoch: 84, Train Loss: 0.04718, Valid Loss: 0.09231
+Epoch: 85, Train Loss: 0.04720, Valid Loss: 0.09261
+Epoch: 86, Train Loss: 0.04723, Valid Loss: 0.09249
+Epoch: 87, Train Loss: 0.04716, Valid Loss: 0.09206
+Epoch: 88, Train Loss: 0.04722, Valid Loss: 0.09223
+Epoch: 89, Train Loss: 0.04724, Valid Loss: 0.09278
+Epoch: 90, Train Loss: 0.04708, Valid Loss: 0.09287
+Epoch: 91, Train Loss: 0.04722, Valid Loss: 0.09280
+Epoch: 92, Train Loss: 0.04708, Valid Loss: 0.09230
+Epoch: 93, Train Loss: 0.04722, Valid Loss: 0.09233
+Epoch: 94, Train Loss: 0.04721, Valid Loss: 0.09286
+Epoch: 95, Train Loss: 0.04718, Valid Loss: 0.09220
+Epoch: 96, Train Loss: 0.04723, Valid Loss: 0.09233
+Epoch: 97, Train Loss: 0.04715, Valid Loss: 0.09247
+Epoch: 98, Train Loss: 0.04718, Valid Loss: 0.09215
+Epoch: 99, Train Loss: 0.04713, Valid Loss: 0.09228
+Test Loss: 0.09263
+Test Loss: 0.09230
