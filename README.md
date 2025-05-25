@@ -26,8 +26,6 @@ This repository contains code and experiments for an MSc thesis focused on contr
 ├── part_3_robust/
 ├── part_4_improved_decoder/
 ├── requirements.txt
-├── README.md
-└── .gitignore
 ```
 
 ## Project Parts
@@ -38,18 +36,18 @@ This repository contains code and experiments for an MSc thesis focused on contr
     - Contrasts with an Autoencoder Approach
 
 - **Part 2: Decoder**
-    - Adds a decoder to the contrastive learning methods to provided a direct comparison to the autoencoder approach
+    - Adds a decoder to the contrastive learning methods to provide a direct comparison to the autoencoder approach
     - Contrasts 2 methods of adding the decoder
     - Compares Instance Norm and Batch Norm Approaches
-    - Evalutes the approaches on the task of downstream weather forecasting
+    - Evaluates the approaches on the task of downstream weather forecasting
 
 - **Part 3: Robust**
     - Attempts to make the chosen SIMCLR approach more robust and have better downstream performance
-    - Trials numerous approaches and collates them all into one final solution
+    - Trialled numerous approaches and collated them all into one final solution
 
 - **Part 4: Improved Decoder**
     - Final decoder architecture improvements
-    - Contrasts final approach with a mroe representative autoencoder
+    - Contrasts final approach with a more representative autoencoder
     - Adds additional tasks of data assimilation and conditional latent diffusion models
     - Expands the downstream task of forecasting with added stride and changing context windows 
 
@@ -76,4 +74,4 @@ This repository contains code and experiments for an MSc thesis focused on contr
 - Each subfolder contains scripts and modules for specific experiments or model variants.
 
 ---
-For questions or collaboration, please contact me
+For questions or collaboration, please get in touch with me
