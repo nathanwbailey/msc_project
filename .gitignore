@@ -5,3 +5,4 @@ test*
 slurm*
 *pth
 *pyc
+.DS_Store
