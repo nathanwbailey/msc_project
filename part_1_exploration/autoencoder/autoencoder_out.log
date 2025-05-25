@@ -1,0 +1,413 @@
+nohup: ignoring input
+====================================================================================================
+Layer (type:depth-idx)                             Output Shape              Param #
+====================================================================================================
+├─ResNet: 1-1                                      [-1, 1000]                --
+|    └─Conv2d: 2-1                                 [-1, 64, 32, 16]          15,680
+|    └─BatchNorm2d: 2-2                            [-1, 64, 32, 16]          128
+|    └─ReLU: 2-3                                   [-1, 64, 32, 16]          --
+|    └─MaxPool2d: 2-4                              [-1, 64, 16, 8]           --
+|    └─Sequential: 2-5                             [-1, 64, 16, 8]           --
+|    |    └─BasicBlock: 3-1                        [-1, 64, 16, 8]           --
+|    |    |    └─Conv2d: 4-1                       [-1, 64, 16, 8]           36,864
+|    |    |    └─BatchNorm2d: 4-2                  [-1, 64, 16, 8]           128
+|    |    |    └─ReLU: 4-3                         [-1, 64, 16, 8]           --
+|    |    |    └─Conv2d: 4-4                       [-1, 64, 16, 8]           36,864
+|    |    |    └─BatchNorm2d: 4-5                  [-1, 64, 16, 8]           128
+|    |    |    └─ReLU: 4-6                         [-1, 64, 16, 8]           --
+|    |    └─BasicBlock: 3-2                        [-1, 64, 16, 8]           --
+|    |    |    └─Conv2d: 4-7                       [-1, 64, 16, 8]           36,864
+|    |    |    └─BatchNorm2d: 4-8                  [-1, 64, 16, 8]           128
+|    |    |    └─ReLU: 4-9                         [-1, 64, 16, 8]           --
+|    |    |    └─Conv2d: 4-10                      [-1, 64, 16, 8]           36,864
+|    |    |    └─BatchNorm2d: 4-11                 [-1, 64, 16, 8]           128
+|    |    |    └─ReLU: 4-12                        [-1, 64, 16, 8]           --
+|    └─Sequential: 2-6                             [-1, 128, 8, 4]           --
+|    |    └─BasicBlock: 3-3                        [-1, 128, 8, 4]           --
+|    |    |    └─Conv2d: 4-13                      [-1, 128, 8, 4]           73,728
+|    |    |    └─BatchNorm2d: 4-14                 [-1, 128, 8, 4]           256
+|    |    |    └─ReLU: 4-15                        [-1, 128, 8, 4]           --
+|    |    |    └─Conv2d: 4-16                      [-1, 128, 8, 4]           147,456
+|    |    |    └─BatchNorm2d: 4-17                 [-1, 128, 8, 4]           256
+|    |    |    └─Sequential: 4-18                  [-1, 128, 8, 4]           --
+|    |    |    |    └─Conv2d: 5-1                  [-1, 128, 8, 4]           8,192
+|    |    |    |    └─BatchNorm2d: 5-2             [-1, 128, 8, 4]           256
+|    |    |    └─ReLU: 4-19                        [-1, 128, 8, 4]           --
+|    |    └─BasicBlock: 3-4                        [-1, 128, 8, 4]           --
+|    |    |    └─Conv2d: 4-20                      [-1, 128, 8, 4]           147,456
+|    |    |    └─BatchNorm2d: 4-21                 [-1, 128, 8, 4]           256
+|    |    |    └─ReLU: 4-22                        [-1, 128, 8, 4]           --
+|    |    |    └─Conv2d: 4-23                      [-1, 128, 8, 4]           147,456
+|    |    |    └─BatchNorm2d: 4-24                 [-1, 128, 8, 4]           256
+|    |    |    └─ReLU: 4-25                        [-1, 128, 8, 4]           --
+|    └─Sequential: 2-7                             [-1, 256, 4, 2]           --
+|    |    └─BasicBlock: 3-5                        [-1, 256, 4, 2]           --
+|    |    |    └─Conv2d: 4-26                      [-1, 256, 4, 2]           294,912
+|    |    |    └─BatchNorm2d: 4-27                 [-1, 256, 4, 2]           512
+|    |    |    └─ReLU: 4-28                        [-1, 256, 4, 2]           --
+|    |    |    └─Conv2d: 4-29                      [-1, 256, 4, 2]           589,824
+|    |    |    └─BatchNorm2d: 4-30                 [-1, 256, 4, 2]           512
+|    |    |    └─Sequential: 4-31                  [-1, 256, 4, 2]           --
+|    |    |    |    └─Conv2d: 5-3                  [-1, 256, 4, 2]           32,768
+|    |    |    |    └─BatchNorm2d: 5-4             [-1, 256, 4, 2]           512
+|    |    |    └─ReLU: 4-32                        [-1, 256, 4, 2]           --
+|    |    └─BasicBlock: 3-6                        [-1, 256, 4, 2]           --
+|    |    |    └─Conv2d: 4-33                      [-1, 256, 4, 2]           589,824
+|    |    |    └─BatchNorm2d: 4-34                 [-1, 256, 4, 2]           512
+|    |    |    └─ReLU: 4-35                        [-1, 256, 4, 2]           --
+|    |    |    └─Conv2d: 4-36                      [-1, 256, 4, 2]           589,824
+|    |    |    └─BatchNorm2d: 4-37                 [-1, 256, 4, 2]           512
+|    |    |    └─ReLU: 4-38                        [-1, 256, 4, 2]           --
+|    └─Sequential: 2-8                             [-1, 512, 2, 1]           --
+|    |    └─BasicBlock: 3-7                        [-1, 512, 2, 1]           --
+|    |    |    └─Conv2d: 4-39                      [-1, 512, 2, 1]           1,179,648
+|    |    |    └─BatchNorm2d: 4-40                 [-1, 512, 2, 1]           1,024
+|    |    |    └─ReLU: 4-41                        [-1, 512, 2, 1]           --
+|    |    |    └─Conv2d: 4-42                      [-1, 512, 2, 1]           2,359,296
+|    |    |    └─BatchNorm2d: 4-43                 [-1, 512, 2, 1]           1,024
+|    |    |    └─Sequential: 4-44                  [-1, 512, 2, 1]           --
+|    |    |    |    └─Conv2d: 5-5                  [-1, 512, 2, 1]           131,072
+|    |    |    |    └─BatchNorm2d: 5-6             [-1, 512, 2, 1]           1,024
+|    |    |    └─ReLU: 4-45                        [-1, 512, 2, 1]           --
+|    |    └─BasicBlock: 3-8                        [-1, 512, 2, 1]           --
+|    |    |    └─Conv2d: 4-46                      [-1, 512, 2, 1]           2,359,296
+|    |    |    └─BatchNorm2d: 4-47                 [-1, 512, 2, 1]           1,024
+|    |    |    └─ReLU: 4-48                        [-1, 512, 2, 1]           --
+|    |    |    └─Conv2d: 4-49                      [-1, 512, 2, 1]           2,359,296
+|    |    |    └─BatchNorm2d: 4-50                 [-1, 512, 2, 1]           1,024
+|    |    |    └─ReLU: 4-51                        [-1, 512, 2, 1]           --
+|    └─AdaptiveAvgPool2d: 2-9                      [-1, 512, 1, 1]           --
+|    └─Linear: 2-10                                [-1, 1000]                513,000
+├─Linear: 1-2                                      [-1, 128]                 128,128
+├─Linear: 1-3                                      [-1, 1000]                129,000
+├─Decoder: 1-4                                     [-1, 5, 64, 32]           --
+|    └─Linear: 2-11                                [-1, 1024]                1,025,024
+|    └─Sequential: 2-12                            [-1, 8, 64, 32]           --
+|    |    └─DecoderBlock: 3-9                      [-1, 64, 8, 4]            --
+|    |    |    └─Sequential: 4-52                  [-1, 64, 8, 4]            --
+|    |    |    |    └─ConvTranspose2d: 5-7         [-1, 64, 8, 4]            32,832
+|    |    |    |    └─LeakyReLU: 5-8               [-1, 64, 8, 4]            --
+|    |    └─DecoderBlock: 3-10                     [-1, 32, 16, 8]           --
+|    |    |    └─Sequential: 4-53                  [-1, 32, 16, 8]           --
+|    |    |    |    └─ConvTranspose2d: 5-9         [-1, 32, 16, 8]           8,224
+|    |    |    |    └─LeakyReLU: 5-10              [-1, 32, 16, 8]           --
+|    |    └─DecoderBlock: 3-11                     [-1, 16, 32, 16]          --
+|    |    |    └─Sequential: 4-54                  [-1, 16, 32, 16]          --
+|    |    |    |    └─ConvTranspose2d: 5-11        [-1, 16, 32, 16]          2,064
+|    |    |    |    └─LeakyReLU: 5-12              [-1, 16, 32, 16]          --
+|    |    └─DecoderBlock: 3-12                     [-1, 8, 64, 32]           --
+|    |    |    └─Sequential: 4-55                  [-1, 8, 64, 32]           --
+|    |    |    |    └─ConvTranspose2d: 5-13        [-1, 8, 64, 32]           520
+|    |    |    |    └─LeakyReLU: 5-14              [-1, 8, 64, 32]           --
+|    └─Conv2d: 2-13                                [-1, 5, 64, 32]           45
+====================================================================================================
+Total params: 13,021,621
+Trainable params: 13,021,621
+Non-trainable params: 0
+Total mult-adds (M): 118.69
+====================================================================================================
+Input size (MB): 0.04
+Forward/backward pass size (MB): 1.88
+Params size (MB): 49.67
+Estimated Total Size (MB): 51.60
+====================================================================================================
+Epoch: 0, train loss = 0.61, test loss = 0.43, lr = 0.00100
+Epoch: 1, train loss = 0.38, test loss = 0.34, lr = 0.00100
+Epoch: 2, train loss = 0.30, test loss = 0.30, lr = 0.00100
+Epoch: 3, train loss = 0.26, test loss = 0.28, lr = 0.00100
+Epoch: 4, train loss = 0.24, test loss = 0.25, lr = 0.00100
+Epoch: 5, train loss = 0.21, test loss = 0.21, lr = 0.00100
+Epoch: 6, train loss = 0.17, test loss = 0.19, lr = 0.00100
+Epoch: 7, train loss = 0.15, test loss = 0.16, lr = 0.00100
+Epoch: 8, train loss = 0.13, test loss = 0.15, lr = 0.00100
+Epoch: 9, train loss = 0.12, test loss = 0.14, lr = 0.00100
+Epoch: 10, train loss = 0.12, test loss = 0.13, lr = 0.00100
+Epoch: 11, train loss = 0.11, test loss = 0.12, lr = 0.00100
+Epoch: 12, train loss = 0.10, test loss = 0.11, lr = 0.00100
+Epoch: 13, train loss = 0.10, test loss = 0.10, lr = 0.00100
+Epoch: 14, train loss = 0.09, test loss = 0.10, lr = 0.00100
+Epoch: 15, train loss = 0.09, test loss = 0.10, lr = 0.00100
+Epoch: 16, train loss = 0.08, test loss = 0.09, lr = 0.00100
+Epoch: 17, train loss = 0.08, test loss = 0.09, lr = 0.00100
+Epoch: 18, train loss = 0.08, test loss = 0.09, lr = 0.00100
+Epoch: 19, train loss = 0.08, test loss = 0.09, lr = 0.00100
+Epoch: 20, train loss = 0.08, test loss = 0.08, lr = 0.00100
+Epoch: 21, train loss = 0.07, test loss = 0.08, lr = 0.00100
+Epoch: 22, train loss = 0.07, test loss = 0.08, lr = 0.00100
+Epoch: 23, train loss = 0.07, test loss = 0.08, lr = 0.00100
+Epoch: 24, train loss = 0.07, test loss = 0.08, lr = 0.00100
+Epoch: 25, train loss = 0.07, test loss = 0.08, lr = 0.00100
+Epoch: 26, train loss = 0.07, test loss = 0.07, lr = 0.00100
+Epoch: 27, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 28, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 29, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 30, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 31, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 32, train loss = 0.06, test loss = 0.07, lr = 0.00100
+Epoch: 33, train loss = 0.06, test loss = 0.06, lr = 0.00100
+Epoch: 34, train loss = 0.06, test loss = 0.06, lr = 0.00100
+Epoch: 35, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 36, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 37, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 38, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 39, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 40, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 41, train loss = 0.05, test loss = 0.06, lr = 0.00100
+Epoch: 42, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 43, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 44, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 45, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 46, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 47, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 48, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 49, train loss = 0.05, test loss = 0.05, lr = 0.00100
+Epoch: 50, train loss = 0.04, test loss = 0.06, lr = 0.00100
+Epoch: 51, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 52, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 53, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 54, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 55, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 56, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 57, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 58, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 59, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 60, train loss = 0.04, test loss = 0.05, lr = 0.00100
+Epoch: 61, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 62, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 63, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 64, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 65, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 66, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 67, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 68, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 69, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 70, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 71, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 72, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 73, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 74, train loss = 0.04, test loss = 0.04, lr = 0.00100
+Epoch: 75, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 76, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 77, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 78, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 79, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 80, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 81, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 82, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 83, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 84, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 85, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 86, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 87, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 88, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 89, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 90, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 91, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 92, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 93, train loss = 0.03, test loss = 0.04, lr = 0.00100
+Epoch: 94, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 95, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 96, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 97, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 98, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 99, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 100, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 101, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 102, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 103, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 104, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 105, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 106, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 107, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 108, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 109, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 110, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 111, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 112, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 113, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 114, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 115, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 116, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 117, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 118, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 119, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 120, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 121, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 122, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 123, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 124, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 125, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 126, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 127, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 128, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 129, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 130, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 131, train loss = 0.03, test loss = 0.03, lr = 0.00100
+Epoch: 132, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 133, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 134, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 135, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 136, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 137, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 138, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 139, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 140, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 141, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 142, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 143, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 144, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 145, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 146, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 147, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 148, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 149, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 150, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 151, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 152, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 153, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 154, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 155, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 156, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 157, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 158, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 159, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 160, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 161, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 162, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 163, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 164, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 165, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 166, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 167, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 168, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 169, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 170, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 171, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 172, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 173, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 174, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 175, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 176, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 177, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 178, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 179, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 180, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 181, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 182, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 183, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 184, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 185, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 186, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 187, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 188, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 189, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 190, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 191, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 192, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 193, train loss = 0.02, test loss = 0.03, lr = 0.00100
+Epoch: 194, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 195, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 196, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 197, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 198, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 199, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 200, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 201, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 202, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 203, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 204, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 205, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 206, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 207, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 208, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 209, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 210, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 211, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 212, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 213, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 214, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 215, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 216, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 217, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 218, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 219, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 220, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 221, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 222, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 223, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 224, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 225, train loss = 0.02, test loss = 0.02, lr = 0.00100
+Epoch: 226, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 227, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 228, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 229, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 230, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 231, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 232, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 233, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 234, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 235, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 236, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 237, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 238, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 239, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 240, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 241, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 242, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 243, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 244, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 245, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 246, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 247, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 248, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 249, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 250, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 251, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 252, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 253, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 254, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 255, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 256, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 257, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 258, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 259, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 260, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 261, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 262, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 263, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 264, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 265, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 266, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 267, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 268, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 269, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 270, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 271, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 272, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 273, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 274, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 275, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 276, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 277, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 278, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 279, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 280, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 281, train loss = 0.02, test loss = 0.02, lr = 0.00010
+Epoch: 282, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 283, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 284, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 285, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 286, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 287, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 288, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 289, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 290, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 291, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 292, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 293, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 294, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 295, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 296, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 297, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 298, train loss = 0.02, test loss = 0.02, lr = 0.00001
+Epoch: 299, train loss = 0.02, test loss = 0.02, lr = 0.00001

@@ -1,0 +1,7 @@
+/dataset
+/.venv
+nohup.out
+test*
+slurm*
+*pth
+*pyc
