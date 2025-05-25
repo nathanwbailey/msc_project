@@ -7,22 +7,7 @@ This repository contains code and experiments for an MSc thesis focused on contr
 ```
 .
 ├── part_1_exploration/
-│   ├── save_data.py
-│   ├── autoencoder/
-│   ├── barlow_twins/
-│   ├── SCL/
-│   └── supervised_contrastive_learning/
 ├── part_2_decoder/
-│   ├── save_data.py
-│   ├── autoencoder_first_idea/
-│   ├── autoencoder_MAE/
-│   ├── barlow_twins_decoder/
-│   ├── barlow_twins_decoder_first_idea/
-│   ├── barlow_twins_decoder_layer_norm/
-│   ├── barlow_twins_decoder_no_batch_norm_and_group_norm/
-│   ├── downstream_model_lstm_no_decoder/
-│   ├── simclr_decoder/
-│   └── simclr_decoder_first_idea/
 ├── part_3_robust/
 ├── part_4_improved_decoder/
 ├── requirements.txt
