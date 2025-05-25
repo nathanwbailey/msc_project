@@ -1,0 +1,431 @@
+nohup: ignoring input
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+Shape: (5, 144, 72)
+====================================================================================================
+Layer (type:depth-idx)                             Output Shape              Param #
+====================================================================================================
+├─ResNet18Encoder: 1-1                             [-1, 1000]                --
+|    └─Sequential: 2-1                             [-1, 64, 72, 36]          --
+|    |    └─Conv2d: 3-1                            [-1, 64, 72, 36]          15,680
+|    |    └─BatchNorm2d: 3-2                       [-1, 64, 72, 36]          128
+|    |    └─ReLU: 3-3                              [-1, 64, 72, 36]          --
+|    └─MaxPool2d: 2-2                              [-1, 64, 36, 18]          --
+|    └─Sequential: 2-3                             [-1, 64, 36, 18]          --
+|    |    └─BasicBlock: 3-4                        [-1, 64, 36, 18]          --
+|    |    |    └─Conv2d: 4-1                       [-1, 64, 36, 18]          36,864
+|    |    |    └─GroupNorm: 4-2                    [-1, 64, 36, 18]          128
+|    |    |    └─ReLU: 4-3                         [-1, 64, 36, 18]          --
+|    |    |    └─Conv2d: 4-4                       [-1, 64, 36, 18]          36,864
+|    |    |    └─GroupNorm: 4-5                    [-1, 64, 36, 18]          128
+|    |    |    └─ReLU: 4-6                         [-1, 64, 36, 18]          --
+|    |    └─BasicBlock: 3-5                        [-1, 64, 36, 18]          --
+|    |    |    └─Conv2d: 4-7                       [-1, 64, 36, 18]          36,864
+|    |    |    └─GroupNorm: 4-8                    [-1, 64, 36, 18]          128
+|    |    |    └─ReLU: 4-9                         [-1, 64, 36, 18]          --
+|    |    |    └─Conv2d: 4-10                      [-1, 64, 36, 18]          36,864
+|    |    |    └─GroupNorm: 4-11                   [-1, 64, 36, 18]          128
+|    |    |    └─ReLU: 4-12                        [-1, 64, 36, 18]          --
+|    └─Sequential: 2-4                             [-1, 128, 18, 9]          --
+|    |    └─BasicBlock: 3-6                        [-1, 128, 18, 9]          --
+|    |    |    └─Conv2d: 4-13                      [-1, 128, 18, 9]          73,728
+|    |    |    └─GroupNorm: 4-14                   [-1, 128, 18, 9]          256
+|    |    |    └─ReLU: 4-15                        [-1, 128, 18, 9]          --
+|    |    |    └─Conv2d: 4-16                      [-1, 128, 18, 9]          147,456
+|    |    |    └─GroupNorm: 4-17                   [-1, 128, 18, 9]          256
+|    |    |    └─Sequential: 4-18                  [-1, 128, 18, 9]          --
+|    |    |    |    └─Conv2d: 5-1                  [-1, 128, 18, 9]          8,192
+|    |    |    |    └─GroupNorm: 5-2               [-1, 128, 18, 9]          256
+|    |    |    └─ReLU: 4-19                        [-1, 128, 18, 9]          --
+|    |    └─BasicBlock: 3-7                        [-1, 128, 18, 9]          --
+|    |    |    └─Conv2d: 4-20                      [-1, 128, 18, 9]          147,456
+|    |    |    └─GroupNorm: 4-21                   [-1, 128, 18, 9]          256
+|    |    |    └─ReLU: 4-22                        [-1, 128, 18, 9]          --
+|    |    |    └─Conv2d: 4-23                      [-1, 128, 18, 9]          147,456
+|    |    |    └─GroupNorm: 4-24                   [-1, 128, 18, 9]          256
+|    |    |    └─ReLU: 4-25                        [-1, 128, 18, 9]          --
+|    └─Sequential: 2-5                             [-1, 256, 9, 5]           --
+|    |    └─BasicBlock: 3-8                        [-1, 256, 9, 5]           --
+|    |    |    └─Conv2d: 4-26                      [-1, 256, 9, 5]           294,912
+|    |    |    └─GroupNorm: 4-27                   [-1, 256, 9, 5]           512
+|    |    |    └─ReLU: 4-28                        [-1, 256, 9, 5]           --
+|    |    |    └─Conv2d: 4-29                      [-1, 256, 9, 5]           589,824
+|    |    |    └─GroupNorm: 4-30                   [-1, 256, 9, 5]           512
+|    |    |    └─Sequential: 4-31                  [-1, 256, 9, 5]           --
+|    |    |    |    └─Conv2d: 5-3                  [-1, 256, 9, 5]           32,768
+|    |    |    |    └─GroupNorm: 5-4               [-1, 256, 9, 5]           512
+|    |    |    └─ReLU: 4-32                        [-1, 256, 9, 5]           --
+|    |    └─BasicBlock: 3-9                        [-1, 256, 9, 5]           --
+|    |    |    └─Conv2d: 4-33                      [-1, 256, 9, 5]           589,824
+|    |    |    └─GroupNorm: 4-34                   [-1, 256, 9, 5]           512
+|    |    |    └─ReLU: 4-35                        [-1, 256, 9, 5]           --
+|    |    |    └─Conv2d: 4-36                      [-1, 256, 9, 5]           589,824
+|    |    |    └─GroupNorm: 4-37                   [-1, 256, 9, 5]           512
+|    |    |    └─ReLU: 4-38                        [-1, 256, 9, 5]           --
+|    └─Sequential: 2-6                             [-1, 512, 5, 3]           --
+|    |    └─BasicBlock: 3-10                       [-1, 512, 5, 3]           --
+|    |    |    └─Conv2d: 4-39                      [-1, 512, 5, 3]           1,179,648
+|    |    |    └─GroupNorm: 4-40                   [-1, 512, 5, 3]           1,024
+|    |    |    └─ReLU: 4-41                        [-1, 512, 5, 3]           --
+|    |    |    └─Conv2d: 4-42                      [-1, 512, 5, 3]           2,359,296
+|    |    |    └─GroupNorm: 4-43                   [-1, 512, 5, 3]           1,024
+|    |    |    └─Sequential: 4-44                  [-1, 512, 5, 3]           --
+|    |    |    |    └─Conv2d: 5-5                  [-1, 512, 5, 3]           131,072
+|    |    |    |    └─GroupNorm: 5-6               [-1, 512, 5, 3]           1,024
+|    |    |    └─ReLU: 4-45                        [-1, 512, 5, 3]           --
+|    |    └─BasicBlock: 3-11                       [-1, 512, 5, 3]           --
+|    |    |    └─Conv2d: 4-46                      [-1, 512, 5, 3]           2,359,296
+|    |    |    └─GroupNorm: 4-47                   [-1, 512, 5, 3]           1,024
+|    |    |    └─ReLU: 4-48                        [-1, 512, 5, 3]           --
+|    |    |    └─Conv2d: 4-49                      [-1, 512, 5, 3]           2,359,296
+|    |    |    └─GroupNorm: 4-50                   [-1, 512, 5, 3]           1,024
+|    |    |    └─ReLU: 4-51                        [-1, 512, 5, 3]           --
+|    └─AdaptiveAvgPool2d: 2-7                      [-1, 512, 1, 1]           --
+|    └─Linear: 2-8                                 [-1, 1000]                513,000
+├─Decoder: 1-2                                     [-1, 5, 64, 32]           --
+|    └─Sequential: 2-9                             [-1, 15, 64, 32]          --
+|    |    └─DecoderBlock: 3-12                     [-1, 250, 4, 2]           --
+|    |    |    └─Sequential: 4-52                  [-1, 250, 4, 2]           --
+|    |    |    |    └─ConvTranspose2d: 5-7         [-1, 250, 4, 2]           500,250
+|    |    |    └─ResidualBlock: 4-53               [-1, 250, 4, 2]           --
+|    |    |    |    └─Sequential: 5-8              [-1, 250, 4, 2]           --
+|    |    |    |    |    └─Conv2d: 6-1             [-1, 250, 4, 2]           562,750
+|    |    |    |    |    └─ReLU: 6-2               [-1, 250, 4, 2]           --
+|    |    |    |    |    └─Conv2d: 6-3             [-1, 250, 4, 2]           562,750
+|    |    |    |    └─ReLU: 5-9                    [-1, 250, 4, 2]           --
+|    |    └─DecoderBlock: 3-13                     [-1, 125, 8, 4]           --
+|    |    |    └─Sequential: 4-54                  [-1, 125, 8, 4]           --
+|    |    |    |    └─ConvTranspose2d: 5-10        [-1, 125, 8, 4]           125,125
+|    |    |    └─ResidualBlock: 4-55               [-1, 125, 8, 4]           --
+|    |    |    |    └─Sequential: 5-11             [-1, 125, 8, 4]           --
+|    |    |    |    |    └─Conv2d: 6-4             [-1, 125, 8, 4]           140,750
+|    |    |    |    |    └─ReLU: 6-5               [-1, 125, 8, 4]           --
+|    |    |    |    |    └─Conv2d: 6-6             [-1, 125, 8, 4]           140,750
+|    |    |    |    └─ReLU: 5-12                   [-1, 125, 8, 4]           --
+|    |    └─DecoderBlock: 3-14                     [-1, 62, 16, 8]           --
+|    |    |    └─Sequential: 4-56                  [-1, 62, 16, 8]           --
+|    |    |    |    └─ConvTranspose2d: 5-13        [-1, 62, 16, 8]           31,062
+|    |    |    └─ResidualBlock: 4-57               [-1, 62, 16, 8]           --
+|    |    |    |    └─Sequential: 5-14             [-1, 62, 16, 8]           --
+|    |    |    |    |    └─Conv2d: 6-7             [-1, 62, 16, 8]           34,658
+|    |    |    |    |    └─ReLU: 6-8               [-1, 62, 16, 8]           --
+|    |    |    |    |    └─Conv2d: 6-9             [-1, 62, 16, 8]           34,658
+|    |    |    |    └─ReLU: 5-15                   [-1, 62, 16, 8]           --
+|    |    └─DecoderBlock: 3-15                     [-1, 31, 32, 16]          --
+|    |    |    └─Sequential: 4-58                  [-1, 31, 32, 16]          --
+|    |    |    |    └─ConvTranspose2d: 5-16        [-1, 31, 32, 16]          7,719
+|    |    |    └─ResidualBlock: 4-59               [-1, 31, 32, 16]          --
+|    |    |    |    └─Sequential: 5-17             [-1, 31, 32, 16]          --
+|    |    |    |    |    └─Conv2d: 6-10            [-1, 31, 32, 16]          8,680
+|    |    |    |    |    └─ReLU: 6-11              [-1, 31, 32, 16]          --
+|    |    |    |    |    └─Conv2d: 6-12            [-1, 31, 32, 16]          8,680
+|    |    |    |    └─ReLU: 5-18                   [-1, 31, 32, 16]          --
+|    |    └─DecoderBlock: 3-16                     [-1, 15, 64, 32]          --
+|    |    |    └─Sequential: 4-60                  [-1, 15, 64, 32]          --
+|    |    |    |    └─ConvTranspose2d: 5-19        [-1, 15, 64, 32]          1,875
+|    |    |    └─ResidualBlock: 4-61               [-1, 15, 64, 32]          --
+|    |    |    |    └─Sequential: 5-20             [-1, 15, 64, 32]          --
+|    |    |    |    |    └─Conv2d: 6-13            [-1, 15, 64, 32]          2,040
+|    |    |    |    |    └─ReLU: 6-14              [-1, 15, 64, 32]          --
+|    |    |    |    |    └─Conv2d: 6-15            [-1, 15, 64, 32]          2,040
+|    |    |    |    └─ReLU: 5-21                   [-1, 15, 64, 32]          --
+|    └─Conv2d: 2-10                                [-1, 5, 64, 32]           80
+====================================================================================================
+Total params: 13,859,651
+Trainable params: 13,859,651
+Non-trainable params: 0
+Total mult-adds (M): 550.07
+====================================================================================================
+Input size (MB): 0.20
+Forward/backward pass size (MB): 9.58
+Params size (MB): 52.87
+Estimated Total Size (MB): 62.65
+====================================================================================================
+Epoch: 0, Train Loss = 0.58, Valid loss = 0.45, lr = 0.00100
+Epoch: 1, Train Loss = 0.41, Valid loss = 0.39, lr = 0.00100
+Epoch: 2, Train Loss = 0.36, Valid loss = 0.36, lr = 0.00100
+Epoch: 3, Train Loss = 0.35, Valid loss = 0.35, lr = 0.00100
+Epoch: 4, Train Loss = 0.34, Valid loss = 0.35, lr = 0.00100
+Epoch: 5, Train Loss = 0.34, Valid loss = 0.34, lr = 0.00100
+Epoch: 6, Train Loss = 0.33, Valid loss = 0.33, lr = 0.00100
+Epoch: 7, Train Loss = 0.32, Valid loss = 0.33, lr = 0.00100
+Epoch: 8, Train Loss = 0.31, Valid loss = 0.31, lr = 0.00100
+Epoch: 9, Train Loss = 0.30, Valid loss = 0.31, lr = 0.00100
+Epoch: 10, Train Loss = 0.30, Valid loss = 0.31, lr = 0.00100
+Epoch: 11, Train Loss = 0.29, Valid loss = 0.29, lr = 0.00100
+Epoch: 12, Train Loss = 0.28, Valid loss = 0.28, lr = 0.00100
+Epoch: 13, Train Loss = 0.27, Valid loss = 0.28, lr = 0.00100
+Epoch: 14, Train Loss = 0.26, Valid loss = 0.27, lr = 0.00100
+Epoch: 15, Train Loss = 0.25, Valid loss = 0.26, lr = 0.00100
+Epoch: 16, Train Loss = 0.25, Valid loss = 0.25, lr = 0.00100
+Epoch: 17, Train Loss = 0.23, Valid loss = 0.24, lr = 0.00100
+Epoch: 18, Train Loss = 0.23, Valid loss = 0.24, lr = 0.00100
+Epoch: 19, Train Loss = 0.22, Valid loss = 0.22, lr = 0.00100
+Epoch: 20, Train Loss = 0.21, Valid loss = 0.21, lr = 0.00100
+Epoch: 21, Train Loss = 0.20, Valid loss = 0.21, lr = 0.00100
+Epoch: 22, Train Loss = 0.19, Valid loss = 0.20, lr = 0.00100
+Epoch: 23, Train Loss = 0.19, Valid loss = 0.20, lr = 0.00100
+Epoch: 24, Train Loss = 0.18, Valid loss = 0.20, lr = 0.00100
+Epoch: 25, Train Loss = 0.17, Valid loss = 0.19, lr = 0.00100
+Epoch: 26, Train Loss = 0.17, Valid loss = 0.18, lr = 0.00100
+Epoch: 27, Train Loss = 0.16, Valid loss = 0.18, lr = 0.00100
+Epoch: 28, Train Loss = 0.16, Valid loss = 0.17, lr = 0.00100
+Epoch: 29, Train Loss = 0.16, Valid loss = 0.17, lr = 0.00100
+Epoch: 30, Train Loss = 0.15, Valid loss = 0.16, lr = 0.00100
+Epoch: 31, Train Loss = 0.15, Valid loss = 0.16, lr = 0.00100
+Epoch: 32, Train Loss = 0.14, Valid loss = 0.16, lr = 0.00100
+Epoch: 33, Train Loss = 0.14, Valid loss = 0.16, lr = 0.00100
+Epoch: 34, Train Loss = 0.14, Valid loss = 0.15, lr = 0.00100
+Epoch: 35, Train Loss = 0.14, Valid loss = 0.15, lr = 0.00100
+Epoch: 36, Train Loss = 0.13, Valid loss = 0.15, lr = 0.00100
+Epoch: 37, Train Loss = 0.13, Valid loss = 0.15, lr = 0.00100
+Epoch: 38, Train Loss = 0.13, Valid loss = 0.14, lr = 0.00100
+Epoch: 39, Train Loss = 0.12, Valid loss = 0.14, lr = 0.00100
+Epoch: 40, Train Loss = 0.12, Valid loss = 0.14, lr = 0.00100
+Epoch: 41, Train Loss = 0.12, Valid loss = 0.14, lr = 0.00100
+Epoch: 42, Train Loss = 0.12, Valid loss = 0.14, lr = 0.00100
+Epoch: 43, Train Loss = 0.12, Valid loss = 0.13, lr = 0.00100
+Epoch: 44, Train Loss = 0.11, Valid loss = 0.14, lr = 0.00100
+Epoch: 45, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 46, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 47, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 48, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 49, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 50, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 51, Train Loss = 0.11, Valid loss = 0.13, lr = 0.00100
+Epoch: 52, Train Loss = 0.10, Valid loss = 0.13, lr = 0.00100
+Epoch: 53, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 54, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 55, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 56, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 57, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 58, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 59, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 60, Train Loss = 0.10, Valid loss = 0.12, lr = 0.00100
+Epoch: 61, Train Loss = 0.09, Valid loss = 0.12, lr = 0.00100
+Epoch: 62, Train Loss = 0.09, Valid loss = 0.12, lr = 0.00100
+Epoch: 63, Train Loss = 0.09, Valid loss = 0.12, lr = 0.00100
+Epoch: 64, Train Loss = 0.09, Valid loss = 0.12, lr = 0.00100
+Epoch: 65, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 66, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 67, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 68, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 69, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 70, Train Loss = 0.09, Valid loss = 0.12, lr = 0.00100
+Epoch: 71, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 72, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 73, Train Loss = 0.09, Valid loss = 0.11, lr = 0.00100
+Epoch: 74, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 75, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 76, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 77, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 78, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 79, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 80, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 81, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 82, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 83, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 84, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 85, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 86, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 87, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 88, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 89, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 90, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 91, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 92, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 93, Train Loss = 0.08, Valid loss = 0.11, lr = 0.00100
+Epoch: 94, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 95, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 96, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 97, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 98, Train Loss = 0.08, Valid loss = 0.10, lr = 0.00100
+Epoch: 99, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 100, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 101, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 102, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 103, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 104, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 105, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 106, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 107, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 108, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 109, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 110, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 111, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 112, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 113, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 114, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 115, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 116, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 117, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 118, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 119, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 120, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 121, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 122, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 123, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 124, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 125, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 126, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 127, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 128, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 129, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 130, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 131, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 132, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 133, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 134, Train Loss = 0.07, Valid loss = 0.09, lr = 0.00100
+Epoch: 135, Train Loss = 0.07, Valid loss = 0.10, lr = 0.00100
+Epoch: 136, Train Loss = 0.07, Valid loss = 0.09, lr = 0.00100
+Epoch: 137, Train Loss = 0.07, Valid loss = 0.09, lr = 0.00100
+Epoch: 138, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 139, Train Loss = 0.06, Valid loss = 0.10, lr = 0.00100
+Epoch: 140, Train Loss = 0.06, Valid loss = 0.10, lr = 0.00100
+Epoch: 141, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 142, Train Loss = 0.06, Valid loss = 0.10, lr = 0.00100
+Epoch: 143, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 144, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 145, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 146, Train Loss = 0.06, Valid loss = 0.10, lr = 0.00100
+Epoch: 147, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 148, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 149, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 150, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 151, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 152, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 153, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 154, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 155, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 156, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 157, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 158, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 159, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 160, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 161, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 162, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 163, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 164, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 165, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 166, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 167, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 168, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 169, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 170, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 171, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 172, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 173, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 174, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 175, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 176, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 177, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 178, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Epoch: 179, Train Loss = 0.06, Valid loss = 0.09, lr = 0.00100
+Starting Downstream Task
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.06508, Valid Loss: 0.04959, EPS: 0.991
+Epoch: 1, Train Loss: 0.04293, Valid Loss: 0.04503, EPS: 0.982
+Epoch: 2, Train Loss: 0.03903, Valid Loss: 0.04315, EPS: 0.973
+Epoch: 3, Train Loss: 0.03702, Valid Loss: 0.04190, EPS: 0.964
+Epoch: 4, Train Loss: 0.03621, Valid Loss: 0.04154, EPS: 0.955
+Epoch: 5, Train Loss: 0.03528, Valid Loss: 0.04044, EPS: 0.946
+Epoch: 6, Train Loss: 0.03471, Valid Loss: 0.04073, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.03461, Valid Loss: 0.04027, EPS: 0.928
+Epoch: 8, Train Loss: 0.03410, Valid Loss: 0.03984, EPS: 0.919
+Epoch: 9, Train Loss: 0.03403, Valid Loss: 0.03972, EPS: 0.91
+Epoch: 10, Train Loss: 0.03371, Valid Loss: 0.03997, EPS: 0.901
+Epoch: 11, Train Loss: 0.03365, Valid Loss: 0.03958, EPS: 0.892
+Epoch: 12, Train Loss: 0.03367, Valid Loss: 0.03974, EPS: 0.883
+Epoch: 13, Train Loss: 0.03353, Valid Loss: 0.03966, EPS: 0.874
+Epoch: 14, Train Loss: 0.03354, Valid Loss: 0.04017, EPS: 0.865
+Epoch: 15, Train Loss: 0.03350, Valid Loss: 0.04017, EPS: 0.856
+Epoch: 16, Train Loss: 0.03318, Valid Loss: 0.03928, EPS: 0.847
+Epoch: 17, Train Loss: 0.03308, Valid Loss: 0.03928, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.03310, Valid Loss: 0.03975, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.03290, Valid Loss: 0.03966, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.03294, Valid Loss: 0.03948, EPS: 0.811
+Epoch: 21, Train Loss: 0.03300, Valid Loss: 0.03956, EPS: 0.802
+Epoch: 22, Train Loss: 0.03291, Valid Loss: 0.03966, EPS: 0.793
+Epoch: 23, Train Loss: 0.03284, Valid Loss: 0.03978, EPS: 0.784
+Epoch: 24, Train Loss: 0.03280, Valid Loss: 0.03956, EPS: 0.775
+Epoch: 25, Train Loss: 0.03281, Valid Loss: 0.03943, EPS: 0.766
+Epoch: 26, Train Loss: 0.03275, Valid Loss: 0.03988, EPS: 0.757
+Epoch: 27, Train Loss: 0.03253, Valid Loss: 0.03986, EPS: 0.748
+Epoch: 28, Train Loss: 0.02822, Valid Loss: 0.03517, EPS: 0.739
+Epoch: 29, Train Loss: 0.02586, Valid Loss: 0.03412, EPS: 0.73
+Epoch: 30, Train Loss: 0.02526, Valid Loss: 0.03373, EPS: 0.721
+Epoch: 31, Train Loss: 0.02493, Valid Loss: 0.03363, EPS: 0.712
+Epoch: 32, Train Loss: 0.02469, Valid Loss: 0.03340, EPS: 0.703
+Epoch: 33, Train Loss: 0.02450, Valid Loss: 0.03334, EPS: 0.694
+Epoch: 34, Train Loss: 0.02429, Valid Loss: 0.03321, EPS: 0.685
+Epoch: 35, Train Loss: 0.02416, Valid Loss: 0.03321, EPS: 0.676
+Epoch: 36, Train Loss: 0.02397, Valid Loss: 0.03307, EPS: 0.667
+Epoch: 37, Train Loss: 0.02385, Valid Loss: 0.03317, EPS: 0.658
+Epoch: 38, Train Loss: 0.02370, Valid Loss: 0.03300, EPS: 0.649
+Epoch: 39, Train Loss: 0.02350, Valid Loss: 0.03323, EPS: 0.64
+Epoch: 40, Train Loss: 0.02341, Valid Loss: 0.03327, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.02326, Valid Loss: 0.03321, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.02311, Valid Loss: 0.03351, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.02297, Valid Loss: 0.03359, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.02276, Valid Loss: 0.03339, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.02258, Valid Loss: 0.03363, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.02248, Valid Loss: 0.03375, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.02236, Valid Loss: 0.03375, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.02213, Valid Loss: 0.03386, EPS: 0.559
+Epoch: 49, Train Loss: 0.02200, Valid Loss: 0.03418, EPS: 0.55
+Epoch: 50, Train Loss: 0.02065, Valid Loss: 0.03374, EPS: 0.541
+Epoch: 51, Train Loss: 0.02027, Valid Loss: 0.03383, EPS: 0.532
+Epoch: 52, Train Loss: 0.02011, Valid Loss: 0.03396, EPS: 0.523
+Epoch: 53, Train Loss: 0.02004, Valid Loss: 0.03406, EPS: 0.514
+Epoch: 54, Train Loss: 0.01997, Valid Loss: 0.03414, EPS: 0.505
+Epoch: 55, Train Loss: 0.01990, Valid Loss: 0.03416, EPS: 0.496
+Epoch: 56, Train Loss: 0.01986, Valid Loss: 0.03424, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.01981, Valid Loss: 0.03435, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.01977, Valid Loss: 0.03439, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.01974, Valid Loss: 0.03454, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.01967, Valid Loss: 0.03458, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.01949, Valid Loss: 0.03456, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.01946, Valid Loss: 0.03451, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.01946, Valid Loss: 0.03455, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.01944, Valid Loss: 0.03456, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.01946, Valid Loss: 0.03465, EPS: 0.406
+Epoch: 66, Train Loss: 0.01945, Valid Loss: 0.03461, EPS: 0.397
+Epoch: 67, Train Loss: 0.01945, Valid Loss: 0.03464, EPS: 0.388
+Epoch: 68, Train Loss: 0.01942, Valid Loss: 0.03460, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.01945, Valid Loss: 0.03463, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.01943, Valid Loss: 0.03465, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.01943, Valid Loss: 0.03468, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.01941, Valid Loss: 0.03464, EPS: 0.343
+Epoch: 73, Train Loss: 0.01939, Valid Loss: 0.03465, EPS: 0.334
+Epoch: 74, Train Loss: 0.01940, Valid Loss: 0.03472, EPS: 0.325
+Epoch: 75, Train Loss: 0.01940, Valid Loss: 0.03467, EPS: 0.316
+Epoch: 76, Train Loss: 0.01942, Valid Loss: 0.03466, EPS: 0.307
+Epoch: 77, Train Loss: 0.01942, Valid Loss: 0.03464, EPS: 0.298
+Epoch: 78, Train Loss: 0.01942, Valid Loss: 0.03465, EPS: 0.289
+Epoch: 79, Train Loss: 0.01940, Valid Loss: 0.03465, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.01941, Valid Loss: 0.03466, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.01941, Valid Loss: 0.03466, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.01940, Valid Loss: 0.03467, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.01940, Valid Loss: 0.03464, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.01940, Valid Loss: 0.03466, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.01940, Valid Loss: 0.03472, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.01939, Valid Loss: 0.03466, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.01939, Valid Loss: 0.03467, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.01940, Valid Loss: 0.03463, EPS: 0.199
+Epoch: 89, Train Loss: 0.01941, Valid Loss: 0.03468, EPS: 0.19
+Epoch: 90, Train Loss: 0.01940, Valid Loss: 0.03469, EPS: 0.181
+Epoch: 91, Train Loss: 0.01939, Valid Loss: 0.03466, EPS: 0.172
+Epoch: 92, Train Loss: 0.01939, Valid Loss: 0.03471, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.01940, Valid Loss: 0.03468, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.01939, Valid Loss: 0.03467, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.01940, Valid Loss: 0.03466, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.01941, Valid Loss: 0.03464, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.01936, Valid Loss: 0.03466, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.01939, Valid Loss: 0.03466, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.01938, Valid Loss: 0.03466, EPS: 0.1
+Test Loss: 0.03462
+Test Loss: 0.03429

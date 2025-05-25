@@ -1,0 +1,36 @@
+nohup: ignoring input
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+Shape: (5, 144, 72)
+Training Decoder
+Fine Tuning Both
+Starting Latent Downstream Task
+MSE Loss Between Generated and Conditioned: 3101082.5000
+Epoch: 1, Loss: 1.0081
+MSE Loss Between Generated and Conditioned: 742639.4375
+Epoch: 2, Loss: 0.8181
+MSE Loss Between Generated and Conditioned: 428103.8125
+Epoch: 3, Loss: 0.7218
+MSE Loss Between Generated and Conditioned: 336888.4375
+Epoch: 4, Loss: 0.6427
+MSE Loss Between Generated and Conditioned: 277959.3438
+Epoch: 5, Loss: 0.5731
+MSE Loss Between Generated and Conditioned: 251235.7969
+Epoch: 6, Loss: 0.5247
+MSE Loss Between Generated and Conditioned: 209037.4844
+Epoch: 7, Loss: 0.4757
+MSE Loss Between Generated and Conditioned: 190451.0469
+Epoch: 8, Loss: 0.4345
+MSE Loss Between Generated and Conditioned: 169923.3281
+Epoch: 9, Loss: 0.4047
+MSE Loss Between Generated and Conditioned: 139002.7812
+Epoch: 10, Loss: 0.3799
+MSE Loss Between Generated and Conditioned: 129325.5625
+Epoch: 11, Loss: 0.3575
+MSE Loss Between Generated and Conditioned: 111763.5781
+Epoch: 12, Loss: 0.3377
+MSE Loss Between Generated and Conditioned: 99432.1172
+Epoch: 13, Loss: 0.3267
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 78 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

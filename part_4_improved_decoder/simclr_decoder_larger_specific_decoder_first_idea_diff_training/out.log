@@ -1,0 +1,334 @@
+nohup: ignoring input
+Train shape: torch.Size([14031, 5, 64, 32]), Valid shape: torch.Size([4677, 5, 64, 32]), Test shape: torch.Size([4678, 5, 64, 32])
+Data shape: (C=5, H=144, W=72)
+Fine Tuning Both Encoder and Decoder
+Epoch: 0, Contrastive Train Loss: 7.84, Recon Train Loss: 0.49, Contrastive Valid Loss: 8.28, Recon Valid Loss: 0.37
+Epoch: 1, Contrastive Train Loss: 6.93, Recon Train Loss: 0.39, Contrastive Valid Loss: 7.99, Recon Valid Loss: 0.34
+Epoch: 2, Contrastive Train Loss: 6.70, Recon Train Loss: 0.36, Contrastive Valid Loss: 7.89, Recon Valid Loss: 0.31
+Epoch: 3, Contrastive Train Loss: 6.55, Recon Train Loss: 0.32, Contrastive Valid Loss: 7.73, Recon Valid Loss: 0.27
+Epoch: 4, Contrastive Train Loss: 6.48, Recon Train Loss: 0.30, Contrastive Valid Loss: 7.69, Recon Valid Loss: 0.25
+Epoch: 5, Contrastive Train Loss: 6.36, Recon Train Loss: 0.28, Contrastive Valid Loss: 7.64, Recon Valid Loss: 0.23
+Epoch: 6, Contrastive Train Loss: 6.27, Recon Train Loss: 0.26, Contrastive Valid Loss: 7.55, Recon Valid Loss: 0.21
+Epoch: 7, Contrastive Train Loss: 6.21, Recon Train Loss: 0.25, Contrastive Valid Loss: 7.57, Recon Valid Loss: 0.20
+Epoch: 8, Contrastive Train Loss: 6.15, Recon Train Loss: 0.23, Contrastive Valid Loss: 7.51, Recon Valid Loss: 0.19
+Epoch: 9, Contrastive Train Loss: 6.10, Recon Train Loss: 0.23, Contrastive Valid Loss: 7.48, Recon Valid Loss: 0.18
+Epoch: 10, Contrastive Train Loss: 6.06, Recon Train Loss: 0.22, Contrastive Valid Loss: 7.44, Recon Valid Loss: 0.18
+Epoch: 11, Contrastive Train Loss: 6.02, Recon Train Loss: 0.21, Contrastive Valid Loss: 7.49, Recon Valid Loss: 0.17
+Epoch: 12, Contrastive Train Loss: 5.99, Recon Train Loss: 0.21, Contrastive Valid Loss: 7.44, Recon Valid Loss: 0.16
+Epoch: 13, Contrastive Train Loss: 5.96, Recon Train Loss: 0.20, Contrastive Valid Loss: 7.41, Recon Valid Loss: 0.16
+Epoch: 14, Contrastive Train Loss: 5.93, Recon Train Loss: 0.20, Contrastive Valid Loss: 7.41, Recon Valid Loss: 0.15
+Epoch: 15, Contrastive Train Loss: 5.91, Recon Train Loss: 0.20, Contrastive Valid Loss: 7.42, Recon Valid Loss: 0.15
+Epoch: 16, Contrastive Train Loss: 5.88, Recon Train Loss: 0.19, Contrastive Valid Loss: 7.39, Recon Valid Loss: 0.15
+Epoch: 17, Contrastive Train Loss: 5.85, Recon Train Loss: 0.19, Contrastive Valid Loss: 7.42, Recon Valid Loss: 0.15
+Epoch: 18, Contrastive Train Loss: 5.83, Recon Train Loss: 0.19, Contrastive Valid Loss: 7.41, Recon Valid Loss: 0.14
+Epoch: 19, Contrastive Train Loss: 5.80, Recon Train Loss: 0.19, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.14
+Epoch: 20, Contrastive Train Loss: 5.78, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.14
+Epoch: 21, Contrastive Train Loss: 5.76, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.36, Recon Valid Loss: 0.14
+Epoch: 22, Contrastive Train Loss: 5.75, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.14
+Epoch: 23, Contrastive Train Loss: 5.73, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.34, Recon Valid Loss: 0.13
+Epoch: 24, Contrastive Train Loss: 5.71, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.37, Recon Valid Loss: 0.13
+Epoch: 25, Contrastive Train Loss: 5.70, Recon Train Loss: 0.18, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.13
+Epoch: 26, Contrastive Train Loss: 5.68, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.13
+Epoch: 27, Contrastive Train Loss: 5.67, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.13
+Epoch: 28, Contrastive Train Loss: 5.65, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.13
+Epoch: 29, Contrastive Train Loss: 5.64, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.13
+Epoch: 30, Contrastive Train Loss: 5.63, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.36, Recon Valid Loss: 0.12
+Epoch: 31, Contrastive Train Loss: 5.62, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.12
+Epoch: 32, Contrastive Train Loss: 5.61, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.39, Recon Valid Loss: 0.12
+Epoch: 33, Contrastive Train Loss: 5.59, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.39, Recon Valid Loss: 0.12
+Epoch: 34, Contrastive Train Loss: 5.58, Recon Train Loss: 0.17, Contrastive Valid Loss: 7.38, Recon Valid Loss: 0.12
+Epoch: 35, Contrastive Train Loss: 5.57, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.41, Recon Valid Loss: 0.12
+Epoch: 36, Contrastive Train Loss: 5.56, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.42, Recon Valid Loss: 0.12
+Epoch: 37, Contrastive Train Loss: 5.55, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.42, Recon Valid Loss: 0.12
+Epoch: 38, Contrastive Train Loss: 5.54, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.43, Recon Valid Loss: 0.12
+Epoch: 39, Contrastive Train Loss: 5.53, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.44, Recon Valid Loss: 0.11
+Epoch: 40, Contrastive Train Loss: 5.52, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.45, Recon Valid Loss: 0.11
+Epoch: 41, Contrastive Train Loss: 5.51, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.46, Recon Valid Loss: 0.12
+Epoch: 42, Contrastive Train Loss: 5.50, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.43, Recon Valid Loss: 0.11
+Epoch: 43, Contrastive Train Loss: 5.49, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.42, Recon Valid Loss: 0.11
+Epoch: 44, Contrastive Train Loss: 5.48, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.47, Recon Valid Loss: 0.11
+Epoch: 45, Contrastive Train Loss: 5.47, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.47, Recon Valid Loss: 0.11
+Epoch: 46, Contrastive Train Loss: 5.47, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.46, Recon Valid Loss: 0.11
+Epoch: 47, Contrastive Train Loss: 5.47, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.48, Recon Valid Loss: 0.11
+Epoch: 48, Contrastive Train Loss: 5.45, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.48, Recon Valid Loss: 0.11
+Epoch: 49, Contrastive Train Loss: 5.45, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.47, Recon Valid Loss: 0.11
+Epoch: 50, Contrastive Train Loss: 5.44, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.47, Recon Valid Loss: 0.11
+Epoch: 51, Contrastive Train Loss: 5.44, Recon Train Loss: 0.16, Contrastive Valid Loss: 7.47, Recon Valid Loss: 0.11
+Epoch: 52, Contrastive Train Loss: 5.43, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.51, Recon Valid Loss: 0.11
+Epoch: 53, Contrastive Train Loss: 5.42, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.53, Recon Valid Loss: 0.11
+Epoch: 54, Contrastive Train Loss: 5.41, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.50, Recon Valid Loss: 0.11
+Epoch: 55, Contrastive Train Loss: 5.41, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.50, Recon Valid Loss: 0.11
+Epoch: 56, Contrastive Train Loss: 5.40, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.48, Recon Valid Loss: 0.11
+Epoch: 57, Contrastive Train Loss: 5.40, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.51, Recon Valid Loss: 0.11
+Epoch: 58, Contrastive Train Loss: 5.39, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.55, Recon Valid Loss: 0.11
+Epoch: 59, Contrastive Train Loss: 5.38, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.55, Recon Valid Loss: 0.11
+Epoch: 60, Contrastive Train Loss: 5.38, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.55, Recon Valid Loss: 0.11
+Epoch: 61, Contrastive Train Loss: 5.37, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.56, Recon Valid Loss: 0.10
+Epoch: 62, Contrastive Train Loss: 5.37, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.57, Recon Valid Loss: 0.10
+Epoch: 63, Contrastive Train Loss: 5.36, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.55, Recon Valid Loss: 0.11
+Epoch: 64, Contrastive Train Loss: 5.36, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.56, Recon Valid Loss: 0.10
+Epoch: 65, Contrastive Train Loss: 5.35, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.57, Recon Valid Loss: 0.10
+Epoch: 66, Contrastive Train Loss: 5.35, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.58, Recon Valid Loss: 0.10
+Epoch: 67, Contrastive Train Loss: 5.34, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.56, Recon Valid Loss: 0.10
+Epoch: 68, Contrastive Train Loss: 5.34, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.58, Recon Valid Loss: 0.10
+Epoch: 69, Contrastive Train Loss: 5.33, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.57, Recon Valid Loss: 0.10
+Epoch: 70, Contrastive Train Loss: 5.33, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.58, Recon Valid Loss: 0.10
+Epoch: 71, Contrastive Train Loss: 5.32, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.60, Recon Valid Loss: 0.10
+Epoch: 72, Contrastive Train Loss: 5.32, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.60, Recon Valid Loss: 0.10
+Epoch: 73, Contrastive Train Loss: 5.32, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.57, Recon Valid Loss: 0.10
+Epoch: 74, Contrastive Train Loss: 5.31, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.63, Recon Valid Loss: 0.10
+Epoch: 75, Contrastive Train Loss: 5.31, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.60, Recon Valid Loss: 0.10
+Epoch: 76, Contrastive Train Loss: 5.30, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.66, Recon Valid Loss: 0.10
+Epoch: 77, Contrastive Train Loss: 5.30, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.64, Recon Valid Loss: 0.10
+Epoch: 78, Contrastive Train Loss: 5.29, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.64, Recon Valid Loss: 0.10
+Epoch: 79, Contrastive Train Loss: 5.29, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.64, Recon Valid Loss: 0.10
+Epoch: 80, Contrastive Train Loss: 5.28, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.65, Recon Valid Loss: 0.10
+Epoch: 81, Contrastive Train Loss: 5.28, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.65, Recon Valid Loss: 0.10
+Epoch: 82, Contrastive Train Loss: 5.28, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.68, Recon Valid Loss: 0.10
+Epoch: 83, Contrastive Train Loss: 5.28, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.68, Recon Valid Loss: 0.10
+Epoch: 84, Contrastive Train Loss: 5.27, Recon Train Loss: 0.15, Contrastive Valid Loss: 7.69, Recon Valid Loss: 0.10
+Epoch: 85, Contrastive Train Loss: 5.27, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.68, Recon Valid Loss: 0.10
+Epoch: 86, Contrastive Train Loss: 5.27, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.69, Recon Valid Loss: 0.10
+Epoch: 87, Contrastive Train Loss: 5.26, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.69, Recon Valid Loss: 0.10
+Epoch: 88, Contrastive Train Loss: 5.26, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.70, Recon Valid Loss: 0.10
+Epoch: 89, Contrastive Train Loss: 5.25, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.70, Recon Valid Loss: 0.10
+Epoch: 90, Contrastive Train Loss: 5.26, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.70, Recon Valid Loss: 0.10
+Epoch: 91, Contrastive Train Loss: 5.25, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.70, Recon Valid Loss: 0.10
+Epoch: 92, Contrastive Train Loss: 5.25, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.67, Recon Valid Loss: 0.10
+Epoch: 93, Contrastive Train Loss: 5.25, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.73, Recon Valid Loss: 0.10
+Epoch: 94, Contrastive Train Loss: 5.24, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.71, Recon Valid Loss: 0.10
+Epoch: 95, Contrastive Train Loss: 5.24, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.72, Recon Valid Loss: 0.10
+Epoch: 96, Contrastive Train Loss: 5.24, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.73, Recon Valid Loss: 0.10
+Epoch: 97, Contrastive Train Loss: 5.24, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.74, Recon Valid Loss: 0.10
+Epoch: 98, Contrastive Train Loss: 5.23, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.69, Recon Valid Loss: 0.10
+Epoch: 99, Contrastive Train Loss: 5.23, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.75, Recon Valid Loss: 0.10
+Epoch: 100, Contrastive Train Loss: 5.23, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.75, Recon Valid Loss: 0.10
+Epoch: 101, Contrastive Train Loss: 5.22, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.78, Recon Valid Loss: 0.10
+Epoch: 102, Contrastive Train Loss: 5.22, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.79, Recon Valid Loss: 0.11
+Epoch: 103, Contrastive Train Loss: 5.22, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.77, Recon Valid Loss: 0.10
+Epoch: 104, Contrastive Train Loss: 5.21, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.74, Recon Valid Loss: 0.11
+Epoch: 105, Contrastive Train Loss: 5.22, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.76, Recon Valid Loss: 0.10
+Epoch: 106, Contrastive Train Loss: 5.21, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.79, Recon Valid Loss: 0.10
+Epoch: 107, Contrastive Train Loss: 5.21, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.80, Recon Valid Loss: 0.10
+Epoch: 108, Contrastive Train Loss: 5.21, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.78, Recon Valid Loss: 0.11
+Epoch: 109, Contrastive Train Loss: 5.21, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.78, Recon Valid Loss: 0.11
+Epoch: 110, Contrastive Train Loss: 5.20, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.83, Recon Valid Loss: 0.10
+Epoch: 111, Contrastive Train Loss: 5.20, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.83, Recon Valid Loss: 0.11
+Epoch: 112, Contrastive Train Loss: 5.20, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.77, Recon Valid Loss: 0.11
+Epoch: 113, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.79, Recon Valid Loss: 0.11
+Epoch: 114, Contrastive Train Loss: 5.20, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.82, Recon Valid Loss: 0.11
+Epoch: 115, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.81, Recon Valid Loss: 0.11
+Epoch: 116, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.82, Recon Valid Loss: 0.10
+Epoch: 117, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.83, Recon Valid Loss: 0.10
+Epoch: 118, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.81, Recon Valid Loss: 0.11
+Epoch: 119, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.82, Recon Valid Loss: 0.11
+Epoch: 120, Contrastive Train Loss: 5.19, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.87, Recon Valid Loss: 0.11
+Epoch: 121, Contrastive Train Loss: 5.18, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.84, Recon Valid Loss: 0.11
+Epoch: 122, Contrastive Train Loss: 5.18, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.84, Recon Valid Loss: 0.10
+Epoch: 123, Contrastive Train Loss: 5.18, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.86, Recon Valid Loss: 0.11
+Epoch: 124, Contrastive Train Loss: 5.18, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.85, Recon Valid Loss: 0.11
+Epoch: 125, Contrastive Train Loss: 5.18, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.86, Recon Valid Loss: 0.11
+Epoch: 126, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.89, Recon Valid Loss: 0.11
+Epoch: 127, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.89, Recon Valid Loss: 0.10
+Epoch: 128, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.87, Recon Valid Loss: 0.11
+Epoch: 129, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.86, Recon Valid Loss: 0.11
+Epoch: 130, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.88, Recon Valid Loss: 0.11
+Epoch: 131, Contrastive Train Loss: 5.17, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.88, Recon Valid Loss: 0.11
+Epoch: 132, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.89, Recon Valid Loss: 0.11
+Epoch: 133, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.89, Recon Valid Loss: 0.11
+Epoch: 134, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.90, Recon Valid Loss: 0.11
+Epoch: 135, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.90, Recon Valid Loss: 0.11
+Epoch: 136, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.93, Recon Valid Loss: 0.11
+Epoch: 137, Contrastive Train Loss: 5.16, Recon Train Loss: 0.14, Contrastive Valid Loss: 7.90, Recon Valid Loss: 0.11
+Epoch: 138, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.94, Recon Valid Loss: 0.11
+Epoch: 139, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.93, Recon Valid Loss: 0.11
+Epoch: 140, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.93, Recon Valid Loss: 0.11
+Epoch: 141, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.94, Recon Valid Loss: 0.11
+Epoch: 142, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.94, Recon Valid Loss: 0.11
+Epoch: 143, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.94, Recon Valid Loss: 0.11
+Epoch: 144, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.92, Recon Valid Loss: 0.11
+Epoch: 145, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.95, Recon Valid Loss: 0.11
+Epoch: 146, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.98, Recon Valid Loss: 0.11
+Epoch: 147, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.98, Recon Valid Loss: 0.11
+Epoch: 148, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.97, Recon Valid Loss: 0.11
+Epoch: 149, Contrastive Train Loss: 5.14, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.96, Recon Valid Loss: 0.11
+Epoch: 150, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.97, Recon Valid Loss: 0.11
+Epoch: 151, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.96, Recon Valid Loss: 0.11
+Epoch: 152, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 7.97, Recon Valid Loss: 0.11
+Epoch: 153, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.00, Recon Valid Loss: 0.11
+Epoch: 154, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 155, Contrastive Train Loss: 5.13, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 156, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.00, Recon Valid Loss: 0.11
+Epoch: 157, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 158, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 159, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.00, Recon Valid Loss: 0.11
+Epoch: 160, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 161, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.00, Recon Valid Loss: 0.11
+Epoch: 162, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.02, Recon Valid Loss: 0.11
+Epoch: 163, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.03, Recon Valid Loss: 0.11
+Epoch: 164, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.03, Recon Valid Loss: 0.12
+Epoch: 165, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.04, Recon Valid Loss: 0.11
+Epoch: 166, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.04, Recon Valid Loss: 0.12
+Epoch: 167, Contrastive Train Loss: 5.15, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.07, Recon Valid Loss: 0.11
+Epoch: 168, Contrastive Train Loss: 5.12, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.04, Recon Valid Loss: 0.11
+Epoch: 169, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.08, Recon Valid Loss: 0.11
+Epoch: 170, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.07, Recon Valid Loss: 0.11
+Epoch: 171, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.08, Recon Valid Loss: 0.11
+Epoch: 172, Contrastive Train Loss: 5.11, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.10, Recon Valid Loss: 0.11
+Epoch: 173, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.09, Recon Valid Loss: 0.11
+Epoch: 174, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.07, Recon Valid Loss: 0.11
+Epoch: 175, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.08, Recon Valid Loss: 0.11
+Epoch: 176, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.10, Recon Valid Loss: 0.11
+Epoch: 177, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.09, Recon Valid Loss: 0.11
+Epoch: 178, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.10, Recon Valid Loss: 0.11
+Epoch: 179, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.10, Recon Valid Loss: 0.11
+Epoch: 180, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.10, Recon Valid Loss: 0.11
+Epoch: 181, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.09, Recon Valid Loss: 0.11
+Epoch: 182, Contrastive Train Loss: 5.10, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.08, Recon Valid Loss: 0.11
+Epoch: 183, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.12, Recon Valid Loss: 0.11
+Epoch: 184, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.09, Recon Valid Loss: 0.11
+Epoch: 185, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.11, Recon Valid Loss: 0.11
+Epoch: 186, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.14, Recon Valid Loss: 0.11
+Epoch: 187, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.12, Recon Valid Loss: 0.11
+Epoch: 188, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.16, Recon Valid Loss: 0.11
+Epoch: 189, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.15, Recon Valid Loss: 0.11
+Epoch: 190, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.15, Recon Valid Loss: 0.11
+Epoch: 191, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.13, Recon Valid Loss: 0.11
+Epoch: 192, Contrastive Train Loss: 5.09, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.13, Recon Valid Loss: 0.11
+Epoch: 193, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.14, Recon Valid Loss: 0.12
+Epoch: 194, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.13, Recon Valid Loss: 0.12
+Epoch: 195, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.13, Recon Valid Loss: 0.11
+Epoch: 196, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.16, Recon Valid Loss: 0.11
+Epoch: 197, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.15, Recon Valid Loss: 0.11
+Epoch: 198, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.16, Recon Valid Loss: 0.12
+Epoch: 199, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.15, Recon Valid Loss: 0.11
+Epoch: 200, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.18, Recon Valid Loss: 0.11
+Epoch: 201, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.17, Recon Valid Loss: 0.11
+Epoch: 202, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.20, Recon Valid Loss: 0.11
+Epoch: 203, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.17, Recon Valid Loss: 0.12
+Epoch: 204, Contrastive Train Loss: 5.08, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.17, Recon Valid Loss: 0.12
+Epoch: 205, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.21, Recon Valid Loss: 0.12
+Epoch: 206, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.18, Recon Valid Loss: 0.11
+Epoch: 207, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.15, Recon Valid Loss: 0.12
+Epoch: 208, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.21, Recon Valid Loss: 0.11
+Epoch: 209, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.17, Recon Valid Loss: 0.11
+Epoch: 210, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.17, Recon Valid Loss: 0.12
+Epoch: 211, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.16, Recon Valid Loss: 0.12
+Epoch: 212, Contrastive Train Loss: 5.07, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.22, Recon Valid Loss: 0.12
+Epoch: 213, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.19, Recon Valid Loss: 0.12
+Epoch: 214, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.20, Recon Valid Loss: 0.12
+Epoch: 215, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.20, Recon Valid Loss: 0.12
+Epoch: 216, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.25, Recon Valid Loss: 0.12
+Epoch: 217, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.24, Recon Valid Loss: 0.12
+Epoch: 218, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.21, Recon Valid Loss: 0.12
+Epoch: 219, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.22, Recon Valid Loss: 0.12
+Epoch: 220, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.23, Recon Valid Loss: 0.12
+Epoch: 221, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.22, Recon Valid Loss: 0.12
+Epoch: 222, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.23, Recon Valid Loss: 0.12
+Epoch: 223, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.24, Recon Valid Loss: 0.12
+Epoch: 224, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.24, Recon Valid Loss: 0.12
+Epoch: 225, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.28, Recon Valid Loss: 0.12
+Epoch: 226, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.24, Recon Valid Loss: 0.12
+Epoch: 227, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.23, Recon Valid Loss: 0.13
+Epoch: 228, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.25, Recon Valid Loss: 0.12
+Epoch: 229, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.24, Recon Valid Loss: 0.12
+Epoch: 230, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.27, Recon Valid Loss: 0.12
+Epoch: 231, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.26, Recon Valid Loss: 0.12
+Epoch: 232, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.25, Recon Valid Loss: 0.12
+Epoch: 233, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.26, Recon Valid Loss: 0.12
+Epoch: 234, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.27, Recon Valid Loss: 0.12
+Epoch: 235, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.28, Recon Valid Loss: 0.12
+Epoch: 236, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.28, Recon Valid Loss: 0.12
+Epoch: 237, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.27, Recon Valid Loss: 0.12
+Epoch: 238, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.29, Recon Valid Loss: 0.12
+Epoch: 239, Contrastive Train Loss: 5.05, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.25, Recon Valid Loss: 0.13
+Epoch: 240, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.31, Recon Valid Loss: 0.12
+Epoch: 241, Contrastive Train Loss: 5.06, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.28, Recon Valid Loss: 0.12
+Epoch: 242, Contrastive Train Loss: 5.05, Recon Train Loss: 0.13, Contrastive Valid Loss: 8.30, Recon Valid Loss: 0.12
+Epoch: 243, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.30, Recon Valid Loss: 0.12
+Epoch: 244, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.27, Recon Valid Loss: 0.12
+Epoch: 245, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.30, Recon Valid Loss: 0.13
+Epoch: 246, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.29, Recon Valid Loss: 0.13
+Epoch: 247, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.31, Recon Valid Loss: 0.13
+Epoch: 248, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.30, Recon Valid Loss: 0.13
+Epoch: 249, Contrastive Train Loss: 5.04, Recon Train Loss: 0.12, Contrastive Valid Loss: 8.31, Recon Valid Loss: 0.12
+Starting Downstream Task
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Traceback (most recent call last):
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_diff_training_first_idea/main.py", line 146, in <module>
+    main()
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_diff_training_first_idea/main.py", line 112, in main
+    downstream_task_lstm(
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/downstream_model_lstm_no_decoder/downstream_task_main.py", line 86, in downstream_task
+    train_plot, valid_plot = train_lstm_model(num_epochs, encoder_model, seq2seq_model, loss_fn, optimizer, scheduler, trainloader, validloader, DEVICE, model_save_path=model_save_path, shuffle_embeddings_flag=shuffle_embeddings_flag)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/downstream_model_lstm_no_decoder/downstream_model_lstm_train.py", line 41, in train_lstm_model
+    for data in trainloader:
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 708, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1480, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1505, in _process_data
+    data.reraise()
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in pin memory thread for device 0.
+Original Traceback (most recent call last):
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 41, in do_one_step
+    data = pin_memory(data, device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 98, in pin_memory
+    clone[i] = pin_memory(item, device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 64, in pin_memory
+    return data.pin_memory(device)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: invalid argument
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+Exception in thread Thread-5 (_pin_memory_loop):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 59, in _pin_memory_loop
+    do_one_step()
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/pin_memory.py", line 35, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/multiprocessing/reductions.py", line 541, in rebuild_storage_fd
+    fd = df.detach()
+         ^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 525, in Client
+    answer_challenge(c, authkey)
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 953, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 430, in _recv_bytes
+    buf = self._recv(4)
+          ^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 395, in _recv
+    chunk = read(handle, remaining)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer

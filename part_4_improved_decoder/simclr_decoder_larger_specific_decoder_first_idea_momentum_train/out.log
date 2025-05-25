@@ -1,0 +1,2129 @@
+nohup: ignoring input
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+Shape: (5, 144, 72)
+Fine Tuning Both
+Epoch: 0
+  Contrastive Train Loss: 11.50
+  Overall Recon Train Loss: 5.02
+  Recon Train Loss:       1.00
+  Contrastive Valid Loss: 11.66
+  Overall Recon Valid Loss: 4.78
+  Recon Valid Loss:       0.96
+Learning Rate: 0.0001
+Epoch: 1
+  Contrastive Train Loss: 9.58
+  Overall Recon Train Loss: 3.74
+  Recon Train Loss:       0.75
+  Contrastive Valid Loss: 11.30
+  Overall Recon Valid Loss: 2.88
+  Recon Valid Loss:       0.58
+Learning Rate: 0.0001
+Epoch: 2
+  Contrastive Train Loss: 9.29
+  Overall Recon Train Loss: 2.31
+  Recon Train Loss:       0.46
+  Contrastive Valid Loss: 11.12
+  Overall Recon Valid Loss: 2.07
+  Recon Valid Loss:       0.41
+Learning Rate: 0.0001
+Epoch: 3
+  Contrastive Train Loss: 9.12
+  Overall Recon Train Loss: 1.90
+  Recon Train Loss:       0.38
+  Contrastive Valid Loss: 10.98
+  Overall Recon Valid Loss: 1.89
+  Recon Valid Loss:       0.38
+Learning Rate: 0.0001
+Epoch: 4
+  Contrastive Train Loss: 8.99
+  Overall Recon Train Loss: 1.80
+  Recon Train Loss:       0.36
+  Contrastive Valid Loss: 10.92
+  Overall Recon Valid Loss: 1.82
+  Recon Valid Loss:       0.36
+Learning Rate: 0.0001
+Epoch: 5
+  Contrastive Train Loss: 8.88
+  Overall Recon Train Loss: 1.74
+  Recon Train Loss:       0.35
+  Contrastive Valid Loss: 10.87
+  Overall Recon Valid Loss: 1.77
+  Recon Valid Loss:       0.35
+Learning Rate: 0.0001
+Epoch: 6
+  Contrastive Train Loss: 8.78
+  Overall Recon Train Loss: 1.70
+  Recon Train Loss:       0.34
+  Contrastive Valid Loss: 10.75
+  Overall Recon Valid Loss: 1.73
+  Recon Valid Loss:       0.35
+Learning Rate: 0.0001
+Epoch: 7
+  Contrastive Train Loss: 8.68
+  Overall Recon Train Loss: 1.66
+  Recon Train Loss:       0.33
+  Contrastive Valid Loss: 10.65
+  Overall Recon Valid Loss: 1.69
+  Recon Valid Loss:       0.34
+Learning Rate: 0.0001
+Epoch: 8
+  Contrastive Train Loss: 8.57
+  Overall Recon Train Loss: 1.61
+  Recon Train Loss:       0.32
+  Contrastive Valid Loss: 10.56
+  Overall Recon Valid Loss: 1.65
+  Recon Valid Loss:       0.33
+Learning Rate: 0.0001
+Epoch: 9
+  Contrastive Train Loss: 8.47
+  Overall Recon Train Loss: 1.57
+  Recon Train Loss:       0.31
+  Contrastive Valid Loss: 10.52
+  Overall Recon Valid Loss: 1.61
+  Recon Valid Loss:       0.32
+Learning Rate: 0.0001
+Epoch: 10
+  Contrastive Train Loss: 8.39
+  Overall Recon Train Loss: 1.54
+  Recon Train Loss:       0.31
+  Contrastive Valid Loss: 10.46
+  Overall Recon Valid Loss: 1.59
+  Recon Valid Loss:       0.32
+Learning Rate: 0.0001
+Epoch: 11
+  Contrastive Train Loss: 8.30
+  Overall Recon Train Loss: 1.51
+  Recon Train Loss:       0.30
+  Contrastive Valid Loss: 10.42
+  Overall Recon Valid Loss: 1.56
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 12
+  Contrastive Train Loss: 8.22
+  Overall Recon Train Loss: 1.48
+  Recon Train Loss:       0.30
+  Contrastive Valid Loss: 10.34
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 13
+  Contrastive Train Loss: 8.15
+  Overall Recon Train Loss: 1.46
+  Recon Train Loss:       0.29
+  Contrastive Valid Loss: 10.31
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 14
+  Contrastive Train Loss: 8.08
+  Overall Recon Train Loss: 1.44
+  Recon Train Loss:       0.29
+  Contrastive Valid Loss: 10.27
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 15
+  Contrastive Train Loss: 8.01
+  Overall Recon Train Loss: 1.42
+  Recon Train Loss:       0.28
+  Contrastive Valid Loss: 10.18
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 16
+  Contrastive Train Loss: 7.94
+  Overall Recon Train Loss: 1.40
+  Recon Train Loss:       0.28
+  Contrastive Valid Loss: 10.15
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 17
+  Contrastive Train Loss: 7.89
+  Overall Recon Train Loss: 1.38
+  Recon Train Loss:       0.28
+  Contrastive Valid Loss: 10.15
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 18
+  Contrastive Train Loss: 7.83
+  Overall Recon Train Loss: 1.37
+  Recon Train Loss:       0.27
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 19
+  Contrastive Train Loss: 7.78
+  Overall Recon Train Loss: 1.35
+  Recon Train Loss:       0.27
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 20
+  Contrastive Train Loss: 7.73
+  Overall Recon Train Loss: 1.34
+  Recon Train Loss:       0.27
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 21
+  Contrastive Train Loss: 7.68
+  Overall Recon Train Loss: 1.32
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.41
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 22
+  Contrastive Train Loss: 7.63
+  Overall Recon Train Loss: 1.31
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 23
+  Contrastive Train Loss: 7.59
+  Overall Recon Train Loss: 1.30
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 24
+  Contrastive Train Loss: 7.55
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 25
+  Contrastive Train Loss: 7.51
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 26
+  Contrastive Train Loss: 7.48
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 27
+  Contrastive Train Loss: 7.44
+  Overall Recon Train Loss: 1.25
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 28
+  Contrastive Train Loss: 7.40
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.89
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 29
+  Contrastive Train Loss: 7.37
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 30
+  Contrastive Train Loss: 7.34
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 31
+  Contrastive Train Loss: 7.30
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 32
+  Contrastive Train Loss: 7.28
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 33
+  Contrastive Train Loss: 7.25
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.83
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 34
+  Contrastive Train Loss: 7.22
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.81
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 35
+  Contrastive Train Loss: 7.20
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 36
+  Contrastive Train Loss: 7.17
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 37
+  Contrastive Train Loss: 7.15
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 38
+  Contrastive Train Loss: 7.12
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 39
+  Contrastive Train Loss: 7.10
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 40
+  Contrastive Train Loss: 7.08
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 41
+  Contrastive Train Loss: 7.06
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 42
+  Contrastive Train Loss: 7.04
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.81
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 43
+  Contrastive Train Loss: 7.02
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 44
+  Contrastive Train Loss: 7.00
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.31
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 45
+  Contrastive Train Loss: 6.98
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 46
+  Contrastive Train Loss: 6.96
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 47
+  Contrastive Train Loss: 6.95
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 48
+  Contrastive Train Loss: 6.93
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.31
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 49
+  Contrastive Train Loss: 6.92
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 50
+  Contrastive Train Loss: 6.90
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.31
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 51
+  Contrastive Train Loss: 6.89
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.77
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 52
+  Contrastive Train Loss: 6.87
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.31
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 53
+  Contrastive Train Loss: 6.85
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 54
+  Contrastive Train Loss: 6.84
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.77
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 55
+  Contrastive Train Loss: 6.83
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 56
+  Contrastive Train Loss: 6.82
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 57
+  Contrastive Train Loss: 6.81
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 58
+  Contrastive Train Loss: 6.79
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 59
+  Contrastive Train Loss: 6.78
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.79
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 60
+  Contrastive Train Loss: 6.78
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.76
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 61
+  Contrastive Train Loss: 6.76
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.77
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 62
+  Contrastive Train Loss: 6.75
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.77
+  Overall Recon Valid Loss: 1.32
+  Recon Valid Loss:       0.26
+Learning Rate: 0.0001
+Epoch: 63
+  Contrastive Train Loss: 6.74
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 64
+  Contrastive Train Loss: 6.73
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 65
+  Contrastive Train Loss: 6.72
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 66
+  Contrastive Train Loss: 6.72
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 67
+  Contrastive Train Loss: 6.71
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 68
+  Contrastive Train Loss: 6.70
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.81
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 69
+  Contrastive Train Loss: 6.69
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.33
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 70
+  Contrastive Train Loss: 6.68
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.81
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 71
+  Contrastive Train Loss: 6.67
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 72
+  Contrastive Train Loss: 6.66
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.78
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 73
+  Contrastive Train Loss: 6.66
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 74
+  Contrastive Train Loss: 6.65
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.80
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 75
+  Contrastive Train Loss: 6.64
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.34
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 76
+  Contrastive Train Loss: 6.63
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 77
+  Contrastive Train Loss: 6.63
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 78
+  Contrastive Train Loss: 6.62
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 79
+  Contrastive Train Loss: 6.62
+  Overall Recon Train Loss: 1.09
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 80
+  Contrastive Train Loss: 6.61
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.35
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 81
+  Contrastive Train Loss: 6.60
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 82
+  Contrastive Train Loss: 6.60
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 83
+  Contrastive Train Loss: 6.59
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 84
+  Contrastive Train Loss: 6.59
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 85
+  Contrastive Train Loss: 6.58
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 86
+  Contrastive Train Loss: 6.57
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 87
+  Contrastive Train Loss: 6.57
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.83
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 88
+  Contrastive Train Loss: 6.56
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 89
+  Contrastive Train Loss: 6.56
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 90
+  Contrastive Train Loss: 6.55
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.83
+  Overall Recon Valid Loss: 1.36
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 91
+  Contrastive Train Loss: 6.55
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 92
+  Contrastive Train Loss: 6.54
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.83
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 93
+  Contrastive Train Loss: 6.54
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 94
+  Contrastive Train Loss: 6.53
+  Overall Recon Train Loss: 1.10
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.87
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 95
+  Contrastive Train Loss: 6.53
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.82
+  Overall Recon Valid Loss: 1.37
+  Recon Valid Loss:       0.27
+Learning Rate: 0.0001
+Epoch: 96
+  Contrastive Train Loss: 6.52
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 97
+  Contrastive Train Loss: 6.52
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 98
+  Contrastive Train Loss: 6.51
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 99
+  Contrastive Train Loss: 6.51
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.83
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 100
+  Contrastive Train Loss: 6.51
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 101
+  Contrastive Train Loss: 6.50
+  Overall Recon Train Loss: 1.11
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.38
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 102
+  Contrastive Train Loss: 6.50
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.84
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 103
+  Contrastive Train Loss: 6.49
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 104
+  Contrastive Train Loss: 6.49
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 105
+  Contrastive Train Loss: 6.48
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 106
+  Contrastive Train Loss: 6.48
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 107
+  Contrastive Train Loss: 6.48
+  Overall Recon Train Loss: 1.12
+  Recon Train Loss:       0.22
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.39
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 108
+  Contrastive Train Loss: 6.47
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.85
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 109
+  Contrastive Train Loss: 6.47
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 110
+  Contrastive Train Loss: 6.47
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.87
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 111
+  Contrastive Train Loss: 6.46
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 112
+  Contrastive Train Loss: 6.46
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 113
+  Contrastive Train Loss: 6.46
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 114
+  Contrastive Train Loss: 6.45
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.40
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 115
+  Contrastive Train Loss: 6.45
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.41
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 116
+  Contrastive Train Loss: 6.44
+  Overall Recon Train Loss: 1.13
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.89
+  Overall Recon Valid Loss: 1.41
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 117
+  Contrastive Train Loss: 6.44
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.41
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 118
+  Contrastive Train Loss: 6.44
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.89
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 119
+  Contrastive Train Loss: 6.44
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.86
+  Overall Recon Valid Loss: 1.41
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 120
+  Contrastive Train Loss: 6.43
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 121
+  Contrastive Train Loss: 6.43
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 122
+  Contrastive Train Loss: 6.42
+  Overall Recon Train Loss: 1.14
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 123
+  Contrastive Train Loss: 6.42
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.89
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 124
+  Contrastive Train Loss: 6.42
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 125
+  Contrastive Train Loss: 6.42
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.42
+  Recon Valid Loss:       0.28
+Learning Rate: 0.0001
+Epoch: 126
+  Contrastive Train Loss: 6.41
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 127
+  Contrastive Train Loss: 6.41
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 128
+  Contrastive Train Loss: 6.41
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.88
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 129
+  Contrastive Train Loss: 6.41
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 130
+  Contrastive Train Loss: 6.40
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 131
+  Contrastive Train Loss: 6.40
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 132
+  Contrastive Train Loss: 6.40
+  Overall Recon Train Loss: 1.15
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.92
+  Overall Recon Valid Loss: 1.43
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 133
+  Contrastive Train Loss: 6.39
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 134
+  Contrastive Train Loss: 6.39
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 135
+  Contrastive Train Loss: 6.39
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 136
+  Contrastive Train Loss: 6.39
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 137
+  Contrastive Train Loss: 6.39
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.89
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 138
+  Contrastive Train Loss: 6.38
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.92
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 139
+  Contrastive Train Loss: 6.38
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.94
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 140
+  Contrastive Train Loss: 6.38
+  Overall Recon Train Loss: 1.16
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.44
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 141
+  Contrastive Train Loss: 6.38
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.94
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 142
+  Contrastive Train Loss: 6.37
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.90
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 143
+  Contrastive Train Loss: 6.37
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 144
+  Contrastive Train Loss: 6.37
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 145
+  Contrastive Train Loss: 6.37
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 146
+  Contrastive Train Loss: 6.36
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 147
+  Contrastive Train Loss: 6.36
+  Overall Recon Train Loss: 1.17
+  Recon Train Loss:       0.23
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 148
+  Contrastive Train Loss: 6.36
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.45
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 149
+  Contrastive Train Loss: 6.36
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 150
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.91
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 151
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.94
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 152
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 153
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 154
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.96
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 155
+  Contrastive Train Loss: 6.35
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 156
+  Contrastive Train Loss: 6.34
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 157
+  Contrastive Train Loss: 6.34
+  Overall Recon Train Loss: 1.18
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 158
+  Contrastive Train Loss: 6.34
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.96
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 159
+  Contrastive Train Loss: 6.34
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.94
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 160
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.46
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 161
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 162
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.93
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 163
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.98
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 164
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.19
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.96
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 165
+  Contrastive Train Loss: 6.33
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 166
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 167
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.47
+  Recon Valid Loss:       0.29
+Learning Rate: 0.0001
+Epoch: 168
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 169
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 170
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.96
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 171
+  Contrastive Train Loss: 6.32
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.98
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 172
+  Contrastive Train Loss: 6.31
+  Overall Recon Train Loss: 1.20
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.96
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 173
+  Contrastive Train Loss: 6.31
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.95
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 174
+  Contrastive Train Loss: 6.31
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 175
+  Contrastive Train Loss: 6.31
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.98
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 176
+  Contrastive Train Loss: 6.31
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.48
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 177
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 178
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 179
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 180
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 181
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.21
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.00
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 182
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.98
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 183
+  Contrastive Train Loss: 6.30
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 184
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.00
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 185
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.49
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 186
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.99
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 187
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 188
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 189
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 9.98
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 190
+  Contrastive Train Loss: 6.29
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.00
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 191
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 192
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 193
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.22
+  Recon Train Loss:       0.24
+  Contrastive Valid Loss: 10.00
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 194
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 9.97
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 195
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 196
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 197
+  Contrastive Train Loss: 6.28
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.50
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 198
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 199
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 200
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.02
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 201
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 202
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 203
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 204
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 205
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.23
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 206
+  Contrastive Train Loss: 6.27
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.00
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 207
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 208
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.51
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 209
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 210
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 211
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 212
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 213
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.24
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 214
+  Contrastive Train Loss: 6.26
+  Overall Recon Train Loss: 1.25
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.03
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 215
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.25
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.52
+  Recon Valid Loss:       0.30
+Learning Rate: 0.0001
+Epoch: 216
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.25
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 217
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.25
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.01
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 218
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 219
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.06
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 220
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.06
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 221
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 222
+  Contrastive Train Loss: 6.25
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 223
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.04
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 224
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 225
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.07
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 226
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.07
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 227
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.53
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 228
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.26
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 229
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 230
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 231
+  Contrastive Train Loss: 6.24
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 232
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.05
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 233
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 234
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 235
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 236
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 237
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.54
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 238
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 239
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 240
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.07
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 241
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.07
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 242
+  Contrastive Train Loss: 6.23
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 243
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 244
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.27
+  Recon Train Loss:       0.25
+  Contrastive Valid Loss: 10.08
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 245
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 246
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.07
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 247
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.09
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 248
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.10
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Epoch: 249
+  Contrastive Train Loss: 6.22
+  Overall Recon Train Loss: 1.28
+  Recon Train Loss:       0.26
+  Contrastive Valid Loss: 10.11
+  Overall Recon Valid Loss: 1.55
+  Recon Valid Loss:       0.31
+Learning Rate: 0.0001
+Starting Downstream Task
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.00534, Valid Loss: 0.00390, EPS: 0.991
+Epoch: 1, Train Loss: 0.00343, Valid Loss: 0.00366, EPS: 0.982
+Epoch: 2, Train Loss: 0.00337, Valid Loss: 0.00367, EPS: 0.973
+Epoch: 3, Train Loss: 0.00334, Valid Loss: 0.00366, EPS: 0.964
+Epoch: 4, Train Loss: 0.00333, Valid Loss: 0.00361, EPS: 0.955
+Epoch: 5, Train Loss: 0.00331, Valid Loss: 0.00356, EPS: 0.946
+Epoch: 6, Train Loss: 0.00327, Valid Loss: 0.00357, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00326, Valid Loss: 0.00360, EPS: 0.928
+Epoch: 8, Train Loss: 0.00326, Valid Loss: 0.00359, EPS: 0.919
+Epoch: 9, Train Loss: 0.00325, Valid Loss: 0.00355, EPS: 0.91
+Epoch: 10, Train Loss: 0.00325, Valid Loss: 0.00359, EPS: 0.901
+Epoch: 11, Train Loss: 0.00322, Valid Loss: 0.00356, EPS: 0.892
+Epoch: 12, Train Loss: 0.00322, Valid Loss: 0.00354, EPS: 0.883
+Epoch: 13, Train Loss: 0.00321, Valid Loss: 0.00357, EPS: 0.874
+Epoch: 14, Train Loss: 0.00322, Valid Loss: 0.00354, EPS: 0.865
+Epoch: 15, Train Loss: 0.00321, Valid Loss: 0.00358, EPS: 0.856
+Epoch: 16, Train Loss: 0.00320, Valid Loss: 0.00354, EPS: 0.847
+Epoch: 17, Train Loss: 0.00320, Valid Loss: 0.00357, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00320, Valid Loss: 0.00354, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00320, Valid Loss: 0.00358, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00320, Valid Loss: 0.00348, EPS: 0.811
+Epoch: 21, Train Loss: 0.00319, Valid Loss: 0.00350, EPS: 0.802
+Epoch: 22, Train Loss: 0.00320, Valid Loss: 0.00356, EPS: 0.793
+Epoch: 23, Train Loss: 0.00320, Valid Loss: 0.00351, EPS: 0.784
+Epoch: 24, Train Loss: 0.00319, Valid Loss: 0.00353, EPS: 0.775
+Epoch: 25, Train Loss: 0.00319, Valid Loss: 0.00359, EPS: 0.766
+Epoch: 26, Train Loss: 0.00319, Valid Loss: 0.00350, EPS: 0.757
+Epoch: 27, Train Loss: 0.00318, Valid Loss: 0.00358, EPS: 0.748
+Epoch: 28, Train Loss: 0.00320, Valid Loss: 0.00352, EPS: 0.739
+Epoch: 29, Train Loss: 0.00318, Valid Loss: 0.00353, EPS: 0.73
+Epoch: 30, Train Loss: 0.00319, Valid Loss: 0.00354, EPS: 0.721
+Epoch: 31, Train Loss: 0.00319, Valid Loss: 0.00356, EPS: 0.712
+Epoch: 32, Train Loss: 0.00282, Valid Loss: 0.00305, EPS: 0.703
+Epoch: 33, Train Loss: 0.00261, Valid Loss: 0.00300, EPS: 0.694
+Epoch: 34, Train Loss: 0.00260, Valid Loss: 0.00301, EPS: 0.685
+Epoch: 35, Train Loss: 0.00257, Valid Loss: 0.00297, EPS: 0.676
+Epoch: 36, Train Loss: 0.00256, Valid Loss: 0.00297, EPS: 0.667
+Epoch: 37, Train Loss: 0.00255, Valid Loss: 0.00296, EPS: 0.658
+Epoch: 38, Train Loss: 0.00254, Valid Loss: 0.00298, EPS: 0.649
+Epoch: 39, Train Loss: 0.00254, Valid Loss: 0.00294, EPS: 0.64
+Epoch: 40, Train Loss: 0.00253, Valid Loss: 0.00296, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00251, Valid Loss: 0.00293, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00249, Valid Loss: 0.00292, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00248, Valid Loss: 0.00291, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00246, Valid Loss: 0.00288, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00246, Valid Loss: 0.00289, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00245, Valid Loss: 0.00288, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00244, Valid Loss: 0.00287, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00244, Valid Loss: 0.00288, EPS: 0.559
+Epoch: 49, Train Loss: 0.00243, Valid Loss: 0.00287, EPS: 0.55
+Epoch: 50, Train Loss: 0.00242, Valid Loss: 0.00287, EPS: 0.541
+Epoch: 51, Train Loss: 0.00242, Valid Loss: 0.00289, EPS: 0.532
+Epoch: 52, Train Loss: 0.00242, Valid Loss: 0.00289, EPS: 0.523
+Epoch: 53, Train Loss: 0.00241, Valid Loss: 0.00286, EPS: 0.514
+Epoch: 54, Train Loss: 0.00242, Valid Loss: 0.00286, EPS: 0.505
+Epoch: 55, Train Loss: 0.00241, Valid Loss: 0.00287, EPS: 0.496
+Epoch: 56, Train Loss: 0.00241, Valid Loss: 0.00286, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00240, Valid Loss: 0.00286, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00241, Valid Loss: 0.00286, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00240, Valid Loss: 0.00286, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00240, Valid Loss: 0.00287, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00240, Valid Loss: 0.00285, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00239, Valid Loss: 0.00286, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00240, Valid Loss: 0.00287, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00239, Valid Loss: 0.00286, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00240, Valid Loss: 0.00286, EPS: 0.406
+Epoch: 66, Train Loss: 0.00239, Valid Loss: 0.00287, EPS: 0.397
+Epoch: 67, Train Loss: 0.00240, Valid Loss: 0.00287, EPS: 0.388
+Epoch: 68, Train Loss: 0.00239, Valid Loss: 0.00287, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00239, Valid Loss: 0.00289, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00240, Valid Loss: 0.00286, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00239, Valid Loss: 0.00286, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00240, Valid Loss: 0.00286, EPS: 0.343
+Epoch: 73, Train Loss: 0.00228, Valid Loss: 0.00280, EPS: 0.334
+Epoch: 74, Train Loss: 0.00225, Valid Loss: 0.00279, EPS: 0.325
+Epoch: 75, Train Loss: 0.00224, Valid Loss: 0.00279, EPS: 0.316
+Epoch: 76, Train Loss: 0.00224, Valid Loss: 0.00279, EPS: 0.307
+Epoch: 77, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.298
+Epoch: 78, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.289
+Epoch: 79, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00224, Valid Loss: 0.00279, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00224, Valid Loss: 0.00280, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00222, Valid Loss: 0.00279, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00222, Valid Loss: 0.00279, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.199
+Epoch: 89, Train Loss: 0.00221, Valid Loss: 0.00280, EPS: 0.19
+Epoch: 90, Train Loss: 0.00222, Valid Loss: 0.00280, EPS: 0.181
+Epoch: 91, Train Loss: 0.00221, Valid Loss: 0.00280, EPS: 0.172
+Epoch: 92, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00221, Valid Loss: 0.00280, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00221, Valid Loss: 0.00280, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00221, Valid Loss: 0.00280, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00221, Valid Loss: 0.00279, EPS: 0.1
+Test Loss: 0.00280
+Test Loss: 0.00288
+Training Decoder
+Traceback (most recent call last):
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_first_idea_momentum_2/main.py", line 120, in <module>
+    main()
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_first_idea_momentum_2/main.py", line 115, in main
+    train_decoder(model=momentum_model, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
+  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_first_idea_momentum_2/train_decoder.py", line 26, in train_decoder
+    loss_batch.backward()
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn

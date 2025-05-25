@@ -1,0 +1,605 @@
+nohup: ignoring input
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+Shape: (5, 144, 72)
+Fine Tuning Both
+Starting Latent Downstream Task
+MSE Loss Between Generated and Conditioned: 45372460.0000
+Epoch: 1, Noise Loss: 1.3166, Pred Loss: 1361.5661, Total Loss: 137.4732
+MSE Loss Between Generated and Conditioned: 1363005.3750
+Epoch: 2, Noise Loss: 1.0948, Pred Loss: 1197.4996, Total Loss: 120.8448
+MSE Loss Between Generated and Conditioned: 223047.2969
+Epoch: 3, Noise Loss: 0.9286, Pred Loss: 1118.3876, Total Loss: 112.7674
+MSE Loss Between Generated and Conditioned: 113221.9922
+Epoch: 4, Noise Loss: 1.2919, Pred Loss: 1055.2171, Total Loss: 106.8136
+MSE Loss Between Generated and Conditioned: 74004.3281
+Epoch: 5, Noise Loss: 0.8861, Pred Loss: 1022.8248, Total Loss: 103.1686
+MSE Loss Between Generated and Conditioned: 42954.7930
+Epoch: 6, Noise Loss: 0.8456, Pred Loss: 1030.2673, Total Loss: 103.8723
+MSE Loss Between Generated and Conditioned: 218882.3750
+Epoch: 7, Noise Loss: 0.8965, Pred Loss: 873.8416, Total Loss: 88.2806
+MSE Loss Between Generated and Conditioned: 48842.1953
+Epoch: 8, Noise Loss: 2.6694, Pred Loss: 1054.1744, Total Loss: 108.0869
+MSE Loss Between Generated and Conditioned: 36660.1875
+Epoch: 9, Noise Loss: 1.7724, Pred Loss: 873.4459, Total Loss: 89.1170
+MSE Loss Between Generated and Conditioned: 30502.9375
+Epoch: 10, Noise Loss: 1.2711, Pred Loss: 791.6084, Total Loss: 80.4320
+MSE Loss Between Generated and Conditioned: 25301.7480
+Epoch: 11, Noise Loss: 0.8759, Pred Loss: 689.6066, Total Loss: 69.8366
+MSE Loss Between Generated and Conditioned: 20733.1348
+Epoch: 12, Noise Loss: 0.7847, Pred Loss: 662.0259, Total Loss: 66.9873
+MSE Loss Between Generated and Conditioned: 19270.5410
+Epoch: 13, Noise Loss: 0.7660, Pred Loss: 613.4835, Total Loss: 62.1144
+MSE Loss Between Generated and Conditioned: 18461.8457
+Epoch: 14, Noise Loss: 0.7413, Pred Loss: 550.5647, Total Loss: 55.7978
+MSE Loss Between Generated and Conditioned: 17614.5000
+Epoch: 15, Noise Loss: 0.7242, Pred Loss: 479.6627, Total Loss: 48.6904
+MSE Loss Between Generated and Conditioned: 13546.1426
+Epoch: 16, Noise Loss: 0.7085, Pred Loss: 501.3991, Total Loss: 50.8485
+MSE Loss Between Generated and Conditioned: 12985.1660
+Epoch: 17, Noise Loss: 0.6882, Pred Loss: 452.5770, Total Loss: 45.9459
+MSE Loss Between Generated and Conditioned: 12001.6797
+Epoch: 18, Noise Loss: 0.6749, Pred Loss: 452.6741, Total Loss: 45.9423
+MSE Loss Between Generated and Conditioned: 11107.9570
+Epoch: 19, Noise Loss: 0.6674, Pred Loss: 464.3270, Total Loss: 47.1001
+MSE Loss Between Generated and Conditioned: 10004.5303
+Epoch: 20, Noise Loss: 0.6660, Pred Loss: 414.5404, Total Loss: 42.1200
+MSE Loss Between Generated and Conditioned: 9611.7959
+Epoch: 21, Noise Loss: 0.6471, Pred Loss: 420.4195, Total Loss: 42.6891
+MSE Loss Between Generated and Conditioned: 8087.2500
+Epoch: 22, Noise Loss: 0.6447, Pred Loss: 385.9300, Total Loss: 39.2377
+MSE Loss Between Generated and Conditioned: 7056.3257
+Epoch: 23, Noise Loss: 0.6382, Pred Loss: 379.1334, Total Loss: 38.5515
+MSE Loss Between Generated and Conditioned: 6819.5854
+Epoch: 24, Noise Loss: 0.6347, Pred Loss: 348.3683, Total Loss: 35.4716
+MSE Loss Between Generated and Conditioned: 5842.4312
+Epoch: 25, Noise Loss: 0.6142, Pred Loss: 345.4776, Total Loss: 35.1619
+MSE Loss Between Generated and Conditioned: 5255.2065
+Epoch: 26, Noise Loss: 0.6124, Pred Loss: 313.9950, Total Loss: 32.0119
+MSE Loss Between Generated and Conditioned: 5188.8179
+Epoch: 27, Noise Loss: 0.6006, Pred Loss: 268.8473, Total Loss: 27.4853
+MSE Loss Between Generated and Conditioned: 4102.8765
+Epoch: 28, Noise Loss: 0.6041, Pred Loss: 284.8635, Total Loss: 29.0905
+MSE Loss Between Generated and Conditioned: 3950.2356
+Epoch: 29, Noise Loss: 0.5962, Pred Loss: 275.8856, Total Loss: 28.1847
+MSE Loss Between Generated and Conditioned: 3426.6296
+Epoch: 30, Noise Loss: 0.5988, Pred Loss: 236.4283, Total Loss: 24.2416
+MSE Loss Between Generated and Conditioned: 2984.0662
+Epoch: 31, Noise Loss: 0.5940, Pred Loss: 207.3487, Total Loss: 21.3288
+MSE Loss Between Generated and Conditioned: 2589.1084
+Epoch: 32, Noise Loss: 0.5780, Pred Loss: 248.3013, Total Loss: 25.4082
+MSE Loss Between Generated and Conditioned: 2833.3835
+Epoch: 33, Noise Loss: 0.5724, Pred Loss: 224.6771, Total Loss: 23.0401
+MSE Loss Between Generated and Conditioned: 2626.5120
+Epoch: 34, Noise Loss: 0.5750, Pred Loss: 221.0887, Total Loss: 22.6839
+MSE Loss Between Generated and Conditioned: 2113.7957
+Epoch: 35, Noise Loss: 0.5789, Pred Loss: 201.9090, Total Loss: 20.7698
+MSE Loss Between Generated and Conditioned: 1697.4084
+Epoch: 36, Noise Loss: 0.5677, Pred Loss: 208.6969, Total Loss: 21.4374
+MSE Loss Between Generated and Conditioned: 1820.5676
+Epoch: 37, Noise Loss: 0.5645, Pred Loss: 184.5757, Total Loss: 19.0220
+MSE Loss Between Generated and Conditioned: 1478.9379
+Epoch: 38, Noise Loss: 0.5599, Pred Loss: 184.2588, Total Loss: 18.9858
+MSE Loss Between Generated and Conditioned: 1014.7454
+Epoch: 39, Noise Loss: 0.5509, Pred Loss: 188.9407, Total Loss: 19.4450
+MSE Loss Between Generated and Conditioned: 1282.6831
+Epoch: 40, Noise Loss: 0.5423, Pred Loss: 167.5381, Total Loss: 17.2961
+MSE Loss Between Generated and Conditioned: 1376.6348
+Epoch: 41, Noise Loss: 0.5461, Pred Loss: 172.4267, Total Loss: 17.7888
+MSE Loss Between Generated and Conditioned: 1154.1884
+Epoch: 42, Noise Loss: 0.5453, Pred Loss: 156.3059, Total Loss: 16.1759
+MSE Loss Between Generated and Conditioned: 911.9378
+Epoch: 43, Noise Loss: 0.5367, Pred Loss: 166.5543, Total Loss: 17.1921
+MSE Loss Between Generated and Conditioned: 749.9955
+Epoch: 44, Noise Loss: 0.5543, Pred Loss: 146.5825, Total Loss: 15.2126
+MSE Loss Between Generated and Conditioned: 778.2963
+Epoch: 45, Noise Loss: 0.5391, Pred Loss: 160.3530, Total Loss: 16.5744
+MSE Loss Between Generated and Conditioned: 758.0695
+Epoch: 46, Noise Loss: 0.5366, Pred Loss: 142.7581, Total Loss: 14.8124
+MSE Loss Between Generated and Conditioned: 595.0136
+Epoch: 47, Noise Loss: 0.5466, Pred Loss: 143.8428, Total Loss: 14.9309
+MSE Loss Between Generated and Conditioned: 647.2329
+Epoch: 48, Noise Loss: 0.5519, Pred Loss: 145.3071, Total Loss: 15.0826
+MSE Loss Between Generated and Conditioned: 600.8141
+Epoch: 49, Noise Loss: 0.5470, Pred Loss: 148.8088, Total Loss: 15.4279
+MSE Loss Between Generated and Conditioned: 749.0512
+Epoch: 50, Noise Loss: 0.5376, Pred Loss: 139.9956, Total Loss: 14.5372
+MSE Loss Between Generated and Conditioned: 577.3622
+Epoch: 51, Noise Loss: 0.5445, Pred Loss: 125.3481, Total Loss: 13.0793
+MSE Loss Between Generated and Conditioned: 492.9774
+Epoch: 52, Noise Loss: 0.5412, Pred Loss: 128.9431, Total Loss: 13.4355
+MSE Loss Between Generated and Conditioned: 566.9854
+Epoch: 53, Noise Loss: 0.5317, Pred Loss: 111.8428, Total Loss: 11.7160
+MSE Loss Between Generated and Conditioned: 529.4145
+Epoch: 54, Noise Loss: 0.5247, Pred Loss: 131.1689, Total Loss: 13.6416
+MSE Loss Between Generated and Conditioned: 618.9599
+Epoch: 55, Noise Loss: 0.5265, Pred Loss: 117.3418, Total Loss: 12.2607
+MSE Loss Between Generated and Conditioned: 387.5479
+Epoch: 56, Noise Loss: 0.5318, Pred Loss: 112.8008, Total Loss: 11.8119
+MSE Loss Between Generated and Conditioned: 448.6887
+Epoch: 57, Noise Loss: 0.5307, Pred Loss: 124.0666, Total Loss: 12.9373
+MSE Loss Between Generated and Conditioned: 436.2110
+Epoch: 58, Noise Loss: 0.5265, Pred Loss: 131.8065, Total Loss: 13.7071
+MSE Loss Between Generated and Conditioned: 713.9926
+Epoch: 59, Noise Loss: 0.5311, Pred Loss: 119.8099, Total Loss: 12.5121
+MSE Loss Between Generated and Conditioned: 487.9492
+Epoch: 60, Noise Loss: 0.5268, Pred Loss: 114.1742, Total Loss: 11.9442
+MSE Loss Between Generated and Conditioned: 433.1561
+Epoch: 61, Noise Loss: 0.5385, Pred Loss: 108.9553, Total Loss: 11.4340
+MSE Loss Between Generated and Conditioned: 355.9286
+Epoch: 62, Noise Loss: 0.5265, Pred Loss: 125.7561, Total Loss: 13.1021
+MSE Loss Between Generated and Conditioned: 392.9452
+Epoch: 63, Noise Loss: 0.5287, Pred Loss: 135.4332, Total Loss: 14.0720
+MSE Loss Between Generated and Conditioned: 435.0592
+Epoch: 64, Noise Loss: 0.5214, Pred Loss: 118.1439, Total Loss: 12.3357
+MSE Loss Between Generated and Conditioned: 409.4937
+Epoch: 65, Noise Loss: 0.5237, Pred Loss: 121.0588, Total Loss: 12.6296
+MSE Loss Between Generated and Conditioned: 648.6649
+Epoch: 66, Noise Loss: 0.5300, Pred Loss: 120.0304, Total Loss: 12.5331
+MSE Loss Between Generated and Conditioned: 385.7107
+Epoch: 67, Noise Loss: 0.5298, Pred Loss: 129.9384, Total Loss: 13.5236
+MSE Loss Between Generated and Conditioned: 519.8668
+Epoch: 68, Noise Loss: 0.5209, Pred Loss: 118.4882, Total Loss: 12.3697
+MSE Loss Between Generated and Conditioned: 348.7028
+Epoch: 69, Noise Loss: 0.5282, Pred Loss: 112.0120, Total Loss: 11.7294
+MSE Loss Between Generated and Conditioned: 446.4248
+Epoch: 70, Noise Loss: 0.5312, Pred Loss: 108.1170, Total Loss: 11.3429
+MSE Loss Between Generated and Conditioned: 716.8261
+Epoch: 71, Noise Loss: 0.5197, Pred Loss: 125.6003, Total Loss: 13.0798
+MSE Loss Between Generated and Conditioned: 417.7017
+Epoch: 72, Noise Loss: 0.5264, Pred Loss: 113.9090, Total Loss: 11.9173
+MSE Loss Between Generated and Conditioned: 371.6332
+Epoch: 73, Noise Loss: 0.5121, Pred Loss: 103.2098, Total Loss: 10.8330
+MSE Loss Between Generated and Conditioned: 779.6461
+Epoch: 74, Noise Loss: 0.5150, Pred Loss: 104.7239, Total Loss: 10.9874
+MSE Loss Between Generated and Conditioned: 241.6986
+Epoch: 75, Noise Loss: 0.5192, Pred Loss: 99.2500, Total Loss: 10.4442
+MSE Loss Between Generated and Conditioned: 403.6852
+Epoch: 76, Noise Loss: 0.5101, Pred Loss: 114.4056, Total Loss: 11.9506
+MSE Loss Between Generated and Conditioned: 361.5751
+Epoch: 77, Noise Loss: 0.5708, Pred Loss: 97.0867, Total Loss: 10.2795
+MSE Loss Between Generated and Conditioned: 266.8652
+Epoch: 78, Noise Loss: 0.9085, Pred Loss: 113.8711, Total Loss: 12.2956
+MSE Loss Between Generated and Conditioned: 319.8845
+Epoch: 79, Noise Loss: 0.5098, Pred Loss: 89.3623, Total Loss: 9.4461
+MSE Loss Between Generated and Conditioned: 543.5367
+Epoch: 80, Noise Loss: 0.5140, Pred Loss: 104.1713, Total Loss: 10.9311
+MSE Loss Between Generated and Conditioned: 279.9188
+Epoch: 81, Noise Loss: 0.5019, Pred Loss: 110.9686, Total Loss: 11.5988
+MSE Loss Between Generated and Conditioned: 263.6128
+Epoch: 82, Noise Loss: 0.4936, Pred Loss: 107.8630, Total Loss: 11.2799
+MSE Loss Between Generated and Conditioned: 275.3697
+Epoch: 83, Noise Loss: 0.5088, Pred Loss: 110.4205, Total Loss: 11.5509
+MSE Loss Between Generated and Conditioned: 186.8968
+Epoch: 84, Noise Loss: 0.5033, Pred Loss: 119.3064, Total Loss: 12.4339
+MSE Loss Between Generated and Conditioned: 407.1608
+Epoch: 85, Noise Loss: 0.5013, Pred Loss: 107.0604, Total Loss: 11.2074
+MSE Loss Between Generated and Conditioned: 268.0028
+Epoch: 86, Noise Loss: 0.4914, Pred Loss: 109.4110, Total Loss: 11.4325
+MSE Loss Between Generated and Conditioned: 594.9489
+Epoch: 87, Noise Loss: 0.4986, Pred Loss: 107.1010, Total Loss: 11.2087
+MSE Loss Between Generated and Conditioned: 541.0861
+Epoch: 88, Noise Loss: 0.4971, Pred Loss: 112.1013, Total Loss: 11.7072
+MSE Loss Between Generated and Conditioned: 240.1284
+Epoch: 89, Noise Loss: 0.5055, Pred Loss: 103.4539, Total Loss: 10.8509
+MSE Loss Between Generated and Conditioned: 263.8839
+Epoch: 90, Noise Loss: 0.5098, Pred Loss: 101.5789, Total Loss: 10.6677
+MSE Loss Between Generated and Conditioned: 212.9344
+Epoch: 91, Noise Loss: 0.4945, Pred Loss: 106.7127, Total Loss: 11.1658
+MSE Loss Between Generated and Conditioned: 179.2090
+Epoch: 92, Noise Loss: 0.4933, Pred Loss: 90.6733, Total Loss: 9.5607
+MSE Loss Between Generated and Conditioned: 188.7424
+Epoch: 93, Noise Loss: 0.5013, Pred Loss: 85.6977, Total Loss: 9.0711
+MSE Loss Between Generated and Conditioned: 260.3559
+Epoch: 94, Noise Loss: 0.4972, Pred Loss: 85.8050, Total Loss: 9.0777
+MSE Loss Between Generated and Conditioned: 330.3847
+Epoch: 95, Noise Loss: 0.5063, Pred Loss: 83.0339, Total Loss: 8.8097
+MSE Loss Between Generated and Conditioned: 251.2007
+Epoch: 96, Noise Loss: 0.4963, Pred Loss: 78.8264, Total Loss: 8.3790
+MSE Loss Between Generated and Conditioned: 181.3585
+Epoch: 97, Noise Loss: 0.5062, Pred Loss: 68.2028, Total Loss: 7.3265
+MSE Loss Between Generated and Conditioned: 216.8870
+Epoch: 98, Noise Loss: 0.4927, Pred Loss: 72.1903, Total Loss: 7.7117
+MSE Loss Between Generated and Conditioned: 249.8134
+Epoch: 99, Noise Loss: 0.4920, Pred Loss: 72.1690, Total Loss: 7.7089
+MSE Loss Between Generated and Conditioned: 206.9647
+Epoch: 100, Noise Loss: 0.4968, Pred Loss: 71.4594, Total Loss: 7.6427
+MSE Loss Between Generated and Conditioned: 229.6541
+Epoch: 101, Noise Loss: 0.4870, Pred Loss: 71.4699, Total Loss: 7.6340
+MSE Loss Between Generated and Conditioned: 185.6254
+Epoch: 102, Noise Loss: 0.4986, Pred Loss: 58.1254, Total Loss: 6.3111
+MSE Loss Between Generated and Conditioned: 251.2903
+Epoch: 103, Noise Loss: 0.4945, Pred Loss: 59.4163, Total Loss: 6.4362
+MSE Loss Between Generated and Conditioned: 264.2480
+Epoch: 104, Noise Loss: 0.4884, Pred Loss: 62.6739, Total Loss: 6.7558
+MSE Loss Between Generated and Conditioned: 261.7347
+Epoch: 105, Noise Loss: 0.4939, Pred Loss: 58.5359, Total Loss: 6.3475
+MSE Loss Between Generated and Conditioned: 229.8129
+Epoch: 106, Noise Loss: 0.4911, Pred Loss: 57.0088, Total Loss: 6.1920
+MSE Loss Between Generated and Conditioned: 128.6543
+Epoch: 107, Noise Loss: 0.4882, Pred Loss: 57.0383, Total Loss: 6.1920
+MSE Loss Between Generated and Conditioned: 269.8760
+Epoch: 108, Noise Loss: 0.4907, Pred Loss: 53.8284, Total Loss: 5.8735
+MSE Loss Between Generated and Conditioned: 182.3272
+Epoch: 109, Noise Loss: 0.5066, Pred Loss: 49.7996, Total Loss: 5.4866
+MSE Loss Between Generated and Conditioned: 147.5652
+Epoch: 110, Noise Loss: 0.4950, Pred Loss: 46.1920, Total Loss: 5.1142
+MSE Loss Between Generated and Conditioned: 183.8090
+Epoch: 111, Noise Loss: 0.4952, Pred Loss: 54.7701, Total Loss: 5.9722
+MSE Loss Between Generated and Conditioned: 175.3686
+Epoch: 112, Noise Loss: 0.5028, Pred Loss: 44.9041, Total Loss: 4.9932
+MSE Loss Between Generated and Conditioned: 178.5044
+Epoch: 113, Noise Loss: 0.4965, Pred Loss: 46.8680, Total Loss: 5.1833
+MSE Loss Between Generated and Conditioned: 216.2010
+Epoch: 114, Noise Loss: 0.4992, Pred Loss: 48.9350, Total Loss: 5.3927
+MSE Loss Between Generated and Conditioned: 246.1270
+Epoch: 115, Noise Loss: 0.4922, Pred Loss: 51.0398, Total Loss: 5.5962
+MSE Loss Between Generated and Conditioned: 150.5047
+Epoch: 116, Noise Loss: 0.4875, Pred Loss: 47.0920, Total Loss: 5.1967
+MSE Loss Between Generated and Conditioned: 186.1660
+Epoch: 117, Noise Loss: 0.4967, Pred Loss: 42.1568, Total Loss: 4.7124
+MSE Loss Between Generated and Conditioned: 184.4842
+Epoch: 118, Noise Loss: 0.4981, Pred Loss: 44.4398, Total Loss: 4.9420
+MSE Loss Between Generated and Conditioned: 325.6086
+Epoch: 119, Noise Loss: 0.4900, Pred Loss: 43.5731, Total Loss: 4.8473
+MSE Loss Between Generated and Conditioned: 136.6637
+Epoch: 120, Noise Loss: 0.4974, Pred Loss: 45.5439, Total Loss: 5.0518
+MSE Loss Between Generated and Conditioned: 185.9492
+Epoch: 121, Noise Loss: 0.4845, Pred Loss: 46.3340, Total Loss: 5.1179
+MSE Loss Between Generated and Conditioned: 209.0733
+Epoch: 122, Noise Loss: 0.4913, Pred Loss: 43.9867, Total Loss: 4.8900
+MSE Loss Between Generated and Conditioned: 140.5961
+Epoch: 123, Noise Loss: 0.4882, Pred Loss: 41.7131, Total Loss: 4.6595
+MSE Loss Between Generated and Conditioned: 185.8471
+Epoch: 124, Noise Loss: 0.4866, Pred Loss: 46.2660, Total Loss: 5.1132
+MSE Loss Between Generated and Conditioned: 218.8232
+Epoch: 125, Noise Loss: 0.4934, Pred Loss: 43.3650, Total Loss: 4.8299
+MSE Loss Between Generated and Conditioned: 177.5152
+Epoch: 126, Noise Loss: 0.4925, Pred Loss: 40.1369, Total Loss: 4.5062
+MSE Loss Between Generated and Conditioned: 258.3694
+Epoch: 127, Noise Loss: 0.4940, Pred Loss: 43.4388, Total Loss: 4.8379
+MSE Loss Between Generated and Conditioned: 193.3404
+Epoch: 128, Noise Loss: 0.4965, Pred Loss: 40.6230, Total Loss: 4.5588
+MSE Loss Between Generated and Conditioned: 146.2998
+Epoch: 129, Noise Loss: 0.5055, Pred Loss: 38.8754, Total Loss: 4.3930
+MSE Loss Between Generated and Conditioned: 144.8422
+Epoch: 130, Noise Loss: 0.4968, Pred Loss: 39.5516, Total Loss: 4.4519
+MSE Loss Between Generated and Conditioned: 172.9933
+Epoch: 131, Noise Loss: 0.4890, Pred Loss: 44.8858, Total Loss: 4.9776
+MSE Loss Between Generated and Conditioned: 179.2381
+Epoch: 132, Noise Loss: 0.5008, Pred Loss: 42.0959, Total Loss: 4.7104
+MSE Loss Between Generated and Conditioned: 176.8364
+Epoch: 133, Noise Loss: 0.4996, Pred Loss: 41.0177, Total Loss: 4.6014
+MSE Loss Between Generated and Conditioned: 209.5722
+Epoch: 134, Noise Loss: 0.5022, Pred Loss: 40.5401, Total Loss: 4.5562
+MSE Loss Between Generated and Conditioned: 98.2837
+Epoch: 135, Noise Loss: 0.5031, Pred Loss: 36.0993, Total Loss: 4.1130
+MSE Loss Between Generated and Conditioned: 244.0838
+Epoch: 136, Noise Loss: 0.4883, Pred Loss: 42.4849, Total Loss: 4.7368
+MSE Loss Between Generated and Conditioned: 124.4118
+Epoch: 137, Noise Loss: 0.5024, Pred Loss: 36.8879, Total Loss: 4.1912
+MSE Loss Between Generated and Conditioned: 270.5972
+Epoch: 138, Noise Loss: 0.4894, Pred Loss: 40.2640, Total Loss: 4.5158
+MSE Loss Between Generated and Conditioned: 175.1788
+Epoch: 139, Noise Loss: 0.4987, Pred Loss: 37.6137, Total Loss: 4.2601
+MSE Loss Between Generated and Conditioned: 163.4629
+Epoch: 140, Noise Loss: 0.4973, Pred Loss: 39.8129, Total Loss: 4.4786
+MSE Loss Between Generated and Conditioned: 146.4939
+Epoch: 141, Noise Loss: 0.4994, Pred Loss: 36.0026, Total Loss: 4.0996
+MSE Loss Between Generated and Conditioned: 170.3850
+Epoch: 142, Noise Loss: 0.4916, Pred Loss: 39.6216, Total Loss: 4.4538
+MSE Loss Between Generated and Conditioned: 112.6881
+Epoch: 143, Noise Loss: 0.4973, Pred Loss: 43.1477, Total Loss: 4.8121
+MSE Loss Between Generated and Conditioned: 224.1228
+Epoch: 144, Noise Loss: 0.4871, Pred Loss: 41.6285, Total Loss: 4.6499
+MSE Loss Between Generated and Conditioned: 142.4681
+Epoch: 145, Noise Loss: 0.4901, Pred Loss: 42.4255, Total Loss: 4.7326
+MSE Loss Between Generated and Conditioned: 108.9757
+Epoch: 146, Noise Loss: 0.4914, Pred Loss: 40.9972, Total Loss: 4.5912
+MSE Loss Between Generated and Conditioned: 122.7756
+Epoch: 147, Noise Loss: 0.4895, Pred Loss: 40.9605, Total Loss: 4.5855
+MSE Loss Between Generated and Conditioned: 276.9726
+Epoch: 148, Noise Loss: 0.5001, Pred Loss: 35.2923, Total Loss: 4.0293
+MSE Loss Between Generated and Conditioned: 192.1214
+Epoch: 149, Noise Loss: 0.4824, Pred Loss: 39.2442, Total Loss: 4.4068
+MSE Loss Between Generated and Conditioned: 145.8146
+Epoch: 150, Noise Loss: 0.4913, Pred Loss: 37.6869, Total Loss: 4.2600
+MSE Loss Between Generated and Conditioned: 144.4029
+Epoch: 151, Noise Loss: 0.4882, Pred Loss: 35.4150, Total Loss: 4.0297
+MSE Loss Between Generated and Conditioned: 213.4491
+Epoch: 152, Noise Loss: 0.4978, Pred Loss: 40.4642, Total Loss: 4.5442
+MSE Loss Between Generated and Conditioned: 223.5378
+Epoch: 153, Noise Loss: 0.4935, Pred Loss: 39.6119, Total Loss: 4.4547
+MSE Loss Between Generated and Conditioned: 117.3742
+Epoch: 154, Noise Loss: 0.5012, Pred Loss: 40.9942, Total Loss: 4.6007
+MSE Loss Between Generated and Conditioned: 120.8372
+Epoch: 155, Noise Loss: 0.4957, Pred Loss: 36.4441, Total Loss: 4.1401
+MSE Loss Between Generated and Conditioned: 303.4049
+Epoch: 156, Noise Loss: 0.4972, Pred Loss: 39.0563, Total Loss: 4.4028
+MSE Loss Between Generated and Conditioned: 379.0357
+Epoch: 157, Noise Loss: 0.4865, Pred Loss: 41.9064, Total Loss: 4.6771
+MSE Loss Between Generated and Conditioned: 139.4393
+Epoch: 158, Noise Loss: 0.4967, Pred Loss: 38.8769, Total Loss: 4.3844
+MSE Loss Between Generated and Conditioned: 95.1687
+Epoch: 159, Noise Loss: 0.4892, Pred Loss: 38.5532, Total Loss: 4.3445
+MSE Loss Between Generated and Conditioned: 166.2439
+Epoch: 160, Noise Loss: 0.4902, Pred Loss: 36.0903, Total Loss: 4.0993
+MSE Loss Between Generated and Conditioned: 205.0743
+Epoch: 161, Noise Loss: 0.4882, Pred Loss: 38.1710, Total Loss: 4.3053
+MSE Loss Between Generated and Conditioned: 193.0977
+Epoch: 162, Noise Loss: 0.4897, Pred Loss: 35.4118, Total Loss: 4.0309
+MSE Loss Between Generated and Conditioned: 191.0285
+Epoch: 163, Noise Loss: 0.4909, Pred Loss: 37.0807, Total Loss: 4.1990
+MSE Loss Between Generated and Conditioned: 193.9201
+Epoch: 164, Noise Loss: 0.4993, Pred Loss: 35.8672, Total Loss: 4.0860
+MSE Loss Between Generated and Conditioned: 158.5809
+Epoch: 165, Noise Loss: 0.4909, Pred Loss: 36.8635, Total Loss: 4.1773
+MSE Loss Between Generated and Conditioned: 133.3220
+Epoch: 166, Noise Loss: 0.4991, Pred Loss: 37.7365, Total Loss: 4.2728
+MSE Loss Between Generated and Conditioned: 194.1750
+Epoch: 167, Noise Loss: 0.5007, Pred Loss: 37.5533, Total Loss: 4.2560
+MSE Loss Between Generated and Conditioned: 160.2368
+Epoch: 168, Noise Loss: 0.5031, Pred Loss: 35.7600, Total Loss: 4.0791
+MSE Loss Between Generated and Conditioned: 147.8439
+Epoch: 169, Noise Loss: 0.4906, Pred Loss: 36.4071, Total Loss: 4.1313
+MSE Loss Between Generated and Conditioned: 151.2924
+Epoch: 170, Noise Loss: 0.4891, Pred Loss: 36.0487, Total Loss: 4.0940
+MSE Loss Between Generated and Conditioned: 120.6743
+Epoch: 171, Noise Loss: 0.4935, Pred Loss: 35.1562, Total Loss: 4.0092
+MSE Loss Between Generated and Conditioned: 125.2027
+Epoch: 172, Noise Loss: 0.4972, Pred Loss: 39.1092, Total Loss: 4.4081
+MSE Loss Between Generated and Conditioned: 141.9534
+Epoch: 173, Noise Loss: 0.4979, Pred Loss: 39.6449, Total Loss: 4.4624
+MSE Loss Between Generated and Conditioned: 145.4962
+Epoch: 174, Noise Loss: 0.4863, Pred Loss: 40.6261, Total Loss: 4.5489
+MSE Loss Between Generated and Conditioned: 202.5798
+Epoch: 175, Noise Loss: 0.4889, Pred Loss: 36.8136, Total Loss: 4.1702
+MSE Loss Between Generated and Conditioned: 141.7602
+Epoch: 176, Noise Loss: 0.4887, Pred Loss: 36.1076, Total Loss: 4.0995
+MSE Loss Between Generated and Conditioned: 149.9861
+Epoch: 177, Noise Loss: 0.4850, Pred Loss: 35.5252, Total Loss: 4.0376
+MSE Loss Between Generated and Conditioned: 177.4239
+Epoch: 178, Noise Loss: 0.4994, Pred Loss: 34.9611, Total Loss: 3.9955
+MSE Loss Between Generated and Conditioned: 185.1345
+Epoch: 179, Noise Loss: 0.4928, Pred Loss: 37.3847, Total Loss: 4.2312
+MSE Loss Between Generated and Conditioned: 200.0503
+Epoch: 180, Noise Loss: 0.4945, Pred Loss: 34.0652, Total Loss: 3.9010
+MSE Loss Between Generated and Conditioned: 151.3721
+Epoch: 181, Noise Loss: 0.4954, Pred Loss: 33.7936, Total Loss: 3.8747
+MSE Loss Between Generated and Conditioned: 132.0712
+Epoch: 182, Noise Loss: 0.4916, Pred Loss: 36.3727, Total Loss: 4.1289
+MSE Loss Between Generated and Conditioned: 135.1927
+Epoch: 183, Noise Loss: 0.4854, Pred Loss: 36.0314, Total Loss: 4.0886
+MSE Loss Between Generated and Conditioned: 115.2624
+Epoch: 184, Noise Loss: 0.4945, Pred Loss: 36.1301, Total Loss: 4.1075
+MSE Loss Between Generated and Conditioned: 131.6683
+Epoch: 185, Noise Loss: 0.4969, Pred Loss: 42.2349, Total Loss: 4.7204
+MSE Loss Between Generated and Conditioned: 136.9834
+Epoch: 186, Noise Loss: 0.4947, Pred Loss: 34.3568, Total Loss: 3.9304
+MSE Loss Between Generated and Conditioned: 143.2902
+Epoch: 187, Noise Loss: 0.4920, Pred Loss: 40.8618, Total Loss: 4.5781
+MSE Loss Between Generated and Conditioned: 114.1001
+Epoch: 188, Noise Loss: 0.5070, Pred Loss: 35.5497, Total Loss: 4.0619
+MSE Loss Between Generated and Conditioned: 171.3456
+Epoch: 189, Noise Loss: 0.4908, Pred Loss: 34.5540, Total Loss: 3.9462
+MSE Loss Between Generated and Conditioned: 121.3614
+Epoch: 190, Noise Loss: 0.4900, Pred Loss: 37.4343, Total Loss: 4.2334
+MSE Loss Between Generated and Conditioned: 101.3319
+Epoch: 191, Noise Loss: 0.4972, Pred Loss: 36.8990, Total Loss: 4.1871
+MSE Loss Between Generated and Conditioned: 116.3851
+Epoch: 192, Noise Loss: 0.4880, Pred Loss: 40.0459, Total Loss: 4.4926
+MSE Loss Between Generated and Conditioned: 126.6504
+Epoch: 193, Noise Loss: 0.4968, Pred Loss: 32.4494, Total Loss: 3.7417
+MSE Loss Between Generated and Conditioned: 141.1091
+Epoch: 194, Noise Loss: 0.5015, Pred Loss: 39.4878, Total Loss: 4.4503
+MSE Loss Between Generated and Conditioned: 149.1301
+Epoch: 195, Noise Loss: 0.4844, Pred Loss: 39.7266, Total Loss: 4.4570
+MSE Loss Between Generated and Conditioned: 169.7540
+Epoch: 196, Noise Loss: 0.4916, Pred Loss: 35.7608, Total Loss: 4.0677
+MSE Loss Between Generated and Conditioned: 126.9816
+Epoch: 197, Noise Loss: 0.4946, Pred Loss: 38.5042, Total Loss: 4.3450
+MSE Loss Between Generated and Conditioned: 143.8662
+Epoch: 198, Noise Loss: 0.4852, Pred Loss: 37.6601, Total Loss: 4.2512
+MSE Loss Between Generated and Conditioned: 174.2112
+Epoch: 199, Noise Loss: 0.4907, Pred Loss: 36.9194, Total Loss: 4.1827
+MSE Loss Between Generated and Conditioned: 153.6668
+Epoch: 200, Noise Loss: 0.4977, Pred Loss: 36.1729, Total Loss: 4.1150
+MSE Loss Between Generated and Conditioned: 154.7152
+Epoch: 201, Noise Loss: 0.4924, Pred Loss: 34.3242, Total Loss: 3.9248
+MSE Loss Between Generated and Conditioned: 159.8313
+Epoch: 202, Noise Loss: 0.4996, Pred Loss: 36.0363, Total Loss: 4.1032
+MSE Loss Between Generated and Conditioned: 133.1106
+Epoch: 203, Noise Loss: 0.4913, Pred Loss: 38.6986, Total Loss: 4.3612
+MSE Loss Between Generated and Conditioned: 105.4132
+Epoch: 204, Noise Loss: 0.4881, Pred Loss: 37.8259, Total Loss: 4.2707
+MSE Loss Between Generated and Conditioned: 165.6563
+Epoch: 205, Noise Loss: 0.4960, Pred Loss: 36.3797, Total Loss: 4.1340
+MSE Loss Between Generated and Conditioned: 149.4120
+Epoch: 206, Noise Loss: 0.4886, Pred Loss: 38.0157, Total Loss: 4.2901
+MSE Loss Between Generated and Conditioned: 172.4423
+Epoch: 207, Noise Loss: 0.4918, Pred Loss: 37.3503, Total Loss: 4.2268
+MSE Loss Between Generated and Conditioned: 125.5194
+Epoch: 208, Noise Loss: 0.4962, Pred Loss: 36.5396, Total Loss: 4.1502
+MSE Loss Between Generated and Conditioned: 140.5356
+Epoch: 209, Noise Loss: 0.4876, Pred Loss: 38.7566, Total Loss: 4.3632
+MSE Loss Between Generated and Conditioned: 149.6411
+Epoch: 210, Noise Loss: 0.4988, Pred Loss: 32.3659, Total Loss: 3.7354
+MSE Loss Between Generated and Conditioned: 165.3858
+Epoch: 211, Noise Loss: 0.5058, Pred Loss: 34.9956, Total Loss: 4.0053
+MSE Loss Between Generated and Conditioned: 197.0173
+Epoch: 212, Noise Loss: 0.4856, Pred Loss: 40.1331, Total Loss: 4.4990
+MSE Loss Between Generated and Conditioned: 129.5838
+Epoch: 213, Noise Loss: 0.4935, Pred Loss: 39.8514, Total Loss: 4.4786
+MSE Loss Between Generated and Conditioned: 127.8978
+Epoch: 214, Noise Loss: 0.4928, Pred Loss: 38.9198, Total Loss: 4.3847
+MSE Loss Between Generated and Conditioned: 141.8394
+Epoch: 215, Noise Loss: 0.4931, Pred Loss: 40.1984, Total Loss: 4.5130
+MSE Loss Between Generated and Conditioned: 108.1093
+Epoch: 216, Noise Loss: 0.4932, Pred Loss: 39.0980, Total Loss: 4.4030
+MSE Loss Between Generated and Conditioned: 102.7493
+Epoch: 217, Noise Loss: 0.4919, Pred Loss: 38.6279, Total Loss: 4.3547
+MSE Loss Between Generated and Conditioned: 150.0488
+Epoch: 218, Noise Loss: 0.4893, Pred Loss: 38.1585, Total Loss: 4.3052
+MSE Loss Between Generated and Conditioned: 136.1091
+Epoch: 219, Noise Loss: 0.4961, Pred Loss: 35.8543, Total Loss: 4.0815
+MSE Loss Between Generated and Conditioned: 172.2319
+Epoch: 220, Noise Loss: 0.4866, Pred Loss: 37.9544, Total Loss: 4.2820
+MSE Loss Between Generated and Conditioned: 163.6608
+Epoch: 221, Noise Loss: 0.4919, Pred Loss: 37.4669, Total Loss: 4.2386
+MSE Loss Between Generated and Conditioned: 127.8356
+Epoch: 222, Noise Loss: 0.4930, Pred Loss: 36.9263, Total Loss: 4.1857
+MSE Loss Between Generated and Conditioned: 176.6615
+Epoch: 223, Noise Loss: 0.4952, Pred Loss: 33.2787, Total Loss: 3.8231
+MSE Loss Between Generated and Conditioned: 121.9809
+Epoch: 224, Noise Loss: 0.4859, Pred Loss: 37.8339, Total Loss: 4.2693
+MSE Loss Between Generated and Conditioned: 169.2617
+Epoch: 225, Noise Loss: 0.4867, Pred Loss: 37.6073, Total Loss: 4.2474
+MSE Loss Between Generated and Conditioned: 120.2145
+Epoch: 226, Noise Loss: 0.4929, Pred Loss: 40.0712, Total Loss: 4.5000
+MSE Loss Between Generated and Conditioned: 186.2556
+Epoch: 227, Noise Loss: 0.4994, Pred Loss: 32.8051, Total Loss: 3.7799
+MSE Loss Between Generated and Conditioned: 172.5801
+Epoch: 228, Noise Loss: 0.4895, Pred Loss: 36.1135, Total Loss: 4.1008
+MSE Loss Between Generated and Conditioned: 122.2136
+Epoch: 229, Noise Loss: 0.4874, Pred Loss: 35.2316, Total Loss: 4.0106
+MSE Loss Between Generated and Conditioned: 114.4009
+Epoch: 230, Noise Loss: 0.4929, Pred Loss: 31.3444, Total Loss: 3.6273
+MSE Loss Between Generated and Conditioned: 129.0345
+Epoch: 231, Noise Loss: 0.4976, Pred Loss: 37.0557, Total Loss: 4.2031
+MSE Loss Between Generated and Conditioned: 127.7161
+Epoch: 232, Noise Loss: 0.4907, Pred Loss: 37.1152, Total Loss: 4.2022
+MSE Loss Between Generated and Conditioned: 143.8204
+Epoch: 233, Noise Loss: 0.4966, Pred Loss: 35.9442, Total Loss: 4.0910
+MSE Loss Between Generated and Conditioned: 129.2285
+Epoch: 234, Noise Loss: 0.4912, Pred Loss: 35.5069, Total Loss: 4.0419
+MSE Loss Between Generated and Conditioned: 143.2971
+Epoch: 235, Noise Loss: 0.4855, Pred Loss: 36.3415, Total Loss: 4.1196
+MSE Loss Between Generated and Conditioned: 169.4126
+Epoch: 236, Noise Loss: 0.4895, Pred Loss: 37.1392, Total Loss: 4.2034
+MSE Loss Between Generated and Conditioned: 165.9109
+Epoch: 237, Noise Loss: 0.4944, Pred Loss: 39.0002, Total Loss: 4.3944
+MSE Loss Between Generated and Conditioned: 136.2361
+Epoch: 238, Noise Loss: 0.4906, Pred Loss: 37.3971, Total Loss: 4.2303
+MSE Loss Between Generated and Conditioned: 159.4403
+Epoch: 239, Noise Loss: 0.4872, Pred Loss: 38.7108, Total Loss: 4.3582
+MSE Loss Between Generated and Conditioned: 146.0727
+Epoch: 240, Noise Loss: 0.4869, Pred Loss: 39.1682, Total Loss: 4.4038
+MSE Loss Between Generated and Conditioned: 111.9933
+Epoch: 241, Noise Loss: 0.4892, Pred Loss: 37.2686, Total Loss: 4.2160
+MSE Loss Between Generated and Conditioned: 146.7880
+Epoch: 242, Noise Loss: 0.4953, Pred Loss: 35.6567, Total Loss: 4.0610
+MSE Loss Between Generated and Conditioned: 155.8303
+Epoch: 243, Noise Loss: 0.4906, Pred Loss: 37.3378, Total Loss: 4.2244
+MSE Loss Between Generated and Conditioned: 153.3896
+Epoch: 244, Noise Loss: 0.4869, Pred Loss: 40.9806, Total Loss: 4.5850
+MSE Loss Between Generated and Conditioned: 162.0703
+Epoch: 245, Noise Loss: 0.5015, Pred Loss: 38.5732, Total Loss: 4.3589
+MSE Loss Between Generated and Conditioned: 100.3145
+Epoch: 246, Noise Loss: 0.4996, Pred Loss: 35.7519, Total Loss: 4.0748
+MSE Loss Between Generated and Conditioned: 164.9292
+Epoch: 247, Noise Loss: 0.4859, Pred Loss: 35.7677, Total Loss: 4.0626
+MSE Loss Between Generated and Conditioned: 132.4998
+Epoch: 248, Noise Loss: 0.4872, Pred Loss: 40.9101, Total Loss: 4.5782
+MSE Loss Between Generated and Conditioned: 159.2716
+Epoch: 249, Noise Loss: 0.4847, Pred Loss: 36.9672, Total Loss: 4.1814
+MSE Loss Between Generated and Conditioned: 180.4735
+Epoch: 250, Noise Loss: 0.4846, Pred Loss: 34.8519, Total Loss: 3.9698
+MSE Loss Between Generated and Conditioned: 146.4291
+Epoch: 251, Noise Loss: 0.4912, Pred Loss: 38.5143, Total Loss: 4.3426
+MSE Loss Between Generated and Conditioned: 123.6586
+Epoch: 252, Noise Loss: 0.5010, Pred Loss: 36.6837, Total Loss: 4.1693
+MSE Loss Between Generated and Conditioned: 140.1077
+Epoch: 253, Noise Loss: 0.4911, Pred Loss: 34.7147, Total Loss: 3.9626
+MSE Loss Between Generated and Conditioned: 156.2343
+Epoch: 254, Noise Loss: 0.4843, Pred Loss: 40.9974, Total Loss: 4.5841
+MSE Loss Between Generated and Conditioned: 117.8369
+Epoch: 255, Noise Loss: 0.4929, Pred Loss: 35.2425, Total Loss: 4.0171
+MSE Loss Between Generated and Conditioned: 150.7239
+Epoch: 256, Noise Loss: 0.4866, Pred Loss: 37.2291, Total Loss: 4.2095
+MSE Loss Between Generated and Conditioned: 158.7305
+Epoch: 257, Noise Loss: 0.4942, Pred Loss: 36.9695, Total Loss: 4.1911
+MSE Loss Between Generated and Conditioned: 132.0352
+Epoch: 258, Noise Loss: 0.4885, Pred Loss: 38.3035, Total Loss: 4.3189
+MSE Loss Between Generated and Conditioned: 174.4158
+Epoch: 259, Noise Loss: 0.4833, Pred Loss: 37.0140, Total Loss: 4.1847
+MSE Loss Between Generated and Conditioned: 175.7197
+Epoch: 260, Noise Loss: 0.4922, Pred Loss: 35.8328, Total Loss: 4.0755
+MSE Loss Between Generated and Conditioned: 144.1718
+Epoch: 261, Noise Loss: 0.4950, Pred Loss: 36.2018, Total Loss: 4.1151
+MSE Loss Between Generated and Conditioned: 156.5164
+Epoch: 262, Noise Loss: 0.4895, Pred Loss: 39.8990, Total Loss: 4.4794
+MSE Loss Between Generated and Conditioned: 128.1934
+Epoch: 263, Noise Loss: 0.5015, Pred Loss: 32.9064, Total Loss: 3.7922
+MSE Loss Between Generated and Conditioned: 139.1032
+Epoch: 264, Noise Loss: 0.5057, Pred Loss: 35.7872, Total Loss: 4.0845
+MSE Loss Between Generated and Conditioned: 118.9386
+Epoch: 265, Noise Loss: 0.5040, Pred Loss: 32.7593, Total Loss: 3.7800
+MSE Loss Between Generated and Conditioned: 121.7068
+Epoch: 266, Noise Loss: 0.4844, Pred Loss: 37.5936, Total Loss: 4.2437
+MSE Loss Between Generated and Conditioned: 110.7410
+Epoch: 267, Noise Loss: 0.4924, Pred Loss: 35.7033, Total Loss: 4.0628
+MSE Loss Between Generated and Conditioned: 122.1975
+Epoch: 268, Noise Loss: 0.4861, Pred Loss: 40.4547, Total Loss: 4.5315
+MSE Loss Between Generated and Conditioned: 147.2182
+Epoch: 269, Noise Loss: 0.4960, Pred Loss: 36.0556, Total Loss: 4.1016
+MSE Loss Between Generated and Conditioned: 129.5249
+Epoch: 270, Noise Loss: 0.4902, Pred Loss: 40.9312, Total Loss: 4.5834
+MSE Loss Between Generated and Conditioned: 129.1939
+Epoch: 271, Noise Loss: 0.5008, Pred Loss: 37.3641, Total Loss: 4.2372
+MSE Loss Between Generated and Conditioned: 147.4040
+Epoch: 272, Noise Loss: 0.5005, Pred Loss: 35.5859, Total Loss: 4.0591
+MSE Loss Between Generated and Conditioned: 149.1758
+Epoch: 273, Noise Loss: 0.4890, Pred Loss: 35.2125, Total Loss: 4.0102
+MSE Loss Between Generated and Conditioned: 170.7661
+Epoch: 274, Noise Loss: 0.4923, Pred Loss: 37.6194, Total Loss: 4.2542
+MSE Loss Between Generated and Conditioned: 93.5017
+Epoch: 275, Noise Loss: 0.5005, Pred Loss: 41.3944, Total Loss: 4.6399
+MSE Loss Between Generated and Conditioned: 126.8077
+Epoch: 276, Noise Loss: 0.4857, Pred Loss: 40.1907, Total Loss: 4.5047
+MSE Loss Between Generated and Conditioned: 130.0858
+Epoch: 277, Noise Loss: 0.4858, Pred Loss: 38.9952, Total Loss: 4.3853
+MSE Loss Between Generated and Conditioned: 121.1905
+Epoch: 278, Noise Loss: 0.4971, Pred Loss: 36.7602, Total Loss: 4.1731
+MSE Loss Between Generated and Conditioned: 121.3006
+Epoch: 279, Noise Loss: 0.4871, Pred Loss: 37.0066, Total Loss: 4.1878
+MSE Loss Between Generated and Conditioned: 142.5385
+Epoch: 280, Noise Loss: 0.4897, Pred Loss: 37.2870, Total Loss: 4.2184
+MSE Loss Between Generated and Conditioned: 140.9352
+Epoch: 281, Noise Loss: 0.4901, Pred Loss: 39.8881, Total Loss: 4.4790
+MSE Loss Between Generated and Conditioned: 154.6526
+Epoch: 282, Noise Loss: 0.4957, Pred Loss: 32.7415, Total Loss: 3.7698
+MSE Loss Between Generated and Conditioned: 140.9176
+Epoch: 283, Noise Loss: 0.4976, Pred Loss: 36.7989, Total Loss: 4.1775
+MSE Loss Between Generated and Conditioned: 177.3945
+Epoch: 284, Noise Loss: 0.4977, Pred Loss: 33.1915, Total Loss: 3.8168
+MSE Loss Between Generated and Conditioned: 145.8245
+Epoch: 285, Noise Loss: 0.4906, Pred Loss: 39.7840, Total Loss: 4.4690
+MSE Loss Between Generated and Conditioned: 137.8316
+Epoch: 286, Noise Loss: 0.4919, Pred Loss: 40.9201, Total Loss: 4.5839
+MSE Loss Between Generated and Conditioned: 169.6891
+Epoch: 287, Noise Loss: 0.4913, Pred Loss: 35.3388, Total Loss: 4.0252
+MSE Loss Between Generated and Conditioned: 93.3196
+Epoch: 288, Noise Loss: 0.4792, Pred Loss: 38.8598, Total Loss: 4.3652
+MSE Loss Between Generated and Conditioned: 167.0708
+Epoch: 289, Noise Loss: 0.4888, Pred Loss: 39.0663, Total Loss: 4.3954
+MSE Loss Between Generated and Conditioned: 172.6574
+Epoch: 290, Noise Loss: 0.4936, Pred Loss: 37.4462, Total Loss: 4.2382
+MSE Loss Between Generated and Conditioned: 161.2103
+Epoch: 291, Noise Loss: 0.4874, Pred Loss: 35.4917, Total Loss: 4.0366
+MSE Loss Between Generated and Conditioned: 169.9958
+Epoch: 292, Noise Loss: 0.4913, Pred Loss: 34.1551, Total Loss: 3.9069
+MSE Loss Between Generated and Conditioned: 142.3046
+Epoch: 293, Noise Loss: 0.4902, Pred Loss: 34.2290, Total Loss: 3.9131
+MSE Loss Between Generated and Conditioned: 167.6419
+Epoch: 294, Noise Loss: 0.4905, Pred Loss: 40.4817, Total Loss: 4.5387
+MSE Loss Between Generated and Conditioned: 154.2463
+Epoch: 295, Noise Loss: 0.4912, Pred Loss: 34.2193, Total Loss: 3.9131
+MSE Loss Between Generated and Conditioned: 155.2222
+Epoch: 296, Noise Loss: 0.4820, Pred Loss: 38.0279, Total Loss: 4.2848
+MSE Loss Between Generated and Conditioned: 186.3365
+Epoch: 297, Noise Loss: 0.5005, Pred Loss: 34.2196, Total Loss: 3.9224
+MSE Loss Between Generated and Conditioned: 154.8532
+Epoch: 298, Noise Loss: 0.4873, Pred Loss: 38.7593, Total Loss: 4.3633
+MSE Loss Between Generated and Conditioned: 138.5899
+Epoch: 299, Noise Loss: 0.4991, Pred Loss: 35.5475, Total Loss: 4.0538

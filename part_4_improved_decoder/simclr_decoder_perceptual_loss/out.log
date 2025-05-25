@@ -1,0 +1,1257 @@
+nohup: ignoring input
+torch.Size([14031, 5, 64, 32])
+torch.Size([4677, 5, 64, 32])
+torch.Size([4678, 5, 64, 32])
+/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Shape: (5, 144, 72)
+Fine Tuning Both
+Epoch: 0, Alpha: 1.00, Learning Rate: 0.0001
+Train Losses -> Total: 5.22, Contrastive: 5.22, Reconstruction: 1.05, Perceptual: 221.98
+Valid Losses -> Total: 7.38, Contrastive: 7.38, Reconstruction: 1.06, Perceptual: 227.20
+Epoch: 1, Alpha: 0.99, Learning Rate: 0.0001
+Train Losses -> Total: 6.34, Contrastive: 5.21, Reconstruction: 1.57, Perceptual: 117.04
+Valid Losses -> Total: 8.12, Contrastive: 7.42, Reconstruction: 1.92, Perceptual: 76.11
+Epoch: 2, Alpha: 0.98, Learning Rate: 0.0001
+Train Losses -> Total: 6.31, Contrastive: 5.19, Reconstruction: 1.61, Perceptual: 60.40
+Valid Losses -> Total: 8.29, Contrastive: 7.39, Reconstruction: 1.38, Perceptual: 51.66
+Epoch: 3, Alpha: 0.97, Learning Rate: 0.0001
+Train Losses -> Total: 6.29, Contrastive: 5.17, Reconstruction: 1.17, Perceptual: 41.92
+Valid Losses -> Total: 8.27, Contrastive: 7.40, Reconstruction: 1.06, Perceptual: 35.56
+Epoch: 4, Alpha: 0.96, Learning Rate: 0.0001
+Train Losses -> Total: 6.11, Contrastive: 5.16, Reconstruction: 0.94, Perceptual: 28.63
+Valid Losses -> Total: 8.14, Contrastive: 7.45, Reconstruction: 0.89, Perceptual: 23.98
+Epoch: 5, Alpha: 0.95, Learning Rate: 0.0001
+Train Losses -> Total: 5.85, Contrastive: 5.14, Reconstruction: 0.80, Perceptual: 18.91
+Valid Losses -> Total: 7.84, Contrastive: 7.41, Reconstruction: 0.78, Perceptual: 15.43
+Epoch: 6, Alpha: 0.94, Learning Rate: 0.0001
+Train Losses -> Total: 5.55, Contrastive: 5.13, Reconstruction: 0.71, Perceptual: 11.65
+Valid Losses -> Total: 7.55, Contrastive: 7.43, Reconstruction: 0.70, Perceptual: 8.76
+Epoch: 7, Alpha: 0.93, Learning Rate: 0.0001
+Train Losses -> Total: 5.25, Contrastive: 5.11, Reconstruction: 0.64, Perceptual: 6.48
+Valid Losses -> Total: 7.34, Contrastive: 7.47, Reconstruction: 0.63, Perceptual: 4.95
+Epoch: 8, Alpha: 0.92, Learning Rate: 0.0001
+Train Losses -> Total: 5.04, Contrastive: 5.10, Reconstruction: 0.59, Perceptual: 3.73
+Valid Losses -> Total: 7.14, Contrastive: 7.45, Reconstruction: 0.59, Perceptual: 2.80
+Epoch: 9, Alpha: 0.91, Learning Rate: 0.0001
+Train Losses -> Total: 4.87, Contrastive: 5.09, Reconstruction: 0.55, Perceptual: 2.01
+Valid Losses -> Total: 6.98, Contrastive: 7.46, Reconstruction: 0.55, Perceptual: 1.43
+Epoch: 10, Alpha: 0.90, Learning Rate: 0.0001
+Train Losses -> Total: 4.74, Contrastive: 5.08, Reconstruction: 0.51, Perceptual: 0.98
+Valid Losses -> Total: 6.90, Contrastive: 7.50, Reconstruction: 0.52, Perceptual: 0.65
+Epoch: 11, Alpha: 0.90, Learning Rate: 0.0001
+Train Losses -> Total: 4.64, Contrastive: 5.07, Reconstruction: 0.49, Perceptual: 0.42
+Valid Losses -> Total: 6.78, Contrastive: 7.49, Reconstruction: 0.49, Perceptual: 0.25
+Epoch: 12, Alpha: 0.89, Learning Rate: 0.0001
+Train Losses -> Total: 4.56, Contrastive: 5.06, Reconstruction: 0.46, Perceptual: 0.14
+Valid Losses -> Total: 6.72, Contrastive: 7.50, Reconstruction: 0.47, Perceptual: 0.06
+Epoch: 13, Alpha: 0.88, Learning Rate: 0.0001
+Train Losses -> Total: 4.49, Contrastive: 5.05, Reconstruction: 0.44, Perceptual: 0.04
+Valid Losses -> Total: 6.66, Contrastive: 7.52, Reconstruction: 0.44, Perceptual: 0.03
+Epoch: 14, Alpha: 0.87, Learning Rate: 0.0001
+Train Losses -> Total: 4.44, Contrastive: 5.04, Reconstruction: 0.42, Perceptual: 0.02
+Valid Losses -> Total: 6.59, Contrastive: 7.52, Reconstruction: 0.43, Perceptual: 0.02
+Epoch: 15, Alpha: 0.86, Learning Rate: 0.0001
+Train Losses -> Total: 4.39, Contrastive: 5.03, Reconstruction: 0.41, Perceptual: 0.01
+Valid Losses -> Total: 6.51, Contrastive: 7.50, Reconstruction: 0.42, Perceptual: 0.01
+Epoch: 16, Alpha: 0.85, Learning Rate: 0.0001
+Train Losses -> Total: 4.35, Contrastive: 5.03, Reconstruction: 0.40, Perceptual: 0.00
+Valid Losses -> Total: 6.46, Contrastive: 7.51, Reconstruction: 0.41, Perceptual: 0.00
+Epoch: 17, Alpha: 0.84, Learning Rate: 0.0001
+Train Losses -> Total: 4.30, Contrastive: 5.02, Reconstruction: 0.39, Perceptual: 0.00
+Valid Losses -> Total: 6.41, Contrastive: 7.53, Reconstruction: 0.40, Perceptual: 0.00
+Epoch: 18, Alpha: 0.84, Learning Rate: 0.0001
+Train Losses -> Total: 4.25, Contrastive: 5.01, Reconstruction: 0.38, Perceptual: 0.00
+Valid Losses -> Total: 6.36, Contrastive: 7.54, Reconstruction: 0.39, Perceptual: 0.00
+Epoch: 19, Alpha: 0.83, Learning Rate: 0.0001
+Train Losses -> Total: 4.21, Contrastive: 5.01, Reconstruction: 0.38, Perceptual: 0.00
+Valid Losses -> Total: 6.29, Contrastive: 7.53, Reconstruction: 0.39, Perceptual: 0.00
+Epoch: 20, Alpha: 0.82, Learning Rate: 0.0001
+Train Losses -> Total: 4.16, Contrastive: 5.00, Reconstruction: 0.37, Perceptual: 0.00
+Valid Losses -> Total: 6.26, Contrastive: 7.56, Reconstruction: 0.38, Perceptual: 0.00
+Epoch: 21, Alpha: 0.81, Learning Rate: 0.0001
+Train Losses -> Total: 4.12, Contrastive: 4.99, Reconstruction: 0.37, Perceptual: 0.00
+Valid Losses -> Total: 6.19, Contrastive: 7.54, Reconstruction: 0.38, Perceptual: 0.00
+Epoch: 22, Alpha: 0.80, Learning Rate: 0.0001
+Train Losses -> Total: 4.07, Contrastive: 4.99, Reconstruction: 0.36, Perceptual: 0.00
+Valid Losses -> Total: 6.15, Contrastive: 7.57, Reconstruction: 0.37, Perceptual: 0.00
+Epoch: 23, Alpha: 0.79, Learning Rate: 0.0001
+Train Losses -> Total: 4.03, Contrastive: 4.98, Reconstruction: 0.36, Perceptual: 0.00
+Valid Losses -> Total: 6.09, Contrastive: 7.58, Reconstruction: 0.37, Perceptual: 0.00
+Epoch: 24, Alpha: 0.79, Learning Rate: 0.0001
+Train Losses -> Total: 3.99, Contrastive: 4.98, Reconstruction: 0.35, Perceptual: 0.00
+Valid Losses -> Total: 6.06, Contrastive: 7.61, Reconstruction: 0.36, Perceptual: 0.00
+Epoch: 25, Alpha: 0.78, Learning Rate: 0.0001
+Train Losses -> Total: 3.95, Contrastive: 4.97, Reconstruction: 0.35, Perceptual: 0.00
+Valid Losses -> Total: 6.00, Contrastive: 7.60, Reconstruction: 0.36, Perceptual: 0.00
+Epoch: 26, Alpha: 0.77, Learning Rate: 0.0001
+Train Losses -> Total: 3.91, Contrastive: 4.97, Reconstruction: 0.34, Perceptual: 0.00
+Valid Losses -> Total: 5.96, Contrastive: 7.63, Reconstruction: 0.35, Perceptual: 0.00
+Epoch: 27, Alpha: 0.76, Learning Rate: 0.0001
+Train Losses -> Total: 3.87, Contrastive: 4.96, Reconstruction: 0.34, Perceptual: 0.00
+Valid Losses -> Total: 5.89, Contrastive: 7.60, Reconstruction: 0.35, Perceptual: 0.00
+Epoch: 28, Alpha: 0.76, Learning Rate: 0.0001
+Train Losses -> Total: 3.83, Contrastive: 4.96, Reconstruction: 0.33, Perceptual: 0.00
+Valid Losses -> Total: 5.81, Contrastive: 7.58, Reconstruction: 0.34, Perceptual: 0.00
+Epoch: 29, Alpha: 0.75, Learning Rate: 0.0001
+Train Losses -> Total: 3.79, Contrastive: 4.96, Reconstruction: 0.33, Perceptual: 0.00
+Valid Losses -> Total: 5.78, Contrastive: 7.60, Reconstruction: 0.34, Perceptual: 0.00
+Epoch: 30, Alpha: 0.74, Learning Rate: 0.0001
+Train Losses -> Total: 3.75, Contrastive: 4.95, Reconstruction: 0.32, Perceptual: 0.00
+Valid Losses -> Total: 5.71, Contrastive: 7.59, Reconstruction: 0.33, Perceptual: 0.00
+Epoch: 31, Alpha: 0.73, Learning Rate: 0.0001
+Train Losses -> Total: 3.71, Contrastive: 4.95, Reconstruction: 0.32, Perceptual: 0.00
+Valid Losses -> Total: 5.66, Contrastive: 7.60, Reconstruction: 0.33, Perceptual: 0.00
+Epoch: 32, Alpha: 0.73, Learning Rate: 0.0001
+Train Losses -> Total: 3.67, Contrastive: 4.94, Reconstruction: 0.31, Perceptual: 0.00
+Valid Losses -> Total: 5.64, Contrastive: 7.65, Reconstruction: 0.33, Perceptual: 0.00
+Epoch: 33, Alpha: 0.72, Learning Rate: 0.0001
+Train Losses -> Total: 3.64, Contrastive: 4.94, Reconstruction: 0.31, Perceptual: 0.00
+Valid Losses -> Total: 5.58, Contrastive: 7.64, Reconstruction: 0.32, Perceptual: 0.00
+Epoch: 34, Alpha: 0.71, Learning Rate: 0.0001
+Train Losses -> Total: 3.60, Contrastive: 4.93, Reconstruction: 0.31, Perceptual: 0.00
+Valid Losses -> Total: 5.54, Contrastive: 7.66, Reconstruction: 0.32, Perceptual: 0.00
+Epoch: 35, Alpha: 0.70, Learning Rate: 0.0001
+Train Losses -> Total: 3.56, Contrastive: 4.93, Reconstruction: 0.30, Perceptual: 0.00
+Valid Losses -> Total: 5.47, Contrastive: 7.63, Reconstruction: 0.31, Perceptual: 0.00
+Epoch: 36, Alpha: 0.70, Learning Rate: 0.0001
+Train Losses -> Total: 3.53, Contrastive: 4.92, Reconstruction: 0.30, Perceptual: 0.00
+Valid Losses -> Total: 5.43, Contrastive: 7.66, Reconstruction: 0.31, Perceptual: 0.00
+Epoch: 37, Alpha: 0.69, Learning Rate: 0.0001
+Train Losses -> Total: 3.49, Contrastive: 4.92, Reconstruction: 0.29, Perceptual: 0.00
+Valid Losses -> Total: 5.39, Contrastive: 7.67, Reconstruction: 0.31, Perceptual: 0.00
+Epoch: 38, Alpha: 0.68, Learning Rate: 0.0001
+Train Losses -> Total: 3.46, Contrastive: 4.92, Reconstruction: 0.29, Perceptual: 0.00
+Valid Losses -> Total: 5.34, Contrastive: 7.67, Reconstruction: 0.30, Perceptual: 0.00
+Epoch: 39, Alpha: 0.68, Learning Rate: 0.0001
+Train Losses -> Total: 3.42, Contrastive: 4.92, Reconstruction: 0.29, Perceptual: 0.00
+Valid Losses -> Total: 5.27, Contrastive: 7.64, Reconstruction: 0.30, Perceptual: 0.00
+Epoch: 40, Alpha: 0.67, Learning Rate: 0.0001
+Train Losses -> Total: 3.39, Contrastive: 4.91, Reconstruction: 0.28, Perceptual: 0.00
+Valid Losses -> Total: 5.25, Contrastive: 7.68, Reconstruction: 0.29, Perceptual: 0.00
+Epoch: 41, Alpha: 0.66, Learning Rate: 0.0001
+Train Losses -> Total: 3.35, Contrastive: 4.91, Reconstruction: 0.28, Perceptual: 0.00
+Valid Losses -> Total: 5.18, Contrastive: 7.66, Reconstruction: 0.29, Perceptual: 0.00
+Epoch: 42, Alpha: 0.66, Learning Rate: 0.0001
+Train Losses -> Total: 3.32, Contrastive: 4.91, Reconstruction: 0.28, Perceptual: 0.00
+Valid Losses -> Total: 5.14, Contrastive: 7.67, Reconstruction: 0.29, Perceptual: 0.00
+Epoch: 43, Alpha: 0.65, Learning Rate: 0.0001
+Train Losses -> Total: 3.29, Contrastive: 4.90, Reconstruction: 0.27, Perceptual: 0.00
+Valid Losses -> Total: 5.10, Contrastive: 7.69, Reconstruction: 0.29, Perceptual: 0.00
+Epoch: 44, Alpha: 0.64, Learning Rate: 0.0001
+Train Losses -> Total: 3.25, Contrastive: 4.90, Reconstruction: 0.27, Perceptual: 0.00
+Valid Losses -> Total: 5.05, Contrastive: 7.69, Reconstruction: 0.28, Perceptual: 0.00
+Epoch: 45, Alpha: 0.64, Learning Rate: 0.0001
+Train Losses -> Total: 3.22, Contrastive: 4.90, Reconstruction: 0.27, Perceptual: 0.00
+Valid Losses -> Total: 5.00, Contrastive: 7.68, Reconstruction: 0.28, Perceptual: 0.00
+Epoch: 46, Alpha: 0.63, Learning Rate: 0.0001
+Train Losses -> Total: 3.19, Contrastive: 4.90, Reconstruction: 0.26, Perceptual: 0.00
+Valid Losses -> Total: 4.96, Contrastive: 7.69, Reconstruction: 0.28, Perceptual: 0.00
+Epoch: 47, Alpha: 0.63, Learning Rate: 0.0001
+Train Losses -> Total: 3.16, Contrastive: 4.89, Reconstruction: 0.26, Perceptual: 0.00
+Valid Losses -> Total: 4.92, Contrastive: 7.70, Reconstruction: 0.27, Perceptual: 0.00
+Epoch: 48, Alpha: 0.62, Learning Rate: 0.0001
+Train Losses -> Total: 3.13, Contrastive: 4.89, Reconstruction: 0.26, Perceptual: 0.00
+Valid Losses -> Total: 4.86, Contrastive: 7.68, Reconstruction: 0.27, Perceptual: 0.00
+Epoch: 49, Alpha: 0.61, Learning Rate: 0.0001
+Train Losses -> Total: 3.09, Contrastive: 4.89, Reconstruction: 0.25, Perceptual: 0.00
+Valid Losses -> Total: 4.82, Contrastive: 7.69, Reconstruction: 0.27, Perceptual: 0.00
+Epoch: 50, Alpha: 0.61, Learning Rate: 0.0001
+Train Losses -> Total: 3.06, Contrastive: 4.89, Reconstruction: 0.25, Perceptual: 0.00
+Valid Losses -> Total: 4.78, Contrastive: 7.71, Reconstruction: 0.26, Perceptual: 0.00
+Epoch: 51, Alpha: 0.60, Learning Rate: 0.0001
+Train Losses -> Total: 3.03, Contrastive: 4.89, Reconstruction: 0.25, Perceptual: 0.00
+Valid Losses -> Total: 4.74, Contrastive: 7.72, Reconstruction: 0.26, Perceptual: 0.00
+Epoch: 52, Alpha: 0.59, Learning Rate: 0.0001
+Train Losses -> Total: 3.00, Contrastive: 4.88, Reconstruction: 0.25, Perceptual: 0.00
+Valid Losses -> Total: 4.69, Contrastive: 7.70, Reconstruction: 0.26, Perceptual: 0.00
+Epoch: 53, Alpha: 0.59, Learning Rate: 0.0001
+Train Losses -> Total: 2.97, Contrastive: 4.88, Reconstruction: 0.24, Perceptual: 0.00
+Valid Losses -> Total: 4.63, Contrastive: 7.68, Reconstruction: 0.26, Perceptual: 0.00
+Epoch: 54, Alpha: 0.58, Learning Rate: 0.0001
+Train Losses -> Total: 2.94, Contrastive: 4.88, Reconstruction: 0.24, Perceptual: 0.00
+Valid Losses -> Total: 4.61, Contrastive: 7.72, Reconstruction: 0.25, Perceptual: 0.00
+Epoch: 55, Alpha: 0.58, Learning Rate: 0.0001
+Train Losses -> Total: 2.91, Contrastive: 4.88, Reconstruction: 0.24, Perceptual: 0.00
+Valid Losses -> Total: 4.55, Contrastive: 7.71, Reconstruction: 0.25, Perceptual: 0.00
+Epoch: 56, Alpha: 0.57, Learning Rate: 0.0001
+Train Losses -> Total: 2.89, Contrastive: 4.87, Reconstruction: 0.24, Perceptual: 0.00
+Valid Losses -> Total: 4.51, Contrastive: 7.72, Reconstruction: 0.25, Perceptual: 0.00
+Epoch: 57, Alpha: 0.57, Learning Rate: 0.0001
+Train Losses -> Total: 2.86, Contrastive: 4.87, Reconstruction: 0.23, Perceptual: 0.00
+Valid Losses -> Total: 4.47, Contrastive: 7.71, Reconstruction: 0.25, Perceptual: 0.00
+Epoch: 58, Alpha: 0.56, Learning Rate: 0.0001
+Train Losses -> Total: 2.83, Contrastive: 4.87, Reconstruction: 0.23, Perceptual: 0.00
+Valid Losses -> Total: 4.42, Contrastive: 7.71, Reconstruction: 0.24, Perceptual: 0.00
+Epoch: 59, Alpha: 0.55, Learning Rate: 0.0001
+Train Losses -> Total: 2.80, Contrastive: 4.87, Reconstruction: 0.23, Perceptual: 0.00
+Valid Losses -> Total: 4.40, Contrastive: 7.74, Reconstruction: 0.24, Perceptual: 0.00
+Epoch: 60, Alpha: 0.55, Learning Rate: 0.0001
+Train Losses -> Total: 2.77, Contrastive: 4.87, Reconstruction: 0.22, Perceptual: 0.00
+Valid Losses -> Total: 4.34, Contrastive: 7.72, Reconstruction: 0.24, Perceptual: 0.00
+Epoch: 61, Alpha: 0.54, Learning Rate: 0.0001
+Train Losses -> Total: 2.75, Contrastive: 4.87, Reconstruction: 0.22, Perceptual: 0.00
+Valid Losses -> Total: 4.30, Contrastive: 7.73, Reconstruction: 0.23, Perceptual: 0.00
+Epoch: 62, Alpha: 0.54, Learning Rate: 0.0001
+Train Losses -> Total: 2.72, Contrastive: 4.87, Reconstruction: 0.22, Perceptual: 0.00
+Valid Losses -> Total: 4.25, Contrastive: 7.71, Reconstruction: 0.23, Perceptual: 0.00
+Epoch: 63, Alpha: 0.53, Learning Rate: 0.0001
+Train Losses -> Total: 2.69, Contrastive: 4.86, Reconstruction: 0.22, Perceptual: 0.00
+Valid Losses -> Total: 4.23, Contrastive: 7.75, Reconstruction: 0.23, Perceptual: 0.00
+Epoch: 64, Alpha: 0.53, Learning Rate: 0.0001
+Train Losses -> Total: 2.66, Contrastive: 4.86, Reconstruction: 0.21, Perceptual: 0.00
+Valid Losses -> Total: 4.18, Contrastive: 7.72, Reconstruction: 0.23, Perceptual: 0.00
+Epoch: 65, Alpha: 0.52, Learning Rate: 0.0001
+Train Losses -> Total: 2.64, Contrastive: 4.86, Reconstruction: 0.21, Perceptual: 0.00
+Valid Losses -> Total: 4.14, Contrastive: 7.74, Reconstruction: 0.22, Perceptual: 0.00
+Epoch: 66, Alpha: 0.52, Learning Rate: 0.0001
+Train Losses -> Total: 2.61, Contrastive: 4.86, Reconstruction: 0.21, Perceptual: 0.00
+Valid Losses -> Total: 4.11, Contrastive: 7.74, Reconstruction: 0.22, Perceptual: 0.00
+Epoch: 67, Alpha: 0.51, Learning Rate: 0.0001
+Train Losses -> Total: 2.59, Contrastive: 4.86, Reconstruction: 0.21, Perceptual: 0.00
+Valid Losses -> Total: 4.06, Contrastive: 7.73, Reconstruction: 0.22, Perceptual: 0.00
+Epoch: 68, Alpha: 0.51, Learning Rate: 0.0001
+Train Losses -> Total: 2.56, Contrastive: 4.86, Reconstruction: 0.20, Perceptual: 0.00
+Valid Losses -> Total: 4.03, Contrastive: 7.74, Reconstruction: 0.22, Perceptual: 0.00
+Epoch: 69, Alpha: 0.50, Learning Rate: 0.0001
+Train Losses -> Total: 2.54, Contrastive: 4.86, Reconstruction: 0.20, Perceptual: 0.00
+Valid Losses -> Total: 3.98, Contrastive: 7.73, Reconstruction: 0.21, Perceptual: 0.00
+Epoch: 70, Alpha: 0.50, Learning Rate: 0.0001
+Train Losses -> Total: 2.51, Contrastive: 4.86, Reconstruction: 0.20, Perceptual: 0.00
+Valid Losses -> Total: 3.95, Contrastive: 7.73, Reconstruction: 0.21, Perceptual: 0.00
+Epoch: 71, Alpha: 0.49, Learning Rate: 0.0001
+Train Losses -> Total: 2.49, Contrastive: 4.86, Reconstruction: 0.19, Perceptual: 0.00
+Valid Losses -> Total: 3.89, Contrastive: 7.71, Reconstruction: 0.21, Perceptual: 0.00
+Epoch: 72, Alpha: 0.49, Learning Rate: 0.0001
+Train Losses -> Total: 2.46, Contrastive: 4.85, Reconstruction: 0.19, Perceptual: 0.00
+Valid Losses -> Total: 3.87, Contrastive: 7.73, Reconstruction: 0.20, Perceptual: 0.00
+Epoch: 73, Alpha: 0.48, Learning Rate: 0.0001
+Train Losses -> Total: 2.44, Contrastive: 4.85, Reconstruction: 0.19, Perceptual: 0.00
+Valid Losses -> Total: 3.85, Contrastive: 7.76, Reconstruction: 0.20, Perceptual: 0.00
+Epoch: 74, Alpha: 0.48, Learning Rate: 0.0001
+Train Losses -> Total: 2.41, Contrastive: 4.85, Reconstruction: 0.19, Perceptual: 0.00
+Valid Losses -> Total: 3.79, Contrastive: 7.72, Reconstruction: 0.20, Perceptual: 0.00
+Epoch: 75, Alpha: 0.47, Learning Rate: 0.0001
+Train Losses -> Total: 2.39, Contrastive: 4.85, Reconstruction: 0.18, Perceptual: 0.00
+Valid Losses -> Total: 3.76, Contrastive: 7.74, Reconstruction: 0.20, Perceptual: 0.00
+Epoch: 76, Alpha: 0.47, Learning Rate: 0.0001
+Train Losses -> Total: 2.36, Contrastive: 4.85, Reconstruction: 0.18, Perceptual: 0.00
+Valid Losses -> Total: 3.74, Contrastive: 7.77, Reconstruction: 0.19, Perceptual: 0.00
+Epoch: 77, Alpha: 0.46, Learning Rate: 0.0001
+Train Losses -> Total: 2.34, Contrastive: 4.85, Reconstruction: 0.18, Perceptual: 0.00
+Valid Losses -> Total: 3.69, Contrastive: 7.74, Reconstruction: 0.19, Perceptual: 0.00
+Epoch: 78, Alpha: 0.46, Learning Rate: 0.0001
+Train Losses -> Total: 2.32, Contrastive: 4.85, Reconstruction: 0.18, Perceptual: 0.00
+Valid Losses -> Total: 3.66, Contrastive: 7.77, Reconstruction: 0.19, Perceptual: 0.00
+Epoch: 79, Alpha: 0.45, Learning Rate: 0.0001
+Train Losses -> Total: 2.30, Contrastive: 4.85, Reconstruction: 0.17, Perceptual: 0.00
+Valid Losses -> Total: 3.62, Contrastive: 7.76, Reconstruction: 0.19, Perceptual: 0.00
+Epoch: 80, Alpha: 0.45, Learning Rate: 0.0001
+Train Losses -> Total: 2.27, Contrastive: 4.84, Reconstruction: 0.17, Perceptual: 0.00
+Valid Losses -> Total: 3.60, Contrastive: 7.78, Reconstruction: 0.18, Perceptual: 0.00
+Epoch: 81, Alpha: 0.44, Learning Rate: 0.0001
+Train Losses -> Total: 2.25, Contrastive: 4.84, Reconstruction: 0.17, Perceptual: 0.00
+Valid Losses -> Total: 3.55, Contrastive: 7.76, Reconstruction: 0.18, Perceptual: 0.00
+Epoch: 82, Alpha: 0.44, Learning Rate: 0.0001
+Train Losses -> Total: 2.23, Contrastive: 4.84, Reconstruction: 0.17, Perceptual: 0.00
+Valid Losses -> Total: 3.51, Contrastive: 7.75, Reconstruction: 0.18, Perceptual: 0.00
+Epoch: 83, Alpha: 0.44, Learning Rate: 0.0001
+Train Losses -> Total: 2.20, Contrastive: 4.84, Reconstruction: 0.17, Perceptual: 0.00
+Valid Losses -> Total: 3.50, Contrastive: 7.79, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 84, Alpha: 0.43, Learning Rate: 0.0001
+Train Losses -> Total: 2.18, Contrastive: 4.84, Reconstruction: 0.16, Perceptual: 0.00
+Valid Losses -> Total: 3.45, Contrastive: 7.77, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 85, Alpha: 0.43, Learning Rate: 0.0001
+Train Losses -> Total: 2.16, Contrastive: 4.84, Reconstruction: 0.16, Perceptual: 0.00
+Valid Losses -> Total: 3.42, Contrastive: 7.77, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 86, Alpha: 0.42, Learning Rate: 0.0001
+Train Losses -> Total: 2.14, Contrastive: 4.84, Reconstruction: 0.16, Perceptual: 0.00
+Valid Losses -> Total: 3.38, Contrastive: 7.75, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 87, Alpha: 0.42, Learning Rate: 0.0001
+Train Losses -> Total: 2.12, Contrastive: 4.84, Reconstruction: 0.16, Perceptual: 0.00
+Valid Losses -> Total: 3.34, Contrastive: 7.74, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 88, Alpha: 0.41, Learning Rate: 0.0001
+Train Losses -> Total: 2.10, Contrastive: 4.84, Reconstruction: 0.16, Perceptual: 0.00
+Valid Losses -> Total: 3.33, Contrastive: 7.79, Reconstruction: 0.17, Perceptual: 0.00
+Epoch: 89, Alpha: 0.41, Learning Rate: 0.0001
+Train Losses -> Total: 2.08, Contrastive: 4.84, Reconstruction: 0.15, Perceptual: 0.00
+Valid Losses -> Total: 3.30, Contrastive: 7.80, Reconstruction: 0.16, Perceptual: 0.00
+Epoch: 90, Alpha: 0.41, Learning Rate: 0.0001
+Train Losses -> Total: 2.06, Contrastive: 4.84, Reconstruction: 0.15, Perceptual: 0.00
+Valid Losses -> Total: 3.25, Contrastive: 7.75, Reconstruction: 0.16, Perceptual: 0.00
+Epoch: 91, Alpha: 0.40, Learning Rate: 0.0001
+Train Losses -> Total: 2.04, Contrastive: 4.84, Reconstruction: 0.15, Perceptual: 0.00
+Valid Losses -> Total: 3.23, Contrastive: 7.79, Reconstruction: 0.16, Perceptual: 0.00
+Epoch: 92, Alpha: 0.40, Learning Rate: 0.0001
+Train Losses -> Total: 2.01, Contrastive: 4.83, Reconstruction: 0.15, Perceptual: 0.00
+Valid Losses -> Total: 3.18, Contrastive: 7.75, Reconstruction: 0.16, Perceptual: 0.00
+Epoch: 93, Alpha: 0.39, Learning Rate: 0.0001
+Train Losses -> Total: 2.00, Contrastive: 4.84, Reconstruction: 0.15, Perceptual: 0.00
+Valid Losses -> Total: 3.16, Contrastive: 7.78, Reconstruction: 0.16, Perceptual: 0.00
+Epoch: 94, Alpha: 0.39, Learning Rate: 0.0001
+Train Losses -> Total: 1.98, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 3.14, Contrastive: 7.81, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 95, Alpha: 0.39, Learning Rate: 0.0001
+Train Losses -> Total: 1.96, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 3.11, Contrastive: 7.79, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 96, Alpha: 0.38, Learning Rate: 0.0001
+Train Losses -> Total: 1.94, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 3.06, Contrastive: 7.75, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 97, Alpha: 0.38, Learning Rate: 0.0001
+Train Losses -> Total: 1.92, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 3.04, Contrastive: 7.77, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 98, Alpha: 0.38, Learning Rate: 0.0001
+Train Losses -> Total: 1.90, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 3.02, Contrastive: 7.81, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 99, Alpha: 0.37, Learning Rate: 0.0001
+Train Losses -> Total: 1.88, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 2.98, Contrastive: 7.78, Reconstruction: 0.15, Perceptual: 0.00
+Epoch: 100, Alpha: 0.37, Learning Rate: 0.0001
+Train Losses -> Total: 1.86, Contrastive: 4.83, Reconstruction: 0.14, Perceptual: 0.00
+Valid Losses -> Total: 2.96, Contrastive: 7.80, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 101, Alpha: 0.36, Learning Rate: 0.0001
+Train Losses -> Total: 1.84, Contrastive: 4.83, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.92, Contrastive: 7.78, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 102, Alpha: 0.36, Learning Rate: 0.0001
+Train Losses -> Total: 1.83, Contrastive: 4.83, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.90, Contrastive: 7.79, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 103, Alpha: 0.36, Learning Rate: 0.0001
+Train Losses -> Total: 1.81, Contrastive: 4.83, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.88, Contrastive: 7.82, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 104, Alpha: 0.35, Learning Rate: 0.0001
+Train Losses -> Total: 1.79, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.85, Contrastive: 7.81, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 105, Alpha: 0.35, Learning Rate: 0.0001
+Train Losses -> Total: 1.77, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.83, Contrastive: 7.83, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 106, Alpha: 0.35, Learning Rate: 0.0001
+Train Losses -> Total: 1.76, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.79, Contrastive: 7.81, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 107, Alpha: 0.34, Learning Rate: 0.0001
+Train Losses -> Total: 1.74, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.76, Contrastive: 7.80, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 108, Alpha: 0.34, Learning Rate: 0.0001
+Train Losses -> Total: 1.72, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.74, Contrastive: 7.80, Reconstruction: 0.14, Perceptual: 0.00
+Epoch: 109, Alpha: 0.34, Learning Rate: 0.0001
+Train Losses -> Total: 1.70, Contrastive: 4.82, Reconstruction: 0.13, Perceptual: 0.00
+Valid Losses -> Total: 2.71, Contrastive: 7.81, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 110, Alpha: 0.33, Learning Rate: 0.0001
+Train Losses -> Total: 1.69, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.68, Contrastive: 7.79, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 111, Alpha: 0.33, Learning Rate: 0.0001
+Train Losses -> Total: 1.67, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.67, Contrastive: 7.83, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 112, Alpha: 0.33, Learning Rate: 0.0001
+Train Losses -> Total: 1.66, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.63, Contrastive: 7.80, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 113, Alpha: 0.32, Learning Rate: 0.0001
+Train Losses -> Total: 1.64, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.61, Contrastive: 7.80, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 114, Alpha: 0.32, Learning Rate: 0.0001
+Train Losses -> Total: 1.62, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.59, Contrastive: 7.81, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 115, Alpha: 0.32, Learning Rate: 0.0001
+Train Losses -> Total: 1.61, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.57, Contrastive: 7.85, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 116, Alpha: 0.31, Learning Rate: 0.0001
+Train Losses -> Total: 1.59, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.54, Contrastive: 7.82, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 117, Alpha: 0.31, Learning Rate: 0.0001
+Train Losses -> Total: 1.58, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.51, Contrastive: 7.81, Reconstruction: 0.13, Perceptual: 0.00
+Epoch: 118, Alpha: 0.31, Learning Rate: 0.0001
+Train Losses -> Total: 1.56, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.50, Contrastive: 7.85, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 119, Alpha: 0.30, Learning Rate: 0.0001
+Train Losses -> Total: 1.55, Contrastive: 4.81, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.47, Contrastive: 7.85, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 120, Alpha: 0.30, Learning Rate: 0.0001
+Train Losses -> Total: 1.53, Contrastive: 4.82, Reconstruction: 0.12, Perceptual: 0.00
+Valid Losses -> Total: 2.44, Contrastive: 7.83, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 121, Alpha: 0.30, Learning Rate: 0.0001
+Train Losses -> Total: 1.52, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.43, Contrastive: 7.85, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 122, Alpha: 0.30, Learning Rate: 0.0001
+Train Losses -> Total: 1.50, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.40, Contrastive: 7.83, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 123, Alpha: 0.29, Learning Rate: 0.0001
+Train Losses -> Total: 1.49, Contrastive: 4.82, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.38, Contrastive: 7.84, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 124, Alpha: 0.29, Learning Rate: 0.0001
+Train Losses -> Total: 1.47, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.35, Contrastive: 7.83, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 125, Alpha: 0.29, Learning Rate: 0.0001
+Train Losses -> Total: 1.46, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.33, Contrastive: 7.84, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 126, Alpha: 0.28, Learning Rate: 0.0001
+Train Losses -> Total: 1.44, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.31, Contrastive: 7.84, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 127, Alpha: 0.28, Learning Rate: 0.0001
+Train Losses -> Total: 1.43, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.29, Contrastive: 7.84, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 128, Alpha: 0.28, Learning Rate: 0.0001
+Train Losses -> Total: 1.42, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.27, Contrastive: 7.87, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 129, Alpha: 0.28, Learning Rate: 0.0001
+Train Losses -> Total: 1.40, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.26, Contrastive: 7.89, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 130, Alpha: 0.27, Learning Rate: 0.0001
+Train Losses -> Total: 1.39, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.22, Contrastive: 7.84, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 131, Alpha: 0.27, Learning Rate: 0.0001
+Train Losses -> Total: 1.38, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.21, Contrastive: 7.88, Reconstruction: 0.12, Perceptual: 0.00
+Epoch: 132, Alpha: 0.27, Learning Rate: 0.0001
+Train Losses -> Total: 1.36, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.18, Contrastive: 7.83, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 133, Alpha: 0.26, Learning Rate: 0.0001
+Train Losses -> Total: 1.35, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.17, Contrastive: 7.89, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 134, Alpha: 0.26, Learning Rate: 0.0001
+Train Losses -> Total: 1.34, Contrastive: 4.81, Reconstruction: 0.11, Perceptual: 0.00
+Valid Losses -> Total: 2.14, Contrastive: 7.86, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 135, Alpha: 0.26, Learning Rate: 0.0001
+Train Losses -> Total: 1.32, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.12, Contrastive: 7.87, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 136, Alpha: 0.26, Learning Rate: 0.0001
+Train Losses -> Total: 1.31, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.11, Contrastive: 7.88, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 137, Alpha: 0.25, Learning Rate: 0.0001
+Train Losses -> Total: 1.30, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.08, Contrastive: 7.85, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 138, Alpha: 0.25, Learning Rate: 0.0001
+Train Losses -> Total: 1.29, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.07, Contrastive: 7.88, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 139, Alpha: 0.25, Learning Rate: 0.0001
+Train Losses -> Total: 1.27, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.04, Contrastive: 7.87, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 140, Alpha: 0.25, Learning Rate: 0.0001
+Train Losses -> Total: 1.26, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.03, Contrastive: 7.91, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 141, Alpha: 0.24, Learning Rate: 0.0001
+Train Losses -> Total: 1.25, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 2.00, Contrastive: 7.86, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 142, Alpha: 0.24, Learning Rate: 0.0001
+Train Losses -> Total: 1.24, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.99, Contrastive: 7.89, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 143, Alpha: 0.24, Learning Rate: 0.0001
+Train Losses -> Total: 1.23, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.98, Contrastive: 7.92, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 144, Alpha: 0.24, Learning Rate: 0.0001
+Train Losses -> Total: 1.22, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.96, Contrastive: 7.93, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 145, Alpha: 0.23, Learning Rate: 0.0001
+Train Losses -> Total: 1.20, Contrastive: 4.81, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.93, Contrastive: 7.88, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 146, Alpha: 0.23, Learning Rate: 0.0001
+Train Losses -> Total: 1.19, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.92, Contrastive: 7.93, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 147, Alpha: 0.23, Learning Rate: 0.0001
+Train Losses -> Total: 1.18, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.89, Contrastive: 7.88, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 148, Alpha: 0.23, Learning Rate: 0.0001
+Train Losses -> Total: 1.17, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.88, Contrastive: 7.92, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 149, Alpha: 0.23, Learning Rate: 0.0001
+Train Losses -> Total: 1.16, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.86, Contrastive: 7.89, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 150, Alpha: 0.22, Learning Rate: 0.0001
+Train Losses -> Total: 1.15, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.84, Contrastive: 7.90, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 151, Alpha: 0.22, Learning Rate: 0.0001
+Train Losses -> Total: 1.14, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.83, Contrastive: 7.92, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 152, Alpha: 0.22, Learning Rate: 0.0001
+Train Losses -> Total: 1.13, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.81, Contrastive: 7.90, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 153, Alpha: 0.22, Learning Rate: 0.0001
+Train Losses -> Total: 1.12, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.80, Contrastive: 7.91, Reconstruction: 0.11, Perceptual: 0.00
+Epoch: 154, Alpha: 0.21, Learning Rate: 0.0001
+Train Losses -> Total: 1.10, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.78, Contrastive: 7.93, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 155, Alpha: 0.21, Learning Rate: 0.0001
+Train Losses -> Total: 1.09, Contrastive: 4.80, Reconstruction: 0.10, Perceptual: 0.00
+Valid Losses -> Total: 1.76, Contrastive: 7.93, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 156, Alpha: 0.21, Learning Rate: 0.0001
+Train Losses -> Total: 1.08, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.75, Contrastive: 7.94, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 157, Alpha: 0.21, Learning Rate: 0.0001
+Train Losses -> Total: 1.07, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.73, Contrastive: 7.90, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 158, Alpha: 0.21, Learning Rate: 0.0001
+Train Losses -> Total: 1.06, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.72, Contrastive: 7.93, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 159, Alpha: 0.20, Learning Rate: 0.0001
+Train Losses -> Total: 1.05, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.69, Contrastive: 7.88, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 160, Alpha: 0.20, Learning Rate: 0.0001
+Train Losses -> Total: 1.04, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.68, Contrastive: 7.94, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 161, Alpha: 0.20, Learning Rate: 0.0001
+Train Losses -> Total: 1.03, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.67, Contrastive: 7.92, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 162, Alpha: 0.20, Learning Rate: 0.0001
+Train Losses -> Total: 1.02, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.65, Contrastive: 7.92, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 163, Alpha: 0.20, Learning Rate: 0.0001
+Train Losses -> Total: 1.01, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.64, Contrastive: 7.96, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 164, Alpha: 0.19, Learning Rate: 0.0001
+Train Losses -> Total: 1.00, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.62, Contrastive: 7.92, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 165, Alpha: 0.19, Learning Rate: 0.0001
+Train Losses -> Total: 1.00, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.61, Contrastive: 7.94, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 166, Alpha: 0.19, Learning Rate: 0.0001
+Train Losses -> Total: 0.99, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.60, Contrastive: 7.98, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 167, Alpha: 0.19, Learning Rate: 0.0001
+Train Losses -> Total: 0.98, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.57, Contrastive: 7.93, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 168, Alpha: 0.19, Learning Rate: 0.0001
+Train Losses -> Total: 0.97, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.56, Contrastive: 7.96, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 169, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.96, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.55, Contrastive: 7.97, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 170, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.95, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.54, Contrastive: 7.99, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 171, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.94, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.52, Contrastive: 7.96, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 172, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.93, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.51, Contrastive: 7.98, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 173, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.92, Contrastive: 4.79, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.49, Contrastive: 7.97, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 174, Alpha: 0.18, Learning Rate: 0.0001
+Train Losses -> Total: 0.91, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.48, Contrastive: 7.98, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 175, Alpha: 0.17, Learning Rate: 0.0001
+Train Losses -> Total: 0.91, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.47, Contrastive: 7.99, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 176, Alpha: 0.17, Learning Rate: 0.0001
+Train Losses -> Total: 0.90, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.45, Contrastive: 7.95, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 177, Alpha: 0.17, Learning Rate: 0.0001
+Train Losses -> Total: 0.89, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.44, Contrastive: 7.98, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 178, Alpha: 0.17, Learning Rate: 0.0001
+Train Losses -> Total: 0.88, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.42, Contrastive: 7.95, Reconstruction: 0.10, Perceptual: 0.00
+Epoch: 179, Alpha: 0.17, Learning Rate: 0.0001
+Train Losses -> Total: 0.87, Contrastive: 4.80, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 1.41, Contrastive: 7.95, Reconstruction: 0.09, Perceptual: 0.00
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.01304, Valid Loss: 0.00837, EPS: 0.991
+Epoch: 1, Train Loss: 0.00776, Valid Loss: 0.00736, EPS: 0.982
+Epoch: 2, Train Loss: 0.00671, Valid Loss: 0.00666, EPS: 0.973
+Epoch: 3, Train Loss: 0.00601, Valid Loss: 0.00612, EPS: 0.964
+Epoch: 4, Train Loss: 0.00556, Valid Loss: 0.00587, EPS: 0.955
+Epoch: 5, Train Loss: 0.00529, Valid Loss: 0.00574, EPS: 0.946
+Epoch: 6, Train Loss: 0.00507, Valid Loss: 0.00553, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00493, Valid Loss: 0.00543, EPS: 0.928
+Epoch: 8, Train Loss: 0.00483, Valid Loss: 0.00544, EPS: 0.919
+Epoch: 9, Train Loss: 0.00474, Valid Loss: 0.00537, EPS: 0.91
+Epoch: 10, Train Loss: 0.00468, Valid Loss: 0.00539, EPS: 0.901
+Epoch: 11, Train Loss: 0.00464, Valid Loss: 0.00536, EPS: 0.892
+Epoch: 12, Train Loss: 0.00457, Valid Loss: 0.00531, EPS: 0.883
+Epoch: 13, Train Loss: 0.00452, Valid Loss: 0.00531, EPS: 0.874
+Epoch: 14, Train Loss: 0.00446, Valid Loss: 0.00526, EPS: 0.865
+Epoch: 15, Train Loss: 0.00439, Valid Loss: 0.00525, EPS: 0.856
+Epoch: 16, Train Loss: 0.00435, Valid Loss: 0.00527, EPS: 0.847
+Epoch: 17, Train Loss: 0.00434, Valid Loss: 0.00527, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00430, Valid Loss: 0.00529, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00425, Valid Loss: 0.00520, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00422, Valid Loss: 0.00520, EPS: 0.811
+Epoch: 21, Train Loss: 0.00418, Valid Loss: 0.00526, EPS: 0.802
+Epoch: 22, Train Loss: 0.00416, Valid Loss: 0.00525, EPS: 0.793
+Epoch: 23, Train Loss: 0.00414, Valid Loss: 0.00528, EPS: 0.784
+Epoch: 24, Train Loss: 0.00414, Valid Loss: 0.00520, EPS: 0.775
+Epoch: 25, Train Loss: 0.00409, Valid Loss: 0.00528, EPS: 0.766
+Epoch: 26, Train Loss: 0.00405, Valid Loss: 0.00527, EPS: 0.757
+Epoch: 27, Train Loss: 0.00404, Valid Loss: 0.00523, EPS: 0.748
+Epoch: 28, Train Loss: 0.00402, Valid Loss: 0.00523, EPS: 0.739
+Epoch: 29, Train Loss: 0.00399, Valid Loss: 0.00522, EPS: 0.73
+Epoch: 30, Train Loss: 0.00396, Valid Loss: 0.00524, EPS: 0.721
+Epoch: 31, Train Loss: 0.00395, Valid Loss: 0.00523, EPS: 0.712
+Epoch: 32, Train Loss: 0.00394, Valid Loss: 0.00526, EPS: 0.703
+Epoch: 33, Train Loss: 0.00394, Valid Loss: 0.00527, EPS: 0.694
+Epoch: 34, Train Loss: 0.00392, Valid Loss: 0.00526, EPS: 0.685
+Epoch: 35, Train Loss: 0.00389, Valid Loss: 0.00526, EPS: 0.676
+Epoch: 36, Train Loss: 0.00356, Valid Loss: 0.00498, EPS: 0.667
+Epoch: 37, Train Loss: 0.00343, Valid Loss: 0.00495, EPS: 0.658
+Epoch: 38, Train Loss: 0.00338, Valid Loss: 0.00496, EPS: 0.649
+Epoch: 39, Train Loss: 0.00336, Valid Loss: 0.00495, EPS: 0.64
+Epoch: 40, Train Loss: 0.00335, Valid Loss: 0.00494, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00334, Valid Loss: 0.00496, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00334, Valid Loss: 0.00495, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00332, Valid Loss: 0.00495, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00331, Valid Loss: 0.00494, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00331, Valid Loss: 0.00494, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00330, Valid Loss: 0.00494, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00328, Valid Loss: 0.00495, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00328, Valid Loss: 0.00494, EPS: 0.559
+Epoch: 49, Train Loss: 0.00327, Valid Loss: 0.00495, EPS: 0.55
+Epoch: 50, Train Loss: 0.00326, Valid Loss: 0.00494, EPS: 0.541
+Epoch: 51, Train Loss: 0.00325, Valid Loss: 0.00492, EPS: 0.532
+Epoch: 52, Train Loss: 0.00324, Valid Loss: 0.00491, EPS: 0.523
+Epoch: 53, Train Loss: 0.00323, Valid Loss: 0.00492, EPS: 0.514
+Epoch: 54, Train Loss: 0.00321, Valid Loss: 0.00491, EPS: 0.505
+Epoch: 55, Train Loss: 0.00320, Valid Loss: 0.00492, EPS: 0.496
+Epoch: 56, Train Loss: 0.00319, Valid Loss: 0.00491, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00318, Valid Loss: 0.00491, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00318, Valid Loss: 0.00491, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00317, Valid Loss: 0.00489, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00316, Valid Loss: 0.00490, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00315, Valid Loss: 0.00490, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00315, Valid Loss: 0.00489, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00314, Valid Loss: 0.00489, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00313, Valid Loss: 0.00489, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00313, Valid Loss: 0.00491, EPS: 0.406
+Epoch: 66, Train Loss: 0.00312, Valid Loss: 0.00491, EPS: 0.397
+Epoch: 67, Train Loss: 0.00312, Valid Loss: 0.00490, EPS: 0.388
+Epoch: 68, Train Loss: 0.00311, Valid Loss: 0.00490, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00310, Valid Loss: 0.00488, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00310, Valid Loss: 0.00489, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00309, Valid Loss: 0.00490, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00309, Valid Loss: 0.00489, EPS: 0.343
+Epoch: 73, Train Loss: 0.00309, Valid Loss: 0.00491, EPS: 0.334
+Epoch: 74, Train Loss: 0.00307, Valid Loss: 0.00491, EPS: 0.325
+Epoch: 75, Train Loss: 0.00307, Valid Loss: 0.00491, EPS: 0.316
+Epoch: 76, Train Loss: 0.00307, Valid Loss: 0.00492, EPS: 0.307
+Epoch: 77, Train Loss: 0.00307, Valid Loss: 0.00490, EPS: 0.298
+Epoch: 78, Train Loss: 0.00306, Valid Loss: 0.00493, EPS: 0.289
+Epoch: 79, Train Loss: 0.00305, Valid Loss: 0.00492, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00305, Valid Loss: 0.00493, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00299, Valid Loss: 0.00490, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00298, Valid Loss: 0.00488, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00298, Valid Loss: 0.00491, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00297, Valid Loss: 0.00490, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00297, Valid Loss: 0.00489, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00298, Valid Loss: 0.00490, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00297, Valid Loss: 0.00489, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00298, Valid Loss: 0.00488, EPS: 0.199
+Epoch: 89, Train Loss: 0.00298, Valid Loss: 0.00490, EPS: 0.19
+Epoch: 90, Train Loss: 0.00297, Valid Loss: 0.00490, EPS: 0.181
+Epoch: 91, Train Loss: 0.00297, Valid Loss: 0.00490, EPS: 0.172
+Epoch: 92, Train Loss: 0.00297, Valid Loss: 0.00491, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00296, Valid Loss: 0.00489, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00296, Valid Loss: 0.00490, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00296, Valid Loss: 0.00489, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00296, Valid Loss: 0.00491, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00296, Valid Loss: 0.00489, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00296, Valid Loss: 0.00490, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00297, Valid Loss: 0.00490, EPS: 0.1
+Test Loss: 0.00490
+Test Loss: 0.00484
+Training Decoder
+Epoch: 0, Learning Rate: 0.0001
+Train Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 1, Learning Rate: 0.0001
+Train Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 2, Learning Rate: 0.0001
+Train Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 3, Learning Rate: 0.0001
+Train Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 4, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 5, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 6, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 7, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 8, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 9, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 10, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 11, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 12, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 13, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 14, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 15, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 16, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 17, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 18, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 19, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 20, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 21, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 22, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 23, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 24, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 25, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 26, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 27, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 28, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 29, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 30, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 31, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 32, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 33, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 34, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 35, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 36, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 37, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 38, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 39, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 40, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 41, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 42, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 43, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 44, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 45, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 46, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 47, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 48, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 49, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 50, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 51, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 52, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 53, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 54, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 55, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 56, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 57, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 58, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 59, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 60, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 61, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 62, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 63, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 64, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 65, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 66, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 67, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 68, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 69, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 70, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 71, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 72, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 73, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 74, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 75, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 76, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 77, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 78, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 79, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 80, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 81, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 82, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 83, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 84, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 85, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 86, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 87, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 88, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 89, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 90, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 91, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 92, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 93, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 94, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 95, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 96, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 97, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 98, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 99, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 100, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 101, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 102, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 103, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 104, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 105, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 106, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 107, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 108, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 109, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 110, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 111, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 112, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 113, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 114, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 115, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 116, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 117, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 118, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 119, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 120, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.09, Reconstruction: 0.09, Perceptual: 0.00
+Epoch: 121, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 122, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 123, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 124, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 125, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 126, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 127, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 128, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 129, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 130, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 131, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 132, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 133, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 134, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 135, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 136, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 137, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 138, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 139, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 140, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 141, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 142, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 143, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 144, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 145, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 146, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 147, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 148, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 149, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 150, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 151, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 152, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 153, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 154, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 155, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 156, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 157, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 158, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 159, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 160, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 161, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 162, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 163, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 164, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 165, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 166, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 167, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 168, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 169, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 170, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 171, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 172, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 173, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 174, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 175, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 176, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 177, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 178, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 179, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 180, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 181, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 182, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 183, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 184, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 185, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 186, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 187, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 188, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 189, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 190, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 191, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 192, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 193, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 194, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 195, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 196, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 197, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 198, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Epoch: 199, Learning Rate: 0.0001
+Train Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
+Valid Losses -> Total: 0.08, Reconstruction: 0.08, Perceptual: 0.00
