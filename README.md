@@ -40,7 +40,7 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 1. **Clone the repository**
     ```
-    git clone <repo-url>
+    GIT_LFS_SKIP_SMUDGE=1 git clone <repo-url> (skips .pth files)
     ```
 
 2. **Create and activate a virtual environment**
