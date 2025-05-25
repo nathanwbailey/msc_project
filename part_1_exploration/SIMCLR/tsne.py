@@ -1,17 +1,29 @@
-
-import torch
-from torch.utils.data import DataLoader
-from dataset import WeatherBenchDataset
-import seaborn as sns
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
-from sklearn.manifold import TSNE
-from sklearn import decomposition
+import seaborn as sns
+import torch
 import torch.nn.functional as F
 import umap
+from dataset import WeatherBenchDataset
+from sklearn import decomposition
+from sklearn.manifold import TSNE
+from torch.utils.data import DataLoader
 
-def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only=False, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')), filename = './tsne.png', decay=0.9):
+
+def plot_tsne(
+    train_data,
+    valid_data,
+    model=torch.load(
+        "SCL.pth",
+        weights_only=False,
+        map_location=torch.device(
+            "cuda:0" if torch.cuda.is_available() else "cpu"
+        ),
+    ),
+    filename="./tsne.png",
+    decay=0.9,
+):
 
     mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
     std = train_data.std(dim=(0, 2, 3), keepdim=True)
@@ -32,7 +44,7 @@ def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only
         num_workers=4,
         persistent_workers=True,
         prefetch_factor=3,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
 
     testloader = DataLoader(
@@ -43,10 +55,10 @@ def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only
         num_workers=4,
         persistent_workers=True,
         prefetch_factor=3,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
 
-    DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     test_batch = next(iter(testloader))
 
@@ -58,16 +70,16 @@ def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only
 
     dist = torch.norm(embeddings_x - embeddings_x_prime, dim=1)
     print(dist.shape)
-    print(f'Mean Euclidean Distance: {dist.mean().item()}')
-    print(f'Max Euclidean Distance: {dist.max().item()}')
-    print(f'Min Euclidean Distance: {dist.min().item()}')
+    print(f"Mean Euclidean Distance: {dist.mean().item()}")
+    print(f"Max Euclidean Distance: {dist.max().item()}")
+    print(f"Min Euclidean Distance: {dist.min().item()}")
 
     rand_indices = torch.randperm(embeddings_x.shape[0])
     dist = torch.norm(embeddings_x - embeddings_x_prime[rand_indices], dim=1)
     print(dist.shape)
-    print(f'Mean Euclidean Distance: {dist.mean().item()}')
-    print(f'Max Euclidean Distance: {dist.max().item()}')
-    print(f'Min Euclidean Distance: {dist.min().item()}')
+    print(f"Mean Euclidean Distance: {dist.mean().item()}")
+    print(f"Max Euclidean Distance: {dist.max().item()}")
+    print(f"Min Euclidean Distance: {dist.min().item()}")
 
     cos_sim = F.cosine_similarity(embeddings_x, embeddings_x_prime, dim=1)
     print(cos_sim.shape)
@@ -77,7 +89,9 @@ def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only
     print("Max:", cos_sim.max().item())
 
     rand_indices = torch.randperm(embeddings_x.shape[0])
-    cos_sim = F.cosine_similarity(embeddings_x, embeddings_x_prime[rand_indices], dim=1)
+    cos_sim = F.cosine_similarity(
+        embeddings_x, embeddings_x_prime[rand_indices], dim=1
+    )
     print(cos_sim.shape)
 
     print("Mean cosine similarity:", cos_sim.mean().item())
@@ -93,27 +107,31 @@ def plot_tsne(train_data, valid_data, model = torch.load('SCL.pth', weights_only
     pca = decomposition.PCA(n_components=2)
     combined_proj = pca.fit_transform(combined)
 
-    x_proj = combined_proj[:len(embeddings_x)]
-    x_prime_proj = combined_proj[len(embeddings_x):]
+    x_proj = combined_proj[: len(embeddings_x)]
+    x_prime_proj = combined_proj[len(embeddings_x) :]
 
-    df = pd.DataFrame({
-        'x': np.concatenate([x_proj[:, 0], x_prime_proj[:, 0]]),
-        'y': np.concatenate([x_proj[:, 1], x_prime_proj[:, 1]]),
-        'group': ['A'] * batch_size + ['B'] * batch_size,
-        'point_id': list(range(batch_size)) * 2
-    })
+    df = pd.DataFrame(
+        {
+            "x": np.concatenate([x_proj[:, 0], x_prime_proj[:, 0]]),
+            "y": np.concatenate([x_proj[:, 1], x_prime_proj[:, 1]]),
+            "group": ["A"] * batch_size + ["B"] * batch_size,
+            "point_id": list(range(batch_size)) * 2,
+        }
+    )
 
     plt.figure(figsize=(8, 6))
-    sns.scatterplot(data=df, x='x', y='y', hue='point_id', palette='tab20', s=60)
+    sns.scatterplot(
+        data=df, x="x", y="y", hue="point_id", palette="tab20", s=60
+    )
     plt.legend().remove()
     plt.title("PCA Embeddings (Matching Colors for Corresponding Points)")
     plt.tight_layout()
     plt.savefig(filename)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     TRAIN_SPLIT = 0.8
-    data = torch.load('/vol/bitbucket/nb324/era5_level0.pt')
+    data = torch.load("/vol/bitbucket/nb324/era5_level0.pt")
     n_samples = data.shape[0]
     n_train = int(n_samples * TRAIN_SPLIT)
     train_data = data[:n_train]
@@ -125,4 +143,3 @@ if __name__ == '__main__':
     train_data = data[:n_train]
     valid_data = data[n_train:]
     plot_tsne(train_data, valid_data)
-

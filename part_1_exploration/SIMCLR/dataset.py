@@ -1,8 +1,9 @@
-from torch.utils.data import Dataset
-import torch
-import pandas as pd
 import numpy as np
+import pandas as pd
+import torch
 from augment_functions import augment_sample
+from torch.utils.data import Dataset
+
 
 class WeatherBenchDataset(Dataset):
     def __init__(self, data, max_delta_t=30, decay=0.9):

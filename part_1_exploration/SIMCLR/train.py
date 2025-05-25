@@ -1,7 +1,17 @@
-import torch
 import numpy as np
+import torch
 
-def train_model(model, num_epochs, trainloader, testloader, optimizer, device, loss_fn, model_save_path="SCL.pth"):
+
+def train_model(
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    device,
+    loss_fn,
+    model_save_path="SCL.pth",
+):
     for epoch in range(num_epochs):
         train_loss = []
         valid_loss = []
@@ -28,6 +38,8 @@ def train_model(model, num_epochs, trainloader, testloader, optimizer, device, l
                 valid_loss.append(loss_batch.item())
 
         torch.save(model, model_save_path)
-        lr = optimizer.param_groups[0]['lr']
-        print(f'Epoch: {epoch}, Train Loss: {np.mean(train_loss):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}')
+        lr = optimizer.param_groups[0]["lr"]
+        print(
+            f"Epoch: {epoch}, Train Loss: {np.mean(train_loss):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}"
+        )
     return np.mean(valid_loss)

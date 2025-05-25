@@ -1,22 +1,26 @@
+import os
+import sys
 
 import torch
+from dataset import WeatherBenchDataset
+from loss import BarlowTwinsLoss
+from model import BarlowTwins
 from torch.utils.data import DataLoader
 from torchsummary import summary
-from dataset import WeatherBenchDataset
-from model import BarlowTwins
-from loss import BarlowTwinsLoss
 from train import train_model
-import sys
 from tsne import plot_tsne
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from downstream_task_transformer.downstream_task_transformer_main import downstream_task
-import optuna
-from optuna.samplers import GridSampler
-from eval_sim import eval_model
 
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+import optuna
+from downstream_task_transformer.downstream_task_transformer_main import \
+    downstream_task
+from eval_sim import eval_model
+from optuna.samplers import GridSampler
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
 def objective(trial):
 
@@ -31,7 +35,7 @@ def objective(trial):
 
     BATCH_SIZE = 128
     TRAIN_SPLIT = 0.8
-    data = torch.load('/vol/bitbucket/nb324/era5_level0.pt')
+    data = torch.load("/vol/bitbucket/nb324/era5_level0.pt")
     n_samples = data.shape[0]
     n_train = int(n_samples * TRAIN_SPLIT)
     train_data = data[:n_train]
@@ -60,7 +64,7 @@ def objective(trial):
         num_workers=4,
         persistent_workers=True,
         prefetch_factor=3,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
 
     testloader = DataLoader(
@@ -71,37 +75,59 @@ def objective(trial):
         num_workers=4,
         persistent_workers=True,
         prefetch_factor=3,
-        multiprocessing_context="forkserver"
+        multiprocessing_context="forkserver",
     )
 
     loss_fn = BarlowTwinsLoss(scale_factor=scale_factor, lambd=lambd)
     num_epochs = 100
 
-    DEVICE = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+    DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
     DEVICE = torch.device(DEVICE)
     C, H, W = next(iter(trainloader))[0].shape[1:]
-    
+
     model = BarlowTwins(in_channels=C, latent_dim=latent_dim)
     model = model.to(DEVICE)
 
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=0)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model.parameters(), lr=learning_rate, weight_decay=0
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
-    train_model(model, num_epochs, trainloader, testloader, optimizer, scheduler, DEVICE, loss_fn)
+    train_model(
+        model,
+        num_epochs,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+    )
 
-    plot_tsne(train_data=train_data, valid_data=valid_data, filename=f'tsne_plots/{param_str}.png', decay=decay, model=model.encoder)
+    plot_tsne(
+        train_data=train_data,
+        valid_data=valid_data,
+        filename=f"tsne_plots/{param_str}.png",
+        decay=decay,
+        model=model.encoder,
+    )
 
-    cos_sim, rand_cos_sim, mean_var = eval_model(model.encoder, testloader, DEVICE)
+    cos_sim, rand_cos_sim, mean_var = eval_model(
+        model.encoder, testloader, DEVICE
+    )
 
     print("Mean Cosine similarity:", cos_sim)
     print("Negative Mean Cosine similarity:", rand_cos_sim)
     print("Mean Variance of Embeddings", mean_var)
 
-    test_data = torch.load('/vol/bitbucket/nb324/CL_X_test_full.pt')
+    test_data = torch.load("/vol/bitbucket/nb324/CL_X_test_full.pt")
     # print('Starting Downstream Task')
     # test_error = downstream_task(num_epochs=50, data=test_data, encoder_model=model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=1)
     # return test_error
-    
+
+
 def main():
     param_grid = {
         "lr": [1e-4, 1e-3],
@@ -115,4 +141,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

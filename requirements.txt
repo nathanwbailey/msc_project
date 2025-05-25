@@ -11,6 +11,7 @@ argcomplete==3.6.1
 arraylake==0.16.0
 asttokens==3.0.0
 attrs==25.3.0
+black==25.1.0
 bleach==6.2.0
 blessed==1.21.0
 bokeh==3.7.0
@@ -54,6 +55,7 @@ executing==2.2.0
 fastavro==1.10.0
 fasteners==0.19
 filelock==3.18.0
+flake8==7.2.0
 flox==0.10.0
 fonttools==4.56.0
 frozenlist==1.5.0
@@ -92,6 +94,7 @@ imageio==2.37.0
 ipykernel==6.29.5
 ipython==9.0.2
 ipython_pygments_lexers==1.1.1
+isort==6.0.1
 jaxtyping==0.3.1
 jedi==0.19.2
 Jinja2==3.1.6
@@ -116,6 +119,7 @@ markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 matplotlib==3.10.1
 matplotlib-inline==0.1.7
+mccabe==0.7.0
 mdit-py-plugins==0.4.2
 mdurl==0.1.2
 monotonic==1.6
@@ -124,6 +128,7 @@ msgpack==1.1.0
 multidict==6.2.0
 multipledispatch==1.0.0
 multiurl==0.3.5
+mypy_extensions==1.1.0
 narwhals==1.32.0
 nc-time-axis==1.4.1
 nest-asyncio==1.6.0
@@ -160,6 +165,7 @@ panel==1.6.2
 param==2.2.0
 parso==0.8.4
 partd==1.4.2
+pathspec==0.12.1
 pexpect==4.9.0
 pillow==11.1.0
 platformdirs==4.3.7
@@ -176,11 +182,13 @@ pyarrow==16.1.0
 pyarrow-hotfix==0.6
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
+pycodestyle==2.13.0
 pycparser==2.22
 pyct==0.5.0
 pydantic==2.9.2
 pydantic_core==2.23.4
 pydot==1.4.2
+pyflakes==3.3.2
 Pygments==2.19.1
 pymongo==4.11.3
 pynndescent==0.5.13
@@ -228,6 +236,7 @@ tblib==3.0.0
 tenacity==8.5.0
 threadpoolctl==3.6.0
 tifffile==2025.3.30
+tokenize_rt==6.2.0
 toolz==1.0.0
 torch==2.6.0
 torch-geometric==2.6.1
