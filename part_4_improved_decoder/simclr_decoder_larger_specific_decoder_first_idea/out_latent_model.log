@@ -5,612 +5,612 @@ torch.Size([4678, 5, 64, 32])
 Shape: (5, 144, 72)
 Fine Tuning Both
 Starting Latent Downstream Task
-MSE Loss Between Generated and Conditioned: 307013.3438
-Epoch: 1, Loss: 1.0097
-MSE Loss Between Generated and Conditioned: 61051.7617
-Epoch: 2, Loss: 0.8056
-MSE Loss Between Generated and Conditioned: 37897.2227
-Epoch: 3, Loss: 0.6848
-MSE Loss Between Generated and Conditioned: 29129.6562
-Epoch: 4, Loss: 0.6105
-MSE Loss Between Generated and Conditioned: 25978.5059
-Epoch: 5, Loss: 0.5374
-MSE Loss Between Generated and Conditioned: 19207.1875
-Epoch: 6, Loss: 0.4772
-MSE Loss Between Generated and Conditioned: 18311.2188
-Epoch: 7, Loss: 0.4385
-MSE Loss Between Generated and Conditioned: 15794.3203
-Epoch: 8, Loss: 0.3998
-MSE Loss Between Generated and Conditioned: 13298.9346
-Epoch: 9, Loss: 0.3776
-MSE Loss Between Generated and Conditioned: 12994.6406
-Epoch: 10, Loss: 0.3473
-MSE Loss Between Generated and Conditioned: 9712.9385
-Epoch: 11, Loss: 0.3250
-MSE Loss Between Generated and Conditioned: 8729.2490
-Epoch: 12, Loss: 0.3111
-MSE Loss Between Generated and Conditioned: 7652.5073
-Epoch: 13, Loss: 0.2901
-MSE Loss Between Generated and Conditioned: 5197.7627
-Epoch: 14, Loss: 0.2798
-MSE Loss Between Generated and Conditioned: 5429.4175
-Epoch: 15, Loss: 0.2651
-MSE Loss Between Generated and Conditioned: 4621.4741
-Epoch: 16, Loss: 0.2555
-MSE Loss Between Generated and Conditioned: 4112.8237
-Epoch: 17, Loss: 0.2484
-MSE Loss Between Generated and Conditioned: 4084.9622
-Epoch: 18, Loss: 0.2403
-MSE Loss Between Generated and Conditioned: 3293.4087
-Epoch: 19, Loss: 0.2343
-MSE Loss Between Generated and Conditioned: 1956.9928
-Epoch: 20, Loss: 0.2252
-MSE Loss Between Generated and Conditioned: 2297.8948
-Epoch: 21, Loss: 0.2269
-MSE Loss Between Generated and Conditioned: 2044.3934
-Epoch: 22, Loss: 0.2194
-MSE Loss Between Generated and Conditioned: 1895.8375
-Epoch: 23, Loss: 0.2180
-MSE Loss Between Generated and Conditioned: 2025.8275
-Epoch: 24, Loss: 0.2073
-MSE Loss Between Generated and Conditioned: 1877.3578
-Epoch: 25, Loss: 0.2078
-MSE Loss Between Generated and Conditioned: 1642.1516
-Epoch: 26, Loss: 0.2025
-MSE Loss Between Generated and Conditioned: 1528.0980
-Epoch: 27, Loss: 0.1985
-MSE Loss Between Generated and Conditioned: 1763.1074
-Epoch: 28, Loss: 0.1999
-MSE Loss Between Generated and Conditioned: 1737.0673
-Epoch: 29, Loss: 0.1936
-MSE Loss Between Generated and Conditioned: 1404.2123
-Epoch: 30, Loss: 0.1989
-MSE Loss Between Generated and Conditioned: 1504.8514
-Epoch: 31, Loss: 0.1967
-MSE Loss Between Generated and Conditioned: 1317.7972
-Epoch: 32, Loss: 0.1924
-MSE Loss Between Generated and Conditioned: 1389.4955
-Epoch: 33, Loss: 0.1941
-MSE Loss Between Generated and Conditioned: 1288.4750
-Epoch: 34, Loss: 0.1943
-MSE Loss Between Generated and Conditioned: 1372.9550
-Epoch: 35, Loss: 0.1884
-MSE Loss Between Generated and Conditioned: 967.1538
-Epoch: 36, Loss: 0.1850
-MSE Loss Between Generated and Conditioned: 1336.5740
-Epoch: 37, Loss: 0.1842
-MSE Loss Between Generated and Conditioned: 1549.3439
-Epoch: 38, Loss: 0.1811
-MSE Loss Between Generated and Conditioned: 1103.4237
-Epoch: 39, Loss: 0.1862
-MSE Loss Between Generated and Conditioned: 733.6617
-Epoch: 40, Loss: 0.1753
-MSE Loss Between Generated and Conditioned: 1154.2438
-Epoch: 41, Loss: 0.1791
-MSE Loss Between Generated and Conditioned: 558.0897
-Epoch: 42, Loss: 0.1807
-MSE Loss Between Generated and Conditioned: 853.2963
-Epoch: 43, Loss: 0.1769
-MSE Loss Between Generated and Conditioned: 543.7134
-Epoch: 44, Loss: 0.1748
-MSE Loss Between Generated and Conditioned: 676.3218
-Epoch: 45, Loss: 0.1680
-MSE Loss Between Generated and Conditioned: 638.3250
-Epoch: 46, Loss: 0.1642
-MSE Loss Between Generated and Conditioned: 455.4897
-Epoch: 47, Loss: 0.1683
-MSE Loss Between Generated and Conditioned: 354.6936
-Epoch: 48, Loss: 0.1652
-MSE Loss Between Generated and Conditioned: 359.8790
-Epoch: 49, Loss: 0.1656
-MSE Loss Between Generated and Conditioned: 327.6466
-Epoch: 50, Loss: 0.1602
-MSE Loss Between Generated and Conditioned: 469.6795
-Epoch: 51, Loss: 0.1660
-MSE Loss Between Generated and Conditioned: 432.3712
-Epoch: 52, Loss: 0.1550
-MSE Loss Between Generated and Conditioned: 238.5785
-Epoch: 53, Loss: 0.1576
-MSE Loss Between Generated and Conditioned: 285.6816
-Epoch: 54, Loss: 0.1580
-MSE Loss Between Generated and Conditioned: 303.3228
-Epoch: 55, Loss: 0.1599
-MSE Loss Between Generated and Conditioned: 210.7312
-Epoch: 56, Loss: 0.1584
-MSE Loss Between Generated and Conditioned: 253.5121
-Epoch: 57, Loss: 0.1542
-MSE Loss Between Generated and Conditioned: 201.0978
-Epoch: 58, Loss: 0.1589
-MSE Loss Between Generated and Conditioned: 95.0297
-Epoch: 59, Loss: 0.1502
-MSE Loss Between Generated and Conditioned: 202.5879
-Epoch: 60, Loss: 0.1567
-MSE Loss Between Generated and Conditioned: 114.6922
-Epoch: 61, Loss: 0.1580
-MSE Loss Between Generated and Conditioned: 164.3364
-Epoch: 62, Loss: 0.1583
-MSE Loss Between Generated and Conditioned: 111.3727
-Epoch: 63, Loss: 0.1579
-MSE Loss Between Generated and Conditioned: 270.6823
-Epoch: 64, Loss: 0.1455
-MSE Loss Between Generated and Conditioned: 126.4128
-Epoch: 65, Loss: 0.1592
-MSE Loss Between Generated and Conditioned: 165.1843
-Epoch: 66, Loss: 0.1510
-MSE Loss Between Generated and Conditioned: 155.7558
-Epoch: 67, Loss: 0.1570
-MSE Loss Between Generated and Conditioned: 53.1284
-Epoch: 68, Loss: 0.1525
-MSE Loss Between Generated and Conditioned: 83.9866
-Epoch: 69, Loss: 0.1415
-MSE Loss Between Generated and Conditioned: 95.2797
-Epoch: 70, Loss: 0.1508
-MSE Loss Between Generated and Conditioned: 92.6119
-Epoch: 71, Loss: 0.1423
-MSE Loss Between Generated and Conditioned: 79.5214
-Epoch: 72, Loss: 0.1495
-MSE Loss Between Generated and Conditioned: 61.3500
-Epoch: 73, Loss: 0.1508
-MSE Loss Between Generated and Conditioned: 84.7465
-Epoch: 74, Loss: 0.1430
-MSE Loss Between Generated and Conditioned: 100.3969
-Epoch: 75, Loss: 0.1482
-MSE Loss Between Generated and Conditioned: 67.1553
-Epoch: 76, Loss: 0.1367
-MSE Loss Between Generated and Conditioned: 87.2638
-Epoch: 77, Loss: 0.1470
-MSE Loss Between Generated and Conditioned: 49.7692
-Epoch: 78, Loss: 0.1410
-MSE Loss Between Generated and Conditioned: 50.5972
-Epoch: 79, Loss: 0.1456
-MSE Loss Between Generated and Conditioned: 33.5582
-Epoch: 80, Loss: 0.1454
-MSE Loss Between Generated and Conditioned: 42.8295
-Epoch: 81, Loss: 0.1436
-MSE Loss Between Generated and Conditioned: 50.6016
-Epoch: 82, Loss: 0.1415
-MSE Loss Between Generated and Conditioned: 95.3036
-Epoch: 83, Loss: 0.1374
-MSE Loss Between Generated and Conditioned: 30.0301
-Epoch: 84, Loss: 0.1456
-MSE Loss Between Generated and Conditioned: 39.3078
-Epoch: 85, Loss: 0.1426
-MSE Loss Between Generated and Conditioned: 44.1776
-Epoch: 86, Loss: 0.1430
-MSE Loss Between Generated and Conditioned: 45.5841
-Epoch: 87, Loss: 0.1497
-MSE Loss Between Generated and Conditioned: 20.6087
-Epoch: 88, Loss: 0.1482
-MSE Loss Between Generated and Conditioned: 21.0242
-Epoch: 89, Loss: 0.1405
-MSE Loss Between Generated and Conditioned: 29.4080
-Epoch: 90, Loss: 0.1388
-MSE Loss Between Generated and Conditioned: 32.8640
-Epoch: 91, Loss: 0.1405
-MSE Loss Between Generated and Conditioned: 10.1147
-Epoch: 92, Loss: 0.1395
-MSE Loss Between Generated and Conditioned: 21.8532
-Epoch: 93, Loss: 0.1398
-MSE Loss Between Generated and Conditioned: 32.1515
-Epoch: 94, Loss: 0.1334
-MSE Loss Between Generated and Conditioned: 26.8518
-Epoch: 95, Loss: 0.1330
-MSE Loss Between Generated and Conditioned: 31.1976
-Epoch: 96, Loss: 0.1266
-MSE Loss Between Generated and Conditioned: 21.7872
-Epoch: 97, Loss: 0.1361
-MSE Loss Between Generated and Conditioned: 26.7015
-Epoch: 98, Loss: 0.1297
-MSE Loss Between Generated and Conditioned: 24.6357
-Epoch: 99, Loss: 0.1328
-MSE Loss Between Generated and Conditioned: 29.4187
-Epoch: 100, Loss: 0.1307
-MSE Loss Between Generated and Conditioned: 25.6661
-Epoch: 101, Loss: 0.1273
-MSE Loss Between Generated and Conditioned: 22.2641
-Epoch: 102, Loss: 0.1376
-MSE Loss Between Generated and Conditioned: 31.5665
-Epoch: 103, Loss: 0.1314
-MSE Loss Between Generated and Conditioned: 25.5037
-Epoch: 104, Loss: 0.1306
-MSE Loss Between Generated and Conditioned: 18.9917
-Epoch: 105, Loss: 0.1350
-MSE Loss Between Generated and Conditioned: 21.1837
-Epoch: 106, Loss: 0.1317
-MSE Loss Between Generated and Conditioned: 25.4110
-Epoch: 107, Loss: 0.1328
-MSE Loss Between Generated and Conditioned: 23.6870
-Epoch: 108, Loss: 0.1353
-MSE Loss Between Generated and Conditioned: 31.2035
-Epoch: 109, Loss: 0.1327
-MSE Loss Between Generated and Conditioned: 23.3444
-Epoch: 110, Loss: 0.1399
-MSE Loss Between Generated and Conditioned: 18.2335
-Epoch: 111, Loss: 0.1346
-MSE Loss Between Generated and Conditioned: 23.7513
-Epoch: 112, Loss: 0.1230
-MSE Loss Between Generated and Conditioned: 25.4647
-Epoch: 113, Loss: 0.1310
-MSE Loss Between Generated and Conditioned: 32.7657
-Epoch: 114, Loss: 0.1306
-MSE Loss Between Generated and Conditioned: 26.3821
-Epoch: 115, Loss: 0.1348
-MSE Loss Between Generated and Conditioned: 23.2320
-Epoch: 116, Loss: 0.1271
-MSE Loss Between Generated and Conditioned: 20.6665
-Epoch: 117, Loss: 0.1297
-MSE Loss Between Generated and Conditioned: 19.5247
-Epoch: 118, Loss: 0.1283
-MSE Loss Between Generated and Conditioned: 24.3241
-Epoch: 119, Loss: 0.1202
-MSE Loss Between Generated and Conditioned: 19.2407
-Epoch: 120, Loss: 0.1303
-MSE Loss Between Generated and Conditioned: 29.5963
-Epoch: 121, Loss: 0.1250
-MSE Loss Between Generated and Conditioned: 23.0736
-Epoch: 122, Loss: 0.1269
-MSE Loss Between Generated and Conditioned: 23.0359
-Epoch: 123, Loss: 0.1214
-MSE Loss Between Generated and Conditioned: 29.9368
-Epoch: 124, Loss: 0.1295
-MSE Loss Between Generated and Conditioned: 22.7946
-Epoch: 125, Loss: 0.1330
-MSE Loss Between Generated and Conditioned: 27.0879
-Epoch: 126, Loss: 0.1363
-MSE Loss Between Generated and Conditioned: 28.7212
-Epoch: 127, Loss: 0.1325
-MSE Loss Between Generated and Conditioned: 21.8799
-Epoch: 128, Loss: 0.1311
-MSE Loss Between Generated and Conditioned: 24.0320
-Epoch: 129, Loss: 0.1258
-MSE Loss Between Generated and Conditioned: 26.2181
-Epoch: 130, Loss: 0.1347
-MSE Loss Between Generated and Conditioned: 22.5776
-Epoch: 131, Loss: 0.1325
-MSE Loss Between Generated and Conditioned: 27.3380
-Epoch: 132, Loss: 0.1332
-MSE Loss Between Generated and Conditioned: 20.9621
-Epoch: 133, Loss: 0.1222
-MSE Loss Between Generated and Conditioned: 23.0083
-Epoch: 134, Loss: 0.1210
-MSE Loss Between Generated and Conditioned: 30.8064
-Epoch: 135, Loss: 0.1300
-MSE Loss Between Generated and Conditioned: 22.1704
-Epoch: 136, Loss: 0.1249
-MSE Loss Between Generated and Conditioned: 17.8010
-Epoch: 137, Loss: 0.1338
-MSE Loss Between Generated and Conditioned: 22.7747
-Epoch: 138, Loss: 0.1282
-MSE Loss Between Generated and Conditioned: 25.0540
-Epoch: 139, Loss: 0.1271
-MSE Loss Between Generated and Conditioned: 19.7631
-Epoch: 140, Loss: 0.1328
-MSE Loss Between Generated and Conditioned: 29.6532
-Epoch: 141, Loss: 0.1323
-MSE Loss Between Generated and Conditioned: 18.3880
-Epoch: 142, Loss: 0.1361
-MSE Loss Between Generated and Conditioned: 18.4747
-Epoch: 143, Loss: 0.1275
-MSE Loss Between Generated and Conditioned: 25.5972
-Epoch: 144, Loss: 0.1334
-MSE Loss Between Generated and Conditioned: 29.1355
-Epoch: 145, Loss: 0.1242
-MSE Loss Between Generated and Conditioned: 23.7681
-Epoch: 146, Loss: 0.1296
-MSE Loss Between Generated and Conditioned: 24.3157
-Epoch: 147, Loss: 0.1283
-MSE Loss Between Generated and Conditioned: 22.4873
-Epoch: 148, Loss: 0.1286
-MSE Loss Between Generated and Conditioned: 36.6277
-Epoch: 149, Loss: 0.1334
-MSE Loss Between Generated and Conditioned: 25.8711
-Epoch: 150, Loss: 0.1287
-MSE Loss Between Generated and Conditioned: 24.6764
-Epoch: 151, Loss: 0.1300
-MSE Loss Between Generated and Conditioned: 21.3338
-Epoch: 152, Loss: 0.1264
-MSE Loss Between Generated and Conditioned: 21.0259
-Epoch: 153, Loss: 0.1309
-MSE Loss Between Generated and Conditioned: 27.7274
-Epoch: 154, Loss: 0.1308
-MSE Loss Between Generated and Conditioned: 22.8252
-Epoch: 155, Loss: 0.1272
-MSE Loss Between Generated and Conditioned: 24.3575
-Epoch: 156, Loss: 0.1315
-MSE Loss Between Generated and Conditioned: 25.6427
-Epoch: 157, Loss: 0.1309
-MSE Loss Between Generated and Conditioned: 27.3999
-Epoch: 158, Loss: 0.1299
-MSE Loss Between Generated and Conditioned: 20.2975
-Epoch: 159, Loss: 0.1302
-MSE Loss Between Generated and Conditioned: 22.5620
-Epoch: 160, Loss: 0.1266
-MSE Loss Between Generated and Conditioned: 27.0866
-Epoch: 161, Loss: 0.1327
-MSE Loss Between Generated and Conditioned: 21.3368
-Epoch: 162, Loss: 0.1290
-MSE Loss Between Generated and Conditioned: 26.2196
-Epoch: 163, Loss: 0.1292
-MSE Loss Between Generated and Conditioned: 23.3045
-Epoch: 164, Loss: 0.1328
-MSE Loss Between Generated and Conditioned: 28.1743
-Epoch: 165, Loss: 0.1304
-MSE Loss Between Generated and Conditioned: 23.1358
-Epoch: 166, Loss: 0.1238
-MSE Loss Between Generated and Conditioned: 18.2989
-Epoch: 167, Loss: 0.1331
-MSE Loss Between Generated and Conditioned: 21.0594
-Epoch: 168, Loss: 0.1334
-MSE Loss Between Generated and Conditioned: 25.0187
-Epoch: 169, Loss: 0.1325
-MSE Loss Between Generated and Conditioned: 33.8245
+MSE Loss Between Generated and Conditioned: 288321.7188
+Epoch: 1, Loss: 1.0101
+MSE Loss Between Generated and Conditioned: 64493.1523
+Epoch: 2, Loss: 0.8189
+MSE Loss Between Generated and Conditioned: 38173.6328
+Epoch: 3, Loss: 0.7053
+MSE Loss Between Generated and Conditioned: 29624.4219
+Epoch: 4, Loss: 0.6172
+MSE Loss Between Generated and Conditioned: 25421.1289
+Epoch: 5, Loss: 0.5459
+MSE Loss Between Generated and Conditioned: 21449.5918
+Epoch: 6, Loss: 0.4903
+MSE Loss Between Generated and Conditioned: 18654.9688
+Epoch: 7, Loss: 0.4453
+MSE Loss Between Generated and Conditioned: 16244.2139
+Epoch: 8, Loss: 0.4111
+MSE Loss Between Generated and Conditioned: 12899.8018
+Epoch: 9, Loss: 0.3842
+MSE Loss Between Generated and Conditioned: 11860.7949
+Epoch: 10, Loss: 0.3575
+MSE Loss Between Generated and Conditioned: 9536.2646
+Epoch: 11, Loss: 0.3345
+MSE Loss Between Generated and Conditioned: 8509.8262
+Epoch: 12, Loss: 0.3066
+MSE Loss Between Generated and Conditioned: 7290.9390
+Epoch: 13, Loss: 0.2905
+MSE Loss Between Generated and Conditioned: 6196.0117
+Epoch: 14, Loss: 0.2733
+MSE Loss Between Generated and Conditioned: 3760.0598
+Epoch: 15, Loss: 0.2621
+MSE Loss Between Generated and Conditioned: 5663.3589
+Epoch: 16, Loss: 0.2485
+MSE Loss Between Generated and Conditioned: 3612.0918
+Epoch: 17, Loss: 0.2472
+MSE Loss Between Generated and Conditioned: 3752.7271
+Epoch: 18, Loss: 0.2379
+MSE Loss Between Generated and Conditioned: 2983.6704
+Epoch: 19, Loss: 0.2335
+MSE Loss Between Generated and Conditioned: 2843.0168
+Epoch: 20, Loss: 0.2382
+MSE Loss Between Generated and Conditioned: 2686.5774
+Epoch: 21, Loss: 0.2238
+MSE Loss Between Generated and Conditioned: 2723.3999
+Epoch: 22, Loss: 0.2222
+MSE Loss Between Generated and Conditioned: 2392.0215
+Epoch: 23, Loss: 0.2226
+MSE Loss Between Generated and Conditioned: 3371.3164
+Epoch: 24, Loss: 0.2217
+MSE Loss Between Generated and Conditioned: 2334.5046
+Epoch: 25, Loss: 0.2191
+MSE Loss Between Generated and Conditioned: 2402.9155
+Epoch: 26, Loss: 0.2135
+MSE Loss Between Generated and Conditioned: 2819.7754
+Epoch: 27, Loss: 0.2093
+MSE Loss Between Generated and Conditioned: 2341.4822
+Epoch: 28, Loss: 0.2029
+MSE Loss Between Generated and Conditioned: 2381.8630
+Epoch: 29, Loss: 0.2050
+MSE Loss Between Generated and Conditioned: 1503.1488
+Epoch: 30, Loss: 0.2030
+MSE Loss Between Generated and Conditioned: 1094.7402
+Epoch: 31, Loss: 0.1929
+MSE Loss Between Generated and Conditioned: 1228.9102
+Epoch: 32, Loss: 0.1954
+MSE Loss Between Generated and Conditioned: 1771.7812
+Epoch: 33, Loss: 0.1975
+MSE Loss Between Generated and Conditioned: 1251.7461
+Epoch: 34, Loss: 0.1953
+MSE Loss Between Generated and Conditioned: 1091.7548
+Epoch: 35, Loss: 0.1909
+MSE Loss Between Generated and Conditioned: 1008.4764
+Epoch: 36, Loss: 0.1851
+MSE Loss Between Generated and Conditioned: 1212.3627
+Epoch: 37, Loss: 0.1814
+MSE Loss Between Generated and Conditioned: 1105.5682
+Epoch: 38, Loss: 0.1775
+MSE Loss Between Generated and Conditioned: 812.2763
+Epoch: 39, Loss: 0.1710
+MSE Loss Between Generated and Conditioned: 970.0522
+Epoch: 40, Loss: 0.1751
+MSE Loss Between Generated and Conditioned: 870.0073
+Epoch: 41, Loss: 0.1768
+MSE Loss Between Generated and Conditioned: 680.5436
+Epoch: 42, Loss: 0.1743
+MSE Loss Between Generated and Conditioned: 1117.9818
+Epoch: 43, Loss: 0.1715
+MSE Loss Between Generated and Conditioned: 534.4926
+Epoch: 44, Loss: 0.1688
+MSE Loss Between Generated and Conditioned: 697.2445
+Epoch: 45, Loss: 0.1621
+MSE Loss Between Generated and Conditioned: 597.2531
+Epoch: 46, Loss: 0.1692
+MSE Loss Between Generated and Conditioned: 562.1460
+Epoch: 47, Loss: 0.1624
+MSE Loss Between Generated and Conditioned: 684.4346
+Epoch: 48, Loss: 0.1577
+MSE Loss Between Generated and Conditioned: 561.4589
+Epoch: 49, Loss: 0.1574
+MSE Loss Between Generated and Conditioned: 319.7418
+Epoch: 50, Loss: 0.1597
+MSE Loss Between Generated and Conditioned: 448.0313
+Epoch: 51, Loss: 0.1594
+MSE Loss Between Generated and Conditioned: 328.7533
+Epoch: 52, Loss: 0.1528
+MSE Loss Between Generated and Conditioned: 240.2580
+Epoch: 53, Loss: 0.1542
+MSE Loss Between Generated and Conditioned: 241.9215
+Epoch: 54, Loss: 0.1538
+MSE Loss Between Generated and Conditioned: 355.1403
+Epoch: 55, Loss: 0.1584
+MSE Loss Between Generated and Conditioned: 276.1997
+Epoch: 56, Loss: 0.1571
+MSE Loss Between Generated and Conditioned: 279.2731
+Epoch: 57, Loss: 0.1538
+MSE Loss Between Generated and Conditioned: 229.5016
+Epoch: 58, Loss: 0.1492
+MSE Loss Between Generated and Conditioned: 165.9531
+Epoch: 59, Loss: 0.1542
+MSE Loss Between Generated and Conditioned: 195.8904
+Epoch: 60, Loss: 0.1543
+MSE Loss Between Generated and Conditioned: 115.1075
+Epoch: 61, Loss: 0.1570
+MSE Loss Between Generated and Conditioned: 218.7783
+Epoch: 62, Loss: 0.1485
+MSE Loss Between Generated and Conditioned: 125.7090
+Epoch: 63, Loss: 0.1543
+MSE Loss Between Generated and Conditioned: 137.0384
+Epoch: 64, Loss: 0.1499
+MSE Loss Between Generated and Conditioned: 141.7504
+Epoch: 65, Loss: 0.1505
+MSE Loss Between Generated and Conditioned: 143.5563
+Epoch: 66, Loss: 0.1473
+MSE Loss Between Generated and Conditioned: 97.1078
+Epoch: 67, Loss: 0.1461
+MSE Loss Between Generated and Conditioned: 103.4839
+Epoch: 68, Loss: 0.1548
+MSE Loss Between Generated and Conditioned: 101.1928
+Epoch: 69, Loss: 0.1474
+MSE Loss Between Generated and Conditioned: 93.4881
+Epoch: 70, Loss: 0.1422
+MSE Loss Between Generated and Conditioned: 79.3621
+Epoch: 71, Loss: 0.1419
+MSE Loss Between Generated and Conditioned: 111.1417
+Epoch: 72, Loss: 0.1483
+MSE Loss Between Generated and Conditioned: 60.7715
+Epoch: 73, Loss: 0.1457
+MSE Loss Between Generated and Conditioned: 86.3497
+Epoch: 74, Loss: 0.1470
+MSE Loss Between Generated and Conditioned: 57.1115
+Epoch: 75, Loss: 0.1368
+MSE Loss Between Generated and Conditioned: 39.5747
+Epoch: 76, Loss: 0.1489
+MSE Loss Between Generated and Conditioned: 54.3573
+Epoch: 77, Loss: 0.1392
+MSE Loss Between Generated and Conditioned: 54.0763
+Epoch: 78, Loss: 0.1462
+MSE Loss Between Generated and Conditioned: 50.4217
+Epoch: 79, Loss: 0.1443
+MSE Loss Between Generated and Conditioned: 44.5200
+Epoch: 80, Loss: 0.1496
+MSE Loss Between Generated and Conditioned: 59.2798
+Epoch: 81, Loss: 0.1438
+MSE Loss Between Generated and Conditioned: 34.5037
+Epoch: 82, Loss: 0.1484
+MSE Loss Between Generated and Conditioned: 86.3587
+Epoch: 83, Loss: 0.1474
+MSE Loss Between Generated and Conditioned: 58.5983
+Epoch: 84, Loss: 0.1478
+MSE Loss Between Generated and Conditioned: 33.0411
+Epoch: 85, Loss: 0.1405
+MSE Loss Between Generated and Conditioned: 47.7290
+Epoch: 86, Loss: 0.1473
+MSE Loss Between Generated and Conditioned: 40.2178
+Epoch: 87, Loss: 0.1418
+MSE Loss Between Generated and Conditioned: 27.9383
+Epoch: 88, Loss: 0.1425
+MSE Loss Between Generated and Conditioned: 32.5064
+Epoch: 89, Loss: 0.1366
+MSE Loss Between Generated and Conditioned: 24.6211
+Epoch: 90, Loss: 0.1374
+MSE Loss Between Generated and Conditioned: 36.4338
+Epoch: 91, Loss: 0.1331
+MSE Loss Between Generated and Conditioned: 25.5729
+Epoch: 92, Loss: 0.1370
+MSE Loss Between Generated and Conditioned: 30.5486
+Epoch: 93, Loss: 0.1365
+MSE Loss Between Generated and Conditioned: 26.5614
+Epoch: 94, Loss: 0.1377
+MSE Loss Between Generated and Conditioned: 34.6103
+Epoch: 95, Loss: 0.1318
+MSE Loss Between Generated and Conditioned: 31.4954
+Epoch: 96, Loss: 0.1300
+MSE Loss Between Generated and Conditioned: 32.5885
+Epoch: 97, Loss: 0.1347
+MSE Loss Between Generated and Conditioned: 21.7628
+Epoch: 98, Loss: 0.1291
+MSE Loss Between Generated and Conditioned: 21.9016
+Epoch: 99, Loss: 0.1267
+MSE Loss Between Generated and Conditioned: 19.5797
+Epoch: 100, Loss: 0.1265
+MSE Loss Between Generated and Conditioned: 32.0140
+Epoch: 101, Loss: 0.1281
+MSE Loss Between Generated and Conditioned: 21.1014
+Epoch: 102, Loss: 0.1288
+MSE Loss Between Generated and Conditioned: 25.3693
+Epoch: 103, Loss: 0.1316
+MSE Loss Between Generated and Conditioned: 19.2964
+Epoch: 104, Loss: 0.1343
+MSE Loss Between Generated and Conditioned: 25.8174
+Epoch: 105, Loss: 0.1259
+MSE Loss Between Generated and Conditioned: 33.7412
+Epoch: 106, Loss: 0.1285
+MSE Loss Between Generated and Conditioned: 26.3141
+Epoch: 107, Loss: 0.1302
+MSE Loss Between Generated and Conditioned: 20.3286
+Epoch: 108, Loss: 0.1350
+MSE Loss Between Generated and Conditioned: 17.8070
+Epoch: 109, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 23.1418
+Epoch: 110, Loss: 0.1312
+MSE Loss Between Generated and Conditioned: 19.3057
+Epoch: 111, Loss: 0.1287
+MSE Loss Between Generated and Conditioned: 18.6670
+Epoch: 112, Loss: 0.1263
+MSE Loss Between Generated and Conditioned: 17.1965
+Epoch: 113, Loss: 0.1309
+MSE Loss Between Generated and Conditioned: 31.7088
+Epoch: 114, Loss: 0.1313
+MSE Loss Between Generated and Conditioned: 23.8642
+Epoch: 115, Loss: 0.1317
+MSE Loss Between Generated and Conditioned: 21.6889
+Epoch: 116, Loss: 0.1309
+MSE Loss Between Generated and Conditioned: 24.3947
+Epoch: 117, Loss: 0.1265
+MSE Loss Between Generated and Conditioned: 24.9778
+Epoch: 118, Loss: 0.1295
+MSE Loss Between Generated and Conditioned: 16.7290
+Epoch: 119, Loss: 0.1257
+MSE Loss Between Generated and Conditioned: 21.3719
+Epoch: 120, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 17.6298
+Epoch: 121, Loss: 0.1337
+MSE Loss Between Generated and Conditioned: 20.5581
+Epoch: 122, Loss: 0.1337
+MSE Loss Between Generated and Conditioned: 19.7179
+Epoch: 123, Loss: 0.1379
+MSE Loss Between Generated and Conditioned: 24.3449
+Epoch: 124, Loss: 0.1303
+MSE Loss Between Generated and Conditioned: 19.8384
+Epoch: 125, Loss: 0.1305
+MSE Loss Between Generated and Conditioned: 20.2780
+Epoch: 126, Loss: 0.1282
+MSE Loss Between Generated and Conditioned: 30.3819
+Epoch: 127, Loss: 0.1276
+MSE Loss Between Generated and Conditioned: 20.1238
+Epoch: 128, Loss: 0.1331
+MSE Loss Between Generated and Conditioned: 27.1261
+Epoch: 129, Loss: 0.1345
+MSE Loss Between Generated and Conditioned: 20.9237
+Epoch: 130, Loss: 0.1309
+MSE Loss Between Generated and Conditioned: 20.9479
+Epoch: 131, Loss: 0.1318
+MSE Loss Between Generated and Conditioned: 18.7570
+Epoch: 132, Loss: 0.1277
+MSE Loss Between Generated and Conditioned: 22.9470
+Epoch: 133, Loss: 0.1242
+MSE Loss Between Generated and Conditioned: 18.9844
+Epoch: 134, Loss: 0.1318
+MSE Loss Between Generated and Conditioned: 17.6350
+Epoch: 135, Loss: 0.1335
+MSE Loss Between Generated and Conditioned: 22.1451
+Epoch: 136, Loss: 0.1312
+MSE Loss Between Generated and Conditioned: 18.1926
+Epoch: 137, Loss: 0.1266
+MSE Loss Between Generated and Conditioned: 14.0421
+Epoch: 138, Loss: 0.1239
+MSE Loss Between Generated and Conditioned: 25.8398
+Epoch: 139, Loss: 0.1242
+MSE Loss Between Generated and Conditioned: 23.8792
+Epoch: 140, Loss: 0.1247
+MSE Loss Between Generated and Conditioned: 21.1834
+Epoch: 141, Loss: 0.1347
+MSE Loss Between Generated and Conditioned: 18.8481
+Epoch: 142, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 19.0103
+Epoch: 143, Loss: 0.1324
+MSE Loss Between Generated and Conditioned: 25.9811
+Epoch: 144, Loss: 0.1325
+MSE Loss Between Generated and Conditioned: 21.0624
+Epoch: 145, Loss: 0.1306
+MSE Loss Between Generated and Conditioned: 21.5587
+Epoch: 146, Loss: 0.1304
+MSE Loss Between Generated and Conditioned: 18.2708
+Epoch: 147, Loss: 0.1305
+MSE Loss Between Generated and Conditioned: 17.5802
+Epoch: 148, Loss: 0.1313
+MSE Loss Between Generated and Conditioned: 28.1407
+Epoch: 149, Loss: 0.1349
+MSE Loss Between Generated and Conditioned: 23.1687
+Epoch: 150, Loss: 0.1244
+MSE Loss Between Generated and Conditioned: 27.9430
+Epoch: 151, Loss: 0.1310
+MSE Loss Between Generated and Conditioned: 27.2836
+Epoch: 152, Loss: 0.1304
+MSE Loss Between Generated and Conditioned: 31.7691
+Epoch: 153, Loss: 0.1263
+MSE Loss Between Generated and Conditioned: 22.3772
+Epoch: 154, Loss: 0.1337
+MSE Loss Between Generated and Conditioned: 22.5186
+Epoch: 155, Loss: 0.1282
+MSE Loss Between Generated and Conditioned: 20.6151
+Epoch: 156, Loss: 0.1303
+MSE Loss Between Generated and Conditioned: 26.8992
+Epoch: 157, Loss: 0.1294
+MSE Loss Between Generated and Conditioned: 18.5621
+Epoch: 158, Loss: 0.1263
+MSE Loss Between Generated and Conditioned: 16.6426
+Epoch: 159, Loss: 0.1315
+MSE Loss Between Generated and Conditioned: 21.6811
+Epoch: 160, Loss: 0.1270
+MSE Loss Between Generated and Conditioned: 28.8880
+Epoch: 161, Loss: 0.1280
+MSE Loss Between Generated and Conditioned: 18.5333
+Epoch: 162, Loss: 0.1336
+MSE Loss Between Generated and Conditioned: 23.6086
+Epoch: 163, Loss: 0.1308
+MSE Loss Between Generated and Conditioned: 16.7582
+Epoch: 164, Loss: 0.1282
+MSE Loss Between Generated and Conditioned: 24.6262
+Epoch: 165, Loss: 0.1211
+MSE Loss Between Generated and Conditioned: 22.6581
+Epoch: 166, Loss: 0.1264
+MSE Loss Between Generated and Conditioned: 21.8238
+Epoch: 167, Loss: 0.1268
+MSE Loss Between Generated and Conditioned: 25.8192
+Epoch: 168, Loss: 0.1317
+MSE Loss Between Generated and Conditioned: 23.2757
+Epoch: 169, Loss: 0.1249
+MSE Loss Between Generated and Conditioned: 24.3168
 Epoch: 170, Loss: 0.1293
-MSE Loss Between Generated and Conditioned: 16.9161
-Epoch: 171, Loss: 0.1257
-MSE Loss Between Generated and Conditioned: 26.5390
-Epoch: 172, Loss: 0.1317
-MSE Loss Between Generated and Conditioned: 30.5128
-Epoch: 173, Loss: 0.1347
-MSE Loss Between Generated and Conditioned: 34.6248
-Epoch: 174, Loss: 0.1288
-MSE Loss Between Generated and Conditioned: 16.8084
-Epoch: 175, Loss: 0.1327
-MSE Loss Between Generated and Conditioned: 30.9473
-Epoch: 176, Loss: 0.1319
-MSE Loss Between Generated and Conditioned: 32.4642
-Epoch: 177, Loss: 0.1312
-MSE Loss Between Generated and Conditioned: 31.5466
-Epoch: 178, Loss: 0.1312
-MSE Loss Between Generated and Conditioned: 16.1695
-Epoch: 179, Loss: 0.1327
-MSE Loss Between Generated and Conditioned: 28.8145
-Epoch: 180, Loss: 0.1290
-MSE Loss Between Generated and Conditioned: 25.8504
-Epoch: 181, Loss: 0.1244
-MSE Loss Between Generated and Conditioned: 21.7644
-Epoch: 182, Loss: 0.1331
-MSE Loss Between Generated and Conditioned: 32.5067
-Epoch: 183, Loss: 0.1374
-MSE Loss Between Generated and Conditioned: 23.5554
-Epoch: 184, Loss: 0.1372
-MSE Loss Between Generated and Conditioned: 19.0594
-Epoch: 185, Loss: 0.1190
-MSE Loss Between Generated and Conditioned: 33.8261
-Epoch: 186, Loss: 0.1386
-MSE Loss Between Generated and Conditioned: 26.4942
-Epoch: 187, Loss: 0.1256
-MSE Loss Between Generated and Conditioned: 26.1603
-Epoch: 188, Loss: 0.1275
-MSE Loss Between Generated and Conditioned: 29.5110
-Epoch: 189, Loss: 0.1317
-MSE Loss Between Generated and Conditioned: 30.0867
-Epoch: 190, Loss: 0.1247
-MSE Loss Between Generated and Conditioned: 19.4534
-Epoch: 191, Loss: 0.1328
-MSE Loss Between Generated and Conditioned: 19.5420
-Epoch: 192, Loss: 0.1241
-MSE Loss Between Generated and Conditioned: 26.0039
-Epoch: 193, Loss: 0.1327
-MSE Loss Between Generated and Conditioned: 17.0035
-Epoch: 194, Loss: 0.1266
-MSE Loss Between Generated and Conditioned: 23.3472
-Epoch: 195, Loss: 0.1331
-MSE Loss Between Generated and Conditioned: 20.9719
-Epoch: 196, Loss: 0.1197
-MSE Loss Between Generated and Conditioned: 20.0761
-Epoch: 197, Loss: 0.1290
-MSE Loss Between Generated and Conditioned: 28.5797
-Epoch: 198, Loss: 0.1251
-MSE Loss Between Generated and Conditioned: 24.0170
-Epoch: 199, Loss: 0.1279
-MSE Loss Between Generated and Conditioned: 28.4167
-Epoch: 200, Loss: 0.1332
-MSE Loss Between Generated and Conditioned: 20.6661
-Epoch: 201, Loss: 0.1329
-MSE Loss Between Generated and Conditioned: 21.6660
-Epoch: 202, Loss: 0.1321
-MSE Loss Between Generated and Conditioned: 22.3344
-Epoch: 203, Loss: 0.1321
-MSE Loss Between Generated and Conditioned: 20.0132
-Epoch: 204, Loss: 0.1256
-MSE Loss Between Generated and Conditioned: 22.8080
-Epoch: 205, Loss: 0.1290
-MSE Loss Between Generated and Conditioned: 26.6780
-Epoch: 206, Loss: 0.1330
-MSE Loss Between Generated and Conditioned: 19.0400
-Epoch: 207, Loss: 0.1360
-MSE Loss Between Generated and Conditioned: 21.0906
-Epoch: 208, Loss: 0.1283
-MSE Loss Between Generated and Conditioned: 27.4045
-Epoch: 209, Loss: 0.1302
-MSE Loss Between Generated and Conditioned: 18.6831
-Epoch: 210, Loss: 0.1303
-MSE Loss Between Generated and Conditioned: 28.1539
-Epoch: 211, Loss: 0.1324
-MSE Loss Between Generated and Conditioned: 25.5939
-Epoch: 212, Loss: 0.1243
-MSE Loss Between Generated and Conditioned: 22.6505
-Epoch: 213, Loss: 0.1297
-MSE Loss Between Generated and Conditioned: 26.7237
-Epoch: 214, Loss: 0.1284
-MSE Loss Between Generated and Conditioned: 24.2053
-Epoch: 215, Loss: 0.1291
-MSE Loss Between Generated and Conditioned: 18.5426
-Epoch: 216, Loss: 0.1260
-MSE Loss Between Generated and Conditioned: 24.8738
-Epoch: 217, Loss: 0.1318
-MSE Loss Between Generated and Conditioned: 17.9782
-Epoch: 218, Loss: 0.1258
-MSE Loss Between Generated and Conditioned: 26.2785
-Epoch: 219, Loss: 0.1362
-MSE Loss Between Generated and Conditioned: 24.4772
-Epoch: 220, Loss: 0.1309
-MSE Loss Between Generated and Conditioned: 23.9172
-Epoch: 221, Loss: 0.1317
-MSE Loss Between Generated and Conditioned: 23.4039
-Epoch: 222, Loss: 0.1284
-MSE Loss Between Generated and Conditioned: 20.4271
-Epoch: 223, Loss: 0.1313
-MSE Loss Between Generated and Conditioned: 19.0883
-Epoch: 224, Loss: 0.1421
-MSE Loss Between Generated and Conditioned: 44.9943
-Epoch: 225, Loss: 0.1318
-MSE Loss Between Generated and Conditioned: 21.2789
-Epoch: 226, Loss: 0.1419
-MSE Loss Between Generated and Conditioned: 18.5449
-Epoch: 227, Loss: 0.1284
-MSE Loss Between Generated and Conditioned: 24.4137
-Epoch: 228, Loss: 0.1277
-MSE Loss Between Generated and Conditioned: 26.0468
-Epoch: 229, Loss: 0.1364
-MSE Loss Between Generated and Conditioned: 31.3617
-Epoch: 230, Loss: 0.1285
-MSE Loss Between Generated and Conditioned: 20.2308
-Epoch: 231, Loss: 0.1351
-MSE Loss Between Generated and Conditioned: 23.4740
-Epoch: 232, Loss: 0.1316
-MSE Loss Between Generated and Conditioned: 24.4822
-Epoch: 233, Loss: 0.1269
-MSE Loss Between Generated and Conditioned: 19.0780
-Epoch: 234, Loss: 0.1253
-MSE Loss Between Generated and Conditioned: 23.8210
-Epoch: 235, Loss: 0.1309
-MSE Loss Between Generated and Conditioned: 22.7273
-Epoch: 236, Loss: 0.1305
-MSE Loss Between Generated and Conditioned: 22.4528
-Epoch: 237, Loss: 0.1270
-MSE Loss Between Generated and Conditioned: 30.2428
-Epoch: 238, Loss: 0.1331
-MSE Loss Between Generated and Conditioned: 24.4653
-Epoch: 239, Loss: 0.1280
-MSE Loss Between Generated and Conditioned: 27.7096
-Epoch: 240, Loss: 0.1306
-MSE Loss Between Generated and Conditioned: 17.3280
-Epoch: 241, Loss: 0.1330
-MSE Loss Between Generated and Conditioned: 19.5733
-Epoch: 242, Loss: 0.1318
-MSE Loss Between Generated and Conditioned: 28.1893
-Epoch: 243, Loss: 0.1323
-MSE Loss Between Generated and Conditioned: 28.4313
-Epoch: 244, Loss: 0.1309
-MSE Loss Between Generated and Conditioned: 26.3399
-Epoch: 245, Loss: 0.1252
-MSE Loss Between Generated and Conditioned: 27.3356
-Epoch: 246, Loss: 0.1307
-MSE Loss Between Generated and Conditioned: 19.3780
-Epoch: 247, Loss: 0.1305
-MSE Loss Between Generated and Conditioned: 27.7965
-Epoch: 248, Loss: 0.1282
-MSE Loss Between Generated and Conditioned: 18.6726
-Epoch: 249, Loss: 0.1263
-MSE Loss Between Generated and Conditioned: 20.9652
-Epoch: 250, Loss: 0.1357
-MSE Loss Between Generated and Conditioned: 19.8649
-Epoch: 251, Loss: 0.1343
-MSE Loss Between Generated and Conditioned: 30.8292
-Epoch: 252, Loss: 0.1298
-MSE Loss Between Generated and Conditioned: 21.0540
-Epoch: 253, Loss: 0.1310
-MSE Loss Between Generated and Conditioned: 25.7067
-Epoch: 254, Loss: 0.1314
-MSE Loss Between Generated and Conditioned: 27.7585
-Epoch: 255, Loss: 0.1262
-MSE Loss Between Generated and Conditioned: 33.6402
-Epoch: 256, Loss: 0.1317
-MSE Loss Between Generated and Conditioned: 31.0674
-Epoch: 257, Loss: 0.1330
-MSE Loss Between Generated and Conditioned: 30.4595
-Epoch: 258, Loss: 0.1274
-MSE Loss Between Generated and Conditioned: 34.2223
-Epoch: 259, Loss: 0.1324
-MSE Loss Between Generated and Conditioned: 23.2425
-Epoch: 260, Loss: 0.1298
-MSE Loss Between Generated and Conditioned: 23.6168
-Epoch: 261, Loss: 0.1320
-MSE Loss Between Generated and Conditioned: 18.0915
-Epoch: 262, Loss: 0.1273
-MSE Loss Between Generated and Conditioned: 37.7534
-Epoch: 263, Loss: 0.1294
-MSE Loss Between Generated and Conditioned: 22.6642
-Epoch: 264, Loss: 0.1311
-MSE Loss Between Generated and Conditioned: 20.5086
-Epoch: 265, Loss: 0.1326
-MSE Loss Between Generated and Conditioned: 21.0782
-Epoch: 266, Loss: 0.1297
-MSE Loss Between Generated and Conditioned: 18.6806
-Epoch: 267, Loss: 0.1257
-MSE Loss Between Generated and Conditioned: 21.2409
-Epoch: 268, Loss: 0.1287
-MSE Loss Between Generated and Conditioned: 23.8312
-Epoch: 269, Loss: 0.1365
-MSE Loss Between Generated and Conditioned: 32.5722
-Epoch: 270, Loss: 0.1331
-MSE Loss Between Generated and Conditioned: 27.7864
-Epoch: 271, Loss: 0.1295
-MSE Loss Between Generated and Conditioned: 26.2655
-Epoch: 272, Loss: 0.1285
-MSE Loss Between Generated and Conditioned: 25.4574
-Epoch: 273, Loss: 0.1241
-MSE Loss Between Generated and Conditioned: 26.2715
-Epoch: 274, Loss: 0.1261
-MSE Loss Between Generated and Conditioned: 31.0061
-Epoch: 275, Loss: 0.1248
-MSE Loss Between Generated and Conditioned: 25.6859
-Epoch: 276, Loss: 0.1308
-MSE Loss Between Generated and Conditioned: 20.0196
-Epoch: 277, Loss: 0.1219
-MSE Loss Between Generated and Conditioned: 30.7584
-Epoch: 278, Loss: 0.1283
-MSE Loss Between Generated and Conditioned: 36.4132
-Epoch: 279, Loss: 0.1239
-MSE Loss Between Generated and Conditioned: 34.1712
-Epoch: 280, Loss: 0.1288
-MSE Loss Between Generated and Conditioned: 20.0080
-Epoch: 281, Loss: 0.1298
-MSE Loss Between Generated and Conditioned: 16.8606
-Epoch: 282, Loss: 0.1329
-MSE Loss Between Generated and Conditioned: 16.9255
-Epoch: 283, Loss: 0.1340
-MSE Loss Between Generated and Conditioned: 20.1461
-Epoch: 284, Loss: 0.1303
-MSE Loss Between Generated and Conditioned: 28.9015
-Epoch: 285, Loss: 0.1320
-MSE Loss Between Generated and Conditioned: 22.5442
-Epoch: 286, Loss: 0.1277
-MSE Loss Between Generated and Conditioned: 17.4341
-Epoch: 287, Loss: 0.1296
-MSE Loss Between Generated and Conditioned: 27.1208
-Epoch: 288, Loss: 0.1254
-MSE Loss Between Generated and Conditioned: 26.1060
-Epoch: 289, Loss: 0.1273
-MSE Loss Between Generated and Conditioned: 29.3193
-Epoch: 290, Loss: 0.1256
-MSE Loss Between Generated and Conditioned: 25.1730
-Epoch: 291, Loss: 0.1280
-MSE Loss Between Generated and Conditioned: 28.3010
-Epoch: 292, Loss: 0.1305
-MSE Loss Between Generated and Conditioned: 23.5641
-Epoch: 293, Loss: 0.1288
-MSE Loss Between Generated and Conditioned: 23.7085
-Epoch: 294, Loss: 0.1311
-MSE Loss Between Generated and Conditioned: 20.7236
-Epoch: 295, Loss: 0.1263
-MSE Loss Between Generated and Conditioned: 19.2723
-Epoch: 296, Loss: 0.1393
-MSE Loss Between Generated and Conditioned: 18.4875
-Epoch: 297, Loss: 0.1310
-MSE Loss Between Generated and Conditioned: 18.8985
-Epoch: 298, Loss: 0.1369
-MSE Loss Between Generated and Conditioned: 23.4137
-Epoch: 299, Loss: 0.1284
-/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/latent_diffusion_model_conditional_attn/latent_model_main.py:68: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+MSE Loss Between Generated and Conditioned: 18.2367
+Epoch: 171, Loss: 0.1235
+MSE Loss Between Generated and Conditioned: 23.7676
+Epoch: 172, Loss: 0.1327
+MSE Loss Between Generated and Conditioned: 20.7738
+Epoch: 173, Loss: 0.1293
+MSE Loss Between Generated and Conditioned: 23.1805
+Epoch: 174, Loss: 0.1260
+MSE Loss Between Generated and Conditioned: 26.3397
+Epoch: 175, Loss: 0.1266
+MSE Loss Between Generated and Conditioned: 15.6205
+Epoch: 176, Loss: 0.1267
+MSE Loss Between Generated and Conditioned: 17.9804
+Epoch: 177, Loss: 0.1392
+MSE Loss Between Generated and Conditioned: 22.9732
+Epoch: 178, Loss: 0.1341
+MSE Loss Between Generated and Conditioned: 22.0910
+Epoch: 179, Loss: 0.1322
+MSE Loss Between Generated and Conditioned: 23.5952
+Epoch: 180, Loss: 0.1316
+MSE Loss Between Generated and Conditioned: 19.5999
+Epoch: 181, Loss: 0.1238
+MSE Loss Between Generated and Conditioned: 29.1535
+Epoch: 182, Loss: 0.1298
+MSE Loss Between Generated and Conditioned: 43.3184
+Epoch: 183, Loss: 0.1230
+MSE Loss Between Generated and Conditioned: 24.1645
+Epoch: 184, Loss: 0.1300
+MSE Loss Between Generated and Conditioned: 23.1855
+Epoch: 185, Loss: 0.1274
+MSE Loss Between Generated and Conditioned: 18.6238
+Epoch: 186, Loss: 0.1326
+MSE Loss Between Generated and Conditioned: 16.4402
+Epoch: 187, Loss: 0.1276
+MSE Loss Between Generated and Conditioned: 23.7684
+Epoch: 188, Loss: 0.1291
+MSE Loss Between Generated and Conditioned: 26.5440
+Epoch: 189, Loss: 0.1253
+MSE Loss Between Generated and Conditioned: 23.0172
+Epoch: 190, Loss: 0.1287
+MSE Loss Between Generated and Conditioned: 18.3092
+Epoch: 191, Loss: 0.1266
+MSE Loss Between Generated and Conditioned: 23.0098
+Epoch: 192, Loss: 0.1302
+MSE Loss Between Generated and Conditioned: 20.2820
+Epoch: 193, Loss: 0.1302
+MSE Loss Between Generated and Conditioned: 20.1511
+Epoch: 194, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 15.1614
+Epoch: 195, Loss: 0.1288
+MSE Loss Between Generated and Conditioned: 21.1102
+Epoch: 196, Loss: 0.1237
+MSE Loss Between Generated and Conditioned: 19.2168
+Epoch: 197, Loss: 0.1383
+MSE Loss Between Generated and Conditioned: 17.6005
+Epoch: 198, Loss: 0.1257
+MSE Loss Between Generated and Conditioned: 25.1583
+Epoch: 199, Loss: 0.1272
+MSE Loss Between Generated and Conditioned: 21.3246
+Epoch: 200, Loss: 0.1276
+MSE Loss Between Generated and Conditioned: 19.7411
+Epoch: 201, Loss: 0.1275
+MSE Loss Between Generated and Conditioned: 22.1210
+Epoch: 202, Loss: 0.1307
+MSE Loss Between Generated and Conditioned: 28.0226
+Epoch: 203, Loss: 0.1335
+MSE Loss Between Generated and Conditioned: 18.7849
+Epoch: 204, Loss: 0.1217
+MSE Loss Between Generated and Conditioned: 18.8102
+Epoch: 205, Loss: 0.1258
+MSE Loss Between Generated and Conditioned: 18.0412
+Epoch: 206, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 18.0217
+Epoch: 207, Loss: 0.1340
+MSE Loss Between Generated and Conditioned: 24.1737
+Epoch: 208, Loss: 0.1411
+MSE Loss Between Generated and Conditioned: 24.6178
+Epoch: 209, Loss: 0.1239
+MSE Loss Between Generated and Conditioned: 29.0232
+Epoch: 210, Loss: 0.1335
+MSE Loss Between Generated and Conditioned: 18.6168
+Epoch: 211, Loss: 0.1304
+MSE Loss Between Generated and Conditioned: 26.8739
+Epoch: 212, Loss: 0.1381
+MSE Loss Between Generated and Conditioned: 26.0878
+Epoch: 213, Loss: 0.1255
+MSE Loss Between Generated and Conditioned: 34.3270
+Epoch: 214, Loss: 0.1336
+MSE Loss Between Generated and Conditioned: 26.2822
+Epoch: 215, Loss: 0.1294
+MSE Loss Between Generated and Conditioned: 22.7870
+Epoch: 216, Loss: 0.1360
+MSE Loss Between Generated and Conditioned: 27.5954
+Epoch: 217, Loss: 0.1328
+MSE Loss Between Generated and Conditioned: 14.1608
+Epoch: 218, Loss: 0.1279
+MSE Loss Between Generated and Conditioned: 15.9531
+Epoch: 219, Loss: 0.1288
+MSE Loss Between Generated and Conditioned: 22.4960
+Epoch: 220, Loss: 0.1259
+MSE Loss Between Generated and Conditioned: 18.4408
+Epoch: 221, Loss: 0.1257
+MSE Loss Between Generated and Conditioned: 18.5579
+Epoch: 222, Loss: 0.1294
+MSE Loss Between Generated and Conditioned: 16.4296
+Epoch: 223, Loss: 0.1331
+MSE Loss Between Generated and Conditioned: 23.0117
+Epoch: 224, Loss: 0.1266
+MSE Loss Between Generated and Conditioned: 16.0751
+Epoch: 225, Loss: 0.1335
+MSE Loss Between Generated and Conditioned: 17.4097
+Epoch: 226, Loss: 0.1283
+MSE Loss Between Generated and Conditioned: 18.7126
+Epoch: 227, Loss: 0.1274
+MSE Loss Between Generated and Conditioned: 17.9463
+Epoch: 228, Loss: 0.1285
+MSE Loss Between Generated and Conditioned: 22.0302
+Epoch: 229, Loss: 0.1304
+MSE Loss Between Generated and Conditioned: 16.7575
+Epoch: 230, Loss: 0.1262
+MSE Loss Between Generated and Conditioned: 19.7786
+Epoch: 231, Loss: 0.1347
+MSE Loss Between Generated and Conditioned: 12.4783
+Epoch: 232, Loss: 0.1257
+MSE Loss Between Generated and Conditioned: 18.2093
+Epoch: 233, Loss: 0.1257
+MSE Loss Between Generated and Conditioned: 9.9330
+Epoch: 234, Loss: 0.1250
+MSE Loss Between Generated and Conditioned: 26.8981
+Epoch: 235, Loss: 0.1377
+MSE Loss Between Generated and Conditioned: 16.8840
+Epoch: 236, Loss: 0.1245
+MSE Loss Between Generated and Conditioned: 23.4470
+Epoch: 237, Loss: 0.1314
+MSE Loss Between Generated and Conditioned: 24.0177
+Epoch: 238, Loss: 0.1285
+MSE Loss Between Generated and Conditioned: 19.4771
+Epoch: 239, Loss: 0.1308
+MSE Loss Between Generated and Conditioned: 21.4927
+Epoch: 240, Loss: 0.1267
+MSE Loss Between Generated and Conditioned: 24.0923
+Epoch: 241, Loss: 0.1287
+MSE Loss Between Generated and Conditioned: 16.1398
+Epoch: 242, Loss: 0.1303
+MSE Loss Between Generated and Conditioned: 22.2498
+Epoch: 243, Loss: 0.1277
+MSE Loss Between Generated and Conditioned: 23.2150
+Epoch: 244, Loss: 0.1359
+MSE Loss Between Generated and Conditioned: 23.8577
+Epoch: 245, Loss: 0.1225
+MSE Loss Between Generated and Conditioned: 21.1410
+Epoch: 246, Loss: 0.1284
+MSE Loss Between Generated and Conditioned: 22.4497
+Epoch: 247, Loss: 0.1339
+MSE Loss Between Generated and Conditioned: 19.2617
+Epoch: 248, Loss: 0.1312
+MSE Loss Between Generated and Conditioned: 12.9209
+Epoch: 249, Loss: 0.1309
+MSE Loss Between Generated and Conditioned: 16.0850
+Epoch: 250, Loss: 0.1273
+MSE Loss Between Generated and Conditioned: 21.3812
+Epoch: 251, Loss: 0.1258
+MSE Loss Between Generated and Conditioned: 25.1309
+Epoch: 252, Loss: 0.1312
+MSE Loss Between Generated and Conditioned: 20.7634
+Epoch: 253, Loss: 0.1298
+MSE Loss Between Generated and Conditioned: 24.4115
+Epoch: 254, Loss: 0.1268
+MSE Loss Between Generated and Conditioned: 30.1862
+Epoch: 255, Loss: 0.1291
+MSE Loss Between Generated and Conditioned: 23.3698
+Epoch: 256, Loss: 0.1256
+MSE Loss Between Generated and Conditioned: 24.0355
+Epoch: 257, Loss: 0.1276
+MSE Loss Between Generated and Conditioned: 22.7827
+Epoch: 258, Loss: 0.1279
+MSE Loss Between Generated and Conditioned: 18.3088
+Epoch: 259, Loss: 0.1290
+MSE Loss Between Generated and Conditioned: 23.1212
+Epoch: 260, Loss: 0.1309
+MSE Loss Between Generated and Conditioned: 15.4620
+Epoch: 261, Loss: 0.1361
+MSE Loss Between Generated and Conditioned: 15.1740
+Epoch: 262, Loss: 0.1269
+MSE Loss Between Generated and Conditioned: 18.8044
+Epoch: 263, Loss: 0.1242
+MSE Loss Between Generated and Conditioned: 25.9704
+Epoch: 264, Loss: 0.1359
+MSE Loss Between Generated and Conditioned: 19.8546
+Epoch: 265, Loss: 0.1276
+MSE Loss Between Generated and Conditioned: 18.0445
+Epoch: 266, Loss: 0.1299
+MSE Loss Between Generated and Conditioned: 22.6684
+Epoch: 267, Loss: 0.1335
+MSE Loss Between Generated and Conditioned: 22.8376
+Epoch: 268, Loss: 0.1297
+MSE Loss Between Generated and Conditioned: 19.4360
+Epoch: 269, Loss: 0.1284
+MSE Loss Between Generated and Conditioned: 20.6812
+Epoch: 270, Loss: 0.1322
+MSE Loss Between Generated and Conditioned: 19.2497
+Epoch: 271, Loss: 0.1332
+MSE Loss Between Generated and Conditioned: 23.2635
+Epoch: 272, Loss: 0.1242
+MSE Loss Between Generated and Conditioned: 21.6060
+Epoch: 273, Loss: 0.1291
+MSE Loss Between Generated and Conditioned: 21.3210
+Epoch: 274, Loss: 0.1256
+MSE Loss Between Generated and Conditioned: 25.8301
+Epoch: 275, Loss: 0.1279
+MSE Loss Between Generated and Conditioned: 26.4906
+Epoch: 276, Loss: 0.1299
+MSE Loss Between Generated and Conditioned: 18.4299
+Epoch: 277, Loss: 0.1265
+MSE Loss Between Generated and Conditioned: 13.7730
+Epoch: 278, Loss: 0.1325
+MSE Loss Between Generated and Conditioned: 19.5422
+Epoch: 279, Loss: 0.1307
+MSE Loss Between Generated and Conditioned: 21.1152
+Epoch: 280, Loss: 0.1274
+MSE Loss Between Generated and Conditioned: 20.8702
+Epoch: 281, Loss: 0.1342
+MSE Loss Between Generated and Conditioned: 25.6876
+Epoch: 282, Loss: 0.1363
+MSE Loss Between Generated and Conditioned: 6.1658
+Epoch: 283, Loss: 0.1339
+MSE Loss Between Generated and Conditioned: 23.3830
+Epoch: 284, Loss: 0.1334
+MSE Loss Between Generated and Conditioned: 17.9362
+Epoch: 285, Loss: 0.1247
+MSE Loss Between Generated and Conditioned: 20.1773
+Epoch: 286, Loss: 0.1261
+MSE Loss Between Generated and Conditioned: 20.1670
+Epoch: 287, Loss: 0.1294
+MSE Loss Between Generated and Conditioned: 20.5754
+Epoch: 288, Loss: 0.1319
+MSE Loss Between Generated and Conditioned: 22.6551
+Epoch: 289, Loss: 0.1316
+MSE Loss Between Generated and Conditioned: 14.0263
+Epoch: 290, Loss: 0.1243
+MSE Loss Between Generated and Conditioned: 23.1203
+Epoch: 291, Loss: 0.1305
+MSE Loss Between Generated and Conditioned: 21.4327
+Epoch: 292, Loss: 0.1239
+MSE Loss Between Generated and Conditioned: 13.9347
+Epoch: 293, Loss: 0.1273
+MSE Loss Between Generated and Conditioned: 16.4467
+Epoch: 294, Loss: 0.1314
+MSE Loss Between Generated and Conditioned: 17.5298
+Epoch: 295, Loss: 0.1301
+MSE Loss Between Generated and Conditioned: 19.7723
+Epoch: 296, Loss: 0.1299
+MSE Loss Between Generated and Conditioned: 24.4500
+Epoch: 297, Loss: 0.1323
+MSE Loss Between Generated and Conditioned: 19.4029
+Epoch: 298, Loss: 0.1296
+MSE Loss Between Generated and Conditioned: 19.2550
+Epoch: 299, Loss: 0.1317
+/vol/bitbucket/nb324/masters_project/msc_repo/part_4_improved_decoder/latent_diffusion_model_conditional_attn/latent_model_main.py:111: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
   plt.legend()
 Traceback (most recent call last):
-  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_first_idea/main.py", line 120, in <module>
+  File "/vol/bitbucket/nb324/masters_project/msc_repo/part_4_improved_decoder/simclr_decoder_larger_specific_decoder_first_idea/main.py", line 147, in <module>
     main()
-  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/simclr_decoder_larger_specific_decoder_first_idea/main.py", line 104, in main
+  File "/vol/bitbucket/nb324/masters_project/msc_repo/part_4_improved_decoder/simclr_decoder_larger_specific_decoder_first_idea/main.py", line 132, in main
     downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model.encoder, model_decoder=model_decoder.decoder)
-  File "/homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/latent_diffusion_model_conditional_attn/latent_model_main.py", line 73, in downstream_task
+  File "/vol/bitbucket/nb324/masters_project/msc_repo/part_4_improved_decoder/latent_diffusion_model_conditional_attn/latent_model_main.py", line 116, in downstream_task
     plt.plot(epochs, train_losses)
   File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/matplotlib/pyplot.py", line 3827, in plot
     return gca().plot(

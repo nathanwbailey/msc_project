@@ -9,7 +9,7 @@ class DDPM(nn.Module):
         self, eps_model, betas, n_T, loss_fn, device, *args, **kwargs
     ):
         super().__init__(*args, **kwargs)
-        self.eps_model = eps_model.to(self.device)
+        self.eps_model = eps_model.to(device)
         for k, v in ddpm_schedules(betas[0], betas[1], n_T).items():
             v = v.to(device)
             self.register_buffer(k, v)

@@ -116,20 +116,20 @@ def main():
     # print('Starting Downstream Task')
     # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_s_5_cw_5.pth', weight_decay=1e-5)
 
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model_decoder.model.encoder,
-        latent_dim=1000,
-        context_window=5,
-        target_length=1,
-        stride=10,
-        model_save_path="downstream_model_no_decoder_s_10_cw_5_2.pth",
-        weight_decay=1e-5,
-    )
+    # downstream_task_lstm(
+    #     num_epochs=100,
+    #     data=test_data,
+    #     encoder_model=model_decoder.model.encoder,
+    #     latent_dim=1000,
+    #     context_window=5,
+    #     target_length=1,
+    #     stride=10,
+    #     model_save_path="downstream_model_no_decoder_s_10_cw_5_2.pth",
+    #     weight_decay=1e-5,
+    # )
 
-    # print('Starting Latent Downstream Task')
-    # downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model.encoder, model_decoder=model_decoder.decoder)
+    print('Starting Latent Downstream Task')
+    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model.encoder, model_decoder=model_decoder.decoder)
 
     # for param in model_decoder.model.parameters():
     #     param.requires_grad = False

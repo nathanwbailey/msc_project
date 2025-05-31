@@ -3,7 +3,7 @@ import re
 import matplotlib.pyplot as plt
 
 # Path to your log file
-log_file = "out_latent_model_ae.log"
+log_file = "out_latent_model.log"
 
 # Containers for the values
 losses = []
