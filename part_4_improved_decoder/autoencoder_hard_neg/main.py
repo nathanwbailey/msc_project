@@ -103,7 +103,7 @@ def main():
 
     print("Training Decoder")
 
-    train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
+    # train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
 
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
     
@@ -121,10 +121,9 @@ def main():
         encoder_model=model_decoder.model.encoder,
         latent_dim=1000,
         context_window=30,
-        target_length=100,
+        target_length=1,
         stride=1,
-        batch_size=16,
-        model_save_path="downstream_model_no_decoder_weight_decay_autoencoder_cw_30_t_100.pth",
+        model_save_path="downstream_model_no_decoder_weight_decay_autoencoder_cw_30_2.pth",
         weight_decay=1e-5,
     )
 
