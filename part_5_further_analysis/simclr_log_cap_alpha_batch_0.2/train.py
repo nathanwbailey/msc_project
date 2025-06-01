@@ -40,7 +40,9 @@ def train_model(
 
             loss_1 = loss_fn(Z, Z_prime)
             loss_2 = loss_fn(Z, Z_prime_2)
-            cyc_loss = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+            cyc_loss = cycle_loss(
+                Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+            )
             loss_batch = loss_1 + loss_2 + cyc_loss
 
             loss_batch.backward()
@@ -68,7 +70,9 @@ def train_model(
 
                 loss_1 = loss_fn(Z, Z_prime)
                 loss_2 = loss_fn(Z, Z_prime_2)
-                cyc_loss = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+                cyc_loss = cycle_loss(
+                    Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+                )
                 loss_batch = loss_1 + loss_2 + cyc_loss
 
                 con_valid_loss_1.append(loss_1.item())

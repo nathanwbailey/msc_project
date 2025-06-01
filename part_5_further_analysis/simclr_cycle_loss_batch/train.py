@@ -60,7 +60,6 @@ def train_model(
             Z_prime, Z_prime_X = model(X_prime)
             Z_prime_2, Z_prime_2_X = model(X_prime_2)
 
-
             loss_1 = loss_fn(Z, Z_prime)
             loss_2 = loss_fn(Z, Z_prime_2)
             loss_cycle = cycle_loss(

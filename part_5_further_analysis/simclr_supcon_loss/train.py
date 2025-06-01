@@ -44,16 +44,21 @@ def train_model(
 
             N = X.shape[0]
             embeddings = torch.cat((Z, Z_prime, Z_prime_2), dim=0)
-            labels = torch.cat([
-                torch.arange(N),
-                torch.arange(N).repeat_interleave(S),
-                torch.arange(N).repeat_interleave(S)
-            ], dim=0)
-
+            labels = torch.cat(
+                [
+                    torch.arange(N),
+                    torch.arange(N).repeat_interleave(S),
+                    torch.arange(N).repeat_interleave(S),
+                ],
+                dim=0,
+            )
 
             cyc_loss = torch.tensor(0.0, device=X.device)
             for i in range(S):
-                cyc_loss += cycle_loss(Z_prime_cyc[:, i] - 2 * Z + Z_prime_2_cyc[:, i], torch.zeros_like(Z))
+                cyc_loss += cycle_loss(
+                    Z_prime_cyc[:, i] - 2 * Z + Z_prime_2_cyc[:, i],
+                    torch.zeros_like(Z),
+                )
             cyc_loss = cyc_loss / S
 
             loss = loss_fn(embeddings, labels)
@@ -86,16 +91,21 @@ def train_model(
 
                 N = X.shape[0]
                 embeddings = torch.cat((Z, Z_prime, Z_prime_2), dim=0)
-                labels = torch.cat([
-                    torch.arange(N),
-                    torch.arange(N).repeat_interleave(S),
-                    torch.arange(N).repeat_interleave(S)
-                ], dim=0)
-
+                labels = torch.cat(
+                    [
+                        torch.arange(N),
+                        torch.arange(N).repeat_interleave(S),
+                        torch.arange(N).repeat_interleave(S),
+                    ],
+                    dim=0,
+                )
 
                 cyc_loss = torch.tensor(0.0, device=X.device)
                 for i in range(S):
-                    cyc_loss += cycle_loss(Z_prime_cyc[:, i] - 2 * Z + Z_prime_2_cyc[:, i], torch.zeros_like(Z))
+                    cyc_loss += cycle_loss(
+                        Z_prime_cyc[:, i] - 2 * Z + Z_prime_2_cyc[:, i],
+                        torch.zeros_like(Z),
+                    )
                 cyc_loss = cyc_loss / S
 
                 loss = loss_fn(embeddings, labels)

@@ -1,13 +1,18 @@
 import os
-import sys
-import torch
 import random
+import sys
+
 import numpy as np
+import torch
 from model_decoder import SIMCLR, SIMCLRDecoder
 from train import train_model
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from downstream_model_lstm_no_decoder.downstream_task_main import downstream_task as downstream_task_lstm
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+from downstream_model_lstm_no_decoder.downstream_task_main import \
+    downstream_task as downstream_task_lstm
+
 
 def set_seed(seed):
     random.seed(seed)
@@ -15,6 +20,7 @@ def set_seed(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
+
 
 def main():
     # --- Data Loading and Preprocessing ---
@@ -34,7 +40,9 @@ def main():
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
 
-    print(f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}")
+    print(
+        f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}"
+    )
 
     DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -43,15 +51,24 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {"context_window": 5, "stride": 5, "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth"},
-        {"context_window": 5, "stride": 10, "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth"},
-
+        {
+            "context_window": 5,
+            "stride": 5,
+            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth",
+        },
+        {
+            "context_window": 5,
+            "stride": 10,
+            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth",
+        },
     ]
     seeds = [0, 42, 123]
     for seed in seeds:
         set_seed(seed)
         for cfg in downstream_configs:
-            print(f"Running context window: {cfg["context_window"]} with stride: {cfg["stride"]} with seed: {seed}")
+            print(
+                f"Running context window: {cfg["context_window"]} with stride: {cfg["stride"]} with seed: {seed}"
+            )
             downstream_task_lstm(
                 num_epochs=100,
                 data=test_data,

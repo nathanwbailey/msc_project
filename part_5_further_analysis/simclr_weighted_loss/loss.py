@@ -1,6 +1,7 @@
+import torch
 from pytorch_metric_learning.losses import NTXentLoss
 from pytorch_metric_learning.utils import common_functions as c_f
-import torch
+
 
 class WeightedLossWrapper(torch.nn.Module):
     def __init__(self, loss_fn):
@@ -15,10 +16,11 @@ class WeightedLossWrapper(torch.nn.Module):
         self.loss_fn.weights = self.weights
         return self.loss_fn(embeddings, labels)
 
+
 class WeightedNTXentLoss(NTXentLoss):
     def __init__(self, temperature=0.07, **kwargs):
         super().__init__(temperature=temperature, **kwargs)
-        self.weights=None
+        self.weights = None
 
     def _compute_loss(self, pos_pairs, neg_pairs, indices_tuple):
         a1, p, a2, _ = indices_tuple
@@ -32,12 +34,13 @@ class WeightedNTXentLoss(NTXentLoss):
 
             pos_pairs = pos_pairs.unsqueeze(1) / self.temperature
             if self.weights is not None:
-                neg_pairs = self.weights*(neg_pairs / self.temperature)
+                neg_pairs = self.weights * (neg_pairs / self.temperature)
             else:
-                neg_pairs = (neg_pairs / self.temperature)
+                neg_pairs = neg_pairs / self.temperature
 
-
-            n_per_p = c_f.to_dtype(a2.unsqueeze(0) == a1.unsqueeze(1), dtype=dtype)
+            n_per_p = c_f.to_dtype(
+                a2.unsqueeze(0) == a1.unsqueeze(1), dtype=dtype
+            )
             neg_pairs = neg_pairs * n_per_p
             neg_pairs[n_per_p == 0] = c_f.neg_inf(dtype)
 
@@ -45,8 +48,12 @@ class WeightedNTXentLoss(NTXentLoss):
                 pos_pairs, torch.max(neg_pairs, dim=1, keepdim=True)[0]
             ).detach()
             numerator = torch.exp(pos_pairs - max_val).squeeze(1)
-            denominator = torch.sum(torch.exp(neg_pairs - max_val), dim=1) + numerator
-            log_exp = torch.log((numerator / denominator) + c_f.small_val(dtype))
+            denominator = (
+                torch.sum(torch.exp(neg_pairs - max_val), dim=1) + numerator
+            )
+            log_exp = torch.log(
+                (numerator / denominator) + c_f.small_val(dtype)
+            )
             return {
                 "loss": {
                     "losses": -log_exp,

@@ -1,7 +1,9 @@
+import gc
+
 import numpy as np
 import torch
 from torch.utils.data import DataLoader
-import gc
+
 
 def train_model(
     model,
@@ -32,9 +34,13 @@ def train_model(
             gc.collect()
             torch.cuda.empty_cache()
         if epoch % 2 == 0:
-            trainloader = DataLoader(train_dataset, shuffle=False, **dataloader_args)
+            trainloader = DataLoader(
+                train_dataset, shuffle=False, **dataloader_args
+            )
         else:
-            trainloader = DataLoader(train_dataset, shuffle=True, **dataloader_args)
+            trainloader = DataLoader(
+                train_dataset, shuffle=True, **dataloader_args
+            )
         for data in trainloader:
             optimizer.zero_grad()
             X = data[0].to(device)
@@ -51,7 +57,9 @@ def train_model(
 
             loss_1 = loss_fn(Z, Z_prime)
             loss_2 = loss_fn(Z, Z_prime_2)
-            cyc_loss = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+            cyc_loss = cycle_loss(
+                Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+            )
             loss_batch = loss_1 + loss_2 + cyc_loss
 
             loss_batch.backward()
@@ -79,7 +87,9 @@ def train_model(
 
                 loss_1 = loss_fn(Z, Z_prime)
                 loss_2 = loss_fn(Z, Z_prime_2)
-                cyc_loss = cycle_loss(Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z))
+                cyc_loss = cycle_loss(
+                    Z_prime - 2 * Z + Z_prime_2, torch.zeros_like(Z)
+                )
                 loss_batch = loss_1 + loss_2 + cyc_loss
 
                 con_valid_loss_1.append(loss_1.item())

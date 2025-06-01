@@ -69,12 +69,8 @@ class WeatherBenchDataset(Dataset):
         X, X_masked = self._create_sample(idx)
         hard_idx = self._hard_neg_idx(idx)
         soft_idx = self._soft_neg_idx(idx)
-        X_soft, X_masked_soft = (
-            self._create_sample(soft_idx)
-        )
-        X_hard, X_masked_hard = (
-            self._create_sample(hard_idx)
-        )
+        X_soft, X_masked_soft = self._create_sample(soft_idx)
+        X_hard, X_masked_hard = self._create_sample(hard_idx)
         return (
             torch.stack([X, X_soft, X_hard]),
             torch.stack([X_masked, X_masked_soft, X_masked_hard]),

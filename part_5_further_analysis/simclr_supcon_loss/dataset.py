@@ -1,18 +1,16 @@
-from torch.utils.data import Dataset
-import torch
 import numpy as np
-from augment_functions import (
-    augment_sample,
-    augment_sample_random_mask,
-    resize_encoder,
-    random_mask,
-)
+import torch
+from augment_functions import (augment_sample, augment_sample_random_mask,
+                               random_mask, resize_encoder)
+from torch.utils.data import Dataset
+
 
 class WeatherBenchDataset(Dataset):
     """
     PyTorch Dataset for WeatherBench data with temporal augmentation and masking.
     Provides positive and negative samples for contrastive learning.
     """
+
     def __init__(
         self,
         data,
@@ -28,7 +26,6 @@ class WeatherBenchDataset(Dataset):
         self.window = window
         self.gap = gap
         self.delta_t = delta_t
-
 
     def __len__(self):
         # Ensures indices are valid for augmentation
@@ -53,9 +50,8 @@ class WeatherBenchDataset(Dataset):
         """
         Returns a soft negative index, far from t by at least 'gap'.
         """
-        candidates = (
-            list(range(0, t - self.gap))
-            + list(range(t + self.gap, len(self.data) - 2 * self.delta_t))
+        candidates = list(range(0, t - self.gap)) + list(
+            range(t + self.gap, len(self.data) - 2 * self.delta_t)
         )
         return np.random.choice(candidates)
 
@@ -65,22 +61,38 @@ class WeatherBenchDataset(Dataset):
         """
         idx = idx + self.delta_t
         X = self.data[idx]
-        X_prime_seq = self.data[idx+1:idx+self.delta_t+1]
-        X_prime_2_seq = self.data[idx-self.delta_t:idx]
+        X_prime_seq = self.data[idx + 1 : idx + self.delta_t + 1]
+        X_prime_2_seq = self.data[idx - self.delta_t : idx]
 
         X_enc = resize_encoder(X)
         X_masked = random_mask(
-            X_enc, mask_prob_low=self.mask_prob_low, mask_prob_high=self.mask_prob_high
+            X_enc,
+            mask_prob_low=self.mask_prob_low,
+            mask_prob_high=self.mask_prob_high,
         )
         x = augment_sample(X)
-        
-        x_prime = torch.stack([augment_sample_random_mask(
-            X_prime, mask_prob_low=self.mask_prob_low, mask_prob_high=self.mask_prob_high
-        ) for X_prime in X_prime_seq])
 
-        x_prime_2 = torch.stack([augment_sample_random_mask(
-            X_prime_2, mask_prob_low=self.mask_prob_low, mask_prob_high=self.mask_prob_high
-        ) for X_prime_2 in X_prime_2_seq])
+        x_prime = torch.stack(
+            [
+                augment_sample_random_mask(
+                    X_prime,
+                    mask_prob_low=self.mask_prob_low,
+                    mask_prob_high=self.mask_prob_high,
+                )
+                for X_prime in X_prime_seq
+            ]
+        )
+
+        x_prime_2 = torch.stack(
+            [
+                augment_sample_random_mask(
+                    X_prime_2,
+                    mask_prob_low=self.mask_prob_low,
+                    mask_prob_high=self.mask_prob_high,
+                )
+                for X_prime_2 in X_prime_2_seq
+            ]
+        )
 
         return (
             x,
@@ -96,13 +108,31 @@ class WeatherBenchDataset(Dataset):
         """
         Returns a tuple of stacked tensors for anchor, soft negative, and hard negative samples.
         """
-        x, x_prime, x_prime_2, X, X_masked, X_prime, X_prime_2 = self._create_sample(idx)
+        x, x_prime, x_prime_2, X, X_masked, X_prime, X_prime_2 = (
+            self._create_sample(idx)
+        )
 
         hard_idx = self._hard_neg_idx(idx)
         soft_idx = self._soft_neg_idx(idx)
 
-        x_soft, x_prime_soft, x_prime_2_soft, X_soft, X_masked_soft, X_prime_soft, X_prime_2_soft = self._create_sample(soft_idx)
-        x_hard, x_prime_hard, x_prime_2_hard, X_hard, X_masked_hard, X_prime_hard, X_prime_2_hard = self._create_sample(hard_idx)
+        (
+            x_soft,
+            x_prime_soft,
+            x_prime_2_soft,
+            X_soft,
+            X_masked_soft,
+            X_prime_soft,
+            X_prime_2_soft,
+        ) = self._create_sample(soft_idx)
+        (
+            x_hard,
+            x_prime_hard,
+            x_prime_2_hard,
+            X_hard,
+            X_masked_hard,
+            X_prime_hard,
+            X_prime_2_hard,
+        ) = self._create_sample(hard_idx)
 
         return (
             torch.stack([x, x_soft, x_hard]),

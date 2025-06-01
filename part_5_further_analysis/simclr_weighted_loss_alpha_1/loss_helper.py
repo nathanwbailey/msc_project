@@ -1,5 +1,6 @@
 import torch
 
+
 def get_loss_weights(idx, batch_size, alpha_decay=1):
     """
     Computes loss weights for contrastive learning based on index differences.
@@ -20,6 +21,11 @@ def get_loss_weights(idx, batch_size, alpha_decay=1):
     neg_mask = ~exclude_mask
 
     # Compute and normalize weights
-    neg_diff = diff[neg_mask].view(2 * batch_size, 2 * batch_size - 2).reshape(-1).float()
-    weights = torch.exp(-alpha_decay * (1/neg_diff).float())
+    neg_diff = (
+        diff[neg_mask]
+        .view(2 * batch_size, 2 * batch_size - 2)
+        .reshape(-1)
+        .float()
+    )
+    weights = torch.exp(-alpha_decay * (1 / neg_diff).float())
     return weights

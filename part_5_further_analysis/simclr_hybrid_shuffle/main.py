@@ -1,16 +1,19 @@
 import os
 import sys
-import torch
-from torch.utils.data import DataLoader
-from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 
+import torch
 from dataset import WeatherBenchDataset
 from model_decoder import SIMCLR, SIMCLRDecoder
+from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
+from torch.utils.data import DataLoader
 from train import train_model
 from train_decoder import train_decoder, train_encoder_decoder
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from downstream_model_lstm_no_decoder.downstream_task_main import downstream_task as downstream_task_lstm
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+from downstream_model_lstm_no_decoder.downstream_task_main import \
+    downstream_task as downstream_task_lstm
 
 
 def main():
@@ -31,11 +34,17 @@ def main():
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
 
-    print(f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}")
+    print(
+        f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}"
+    )
 
     # --- Dataset and DataLoader ---
-    train_dataset = WeatherBenchDataset(data=train_data, mask_prob_low=0.5, mask_prob_high=0.9)
-    valid_dataset = WeatherBenchDataset(data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9)
+    train_dataset = WeatherBenchDataset(
+        data=train_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
+    valid_dataset = WeatherBenchDataset(
+        data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
 
     loader_args = dict(
         batch_size=BATCH_SIZE,
@@ -63,26 +72,41 @@ def main():
     # --- Model Initialization ---
     model = SIMCLR(in_channels=C, latent_dim=latent_dim).to(DEVICE)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     # --- Pretrain Encoder (SimCLR) ---
     train_model(
-        model, 100, train_dataset, loader_args, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+        model,
+        100,
+        train_dataset,
+        loader_args,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
     )
-    model = torch.load('simclr.pth', weights_only=False)
+    model = torch.load("simclr.pth", weights_only=False)
 
     # --- Fine-tune Encoder + Decoder ---
     model_decoder = SIMCLRDecoder(in_channels=C, model=model).to(DEVICE)
-    optimizer = torch.optim.Adam(model_decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     print("Fine Tuning Both")
     train_encoder_decoder(
         model=model_decoder,
         num_epochs=num_epochs,
         train_dataset=train_dataset,
-        dataloader_args = loader_args,
+        dataloader_args=loader_args,
         testloader=validloader,
         optimizer=optimizer,
         scheduler=scheduler,
@@ -97,12 +121,36 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
-        {"context_window": 5, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_5.pth"},
-        {"context_window": 5, "stride": 5, "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth"},
-        {"context_window": 5, "stride": 10, "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth"},
-        {"context_window": 3, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_3.pth"},
-        {"context_window": 1, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_1.pth"},
+        {
+            "context_window": 30,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay.pth",
+        },
+        {
+            "context_window": 5,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay_cw_5.pth",
+        },
+        {
+            "context_window": 5,
+            "stride": 5,
+            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
+        },
+        {
+            "context_window": 5,
+            "stride": 10,
+            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
+        },
+        {
+            "context_window": 3,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay_cw_3.pth",
+        },
+        {
+            "context_window": 1,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay_cw_1.pth",
+        },
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(
@@ -122,8 +170,12 @@ def main():
         param.requires_grad = False
     model_decoder.model.eval()
 
-    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     print("Training Decoder")
     train_decoder(

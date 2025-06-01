@@ -1,12 +1,8 @@
 import numpy as np
 import torch
+from augment_functions import (augment_sample, augment_sample_random_mask,
+                               random_mask, resize_encoder)
 from torch.utils.data import Dataset
-from augment_functions import (
-    augment_sample,
-    augment_sample_random_mask,
-    random_mask,
-    resize_encoder,
-)
 
 
 class WeatherBenchDataset(Dataset):
@@ -61,7 +57,8 @@ class WeatherBenchDataset(Dataset):
                 t - (self.window + 4 * self.max_delta_t),
                 t + self.window + 4 * self.max_delta_t + 1,
             )
-            if i not in exclude_range and 0 <= i < len(self.data) - 4 * self.max_delta_t
+            if i not in exclude_range
+            and 0 <= i < len(self.data) - 4 * self.max_delta_t
         ]
         return np.random.choice(candidates)
 
@@ -78,19 +75,18 @@ class WeatherBenchDataset(Dataset):
         """
         Create augmented and masked samples for a given index.
         """
-        idx = idx + 2*self.max_delta_t
+        idx = idx + 2 * self.max_delta_t
         X = self.data[idx]
 
         augment_idx = np.random.choice(self.delta_ts, p=self.delta_weights)
         X_prime = self.data[idx + augment_idx]
         X_prime_2 = self.data[idx - augment_idx]
 
-
         X_delta = resize_encoder(self.data[idx + augment_idx])
         X_minus_delta = resize_encoder(self.data[idx - augment_idx])
 
         X_enc = resize_encoder(X)
-        
+
         X_masked = random_mask(
             X_enc,
             mask_prob_low=self.mask_prob_low,
@@ -109,7 +105,18 @@ class WeatherBenchDataset(Dataset):
             mask_prob_high=self.mask_prob_high,
         )
 
-        return x, x_prime, x_prime_2, X, X_masked, X_prime, X_prime_2, X_enc, X_delta, X_minus_delta
+        return (
+            x,
+            x_prime,
+            x_prime_2,
+            X,
+            X_masked,
+            X_prime,
+            X_prime_2,
+            X_enc,
+            X_delta,
+            X_minus_delta,
+        )
 
     def __getitem__(self, idx):
         """
@@ -118,24 +125,65 @@ class WeatherBenchDataset(Dataset):
                   with keys labeling anchor, soft negative, and hard negative.
         """
         # Anchor sample
-        x, x_prime, x_prime_2, X, X_masked, X_prime, X_prime_2, X_enc, X_delta, X_minus_delta = self._create_sample(idx)
+        (
+            x,
+            x_prime,
+            x_prime_2,
+            X,
+            X_masked,
+            X_prime,
+            X_prime_2,
+            X_enc,
+            X_delta,
+            X_minus_delta,
+        ) = self._create_sample(idx)
         # Negative indices
         hard_idx = self._hard_neg_idx(idx)
         soft_idx = self._soft_neg_idx(idx)
         # Soft negative sample
-        x_soft, x_prime_soft, x_prime_2_soft, X_soft, X_masked_soft, X_prime_soft, X_prime_2_soft, X_enc_soft, X_delta_soft, X_minus_delta_soft = self._create_sample(soft_idx)
+        (
+            x_soft,
+            x_prime_soft,
+            x_prime_2_soft,
+            X_soft,
+            X_masked_soft,
+            X_prime_soft,
+            X_prime_2_soft,
+            X_enc_soft,
+            X_delta_soft,
+            X_minus_delta_soft,
+        ) = self._create_sample(soft_idx)
         # Hard negative sample
-        x_hard, x_prime_hard, x_prime_2_hard, X_hard, X_masked_hard, X_prime_hard, X_prime_2_hard, X_enc_hard, X_delta_hard, X_minus_delta_hard = self._create_sample(hard_idx)
+        (
+            x_hard,
+            x_prime_hard,
+            x_prime_2_hard,
+            X_hard,
+            X_masked_hard,
+            X_prime_hard,
+            X_prime_2_hard,
+            X_enc_hard,
+            X_delta_hard,
+            X_minus_delta_hard,
+        ) = self._create_sample(hard_idx)
 
         return {
             "x_pos_1": torch.stack([x, x_soft, x_hard]),
             "x_pos_2": torch.stack([x_prime, x_prime_soft, x_prime_hard]),
-            "x_pos_3": torch.stack([x_prime_2, x_prime_2_soft, x_prime_2_hard]),
+            "x_pos_3": torch.stack(
+                [x_prime_2, x_prime_2_soft, x_prime_2_hard]
+            ),
             "X_orig": torch.stack([X, X_soft, X_hard]),
             "X_masked": torch.stack([X_masked, X_masked_soft, X_masked_hard]),
-            "X_masked_delta": torch.stack([X_prime, X_prime_soft, X_prime_hard]),
-            "X_masked_delta_2": torch.stack([X_prime_2, X_prime_2_soft, X_prime_2_hard]),
+            "X_masked_delta": torch.stack(
+                [X_prime, X_prime_soft, X_prime_hard]
+            ),
+            "X_masked_delta_2": torch.stack(
+                [X_prime_2, X_prime_2_soft, X_prime_2_hard]
+            ),
             "X_enc": torch.stack([X_enc, X_enc_soft, X_enc_hard]),
             "X_delta": torch.stack([X_delta, X_delta_soft, X_delta_hard]),
-            "X_minus_delta": torch.stack([X_minus_delta, X_minus_delta_soft, X_minus_delta_hard]),
+            "X_minus_delta": torch.stack(
+                [X_minus_delta, X_minus_delta_soft, X_minus_delta_hard]
+            ),
         }

@@ -128,8 +128,13 @@ def main():
     #     weight_decay=1e-5,
     # )
 
-    print('Starting Latent Downstream Task')
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model.encoder, model_decoder=model_decoder.decoder)
+    print("Starting Latent Downstream Task")
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model_decoder.model.encoder,
+        model_decoder=model_decoder.decoder,
+    )
 
     # for param in model_decoder.model.parameters():
     #     param.requires_grad = False

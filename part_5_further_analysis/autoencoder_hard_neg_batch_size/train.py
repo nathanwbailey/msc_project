@@ -1,10 +1,20 @@
+import numpy as np
 import torch
 from torch import nn
-import numpy as np
+
 
 def train_autoencoder(
-    model, num_epochs, trainloader, testloader, optimizer, scheduler, device,
-    loss_fn, model_save_path="det_autoencoder.pth", add_l1=False, l1_lambda=1e-6
+    model,
+    num_epochs,
+    trainloader,
+    testloader,
+    optimizer,
+    scheduler,
+    device,
+    loss_fn,
+    model_save_path="det_autoencoder.pth",
+    add_l1=False,
+    l1_lambda=1e-6,
 ):
     for epoch in range(num_epochs):
         train_loss = []
@@ -14,9 +24,9 @@ def train_autoencoder(
             X = data[0].to(device)
             x_input = data[1].to(device)
             B, T, C, H, W = x_input.shape
-            x_input = x_input.reshape(B*T, C, H, W)
+            x_input = x_input.reshape(B * T, C, H, W)
             B, T, C, H, W = X.shape
-            X = X.reshape(B*T, C, H, W)
+            X = X.reshape(B * T, C, H, W)
             recon_data_X = model(x_input)
             loss_batch = torch.tensor(0.0, device=X.device)
             B, C, H, W = X.shape
@@ -38,17 +48,17 @@ def train_autoencoder(
                 X = data[0].to(device)
                 x_input = data[1].to(device)
                 B, T, C, H, W = x_input.shape
-                x_input = x_input.reshape(B*T, C, H, W)
+                x_input = x_input.reshape(B * T, C, H, W)
                 B, T, C, H, W = X.shape
-                X = X.reshape(B*T, C, H, W)
+                X = X.reshape(B * T, C, H, W)
                 recon_data_X = model(x_input)
                 loss_batch = loss_fn(recon_data_X, X)
                 valid_loss.append(loss_batch.item())
 
-        lr = optimizer.param_groups[0]['lr']
+        lr = optimizer.param_groups[0]["lr"]
         print(
-            f'Epoch: {epoch}, Train Loss = {np.mean(train_loss):.2f}, '
-            f'Valid loss = {np.mean(valid_loss):.2f}, lr = {lr:.5f}'
+            f"Epoch: {epoch}, Train Loss = {np.mean(train_loss):.2f}, "
+            f"Valid loss = {np.mean(valid_loss):.2f}, lr = {lr:.5f}"
         )
         torch.save(model, model_save_path)
         scheduler.step(np.mean(valid_loss))

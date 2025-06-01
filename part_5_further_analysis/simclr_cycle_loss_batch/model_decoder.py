@@ -11,7 +11,9 @@ def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
-            gn = nn.GroupNorm(num_groups=num_channels, num_channels=num_channels)
+            gn = nn.GroupNorm(
+                num_groups=num_channels, num_channels=num_channels
+            )
             setattr(module, name, gn)
         else:
             replace_bn_with_gn(child)
@@ -21,6 +23,7 @@ class ResNet18Encoder(nn.Module):
     """
     Modified ResNet18 encoder with GroupNorm and custom input channels.
     """
+
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
@@ -55,6 +58,7 @@ class ResidualBlock(nn.Module):
     """
     Simple residual block with dropout and ReLU.
     """
+
     def __init__(self, channels):
         super().__init__()
         self.block = nn.Sequential(
@@ -74,6 +78,7 @@ class DecoderBlock(nn.Module):
     """
     Decoder block: upsampling via ConvTranspose2d + residual block.
     """
+
     def __init__(
         self,
         in_channels,
@@ -106,15 +111,26 @@ class Decoder(nn.Module):
     """
     Decoder network for upsampling latent representations.
     """
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.project_dim = latent_dim // 2
         self.decoder = nn.Sequential(
-            DecoderBlock(self.project_dim, self.project_dim // 2),   # 2x1 -> 4x2
-            DecoderBlock(self.project_dim // 2, self.project_dim // 4),   # 4x2 -> 8x4
-            DecoderBlock(self.project_dim // 4, self.project_dim // 8),   # 8x4 -> 16x8
-            DecoderBlock(self.project_dim // 8, self.project_dim // 16),  # 16x8 -> 32x16
-            DecoderBlock(self.project_dim // 16, self.project_dim // 32), # 32x16 -> 64x32
+            DecoderBlock(
+                self.project_dim, self.project_dim // 2
+            ),  # 2x1 -> 4x2
+            DecoderBlock(
+                self.project_dim // 2, self.project_dim // 4
+            ),  # 4x2 -> 8x4
+            DecoderBlock(
+                self.project_dim // 4, self.project_dim // 8
+            ),  # 8x4 -> 16x8
+            DecoderBlock(
+                self.project_dim // 8, self.project_dim // 16
+            ),  # 16x8 -> 32x16
+            DecoderBlock(
+                self.project_dim // 16, self.project_dim // 32
+            ),  # 32x16 -> 64x32
         )
         self.channel_layer = nn.Conv2d(
             in_channels=self.project_dim // 32,
@@ -134,6 +150,7 @@ class SIMCLR(nn.Module):
     """
     SimCLR encoder + projector.
     """
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.encoder = ResNet18Encoder(in_channels)
@@ -161,6 +178,7 @@ class SIMCLRDecoder(nn.Module):
     """
     SimCLR model with decoder for reconstruction.
     """
+
     def __init__(self, in_channels, model):
         super().__init__()
         self.model = model
