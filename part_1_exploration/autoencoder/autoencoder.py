@@ -3,39 +3,6 @@ import torchvision
 from torch import nn
 
 
-class EncoderBlock(nn.Module):
-    def __init__(self, in_channels, out_channels):
-        super().__init__()
-        self.block = nn.Sequential(
-            nn.Conv2d(
-                in_channels=in_channels,
-                out_channels=out_channels,
-                kernel_size=7,
-                padding=3,
-            ),
-            nn.BatchNorm2d(out_channels),
-            nn.LeakyReLU(),
-            nn.Conv2d(
-                in_channels=out_channels,
-                out_channels=out_channels,
-                kernel_size=7,
-                padding=3,
-            ),
-            nn.BatchNorm2d(out_channels),
-            nn.LeakyReLU(),
-            nn.Conv2d(
-                in_channels=out_channels,
-                out_channels=out_channels,
-                kernel_size=2,
-                stride=2,
-            ),
-            nn.LeakyReLU(),
-        )
-
-    def forward(self, x):
-        return self.block(x)
-
-
 class DecoderBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
@@ -103,18 +70,15 @@ class VAE(nn.Module):
             padding=(3, 3),
             bias=False,
         )
-        self.fc1 = nn.Linear(1000, latent_dim)
-        self.fc2 = nn.Linear(latent_dim, 1000)
         self.decoder = self.decoder = Decoder(
             in_channels=in_channels, initial_kernel=(8, 4), latent_dim=1000
         )
 
     def encode(self, x):
         encoded_data = self.encoder(x)
-        return self.fc1(encoded_data)
+        return encoded_data
 
     def decode(self, z):
-        z = self.fc2(z)
         z = self.decoder(z)
         return z
 

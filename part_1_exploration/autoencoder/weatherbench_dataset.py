@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-from create_forecast_data import create_forecast_data
 from torch.utils.data import Dataset
 
 
