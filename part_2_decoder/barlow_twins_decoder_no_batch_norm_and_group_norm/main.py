@@ -104,6 +104,7 @@ def main():
 
     # train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='barlow_twins_layer.pth')
     model = torch.load("barlow_twins_layer.pth", weights_only=False)
+    print(model)
 
     model_decoder = BarlowTwinsDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)
@@ -127,16 +128,16 @@ def main():
     # plot_tsne(train_data=train_data, valid_data=valid_data, filename='tsne_rand_mask.png', model=model_decoder.model.encoder)
 
     print("Starting Downstream Task")
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model_decoder.model.encoder,
-        latent_dim=1000,
-        context_window=30,
-        target_length=1,
-        stride=1,
-        model_save_path="downstream_model_no_decoder.pth",
-    )
+    # downstream_task_lstm(
+    #     num_epochs=100,
+    #     data=test_data,
+    #     encoder_model=model_decoder.model.encoder,
+    #     latent_dim=1000,
+    #     context_window=30,
+    #     target_length=1,
+    #     stride=1,
+    #     model_save_path="downstream_model_no_decoder.pth",
+    # )
 
 
 if __name__ == "__main__":
