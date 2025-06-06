@@ -37,8 +37,23 @@ def matern_kernel_noise(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
     noise = (z @ L.T).reshape(C, H, W)
     return sample + noise
 
-
 def matern_kernel_noise_batch(
+    sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
+):
+    B, C, H, W = sample.shape
+    N = H * W
+    # Matern kernel gives the co-variance
+    cov = matern_kernel(coords, lengthscale=lengthscale, nu=nu, sigma=sigma)
+    # Normal
+    z = torch.randn(B, C, N, device=cov.device)
+    # Ensure the covariance matrix is positive definite
+    L = torch.linalg.cholesky(cov + 1e-2 * torch.eye(N, device=sample.device))
+    # Noise with a mean of 0
+    # Covariance of Cov
+    noise = (z @ L.T).reshape(B, C, H, W)
+    return sample + noise
+
+def matern_kernel_noise_time_batch(
     sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
 ):
     B, T, C, H, W = sample.shape
