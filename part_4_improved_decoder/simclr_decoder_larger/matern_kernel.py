@@ -38,7 +38,7 @@ def matern_kernel_noise(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
     return sample + noise
 
 
-def matern_kernel_noise_batch(
+def matern_kernel_noise_time_batch(
     sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
 ):
     B, T, C, H, W = sample.shape

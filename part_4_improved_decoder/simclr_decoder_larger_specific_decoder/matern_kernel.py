@@ -69,7 +69,7 @@ def matern_kernel_noise_batch(
     # Noise with a mean of 0
     # Covariance of Cov
     noise = (z @ L.T).reshape(B, C, H, W)
-    return sample + noise, cov
+    return sample + noise
 
 
 # C, H, W = 5, 64, 32
