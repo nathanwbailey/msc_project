@@ -111,7 +111,7 @@ def main():
 
     # train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder.pth')
 
-    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
+    # model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # print('Starting Downstream Task')
     # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_s_5_cw_5.pth', weight_decay=1e-5)
@@ -128,6 +128,7 @@ def main():
     #     weight_decay=1e-5,
     # )
 
+    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(
         num_epochs=300,
