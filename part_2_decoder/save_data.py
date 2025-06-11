@@ -39,8 +39,21 @@ def main():
         new_dim="batch", sample_dims=("time", "longitude", "latitude")
     ).transpose("time", "batch", ...)
 
-    print("HERE")
     with ProgressBar():
+        timestamps = ds_full.time.values
+        Y = []
+        for timestamp in timestamps:
+            month = pd.Timestamp(timestamp).month
+            if month in [12, 1, 2]:
+                Y.append(0)
+            elif month in [3, 4, 5]:
+                Y.append(1)
+            elif month in [6, 7, 8]:
+                Y.append(2)
+            elif month in [9, 10, 11]:
+                Y.append(3)
+        Y = torch.tensor(Y)
+        torch.save(Y, "/vol/bitbucket/nb324/ERA5_64x32_daily_850_labels.pt")
         tensor_data = ds_full.values
         print(tensor_data.shape)
         tensor_data = torch.from_numpy(tensor_data).float()
