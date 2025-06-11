@@ -48,7 +48,7 @@ def extract_recon_log_valid_loss(log_path):
 
 def plot_loss(epochs, losses, alphas):
     plt.figure(figsize=(10, 6))
-    plt.plot(epochs, losses, color="blue", label="Recon (log) Valid Loss")
+    plt.plot(epochs, losses, color="blue", label="Recon Valid Loss")
     if any(a != 0.0 for a in alphas):
         plt.plot(epochs, alphas, color="red", label="Alpha Value")
     y_min, y_max = plt.ylim()
@@ -58,7 +58,7 @@ def plot_loss(epochs, losses, alphas):
     )
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
-    plt.title("Recon (log) Valid Loss Over Epochs")
+    plt.title("Recon Valid Loss Over Epochs")
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
