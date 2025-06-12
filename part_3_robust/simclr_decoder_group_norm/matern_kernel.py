@@ -37,6 +37,7 @@ def matern_kernel_noise(sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0):
     noise = (z @ L.T).reshape(C, H, W)
     return sample + noise
 
+
 def matern_kernel_noise_batch(
     sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0
 ):
@@ -52,6 +53,7 @@ def matern_kernel_noise_batch(
     # Covariance of Cov
     noise = (z @ L.T).reshape(B, C, H, W)
     return sample + noise
+
 
 def matern_kernel_noise_time_batch(
     sample, coords, lengthscale=1.0, nu=2.5, sigma=1.0

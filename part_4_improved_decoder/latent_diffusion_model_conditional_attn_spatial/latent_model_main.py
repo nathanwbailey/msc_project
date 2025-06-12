@@ -19,7 +19,7 @@ def downstream_task(
     mask_prob_high=0.7,
     loss_fn=torch.nn.MSELoss,
     latent_dim=1000,
-    learning_rate=1e-3
+    learning_rate=1e-3,
 ):
 
     DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -81,7 +81,9 @@ def downstream_task(
         device=DEVICE,
     )
 
-    optimizer = torch.optim.Adam(ddpm.eps_model.parameters(), lr=learning_rate)
+    optimizer = torch.optim.Adam(
+        ddpm.eps_model.parameters(), lr=learning_rate
+    )
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )

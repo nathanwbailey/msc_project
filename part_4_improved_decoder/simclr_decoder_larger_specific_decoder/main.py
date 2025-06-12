@@ -138,7 +138,9 @@ def main():
     # print('Training Decoder')
 
     # train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
-    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
+    model_decoder = torch.load(
+        "simclr_decoder_freeze.pth", weights_only=False
+    )
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(
         num_epochs=300,
@@ -146,6 +148,7 @@ def main():
         model_encoder=model_decoder.model.encoder,
         model_decoder=model_decoder.decoder,
     )
+
 
 if __name__ == "__main__":
     main()

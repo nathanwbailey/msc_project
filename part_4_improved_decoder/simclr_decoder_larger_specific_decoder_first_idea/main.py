@@ -128,7 +128,9 @@ def main():
     #     weight_decay=1e-5,
     # )
 
-    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
+    model_decoder = torch.load(
+        "simclr_decoder_freeze.pth", weights_only=False
+    )
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(
         num_epochs=300,

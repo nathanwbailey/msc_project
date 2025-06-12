@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import re
+
 import matplotlib.pyplot as plt
 
-
 LOG_FILE = "out.log"
-OUT_PNG  = "recon_losses.png"
+OUT_PNG = "recon_losses.png"
 
 
 def parse_log(log_path):
@@ -63,14 +63,20 @@ def main():
     epochs, recon_train, recon_valid = parse_log(LOG_FILE)
 
     if not epochs:
-        print("No lines matching 'Recon Train Loss' / 'Recon Valid Loss' were found in the log.")
+        print(
+            "No lines matching 'Recon Train Loss' / 'Recon Valid Loss' were found in the log."
+        )
         return
 
     # In case the log isn’t strictly sorted by epoch:
-    sorted_data = sorted(zip(epochs, recon_train, recon_valid), key=lambda x: x[0])
+    sorted_data = sorted(
+        zip(epochs, recon_train, recon_valid), key=lambda x: x[0]
+    )
     epochs_sorted, recon_train_sorted, recon_valid_sorted = zip(*sorted_data)
 
-    plot_losses(epochs_sorted, recon_train_sorted, recon_valid_sorted, OUT_PNG)
+    plot_losses(
+        epochs_sorted, recon_train_sorted, recon_valid_sorted, OUT_PNG
+    )
 
 
 if __name__ == "__main__":

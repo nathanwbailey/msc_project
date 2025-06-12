@@ -46,7 +46,9 @@ def main():
 
     DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    model_decoder = torch.load("simclr_decoder.pth", weights_only=False, map_location=DEVICE)
+    model_decoder = torch.load(
+        "simclr_decoder.pth", weights_only=False, map_location=DEVICE
+    )
 
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
