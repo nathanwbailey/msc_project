@@ -14,6 +14,10 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
+from latent_classification_model.latent_model_main import \
+    downstream_task as downstream_task_latent_classification
+from latent_diffusion_model_conditional_attn.latent_model_main import \
+    downstream_task as downstream_task_latent_diffusion_conditional_attn
 
 
 def main():
@@ -126,18 +130,18 @@ def main():
         # {"context_window": 3, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_3.pth"},
         # {"context_window": 1, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_1.pth"},
     ]
-    for cfg in downstream_configs:
-        downstream_task_lstm(
-            num_epochs=100,
-            data=test_data,
-            encoder_model=model_decoder.model.encoder,
-            latent_dim=1000,
-            context_window=cfg["context_window"],
-            target_length=1,
-            stride=cfg["stride"],
-            model_save_path=cfg["save"],
-            weight_decay=1e-5,
-        )
+    # for cfg in downstream_configs:
+    #     downstream_task_lstm(
+    #         num_epochs=100,
+    #         data=test_data,
+    #         encoder_model=model_decoder.model.encoder,
+    #         latent_dim=1000,
+    #         context_window=cfg["context_window"],
+    #         target_length=1,
+    #         stride=cfg["stride"],
+    #         model_save_path=cfg["save"],
+    #         weight_decay=1e-5,
+    #     )
 
     # --- Freeze Encoder, Train Decoder Only ---
     for param in model_decoder.model.parameters():
@@ -163,7 +167,14 @@ def main():
     #     loss_fn_reconstruct=loss_fn_reconstruct,
     #     model_save_path="simclr_decoder_freeze.pth",
     # )
-
+    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
+    print("Starting Latent Downstream Task")
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model_decoder.model.encoder,
+        model_decoder=model_decoder.decoder,
+    )
 
 if __name__ == "__main__":
     main()

@@ -163,23 +163,23 @@ def main():
     #     loss_fn_reconstruct=loss_fn_reconstruct,
     #     model_save_path="simclr_decoder_freeze.pth",
     # )
-
+    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
     print("Starting Latent Downstream Task")
-    # downstream_task_latent_diffusion_conditional_attn(
-    #     num_epochs=300,
-    #     data=test_data,
-    #     model_encoder=model_decoder.model.encoder,
-    #     model_decoder=model_decoder.decoder,
-    # )
-    downstream_task_latent_classification(
-        num_epochs=100,
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
         data=test_data,
-        labels=test_labels,
         model_encoder=model_decoder.model.encoder,
-        mask_prob_low=0.2,
-        mask_prob_high=0.9,
-        learning_rate=1e-3,
+        model_decoder=model_decoder.decoder,
     )
+    # downstream_task_latent_classification(
+    #     num_epochs=100,
+    #     data=test_data,
+    #     labels=test_labels,
+    #     model_encoder=model_decoder.model.encoder,
+    #     mask_prob_low=0.2,
+    #     mask_prob_high=0.9,
+    #     learning_rate=1e-3,
+    # )
 
 
 if __name__ == "__main__":
