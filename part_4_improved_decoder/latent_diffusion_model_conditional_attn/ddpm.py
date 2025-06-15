@@ -58,3 +58,30 @@ class DDPM(nn.Module):
             )
 
         return x_i
+    
+    def sample_and_log(self, n_sample, size, condition, t=0):
+        trajectory_log = []
+        x_i = torch.randn(n_sample, size).to(self.device)
+        trajectory_log.append(x_i.clone().detach())
+        for i in range(self.n_T, t, -1):
+            time_tensor = (
+                torch.full((n_sample, 1), i).float() / (self.n_T)
+            ).to(self.device)
+            if i > 1:
+                rand_noise = torch.randn_like(x_i)
+            else:
+                rand_noise = torch.zeros_like(x_i)
+            rand_noise = rand_noise.to(self.device)
+            x_i = (
+                self.oneover_sqrta[i]
+                * (
+                    x_i
+                    - self.mab_over_sqrtmab[i]
+                    * self.eps_model(x_i, time_tensor, condition)
+                )
+                + self.sqrt_beta_t[i] * rand_noise
+            )
+            trajectory_log.append(x_i.clone().detach())
+        trajectory_log.reverse()
+        trajectory_log = torch.stack(trajectory_log)
+        return trajectory_log
