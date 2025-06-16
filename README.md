@@ -10,6 +10,8 @@ This repository contains code and experiments for an MSc thesis focused on contr
 ├── part_2_decoder/
 ├── part_3_robust/
 ├── part_4_improved_decoder/
+├── part_5_further_analysis/
+├── part_6_multimodal/
 ├── requirements.txt
 ```
 
