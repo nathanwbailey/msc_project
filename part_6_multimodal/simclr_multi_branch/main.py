@@ -1,20 +1,22 @@
+import gc
 import os
 import sys
-import gc
-import torch
-from torch.utils.data import DataLoader
-from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 
+import torch
 from dataset import WeatherBenchDataset
 from model_decoder import SIMCLR, SIMCLRDecoder
+from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
+from torch.utils.data import DataLoader
 from train import train_model
 from train_decoder import train_decoder, train_encoder_decoder
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from downstream_model_lstm_no_decoder.downstream_task_main import downstream_task as downstream_task_lstm
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
+from downstream_model_lstm_no_decoder.downstream_task_main import \
+    downstream_task as downstream_task_lstm
 from latent_diffusion_model_conditional_attn.latent_model_main import \
     downstream_task as downstream_task_latent_diffusion_conditional_attn
-
 
 
 def main():
@@ -35,11 +37,17 @@ def main():
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
 
-    print(f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}")
+    print(
+        f"Train: {train_data.shape}, Valid: {valid_data.shape}, Test: {test_data.shape}"
+    )
 
     # --- Dataset and DataLoader ---
-    train_dataset = WeatherBenchDataset(data=train_data, mask_prob_low=0.5, mask_prob_high=0.9)
-    valid_dataset = WeatherBenchDataset(data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9)
+    train_dataset = WeatherBenchDataset(
+        data=train_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
+    valid_dataset = WeatherBenchDataset(
+        data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
 
     loader_args = dict(
         batch_size=BATCH_SIZE,
@@ -68,21 +76,27 @@ def main():
     # --- Model Initialization ---
     model = SIMCLR(in_channels=C, latent_dim=latent_dim).to(DEVICE)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     # --- Pretrain Encoder (SimCLR) ---
     # train_model(
     #     model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
     #     loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
     # )
-    model = torch.load('simclr.pth', weights_only=False)
+    model = torch.load("simclr.pth", weights_only=False)
     torch.cuda.empty_cache()
     gc.collect()
 
     # --- Fine-tune Encoder + Decoder ---
     model_decoder = SIMCLRDecoder(in_channels=C, model=model).to(DEVICE)
-    optimizer = torch.optim.Adam(model_decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     print("Fine Tuning Both")
     # train_encoder_decoder(
@@ -130,8 +144,12 @@ def main():
         param.requires_grad = False
     model_decoder.model.eval()
 
-    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
     torch.cuda.empty_cache()
     gc.collect()
     print("Training Decoder")
@@ -148,9 +166,12 @@ def main():
     )
 
     print("Starting Latent Downstream Task")
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model, model_decoder=model_decoder.decoder)
-
-
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model_decoder.model,
+        model_decoder=model_decoder.decoder,
+    )
 
 
 if __name__ == "__main__":

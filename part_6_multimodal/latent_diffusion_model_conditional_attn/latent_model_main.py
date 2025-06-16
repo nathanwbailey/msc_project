@@ -84,7 +84,7 @@ def downstream_task(
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
-    
+
     for param in model_encoder.parameters():
         param.requires_grad = False
     model_encoder.eval()

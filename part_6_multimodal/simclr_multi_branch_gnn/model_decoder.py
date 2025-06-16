@@ -2,10 +2,9 @@ import torch
 import torch.nn.functional as F
 import torchvision
 from torch import nn
-from torch_geometric.nn import GCNConv
-from torch_geometric.data import Data, Batch
+from torch_geometric.data import Batch, Data
+from torch_geometric.nn import GCNConv, global_mean_pool
 from torch_geometric.utils import dense_to_sparse
-from torch_geometric.nn import global_mean_pool
 
 
 def replace_bn_with_gn(module):
@@ -13,7 +12,9 @@ def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
-            gn = nn.GroupNorm(num_groups=num_channels, num_channels=num_channels)
+            gn = nn.GroupNorm(
+                num_groups=num_channels, num_channels=num_channels
+            )
             setattr(module, name, gn)
         else:
             replace_bn_with_gn(child)
@@ -21,6 +22,7 @@ def replace_bn_with_gn(module):
 
 class ResNet18Encoder(nn.Module):
     """ResNet18 encoder with configurable input channels and GroupNorm."""
+
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
@@ -53,6 +55,7 @@ class ResNet18Encoder(nn.Module):
 
 class ResidualBlock(nn.Module):
     """A simple residual block with dropout."""
+
     def __init__(self, channels):
         super().__init__()
         self.block = nn.Sequential(
@@ -70,6 +73,7 @@ class ResidualBlock(nn.Module):
 
 class DecoderBlock(nn.Module):
     """A decoder block with transposed convolution and a residual block."""
+
     def __init__(
         self,
         in_channels,
@@ -98,6 +102,7 @@ class DecoderBlock(nn.Module):
 
 class Decoder(nn.Module):
     """Decoder network for reconstructing from latent space."""
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.project_dim = latent_dim // 2
@@ -120,9 +125,12 @@ class Decoder(nn.Module):
         x = self.decoder(x)
         x = self.channel_layer(x)
         return x
-    
+
+
 class GCN(nn.Module):
-    def __init__(self, in_channels, out_channels, hidden_channels, *args, **kwargs):
+    def __init__(
+        self, in_channels, out_channels, hidden_channels, *args, **kwargs
+    ):
         super().__init__(*args, **kwargs)
         self.out_channels = out_channels
         self.conv1 = GCNConv(in_channels, out_channels, add_self_loops=False)
@@ -131,8 +139,10 @@ class GCN(nn.Module):
         x = self.conv1(X, A)
         return x
 
+
 class SIMCLR(nn.Module):
     """SIMCLR model with modal specific encoders and shared projection head."""
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.in_channels = in_channels
@@ -155,8 +165,9 @@ class SIMCLR(nn.Module):
         )
 
         # Fuse with a GNN
-        self.gcn = GCN(in_channels=1000, hidden_channels=512, out_channels=1000)
-
+        self.gcn = GCN(
+            in_channels=1000, hidden_channels=512, out_channels=1000
+        )
 
     def encode(self, x):
         B, C, H, W = x.shape
@@ -196,6 +207,7 @@ class SIMCLR(nn.Module):
 
 class SIMCLRDecoder(nn.Module):
     """SIMCLR model with an attached decoder for reconstruction."""
+
     def __init__(self, in_channels, model):
         super().__init__()
         self.model = model

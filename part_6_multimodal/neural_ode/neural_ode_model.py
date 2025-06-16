@@ -30,27 +30,30 @@ class ODEF(nn.Module):
     #     z_inp = torch.cat((z, t_vec), dim=1)
     #     dz = self.net(z_inp)
     #     return dz
-    
+
     def forward(self, t, z):
-        if z.dim() == 2: # [B, D]
+        if z.dim() == 2:  # [B, D]
             B, D = z.shape
-            t_vec = t.unsqueeze(0).expand(B).unsqueeze(1) # [B, 1]
-            z_inp = torch.cat((z, t_vec), dim=-1) # [B, D+1]
+            t_vec = t.unsqueeze(0).expand(B).unsqueeze(1)  # [B, 1]
+            z_inp = torch.cat((z, t_vec), dim=-1)  # [B, D+1]
             dz = self.net(z_inp)
             return dz
 
-        elif z.dim() == 3: # [B, T, D]
+        elif z.dim() == 3:  # [B, T, D]
             B, T, D = z.shape
             # t: [T] -> t_vec: [B, T, 1]
             t_vec = t.unsqueeze(0).expand(B, T).unsqueeze(2)
-            z_inp = torch.cat((z, t_vec), dim=-1) # [B, T, D+1]
+            z_inp = torch.cat((z, t_vec), dim=-1)  # [B, T, D+1]
             # flatten, push through MLP
-            flat  = z_inp.reshape(B * T, D + 1)
+            flat = z_inp.reshape(B * T, D + 1)
             out = self.net(flat)
             dz = out.reshape(B, T, D)
             return dz
         else:
-            raise ValueError(f"Unsupported z.dim()=={z.dim()}, expected 2 or 3.")
+            raise ValueError(
+                f"Unsupported z.dim()=={z.dim()}, expected 2 or 3."
+            )
+
 
 class NeuralODE(nn.Module):
     def __init__(self, dim, *args, **kwargs):

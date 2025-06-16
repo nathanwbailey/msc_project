@@ -3,7 +3,7 @@ from torch.utils.data import DataLoader
 
 from .dataset import WeatherBenchDataset
 from .model import LatentClassificationModel
-from .train import train_classification_model, test_classification_network
+from .train import test_classification_network, train_classification_model
 
 
 def downstream_task(
@@ -125,5 +125,5 @@ def downstream_task(
         encoder_model=model_encoder,
         device=DEVICE,
         loss_fn=loss_fn(),
-        testloader=testloader
+        testloader=testloader,
     )

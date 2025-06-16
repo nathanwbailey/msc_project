@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
 import torch
+from autoencoder import VAE
 from torch.utils.data import DataLoader, random_split
 from torchsummary import summary
 from train_autoencoder import train_autoencoder
 from weatherbench_dataset import WeatherBenchDataset
-
-from autoencoder import VAE
 
 
 def main():

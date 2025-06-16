@@ -58,7 +58,7 @@ class DDPM(nn.Module):
             )
 
         return x_i
-    
+
     def sample_and_log(self, n_sample, size, condition, t=0):
         trajectory_log = []
         x_i = torch.randn(n_sample, size).to(self.device)

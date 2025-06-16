@@ -133,7 +133,13 @@ def main():
         )
 
     print("Starting Latent Downstream Task")
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model, model_decoder=model.decoder)
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model,
+        model_decoder=model.decoder,
+    )
+
 
 if __name__ == "__main__":
     main()

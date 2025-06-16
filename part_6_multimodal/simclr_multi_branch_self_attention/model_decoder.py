@@ -9,7 +9,9 @@ def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
-            gn = nn.GroupNorm(num_groups=num_channels, num_channels=num_channels)
+            gn = nn.GroupNorm(
+                num_groups=num_channels, num_channels=num_channels
+            )
             setattr(module, name, gn)
         else:
             replace_bn_with_gn(child)
@@ -17,6 +19,7 @@ def replace_bn_with_gn(module):
 
 class ResNet18Encoder(nn.Module):
     """ResNet18 encoder with configurable input channels and GroupNorm."""
+
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
@@ -49,6 +52,7 @@ class ResNet18Encoder(nn.Module):
 
 class ResidualBlock(nn.Module):
     """A simple residual block with dropout."""
+
     def __init__(self, channels):
         super().__init__()
         self.block = nn.Sequential(
@@ -66,6 +70,7 @@ class ResidualBlock(nn.Module):
 
 class DecoderBlock(nn.Module):
     """A decoder block with transposed convolution and a residual block."""
+
     def __init__(
         self,
         in_channels,
@@ -94,6 +99,7 @@ class DecoderBlock(nn.Module):
 
 class Decoder(nn.Module):
     """Decoder network for reconstructing from latent space."""
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.project_dim = latent_dim // 2
@@ -120,6 +126,7 @@ class Decoder(nn.Module):
 
 class SIMCLR(nn.Module):
     """SIMCLR model with modal specific encoders and shared projection head."""
+
     def __init__(self, in_channels, latent_dim):
         super().__init__()
         self.in_channels = in_channels
@@ -142,8 +149,10 @@ class SIMCLR(nn.Module):
         )
         # [CLS] token
         self.cls_token = nn.Parameter(torch.randn(1, 1, 1000))
-        self.fuse = nn.MultiheadAttention(embed_dim=1000, num_heads=8, batch_first=True)
-        self.modal_embedding = nn.Embedding(in_channels+1, 1000)
+        self.fuse = nn.MultiheadAttention(
+            embed_dim=1000, num_heads=8, batch_first=True
+        )
+        self.modal_embedding = nn.Embedding(in_channels + 1, 1000)
 
     def encode(self, x):
         B, _, _, _ = x.shape
@@ -156,13 +165,13 @@ class SIMCLR(nn.Module):
         cls = self.cls_token.expand(B, -1, -1)
         z_values = torch.cat([cls, z_values], dim=1)
         # Add Modal Embeddings
-        mod_ids = torch.arange(self.in_channels+1, device=x.device)
+        mod_ids = torch.arange(self.in_channels + 1, device=x.device)
         modal_emb = self.modal_embedding(mod_ids)
         modal_emb = modal_emb.unsqueeze(0).expand(B, -1, -1)
         z_values = z_values + modal_emb
         fused, _ = self.fuse(query=z_values, key=z_values, value=z_values)
         # Out is the [CLS] token
-        out = fused[:, 0, :] 
+        out = fused[:, 0, :]
         return out
 
     def forward(self, x):
@@ -173,6 +182,7 @@ class SIMCLR(nn.Module):
 
 class SIMCLRDecoder(nn.Module):
     """SIMCLR model with an attached decoder for reconstruction."""
+
     def __init__(self, in_channels, model):
         super().__init__()
         self.model = model

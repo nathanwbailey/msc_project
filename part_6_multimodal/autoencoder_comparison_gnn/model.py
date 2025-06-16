@@ -2,10 +2,9 @@ import torch
 import torch.nn.functional as F
 import torchvision
 from torch import nn
-from torch_geometric.nn import GCNConv
-from torch_geometric.data import Data, Batch
+from torch_geometric.data import Batch, Data
+from torch_geometric.nn import GCNConv, global_mean_pool
 from torch_geometric.utils import dense_to_sparse
-from torch_geometric.nn import global_mean_pool
 
 
 def replace_bn_with_gn(module):
@@ -96,8 +95,11 @@ class DecoderBlock(nn.Module):
         x = self.res_block(x)
         return x
 
+
 class GCN(nn.Module):
-    def __init__(self, in_channels, out_channels, hidden_channels, *args, **kwargs):
+    def __init__(
+        self, in_channels, out_channels, hidden_channels, *args, **kwargs
+    ):
         super().__init__(*args, **kwargs)
         self.out_channels = out_channels
         self.conv1 = GCNConv(in_channels, out_channels, add_self_loops=False)
@@ -105,6 +107,7 @@ class GCN(nn.Module):
     def forward(self, X, A):
         x = self.conv1(X, A)
         return x
+
 
 class Decoder(nn.Module):
     def __init__(self, in_channels, latent_dim, *args, **kwargs):
@@ -160,8 +163,9 @@ class AutoEncoder(nn.Module):
         self.decoder = Decoder(in_channels=in_channels, latent_dim=1000)
 
         # Fuse with a GNN
-        self.gcn = GCN(in_channels=1000, hidden_channels=512, out_channels=1000)
-
+        self.gcn = GCN(
+            in_channels=1000, hidden_channels=512, out_channels=1000
+        )
 
     def encode(self, x):
         B, C, H, W = x.shape

@@ -35,7 +35,6 @@ def main():
     test_data = data[n_train + n_valid :]
     test_labels = labels[n_train + n_valid :]
 
-
     mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
     std = train_data.std(dim=(0, 2, 3), keepdim=True)
 

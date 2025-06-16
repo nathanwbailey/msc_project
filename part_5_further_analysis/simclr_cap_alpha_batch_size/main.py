@@ -189,7 +189,9 @@ def main():
     #     loss_fn_reconstruct=loss_fn_reconstruct,
     #     model_save_path="simclr_decoder_freeze.pth",
     # )
-    model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
+    model_decoder = torch.load(
+        "simclr_decoder_freeze.pth", weights_only=False
+    )
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(
         num_epochs=300,

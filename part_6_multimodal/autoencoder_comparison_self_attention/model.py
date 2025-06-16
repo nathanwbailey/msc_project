@@ -2,10 +2,9 @@ import torch
 import torch.nn.functional as F
 import torchvision
 from torch import nn
-from torch_geometric.nn import GCNConv
-from torch_geometric.data import Data, Batch
+from torch_geometric.data import Batch, Data
+from torch_geometric.nn import GCNConv, global_mean_pool
 from torch_geometric.utils import dense_to_sparse
-from torch_geometric.nn import global_mean_pool
 
 
 def replace_bn_with_gn(module):
@@ -96,18 +95,26 @@ class DecoderBlock(nn.Module):
         x = self.res_block(x)
         return x
 
+
 class GCN(nn.Module):
-    def __init__(self, in_channels, out_channels, hidden_channels, *args, **kwargs):
+    def __init__(
+        self, in_channels, out_channels, hidden_channels, *args, **kwargs
+    ):
         super().__init__(*args, **kwargs)
         self.out_channels = out_channels
-        self.conv1 = GCNConv(in_channels, hidden_channels, add_self_loops=False)
-        self.conv2 = GCNConv(hidden_channels, out_channels, add_self_loops=False)
+        self.conv1 = GCNConv(
+            in_channels, hidden_channels, add_self_loops=False
+        )
+        self.conv2 = GCNConv(
+            hidden_channels, out_channels, add_self_loops=False
+        )
 
     def forward(self, X, A):
         x = self.conv1(X, A)
         x = F.relu(x)
         x = self.conv2(x, A)
         return x
+
 
 class Decoder(nn.Module):
     def __init__(self, in_channels, latent_dim, *args, **kwargs):
@@ -164,9 +171,10 @@ class AutoEncoder(nn.Module):
 
         # [CLS] token
         self.cls_token = nn.Parameter(torch.randn(1, 1, 1000))
-        self.fuse = nn.MultiheadAttention(embed_dim=1000, num_heads=8, batch_first=True)
-        self.modal_embedding = nn.Embedding(in_channels+1, 1000)
-
+        self.fuse = nn.MultiheadAttention(
+            embed_dim=1000, num_heads=8, batch_first=True
+        )
+        self.modal_embedding = nn.Embedding(in_channels + 1, 1000)
 
     def encode(self, x):
         B, _, _, _ = x.shape
@@ -179,13 +187,13 @@ class AutoEncoder(nn.Module):
         cls = self.cls_token.expand(B, -1, -1)
         z_values = torch.cat([cls, z_values], dim=1)
         # Add Modal Embeddings
-        mod_ids = torch.arange(self.in_channels+1, device=x.device)
+        mod_ids = torch.arange(self.in_channels + 1, device=x.device)
         modal_emb = self.modal_embedding(mod_ids)
         modal_emb = modal_emb.unsqueeze(0).expand(B, -1, -1)
         z_values = z_values + modal_emb
         fused, _ = self.fuse(query=z_values, key=z_values, value=z_values)
         # Out is the [CLS] token
-        out = fused[:, 0, :] 
+        out = fused[:, 0, :]
         return out
 
     def decode(self, z):
