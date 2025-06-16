@@ -5,19 +5,15 @@
 ```
 part_2_decoder/
 ├── save_data.py
-├── autoencoder_first_idea/
 ├── autoencoder_MAE/
+├── autoencoder_MAE_GN/
 ├── barlow_twins_decoder/
-├── barlow_twins_decoder_first_idea/
-├── barlow_twins_decoder_layer_norm/
 ├── barlow_twins_decoder_no_batch_norm_and_group_norm/
 ├── downstream_model_lstm_no_decoder/
 ├── simclr_decoder/
-├── simclr_decoder_first_idea/
-├── simclr_decoder_freeze_train/
-├── simclr_decoder_freeze_train_group/
+├── simclr_decoder_final_stage/
 ├── simclr_decoder_group_norm/
-├── simclr_decoder_layer_norm/
+├── simclr_decoder_group_norm_final_stage/
 ```
 
 ## Contents
@@ -25,20 +21,14 @@ part_2_decoder/
 - **save_data.py**  
   Utility script for saving ERA5 data to torch tensor.
 
-- **autoencoder_first_idea/**  
-  Initial autoencoder-based approach that reconstructs augmented data to original data. 
-
 - **autoencoder_MAE/**  
   Simple Masked Autoencoder (MAE) for comparison.
 
+- **autoencoder_MAE_GN/**  
+  Simple Masked Autoencoder (MAE) with group normalisation for comparison.
+
 - **barlow_twins_decoder/**  
-  Adds decoder to barlow twins that reconstructs masked data. 
-
-- **barlow_twins_decoder_first_idea/**  
-  Adds decoder to barlow twins that reconstructs augmented masked data. 
-
-- **barlow_twins_decoder_layer_norm/**  
-  Switches Batch Norm in barlow_twins_decoder for layer norm
+  Adds decoder to barlow twins that reconstructs masked data - uses BN. 
 
 - **barlow_twins_decoder_no_batch_norm_and_group_norm/**  
   Switches Batch Norm in barlow_twins_decoder for none and group (instance) norm
@@ -47,22 +37,16 @@ part_2_decoder/
   LSTM-based downstream model to test encoder representations directly.
 
 - **simclr_decoder/**  
-  Adds decoder to SIMCLR that reconstructs masked data. 
+  Adds decoder to SIMCLR that reconstructs masked data - uses BM. 
 
-- **simclr_decoder_first_idea/**  
-  Adds decoder to SIMCLR that reconstructs augmented masked data. 
-
-- **simclr_decoder_freeze_train/**  
-  Freezes encoder of simclr_decoder and trains encoder on top
-
-- **simclr_decoder_freeze_train_group/**  
-  Freezes encoder of simclr_decoder_group_norm and trains encoder on top
+- **simclr_decoder_final_stage/**  
+  Freezes encoder of simclr_decoder and trains encoder on top - for the final training stage
 
 - **simclr_decoder_group_norm/**  
   Switches Batch Norm in barlow_twins_decoder for group (instance) norm
 
-- **simclr_decoder_layer_norm/**  
-  Switches Batch Norm in barlow_twins_decoder for layer norm
+- **simclr_decoder_group_norm_final_stage/**  
+  Freezes encoder of simclr_decoder_group_norm and trains encoder on top - for the final training stage
 
 ## Purpose
 

@@ -11,17 +11,11 @@ part_3_robust/
 ├── simclr_decoder_group_norm/
 ├── simclr_decoder_group_norm_hard_neg/
 ├── simclr_decoder_mask_ratio/
-├── simclr_decoder_mode_drop/
 ├── simclr_decoder_window/
-├── simclr_decoder_window_both/
-├── simclr_decoder_window_both_cycle/
 ├── simclr_decoder_window_hard_neg/
-├── simclr_decoder_window_hard_neg_dual_loss/
-├── simclr_decoder_window_hard_neg_masked/
 ├── simclr_decoder_window_hard_neg_ratio/
-├── simclr_decoder_window_hard_neg_ratio_both/
-├── simclr_decoder_window_hard_neg_ratio_both_cycle/
-├── simclr_decoder_window_hard_neg_ratio_both_cycle_mode_drop/
+├── simclr_decoder_window_hard_neg_ratio_expanded/
+├── simclr_decoder_window_hard_neg_ratio_expanded_cycle/
 ```
 
 ## Contents
@@ -36,22 +30,13 @@ part_3_robust/
   Adds hard negative sampling to the baseline.
 
 - **simclr_decoder_mask_ratio/**  
-  Experiments with varying mask ratios to test robustness.
-
-- **simclr_decoder_mode_drop/**  
-  Adds mode dropping for further robustness.
+  Adds 50%-70% mask ratios to test robustness.
 
 - **simclr_decoder_window/**  
   Uses positive samples at time t+delta to exploit temporal structure.
 
 - **simclr_decoder_window_hard_neg/**  
   Combines windowing with hard negative sampling.
-
-- **simclr_decoder_window_hard_neg_dual_loss/**  
-  Applies windowing and masked samples at t in separate SIMCLR losses.
-
-- **simclr_decoder_window_hard_neg_masked/**  
-  Applies windowing and masked samples at t in the same SIMCLR loss.
 
 - **simclr_decoder_window_hard_neg_ratio/**  
   Combines windowing, hard negative sampling, and varying mask ratios.
@@ -62,8 +47,6 @@ part_3_robust/
 - **simclr_decoder_window_hard_neg_ratio_both_cycle/**  
   Adds cycle consistency loss to SIMCLR projections.
 
-- **simclr_decoder_window_hard_neg_ratio_both_cycle_mode_drop/**  
-  Adds mode dropping to the above approach.
 
 ## Purpose
 

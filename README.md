@@ -36,6 +36,17 @@ This repository contains code and experiments for an MSc thesis focused on contr
     - Adds additional tasks of data assimilation and conditional latent diffusion models
     - Expands the downstream task of forecasting with added stride and changing context windows 
 
+- **Part 5: Further Analysis**
+    - Analysis on the latent space to link smoothness and forecasting peformance
+    - Implements changes to batch size, cycle loss and alpha decay based on findings
+
+
+- **Part 6: Multimodal**
+    - Implements several Multimodal late fusion methods
+    - Average Pooling
+    - Self Attention
+    - GNN
+
 ## Getting Started
 
 1. **Clone the repository**
