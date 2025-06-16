@@ -1,0 +1,3953 @@
+nohup: ignoring input
+Train: torch.Size([14031, 5, 64, 32]), Valid: torch.Size([4677, 5, 64, 32]), Test: torch.Size([4678, 5, 64, 32])
+Input shape: (C=5, H=144, W=72)
+Epoch: 0
+  Train Loss:        7.6974
+    Contrastive 1:   3.8446
+    Contrastive 2:   3.8495
+    Cycle:           0.0033
+  Valid Loss:        7.8165
+    Contrastive 1:   3.9157
+    Contrastive 2:   3.8979
+    Cycle:           0.0029
+  LR: 1.00e-04
+Epoch: 1
+  Train Loss:        6.3860
+    Contrastive 1:   3.1921
+    Contrastive 2:   3.1916
+    Cycle:           0.0023
+  Valid Loss:        7.4053
+    Contrastive 1:   3.7067
+    Contrastive 2:   3.6965
+    Cycle:           0.0022
+  LR: 1.00e-04
+Epoch: 2
+  Train Loss:        6.0617
+    Contrastive 1:   3.0300
+    Contrastive 2:   3.0299
+    Cycle:           0.0018
+  Valid Loss:        7.2744
+    Contrastive 1:   3.6342
+    Contrastive 2:   3.6384
+    Cycle:           0.0018
+  LR: 1.00e-04
+Epoch: 3
+  Train Loss:        5.8891
+    Contrastive 1:   2.9450
+    Contrastive 2:   2.9426
+    Cycle:           0.0015
+  Valid Loss:        7.2039
+    Contrastive 1:   3.5964
+    Contrastive 2:   3.6060
+    Cycle:           0.0016
+  LR: 1.00e-04
+Epoch: 4
+  Train Loss:        5.7845
+    Contrastive 1:   2.8911
+    Contrastive 2:   2.8920
+    Cycle:           0.0014
+  Valid Loss:        7.1683
+    Contrastive 1:   3.5862
+    Contrastive 2:   3.5806
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 5
+  Train Loss:        5.7020
+    Contrastive 1:   2.8514
+    Contrastive 2:   2.8493
+    Cycle:           0.0013
+  Valid Loss:        7.1446
+    Contrastive 1:   3.5742
+    Contrastive 2:   3.5688
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 6
+  Train Loss:        5.6339
+    Contrastive 1:   2.8168
+    Contrastive 2:   2.8159
+    Cycle:           0.0012
+  Valid Loss:        7.0862
+    Contrastive 1:   3.5452
+    Contrastive 2:   3.5394
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 7
+  Train Loss:        5.5728
+    Contrastive 1:   2.7865
+    Contrastive 2:   2.7851
+    Cycle:           0.0012
+  Valid Loss:        7.0882
+    Contrastive 1:   3.5451
+    Contrastive 2:   3.5416
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 8
+  Train Loss:        5.5269
+    Contrastive 1:   2.7629
+    Contrastive 2:   2.7628
+    Cycle:           0.0012
+  Valid Loss:        7.1085
+    Contrastive 1:   3.5588
+    Contrastive 2:   3.5482
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 9
+  Train Loss:        5.4803
+    Contrastive 1:   2.7410
+    Contrastive 2:   2.7381
+    Cycle:           0.0012
+  Valid Loss:        7.1058
+    Contrastive 1:   3.5533
+    Contrastive 2:   3.5510
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 10
+  Train Loss:        5.4435
+    Contrastive 1:   2.7216
+    Contrastive 2:   2.7208
+    Cycle:           0.0011
+  Valid Loss:        7.1129
+    Contrastive 1:   3.5645
+    Contrastive 2:   3.5468
+    Cycle:           0.0017
+  LR: 1.00e-04
+Epoch: 11
+  Train Loss:        5.3974
+    Contrastive 1:   2.6984
+    Contrastive 2:   2.6979
+    Cycle:           0.0011
+  Valid Loss:        7.1325
+    Contrastive 1:   3.5717
+    Contrastive 2:   3.5593
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 12
+  Train Loss:        5.3633
+    Contrastive 1:   2.6823
+    Contrastive 2:   2.6799
+    Cycle:           0.0012
+  Valid Loss:        7.1524
+    Contrastive 1:   3.5857
+    Contrastive 2:   3.5652
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 13
+  Train Loss:        5.3356
+    Contrastive 1:   2.6683
+    Contrastive 2:   2.6662
+    Cycle:           0.0011
+  Valid Loss:        7.1426
+    Contrastive 1:   3.5737
+    Contrastive 2:   3.5673
+    Cycle:           0.0016
+  LR: 1.00e-04
+Epoch: 14
+  Train Loss:        5.3094
+    Contrastive 1:   2.6552
+    Contrastive 2:   2.6531
+    Cycle:           0.0011
+  Valid Loss:        7.1689
+    Contrastive 1:   3.5907
+    Contrastive 2:   3.5767
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 15
+  Train Loss:        5.2818
+    Contrastive 1:   2.6404
+    Contrastive 2:   2.6402
+    Cycle:           0.0011
+  Valid Loss:        7.1784
+    Contrastive 1:   3.5919
+    Contrastive 2:   3.5849
+    Cycle:           0.0016
+  LR: 1.00e-04
+Epoch: 16
+  Train Loss:        5.2543
+    Contrastive 1:   2.6275
+    Contrastive 2:   2.6257
+    Cycle:           0.0011
+  Valid Loss:        7.1716
+    Contrastive 1:   3.5949
+    Contrastive 2:   3.5751
+    Cycle:           0.0016
+  LR: 1.00e-04
+Epoch: 17
+  Train Loss:        5.2333
+    Contrastive 1:   2.6167
+    Contrastive 2:   2.6155
+    Cycle:           0.0011
+  Valid Loss:        7.1962
+    Contrastive 1:   3.6088
+    Contrastive 2:   3.5859
+    Cycle:           0.0015
+  LR: 1.00e-04
+Epoch: 18
+  Train Loss:        5.1854
+    Contrastive 1:   2.5928
+    Contrastive 2:   2.5915
+    Cycle:           0.0011
+  Valid Loss:        7.2139
+    Contrastive 1:   3.6128
+    Contrastive 2:   3.5996
+    Cycle:           0.0015
+  LR: 1.00e-05
+Epoch: 19
+  Train Loss:        5.1682
+    Contrastive 1:   2.5842
+    Contrastive 2:   2.5829
+    Cycle:           0.0011
+  Valid Loss:        7.1964
+    Contrastive 1:   3.6052
+    Contrastive 2:   3.5897
+    Cycle:           0.0015
+  LR: 1.00e-05
+Epoch: 20
+  Train Loss:        5.1583
+    Contrastive 1:   2.5791
+    Contrastive 2:   2.5781
+    Cycle:           0.0011
+  Valid Loss:        7.2245
+    Contrastive 1:   3.6204
+    Contrastive 2:   3.6025
+    Cycle:           0.0015
+  LR: 1.00e-05
+Epoch: 21
+  Train Loss:        5.1506
+    Contrastive 1:   2.5746
+    Contrastive 2:   2.5749
+    Cycle:           0.0011
+  Valid Loss:        7.2335
+    Contrastive 1:   3.6236
+    Contrastive 2:   3.6085
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 22
+  Train Loss:        5.1465
+    Contrastive 1:   2.5727
+    Contrastive 2:   2.5727
+    Cycle:           0.0011
+  Valid Loss:        7.2236
+    Contrastive 1:   3.6182
+    Contrastive 2:   3.6039
+    Cycle:           0.0015
+  LR: 1.00e-05
+Epoch: 23
+  Train Loss:        5.1415
+    Contrastive 1:   2.5707
+    Contrastive 2:   2.5698
+    Cycle:           0.0011
+  Valid Loss:        7.2220
+    Contrastive 1:   3.6211
+    Contrastive 2:   3.5995
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 24
+  Train Loss:        5.1348
+    Contrastive 1:   2.5670
+    Contrastive 2:   2.5667
+    Cycle:           0.0011
+  Valid Loss:        7.2447
+    Contrastive 1:   3.6293
+    Contrastive 2:   3.6140
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 25
+  Train Loss:        5.1304
+    Contrastive 1:   2.5649
+    Contrastive 2:   2.5644
+    Cycle:           0.0011
+  Valid Loss:        7.2366
+    Contrastive 1:   3.6269
+    Contrastive 2:   3.6083
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 26
+  Train Loss:        5.1253
+    Contrastive 1:   2.5623
+    Contrastive 2:   2.5619
+    Cycle:           0.0010
+  Valid Loss:        7.2730
+    Contrastive 1:   3.6430
+    Contrastive 2:   3.6287
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 27
+  Train Loss:        5.1223
+    Contrastive 1:   2.5607
+    Contrastive 2:   2.5605
+    Cycle:           0.0010
+  Valid Loss:        7.2450
+    Contrastive 1:   3.6289
+    Contrastive 2:   3.6148
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 28
+  Train Loss:        5.1183
+    Contrastive 1:   2.5587
+    Contrastive 2:   2.5585
+    Cycle:           0.0010
+  Valid Loss:        7.2722
+    Contrastive 1:   3.6448
+    Contrastive 2:   3.6260
+    Cycle:           0.0014
+  LR: 1.00e-05
+Epoch: 29
+  Train Loss:        5.1141
+    Contrastive 1:   2.5566
+    Contrastive 2:   2.5564
+    Cycle:           0.0010
+  Valid Loss:        7.2759
+    Contrastive 1:   3.6480
+    Contrastive 2:   3.6264
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 30
+  Train Loss:        5.1126
+    Contrastive 1:   2.5559
+    Contrastive 2:   2.5556
+    Cycle:           0.0010
+  Valid Loss:        7.2753
+    Contrastive 1:   3.6437
+    Contrastive 2:   3.6303
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 31
+  Train Loss:        5.1136
+    Contrastive 1:   2.5566
+    Contrastive 2:   2.5560
+    Cycle:           0.0010
+  Valid Loss:        7.2658
+    Contrastive 1:   3.6434
+    Contrastive 2:   3.6209
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 32
+  Train Loss:        5.1110
+    Contrastive 1:   2.5551
+    Contrastive 2:   2.5549
+    Cycle:           0.0010
+  Valid Loss:        7.2607
+    Contrastive 1:   3.6375
+    Contrastive 2:   3.6217
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 33
+  Train Loss:        5.1080
+    Contrastive 1:   2.5536
+    Contrastive 2:   2.5533
+    Cycle:           0.0010
+  Valid Loss:        7.2599
+    Contrastive 1:   3.6359
+    Contrastive 2:   3.6227
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 34
+  Train Loss:        5.1077
+    Contrastive 1:   2.5538
+    Contrastive 2:   2.5530
+    Cycle:           0.0010
+  Valid Loss:        7.2582
+    Contrastive 1:   3.6408
+    Contrastive 2:   3.6160
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 35
+  Train Loss:        5.1077
+    Contrastive 1:   2.5538
+    Contrastive 2:   2.5529
+    Cycle:           0.0010
+  Valid Loss:        7.2668
+    Contrastive 1:   3.6435
+    Contrastive 2:   3.6220
+    Cycle:           0.0013
+  LR: 1.00e-06
+Epoch: 36
+  Train Loss:        5.1090
+    Contrastive 1:   2.5542
+    Contrastive 2:   2.5538
+    Cycle:           0.0010
+  Valid Loss:        7.2573
+    Contrastive 1:   3.6357
+    Contrastive 2:   3.6203
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 37
+  Train Loss:        5.1065
+    Contrastive 1:   2.5527
+    Contrastive 2:   2.5528
+    Cycle:           0.0010
+  Valid Loss:        7.2769
+    Contrastive 1:   3.6440
+    Contrastive 2:   3.6315
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 38
+  Train Loss:        5.1059
+    Contrastive 1:   2.5531
+    Contrastive 2:   2.5517
+    Cycle:           0.0010
+  Valid Loss:        7.2504
+    Contrastive 1:   3.6317
+    Contrastive 2:   3.6174
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 39
+  Train Loss:        5.1055
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5519
+    Cycle:           0.0010
+  Valid Loss:        7.2717
+    Contrastive 1:   3.6428
+    Contrastive 2:   3.6275
+    Cycle:           0.0014
+  LR: 1.00e-06
+Epoch: 40
+  Train Loss:        5.1044
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2821
+    Contrastive 1:   3.6430
+    Contrastive 2:   3.6377
+    Cycle:           0.0013
+  LR: 1.00e-07
+Epoch: 41
+  Train Loss:        5.1070
+    Contrastive 1:   2.5538
+    Contrastive 2:   2.5522
+    Cycle:           0.0010
+  Valid Loss:        7.2665
+    Contrastive 1:   3.6389
+    Contrastive 2:   3.6263
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 42
+  Train Loss:        5.1060
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5524
+    Cycle:           0.0010
+  Valid Loss:        7.2610
+    Contrastive 1:   3.6359
+    Contrastive 2:   3.6237
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 43
+  Train Loss:        5.1019
+    Contrastive 1:   2.5508
+    Contrastive 2:   2.5501
+    Cycle:           0.0010
+  Valid Loss:        7.2535
+    Contrastive 1:   3.6304
+    Contrastive 2:   3.6217
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 44
+  Train Loss:        5.1059
+    Contrastive 1:   2.5530
+    Contrastive 2:   2.5518
+    Cycle:           0.0010
+  Valid Loss:        7.2524
+    Contrastive 1:   3.6367
+    Contrastive 2:   3.6143
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 45
+  Train Loss:        5.1050
+    Contrastive 1:   2.5522
+    Contrastive 2:   2.5518
+    Cycle:           0.0010
+  Valid Loss:        7.2720
+    Contrastive 1:   3.6441
+    Contrastive 2:   3.6265
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 46
+  Train Loss:        5.1061
+    Contrastive 1:   2.5529
+    Contrastive 2:   2.5521
+    Cycle:           0.0010
+  Valid Loss:        7.2820
+    Contrastive 1:   3.6495
+    Contrastive 2:   3.6311
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 47
+  Train Loss:        5.1052
+    Contrastive 1:   2.5520
+    Contrastive 2:   2.5522
+    Cycle:           0.0010
+  Valid Loss:        7.2533
+    Contrastive 1:   3.6288
+    Contrastive 2:   3.6231
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 48
+  Train Loss:        5.1031
+    Contrastive 1:   2.5509
+    Contrastive 2:   2.5512
+    Cycle:           0.0010
+  Valid Loss:        7.2551
+    Contrastive 1:   3.6327
+    Contrastive 2:   3.6210
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 49
+  Train Loss:        5.1073
+    Contrastive 1:   2.5534
+    Contrastive 2:   2.5529
+    Cycle:           0.0010
+  Valid Loss:        7.2700
+    Contrastive 1:   3.6426
+    Contrastive 2:   3.6261
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 50
+  Train Loss:        5.1019
+    Contrastive 1:   2.5507
+    Contrastive 2:   2.5502
+    Cycle:           0.0010
+  Valid Loss:        7.2655
+    Contrastive 1:   3.6426
+    Contrastive 2:   3.6214
+    Cycle:           0.0014
+  LR: 1.00e-07
+Epoch: 51
+  Train Loss:        5.1049
+    Contrastive 1:   2.5525
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2781
+    Contrastive 1:   3.6526
+    Contrastive 2:   3.6241
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 52
+  Train Loss:        5.1046
+    Contrastive 1:   2.5523
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2593
+    Contrastive 1:   3.6386
+    Contrastive 2:   3.6194
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 53
+  Train Loss:        5.1043
+    Contrastive 1:   2.5518
+    Contrastive 2:   2.5515
+    Cycle:           0.0010
+  Valid Loss:        7.2654
+    Contrastive 1:   3.6425
+    Contrastive 2:   3.6216
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 54
+  Train Loss:        5.1070
+    Contrastive 1:   2.5531
+    Contrastive 2:   2.5528
+    Cycle:           0.0010
+  Valid Loss:        7.2310
+    Contrastive 1:   3.6211
+    Contrastive 2:   3.6086
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 55
+  Train Loss:        5.1055
+    Contrastive 1:   2.5523
+    Contrastive 2:   2.5522
+    Cycle:           0.0010
+  Valid Loss:        7.2717
+    Contrastive 1:   3.6433
+    Contrastive 2:   3.6270
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 56
+  Train Loss:        5.1049
+    Contrastive 1:   2.5522
+    Contrastive 2:   2.5517
+    Cycle:           0.0010
+  Valid Loss:        7.2750
+    Contrastive 1:   3.6455
+    Contrastive 2:   3.6282
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 57
+  Train Loss:        5.1044
+    Contrastive 1:   2.5520
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2698
+    Contrastive 1:   3.6396
+    Contrastive 2:   3.6289
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 58
+  Train Loss:        5.1033
+    Contrastive 1:   2.5515
+    Contrastive 2:   2.5508
+    Cycle:           0.0010
+  Valid Loss:        7.2661
+    Contrastive 1:   3.6390
+    Contrastive 2:   3.6257
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 59
+  Train Loss:        5.1045
+    Contrastive 1:   2.5525
+    Contrastive 2:   2.5510
+    Cycle:           0.0010
+  Valid Loss:        7.2644
+    Contrastive 1:   3.6399
+    Contrastive 2:   3.6232
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 60
+  Train Loss:        5.1037
+    Contrastive 1:   2.5520
+    Contrastive 2:   2.5508
+    Cycle:           0.0010
+  Valid Loss:        7.2597
+    Contrastive 1:   3.6359
+    Contrastive 2:   3.6224
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 61
+  Train Loss:        5.1045
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2587
+    Contrastive 1:   3.6343
+    Contrastive 2:   3.6231
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 62
+  Train Loss:        5.1058
+    Contrastive 1:   2.5524
+    Contrastive 2:   2.5524
+    Cycle:           0.0010
+  Valid Loss:        7.2622
+    Contrastive 1:   3.6391
+    Contrastive 2:   3.6216
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 63
+  Train Loss:        5.1018
+    Contrastive 1:   2.5504
+    Contrastive 2:   2.5504
+    Cycle:           0.0010
+  Valid Loss:        7.2700
+    Contrastive 1:   3.6427
+    Contrastive 2:   3.6260
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 64
+  Train Loss:        5.1030
+    Contrastive 1:   2.5512
+    Contrastive 2:   2.5508
+    Cycle:           0.0010
+  Valid Loss:        7.2707
+    Contrastive 1:   3.6425
+    Contrastive 2:   3.6268
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 65
+  Train Loss:        5.1040
+    Contrastive 1:   2.5515
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2430
+    Contrastive 1:   3.6302
+    Contrastive 2:   3.6115
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 66
+  Train Loss:        5.1035
+    Contrastive 1:   2.5512
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2667
+    Contrastive 1:   3.6409
+    Contrastive 2:   3.6245
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 67
+  Train Loss:        5.1040
+    Contrastive 1:   2.5519
+    Contrastive 2:   2.5511
+    Cycle:           0.0010
+  Valid Loss:        7.2542
+    Contrastive 1:   3.6342
+    Contrastive 2:   3.6187
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 68
+  Train Loss:        5.1011
+    Contrastive 1:   2.5503
+    Contrastive 2:   2.5498
+    Cycle:           0.0010
+  Valid Loss:        7.2635
+    Contrastive 1:   3.6398
+    Contrastive 2:   3.6223
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 69
+  Train Loss:        5.1059
+    Contrastive 1:   2.5530
+    Contrastive 2:   2.5518
+    Cycle:           0.0010
+  Valid Loss:        7.2734
+    Contrastive 1:   3.6433
+    Contrastive 2:   3.6287
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 70
+  Train Loss:        5.1063
+    Contrastive 1:   2.5529
+    Contrastive 2:   2.5524
+    Cycle:           0.0010
+  Valid Loss:        7.2668
+    Contrastive 1:   3.6404
+    Contrastive 2:   3.6250
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 71
+  Train Loss:        5.1056
+    Contrastive 1:   2.5523
+    Contrastive 2:   2.5523
+    Cycle:           0.0010
+  Valid Loss:        7.2653
+    Contrastive 1:   3.6437
+    Contrastive 2:   3.6202
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 72
+  Train Loss:        5.1076
+    Contrastive 1:   2.5534
+    Contrastive 2:   2.5532
+    Cycle:           0.0010
+  Valid Loss:        7.2832
+    Contrastive 1:   3.6463
+    Contrastive 2:   3.6355
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 73
+  Train Loss:        5.1043
+    Contrastive 1:   2.5517
+    Contrastive 2:   2.5515
+    Cycle:           0.0010
+  Valid Loss:        7.2600
+    Contrastive 1:   3.6350
+    Contrastive 2:   3.6237
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 74
+  Train Loss:        5.1035
+    Contrastive 1:   2.5511
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2830
+    Contrastive 1:   3.6457
+    Contrastive 2:   3.6359
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 75
+  Train Loss:        5.1050
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2629
+    Contrastive 1:   3.6380
+    Contrastive 2:   3.6236
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 76
+  Train Loss:        5.1045
+    Contrastive 1:   2.5523
+    Contrastive 2:   2.5511
+    Cycle:           0.0010
+  Valid Loss:        7.2691
+    Contrastive 1:   3.6425
+    Contrastive 2:   3.6252
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 77
+  Train Loss:        5.1062
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5525
+    Cycle:           0.0010
+  Valid Loss:        7.2664
+    Contrastive 1:   3.6440
+    Contrastive 2:   3.6211
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 78
+  Train Loss:        5.1031
+    Contrastive 1:   2.5511
+    Contrastive 2:   2.5510
+    Cycle:           0.0010
+  Valid Loss:        7.2605
+    Contrastive 1:   3.6389
+    Contrastive 2:   3.6202
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 79
+  Train Loss:        5.1036
+    Contrastive 1:   2.5514
+    Contrastive 2:   2.5511
+    Cycle:           0.0010
+  Valid Loss:        7.2723
+    Contrastive 1:   3.6456
+    Contrastive 2:   3.6253
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 80
+  Train Loss:        5.1029
+    Contrastive 1:   2.5510
+    Contrastive 2:   2.5508
+    Cycle:           0.0010
+  Valid Loss:        7.2658
+    Contrastive 1:   3.6359
+    Contrastive 2:   3.6286
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 81
+  Train Loss:        5.1033
+    Contrastive 1:   2.5508
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2564
+    Contrastive 1:   3.6337
+    Contrastive 2:   3.6214
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 82
+  Train Loss:        5.1053
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5522
+    Cycle:           0.0010
+  Valid Loss:        7.2694
+    Contrastive 1:   3.6406
+    Contrastive 2:   3.6275
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 83
+  Train Loss:        5.1049
+    Contrastive 1:   2.5522
+    Contrastive 2:   2.5517
+    Cycle:           0.0010
+  Valid Loss:        7.2564
+    Contrastive 1:   3.6318
+    Contrastive 2:   3.6232
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 84
+  Train Loss:        5.1029
+    Contrastive 1:   2.5514
+    Contrastive 2:   2.5505
+    Cycle:           0.0010
+  Valid Loss:        7.2636
+    Contrastive 1:   3.6415
+    Contrastive 2:   3.6208
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 85
+  Train Loss:        5.1042
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5511
+    Cycle:           0.0010
+  Valid Loss:        7.2744
+    Contrastive 1:   3.6451
+    Contrastive 2:   3.6280
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 86
+  Train Loss:        5.1044
+    Contrastive 1:   2.5519
+    Contrastive 2:   2.5515
+    Cycle:           0.0010
+  Valid Loss:        7.2661
+    Contrastive 1:   3.6417
+    Contrastive 2:   3.6230
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 87
+  Train Loss:        5.1050
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5518
+    Cycle:           0.0010
+  Valid Loss:        7.2626
+    Contrastive 1:   3.6367
+    Contrastive 2:   3.6246
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 88
+  Train Loss:        5.1057
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5521
+    Cycle:           0.0010
+  Valid Loss:        7.2633
+    Contrastive 1:   3.6426
+    Contrastive 2:   3.6192
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 89
+  Train Loss:        5.1033
+    Contrastive 1:   2.5517
+    Contrastive 2:   2.5506
+    Cycle:           0.0010
+  Valid Loss:        7.2740
+    Contrastive 1:   3.6409
+    Contrastive 2:   3.6318
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 90
+  Train Loss:        5.1023
+    Contrastive 1:   2.5512
+    Contrastive 2:   2.5501
+    Cycle:           0.0010
+  Valid Loss:        7.2628
+    Contrastive 1:   3.6408
+    Contrastive 2:   3.6207
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 91
+  Train Loss:        5.1060
+    Contrastive 1:   2.5527
+    Contrastive 2:   2.5523
+    Cycle:           0.0010
+  Valid Loss:        7.2619
+    Contrastive 1:   3.6426
+    Contrastive 2:   3.6179
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 92
+  Train Loss:        5.1039
+    Contrastive 1:   2.5521
+    Contrastive 2:   2.5508
+    Cycle:           0.0010
+  Valid Loss:        7.2646
+    Contrastive 1:   3.6408
+    Contrastive 2:   3.6224
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 93
+  Train Loss:        5.1028
+    Contrastive 1:   2.5511
+    Contrastive 2:   2.5506
+    Cycle:           0.0010
+  Valid Loss:        7.2555
+    Contrastive 1:   3.6392
+    Contrastive 2:   3.6150
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 94
+  Train Loss:        5.1024
+    Contrastive 1:   2.5509
+    Contrastive 2:   2.5505
+    Cycle:           0.0010
+  Valid Loss:        7.2721
+    Contrastive 1:   3.6380
+    Contrastive 2:   3.6328
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 95
+  Train Loss:        5.1053
+    Contrastive 1:   2.5526
+    Contrastive 2:   2.5517
+    Cycle:           0.0010
+  Valid Loss:        7.2637
+    Contrastive 1:   3.6401
+    Contrastive 2:   3.6223
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 96
+  Train Loss:        5.1039
+    Contrastive 1:   2.5516
+    Contrastive 2:   2.5513
+    Cycle:           0.0010
+  Valid Loss:        7.2508
+    Contrastive 1:   3.6312
+    Contrastive 2:   3.6183
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 97
+  Train Loss:        5.1055
+    Contrastive 1:   2.5524
+    Contrastive 2:   2.5521
+    Cycle:           0.0010
+  Valid Loss:        7.2671
+    Contrastive 1:   3.6455
+    Contrastive 2:   3.6202
+    Cycle:           0.0014
+  LR: 1.00e-08
+Epoch: 98
+  Train Loss:        5.1036
+    Contrastive 1:   2.5513
+    Contrastive 2:   2.5512
+    Cycle:           0.0010
+  Valid Loss:        7.2650
+    Contrastive 1:   3.6358
+    Contrastive 2:   3.6278
+    Cycle:           0.0013
+  LR: 1.00e-08
+Epoch: 99
+  Train Loss:        5.1037
+    Contrastive 1:   2.5513
+    Contrastive 2:   2.5514
+    Cycle:           0.0010
+  Valid Loss:        7.2489
+    Contrastive 1:   3.6330
+    Contrastive 2:   3.6146
+    Cycle:           0.0013
+  LR: 1.00e-08
+Fine Tuning Both
+Epoch: 0, Alpha: 1.00
+  Train Loss:        11.4462
+    Contrastive:     11.4462
+    Recon (all):     3.1437
+    Recon (log):     0.6287
+  Valid Loss:        11.5483
+    Contrastive:     11.5483
+    Recon (all):     2.1477
+    Recon (log):     0.4295
+  LR: 1.00e-04
+Epoch: 1, Alpha: 0.99
+  Train Loss:        9.4972
+    Contrastive:     9.5702
+    Recon (all):     2.2350
+    Recon (log):     0.4470
+  Valid Loss:        10.9931
+    Contrastive:     11.0842
+    Recon (all):     1.9237
+    Recon (log):     0.3847
+  LR: 1.00e-04
+Epoch: 2, Alpha: 0.98
+  Train Loss:        9.1079
+    Contrastive:     9.2500
+    Recon (all):     2.0741
+    Recon (log):     0.4148
+  Valid Loss:        10.7585
+    Contrastive:     10.9385
+    Recon (all):     1.8440
+    Recon (log):     0.3688
+  LR: 1.00e-04
+Epoch: 3, Alpha: 0.97
+  Train Loss:        8.8762
+    Contrastive:     9.0860
+    Recon (all):     1.9889
+    Recon (log):     0.3978
+  Valid Loss:        10.5710
+    Contrastive:     10.8387
+    Recon (all):     1.7804
+    Recon (log):     0.3561
+  LR: 1.00e-04
+Epoch: 4, Alpha: 0.96
+  Train Loss:        8.6839
+    Contrastive:     8.9594
+    Recon (all):     1.9331
+    Recon (log):     0.3866
+  Valid Loss:        10.4643
+    Contrastive:     10.8190
+    Recon (all):     1.7712
+    Recon (log):     0.3542
+  LR: 1.00e-04
+Epoch: 5, Alpha: 0.95
+  Train Loss:        8.5242
+    Contrastive:     8.8644
+    Recon (all):     1.8883
+    Recon (log):     0.3777
+  Valid Loss:        10.3193
+    Contrastive:     10.7601
+    Recon (all):     1.7216
+    Recon (log):     0.3443
+  LR: 1.00e-04
+Epoch: 6, Alpha: 0.94
+  Train Loss:        8.3658
+    Contrastive:     8.7690
+    Recon (all):     1.8450
+    Recon (log):     0.3690
+  Valid Loss:        10.1377
+    Contrastive:     10.6610
+    Recon (all):     1.6741
+    Recon (log):     0.3348
+  LR: 1.00e-04
+Epoch: 7, Alpha: 0.93
+  Train Loss:        8.1961
+    Contrastive:     8.6602
+    Recon (all):     1.7951
+    Recon (log):     0.3590
+  Valid Loss:        9.9882
+    Contrastive:     10.5940
+    Recon (all):     1.6335
+    Recon (log):     0.3267
+  LR: 1.00e-04
+Epoch: 8, Alpha: 0.92
+  Train Loss:        8.0348
+    Contrastive:     8.5582
+    Recon (all):     1.7499
+    Recon (log):     0.3500
+  Valid Loss:        9.7983
+    Contrastive:     10.4833
+    Recon (all):     1.5728
+    Recon (log):     0.3146
+  LR: 1.00e-04
+Epoch: 9, Alpha: 0.91
+  Train Loss:        7.8786
+    Contrastive:     8.4600
+    Recon (all):     1.7055
+    Recon (log):     0.3411
+  Valid Loss:        9.6597
+    Contrastive:     10.4251
+    Recon (all):     1.5322
+    Recon (log):     0.3064
+  LR: 1.00e-04
+Epoch: 10, Alpha: 0.90
+  Train Loss:        7.7429
+    Contrastive:     8.3816
+    Recon (all):     1.6697
+    Recon (log):     0.3339
+  Valid Loss:        9.5399
+    Contrastive:     10.3854
+    Recon (all):     1.5012
+    Recon (log):     0.3002
+  LR: 1.00e-04
+Epoch: 11, Alpha: 0.90
+  Train Loss:        7.6101
+    Contrastive:     8.3047
+    Recon (all):     1.6365
+    Recon (log):     0.3273
+  Valid Loss:        9.4073
+    Contrastive:     10.3303
+    Recon (all):     1.4701
+    Recon (log):     0.2940
+  LR: 1.00e-04
+Epoch: 12, Alpha: 0.89
+  Train Loss:        7.4825
+    Contrastive:     8.2317
+    Recon (all):     1.6058
+    Recon (log):     0.3212
+  Valid Loss:        9.2553
+    Contrastive:     10.2527
+    Recon (all):     1.4326
+    Recon (log):     0.2865
+  LR: 1.00e-04
+Epoch: 13, Alpha: 0.88
+  Train Loss:        7.3562
+    Contrastive:     8.1593
+    Recon (all):     1.5711
+    Recon (log):     0.3142
+  Valid Loss:        9.1103
+    Contrastive:     10.1818
+    Recon (all):     1.3928
+    Recon (log):     0.2786
+  LR: 1.00e-04
+Epoch: 14, Alpha: 0.87
+  Train Loss:        7.2259
+    Contrastive:     8.0809
+    Recon (all):     1.5361
+    Recon (log):     0.3072
+  Valid Loss:        8.9810
+    Contrastive:     10.1264
+    Recon (all):     1.3590
+    Recon (log):     0.2718
+  LR: 1.00e-04
+Epoch: 15, Alpha: 0.86
+  Train Loss:        7.1011
+    Contrastive:     8.0076
+    Recon (all):     1.4997
+    Recon (log):     0.2999
+  Valid Loss:        8.7987
+    Contrastive:     10.0096
+    Recon (all):     1.3164
+    Recon (log):     0.2633
+  LR: 1.00e-04
+Epoch: 16, Alpha: 0.85
+  Train Loss:        6.9744
+    Contrastive:     7.9305
+    Recon (all):     1.4642
+    Recon (log):     0.2928
+  Valid Loss:        8.7196
+    Contrastive:     10.0099
+    Recon (all):     1.2830
+    Recon (log):     0.2566
+  LR: 1.00e-04
+Epoch: 17, Alpha: 0.84
+  Train Loss:        6.8568
+    Contrastive:     7.8621
+    Recon (all):     1.4313
+    Recon (log):     0.2863
+  Valid Loss:        8.5781
+    Contrastive:     9.9374
+    Recon (all):     1.2425
+    Recon (log):     0.2485
+  LR: 1.00e-04
+Epoch: 18, Alpha: 0.84
+  Train Loss:        6.7488
+    Contrastive:     7.8031
+    Recon (all):     1.4027
+    Recon (log):     0.2805
+  Valid Loss:        8.4801
+    Contrastive:     9.9133
+    Recon (all):     1.2127
+    Recon (log):     0.2425
+  LR: 1.00e-04
+Epoch: 19, Alpha: 0.83
+  Train Loss:        6.6406
+    Contrastive:     7.7424
+    Recon (all):     1.3752
+    Recon (log):     0.2750
+  Valid Loss:        8.3351
+    Contrastive:     9.8307
+    Recon (all):     1.1873
+    Recon (log):     0.2375
+  LR: 1.00e-04
+Epoch: 20, Alpha: 0.82
+  Train Loss:        6.5405
+    Contrastive:     7.6895
+    Recon (all):     1.3509
+    Recon (log):     0.2702
+  Valid Loss:        8.2214
+    Contrastive:     9.7844
+    Recon (all):     1.1615
+    Recon (log):     0.2323
+  LR: 1.00e-04
+Epoch: 21, Alpha: 0.81
+  Train Loss:        6.4440
+    Contrastive:     7.6395
+    Recon (all):     1.3277
+    Recon (log):     0.2655
+  Valid Loss:        8.1135
+    Contrastive:     9.7440
+    Recon (all):     1.1362
+    Recon (log):     0.2272
+  LR: 1.00e-04
+Epoch: 22, Alpha: 0.80
+  Train Loss:        6.3524
+    Contrastive:     7.5942
+    Recon (all):     1.3057
+    Recon (log):     0.2611
+  Valid Loss:        8.0378
+    Contrastive:     9.7413
+    Recon (all):     1.1152
+    Recon (log):     0.2230
+  LR: 1.00e-04
+Epoch: 23, Alpha: 0.79
+  Train Loss:        6.2622
+    Contrastive:     7.5497
+    Recon (all):     1.2835
+    Recon (log):     0.2567
+  Valid Loss:        7.9222
+    Contrastive:     9.6878
+    Recon (all):     1.0947
+    Recon (log):     0.2189
+  LR: 1.00e-04
+Epoch: 24, Alpha: 0.79
+  Train Loss:        6.1650
+    Contrastive:     7.4953
+    Recon (all):     1.2605
+    Recon (log):     0.2521
+  Valid Loss:        7.8320
+    Contrastive:     9.6663
+    Recon (all):     1.0694
+    Recon (log):     0.2139
+  LR: 1.00e-04
+Epoch: 25, Alpha: 0.78
+  Train Loss:        6.0739
+    Contrastive:     7.4472
+    Recon (all):     1.2387
+    Recon (log):     0.2477
+  Valid Loss:        7.7356
+    Contrastive:     9.6367
+    Recon (all):     1.0424
+    Recon (log):     0.2085
+  LR: 1.00e-04
+Epoch: 26, Alpha: 0.77
+  Train Loss:        5.9872
+    Contrastive:     7.4036
+    Recon (all):     1.2172
+    Recon (log):     0.2434
+  Valid Loss:        7.6215
+    Contrastive:     9.5817
+    Recon (all):     1.0200
+    Recon (log):     0.2040
+  LR: 1.00e-04
+Epoch: 27, Alpha: 0.76
+  Train Loss:        5.8996
+    Contrastive:     7.3579
+    Recon (all):     1.1949
+    Recon (log):     0.2390
+  Valid Loss:        7.5362
+    Contrastive:     9.5649
+    Recon (all):     0.9914
+    Recon (log):     0.1983
+  LR: 1.00e-04
+Epoch: 28, Alpha: 0.76
+  Train Loss:        5.8162
+    Contrastive:     7.3159
+    Recon (all):     1.1751
+    Recon (log):     0.2350
+  Valid Loss:        7.4128
+    Contrastive:     9.4929
+    Recon (all):     0.9756
+    Recon (log):     0.1951
+  LR: 1.00e-04
+Epoch: 29, Alpha: 0.75
+  Train Loss:        5.7342
+    Contrastive:     7.2751
+    Recon (all):     1.1539
+    Recon (log):     0.2308
+  Valid Loss:        7.3410
+    Contrastive:     9.4879
+    Recon (all):     0.9596
+    Recon (log):     0.1919
+  LR: 1.00e-04
+Epoch: 30, Alpha: 0.74
+  Train Loss:        5.6515
+    Contrastive:     7.2318
+    Recon (all):     1.1347
+    Recon (log):     0.2269
+  Valid Loss:        7.2474
+    Contrastive:     9.4559
+    Recon (all):     0.9347
+    Recon (log):     0.1869
+  LR: 1.00e-04
+Epoch: 31, Alpha: 0.73
+  Train Loss:        5.5742
+    Contrastive:     7.1940
+    Recon (all):     1.1171
+    Recon (log):     0.2234
+  Valid Loss:        7.1652
+    Contrastive:     9.4377
+    Recon (all):     0.9122
+    Recon (log):     0.1824
+  LR: 1.00e-04
+Epoch: 32, Alpha: 0.73
+  Train Loss:        5.4991
+    Contrastive:     7.1581
+    Recon (all):     1.1001
+    Recon (log):     0.2200
+  Valid Loss:        7.0989
+    Contrastive:     9.4388
+    Recon (all):     0.8945
+    Recon (log):     0.1789
+  LR: 1.00e-04
+Epoch: 33, Alpha: 0.72
+  Train Loss:        5.4273
+    Contrastive:     7.1252
+    Recon (all):     1.0847
+    Recon (log):     0.2169
+  Valid Loss:        6.9930
+    Contrastive:     9.3819
+    Recon (all):     0.8827
+    Recon (log):     0.1765
+  LR: 1.00e-04
+Epoch: 34, Alpha: 0.71
+  Train Loss:        5.3595
+    Contrastive:     7.0963
+    Recon (all):     1.0706
+    Recon (log):     0.2141
+  Valid Loss:        6.9182
+    Contrastive:     9.3685
+    Recon (all):     0.8673
+    Recon (log):     0.1735
+  LR: 1.00e-04
+Epoch: 35, Alpha: 0.70
+  Train Loss:        5.2913
+    Contrastive:     7.0656
+    Recon (all):     1.0576
+    Recon (log):     0.2115
+  Valid Loss:        6.8758
+    Contrastive:     9.3954
+    Recon (all):     0.8633
+    Recon (log):     0.1727
+  LR: 1.00e-04
+Epoch: 36, Alpha: 0.70
+  Train Loss:        5.2277
+    Contrastive:     7.0398
+    Recon (all):     1.0459
+    Recon (log):     0.2092
+  Valid Loss:        6.7564
+    Contrastive:     9.3222
+    Recon (all):     0.8354
+    Recon (log):     0.1671
+  LR: 1.00e-04
+Epoch: 37, Alpha: 0.69
+  Train Loss:        5.1649
+    Contrastive:     7.0147
+    Recon (all):     1.0336
+    Recon (log):     0.2067
+  Valid Loss:        6.7120
+    Contrastive:     9.3475
+    Recon (all):     0.8258
+    Recon (log):     0.1652
+  LR: 1.00e-04
+Epoch: 38, Alpha: 0.68
+  Train Loss:        5.1014
+    Contrastive:     6.9878
+    Recon (all):     1.0206
+    Recon (log):     0.2041
+  Valid Loss:        6.6175
+    Contrastive:     9.2998
+    Recon (all):     0.8151
+    Recon (log):     0.1630
+  LR: 1.00e-04
+Epoch: 39, Alpha: 0.68
+  Train Loss:        5.0405
+    Contrastive:     6.9631
+    Recon (all):     1.0095
+    Recon (log):     0.2019
+  Valid Loss:        6.5302
+    Contrastive:     9.2622
+    Recon (all):     0.8024
+    Recon (log):     0.1605
+  LR: 1.00e-04
+Epoch: 40, Alpha: 0.67
+  Train Loss:        4.9821
+    Contrastive:     6.9414
+    Recon (all):     0.9985
+    Recon (log):     0.1997
+  Valid Loss:        6.4930
+    Contrastive:     9.2952
+    Recon (all):     0.7954
+    Recon (log):     0.1591
+  LR: 1.00e-04
+Epoch: 41, Alpha: 0.66
+  Train Loss:        4.9240
+    Contrastive:     6.9184
+    Recon (all):     0.9887
+    Recon (log):     0.1977
+  Valid Loss:        6.3970
+    Contrastive:     9.2436
+    Recon (all):     0.7803
+    Recon (log):     0.1561
+  LR: 1.00e-04
+Epoch: 42, Alpha: 0.66
+  Train Loss:        4.8664
+    Contrastive:     6.8952
+    Recon (all):     0.9795
+    Recon (log):     0.1959
+  Valid Loss:        6.3786
+    Contrastive:     9.2991
+    Recon (all):     0.7834
+    Recon (log):     0.1567
+  LR: 1.00e-04
+Epoch: 43, Alpha: 0.65
+  Train Loss:        4.8126
+    Contrastive:     6.8766
+    Recon (all):     0.9709
+    Recon (log):     0.1942
+  Valid Loss:        6.2792
+    Contrastive:     9.2399
+    Recon (all):     0.7684
+    Recon (log):     0.1537
+  LR: 1.00e-04
+Epoch: 44, Alpha: 0.64
+  Train Loss:        4.7577
+    Contrastive:     6.8555
+    Recon (all):     0.9620
+    Recon (log):     0.1924
+  Valid Loss:        6.2113
+    Contrastive:     9.2245
+    Recon (all):     0.7597
+    Recon (log):     0.1519
+  LR: 1.00e-04
+Epoch: 45, Alpha: 0.64
+  Train Loss:        4.7077
+    Contrastive:     6.8404
+    Recon (all):     0.9550
+    Recon (log):     0.1910
+  Valid Loss:        6.1671
+    Contrastive:     9.2449
+    Recon (all):     0.7515
+    Recon (log):     0.1503
+  LR: 1.00e-04
+Epoch: 46, Alpha: 0.63
+  Train Loss:        4.6560
+    Contrastive:     6.8224
+    Recon (all):     0.9470
+    Recon (log):     0.1894
+  Valid Loss:        6.1034
+    Contrastive:     9.2317
+    Recon (all):     0.7474
+    Recon (log):     0.1495
+  LR: 1.00e-04
+Epoch: 47, Alpha: 0.63
+  Train Loss:        4.6067
+    Contrastive:     6.8065
+    Recon (all):     0.9404
+    Recon (log):     0.1881
+  Valid Loss:        6.0059
+    Contrastive:     9.1697
+    Recon (all):     0.7328
+    Recon (log):     0.1466
+  LR: 1.00e-04
+Epoch: 48, Alpha: 0.62
+  Train Loss:        4.5591
+    Contrastive:     6.7933
+    Recon (all):     0.9326
+    Recon (log):     0.1865
+  Valid Loss:        5.9726
+    Contrastive:     9.2005
+    Recon (all):     0.7332
+    Recon (log):     0.1466
+  LR: 1.00e-04
+Epoch: 49, Alpha: 0.61
+  Train Loss:        4.5112
+    Contrastive:     6.7785
+    Recon (all):     0.9255
+    Recon (log):     0.1851
+  Valid Loss:        5.9037
+    Contrastive:     9.1823
+    Recon (all):     0.7185
+    Recon (log):     0.1437
+  LR: 1.00e-04
+Epoch: 50, Alpha: 0.61
+  Train Loss:        4.4620
+    Contrastive:     6.7607
+    Recon (all):     0.9184
+    Recon (log):     0.1837
+  Valid Loss:        5.8394
+    Contrastive:     9.1684
+    Recon (all):     0.7078
+    Recon (log):     0.1416
+  LR: 1.00e-04
+Epoch: 51, Alpha: 0.60
+  Train Loss:        4.4144
+    Contrastive:     6.7445
+    Recon (all):     0.9120
+    Recon (log):     0.1824
+  Valid Loss:        5.8007
+    Contrastive:     9.1836
+    Recon (all):     0.7158
+    Recon (log):     0.1432
+  LR: 1.00e-04
+Epoch: 52, Alpha: 0.59
+  Train Loss:        4.3695
+    Contrastive:     6.7324
+    Recon (all):     0.9050
+    Recon (log):     0.1810
+  Valid Loss:        5.7641
+    Contrastive:     9.2114
+    Recon (all):     0.7095
+    Recon (log):     0.1419
+  LR: 1.00e-04
+Epoch: 53, Alpha: 0.59
+  Train Loss:        4.3240
+    Contrastive:     6.7179
+    Recon (all):     0.8989
+    Recon (log):     0.1798
+  Valid Loss:        5.6924
+    Contrastive:     9.1809
+    Recon (all):     0.7013
+    Recon (log):     0.1403
+  LR: 1.00e-04
+Epoch: 54, Alpha: 0.58
+  Train Loss:        4.2795
+    Contrastive:     6.7042
+    Recon (all):     0.8930
+    Recon (log):     0.1786
+  Valid Loss:        5.6049
+    Contrastive:     9.1250
+    Recon (all):     0.6886
+    Recon (log):     0.1377
+  LR: 1.00e-04
+Epoch: 55, Alpha: 0.58
+  Train Loss:        4.2360
+    Contrastive:     6.6919
+    Recon (all):     0.8867
+    Recon (log):     0.1773
+  Valid Loss:        5.5877
+    Contrastive:     9.1849
+    Recon (all):     0.6820
+    Recon (log):     0.1364
+  LR: 1.00e-04
+Epoch: 56, Alpha: 0.57
+  Train Loss:        4.1932
+    Contrastive:     6.6791
+    Recon (all):     0.8815
+    Recon (log):     0.1763
+  Valid Loss:        5.5034
+    Contrastive:     9.1247
+    Recon (all):     0.6794
+    Recon (log):     0.1359
+  LR: 1.00e-04
+Epoch: 57, Alpha: 0.57
+  Train Loss:        4.1503
+    Contrastive:     6.6655
+    Recon (all):     0.8763
+    Recon (log):     0.1753
+  Valid Loss:        5.4621
+    Contrastive:     9.1429
+    Recon (all):     0.6711
+    Recon (log):     0.1342
+  LR: 1.00e-04
+Epoch: 58, Alpha: 0.56
+  Train Loss:        4.1106
+    Contrastive:     6.6566
+    Recon (all):     0.8717
+    Recon (log):     0.1743
+  Valid Loss:        5.4138
+    Contrastive:     9.1399
+    Recon (all):     0.6734
+    Recon (log):     0.1347
+  LR: 1.00e-04
+Epoch: 59, Alpha: 0.55
+  Train Loss:        4.0691
+    Contrastive:     6.6445
+    Recon (all):     0.8659
+    Recon (log):     0.1732
+  Valid Loss:        5.3358
+    Contrastive:     9.0875
+    Recon (all):     0.6695
+    Recon (log):     0.1339
+  LR: 1.00e-04
+Epoch: 60, Alpha: 0.55
+  Train Loss:        4.0302
+    Contrastive:     6.6353
+    Recon (all):     0.8615
+    Recon (log):     0.1723
+  Valid Loss:        5.3001
+    Contrastive:     9.1104
+    Recon (all):     0.6653
+    Recon (log):     0.1331
+  LR: 1.00e-04
+Epoch: 61, Alpha: 0.54
+  Train Loss:        3.9900
+    Contrastive:     6.6232
+    Recon (all):     0.8568
+    Recon (log):     0.1714
+  Valid Loss:        5.2447
+    Contrastive:     9.1025
+    Recon (all):     0.6544
+    Recon (log):     0.1309
+  LR: 1.00e-04
+Epoch: 62, Alpha: 0.54
+  Train Loss:        3.9516
+    Contrastive:     6.6135
+    Recon (all):     0.8526
+    Recon (log):     0.1705
+  Valid Loss:        5.2268
+    Contrastive:     9.1514
+    Recon (all):     0.6576
+    Recon (log):     0.1315
+  LR: 1.00e-04
+Epoch: 63, Alpha: 0.53
+  Train Loss:        3.9134
+    Contrastive:     6.6032
+    Recon (all):     0.8486
+    Recon (log):     0.1697
+  Valid Loss:        5.1455
+    Contrastive:     9.0891
+    Recon (all):     0.6520
+    Recon (log):     0.1304
+  LR: 1.00e-04
+Epoch: 64, Alpha: 0.53
+  Train Loss:        3.8755
+    Contrastive:     6.5933
+    Recon (all):     0.8439
+    Recon (log):     0.1688
+  Valid Loss:        5.1196
+    Contrastive:     9.1256
+    Recon (all):     0.6511
+    Recon (log):     0.1302
+  LR: 1.00e-04
+Epoch: 65, Alpha: 0.52
+  Train Loss:        3.8385
+    Contrastive:     6.5839
+    Recon (all):     0.8399
+    Recon (log):     0.1680
+  Valid Loss:        5.0787
+    Contrastive:     9.1295
+    Recon (all):     0.6543
+    Recon (log):     0.1309
+  LR: 1.00e-04
+Epoch: 66, Alpha: 0.52
+  Train Loss:        3.8020
+    Contrastive:     6.5745
+    Recon (all):     0.8360
+    Recon (log):     0.1672
+  Valid Loss:        5.0316
+    Contrastive:     9.1308
+    Recon (all):     0.6465
+    Recon (log):     0.1293
+  LR: 1.00e-04
+Epoch: 67, Alpha: 0.51
+  Train Loss:        3.7681
+    Contrastive:     6.5689
+    Recon (all):     0.8329
+    Recon (log):     0.1666
+  Valid Loss:        4.9540
+    Contrastive:     9.0755
+    Recon (all):     0.6348
+    Recon (log):     0.1270
+  LR: 1.00e-04
+Epoch: 68, Alpha: 0.51
+  Train Loss:        3.7308
+    Contrastive:     6.5573
+    Recon (all):     0.8284
+    Recon (log):     0.1657
+  Valid Loss:        4.9268
+    Contrastive:     9.0998
+    Recon (all):     0.6418
+    Recon (log):     0.1284
+  LR: 1.00e-04
+Epoch: 69, Alpha: 0.50
+  Train Loss:        3.6956
+    Contrastive:     6.5480
+    Recon (all):     0.8253
+    Recon (log):     0.1651
+  Valid Loss:        4.8800
+    Contrastive:     9.1001
+    Recon (all):     0.6331
+    Recon (log):     0.1266
+  LR: 1.00e-04
+Epoch: 70, Alpha: 0.50
+  Train Loss:        3.6614
+    Contrastive:     6.5402
+    Recon (all):     0.8216
+    Recon (log):     0.1643
+  Valid Loss:        4.8446
+    Contrastive:     9.1137
+    Recon (all):     0.6334
+    Recon (log):     0.1267
+  LR: 1.00e-04
+Epoch: 71, Alpha: 0.49
+  Train Loss:        3.6273
+    Contrastive:     6.5323
+    Recon (all):     0.8177
+    Recon (log):     0.1635
+  Valid Loss:        4.7999
+    Contrastive:     9.1106
+    Recon (all):     0.6309
+    Recon (log):     0.1262
+  LR: 1.00e-04
+Epoch: 72, Alpha: 0.49
+  Train Loss:        3.5936
+    Contrastive:     6.5246
+    Recon (all):     0.8139
+    Recon (log):     0.1628
+  Valid Loss:        4.7451
+    Contrastive:     9.0834
+    Recon (all):     0.6308
+    Recon (log):     0.1262
+  LR: 1.00e-04
+Epoch: 73, Alpha: 0.48
+  Train Loss:        3.5616
+    Contrastive:     6.5184
+    Recon (all):     0.8113
+    Recon (log):     0.1623
+  Valid Loss:        4.6959
+    Contrastive:     9.0761
+    Recon (all):     0.6216
+    Recon (log):     0.1243
+  LR: 1.00e-04
+Epoch: 74, Alpha: 0.48
+  Train Loss:        3.5284
+    Contrastive:     6.5096
+    Recon (all):     0.8082
+    Recon (log):     0.1616
+  Valid Loss:        4.6644
+    Contrastive:     9.0938
+    Recon (all):     0.6227
+    Recon (log):     0.1245
+  LR: 1.00e-04
+Epoch: 75, Alpha: 0.47
+  Train Loss:        3.4974
+    Contrastive:     6.5045
+    Recon (all):     0.8052
+    Recon (log):     0.1610
+  Valid Loss:        4.6307
+    Contrastive:     9.1133
+    Recon (all):     0.6176
+    Recon (log):     0.1235
+  LR: 1.00e-04
+Epoch: 76, Alpha: 0.47
+  Train Loss:        3.4646
+    Contrastive:     6.4955
+    Recon (all):     0.8018
+    Recon (log):     0.1604
+  Valid Loss:        4.5678
+    Contrastive:     9.0692
+    Recon (all):     0.6132
+    Recon (log):     0.1226
+  LR: 1.00e-04
+Epoch: 77, Alpha: 0.46
+  Train Loss:        3.4341
+    Contrastive:     6.4903
+    Recon (all):     0.7989
+    Recon (log):     0.1598
+  Valid Loss:        4.5424
+    Contrastive:     9.0962
+    Recon (all):     0.6160
+    Recon (log):     0.1232
+  LR: 1.00e-04
+Epoch: 78, Alpha: 0.46
+  Train Loss:        3.4036
+    Contrastive:     6.4838
+    Recon (all):     0.7966
+    Recon (log):     0.1593
+  Valid Loss:        4.4900
+    Contrastive:     9.0688
+    Recon (all):     0.6145
+    Recon (log):     0.1229
+  LR: 1.00e-04
+Epoch: 79, Alpha: 0.45
+  Train Loss:        3.3724
+    Contrastive:     6.4765
+    Recon (all):     0.7931
+    Recon (log):     0.1586
+  Valid Loss:        4.4475
+    Contrastive:     9.0682
+    Recon (all):     0.6078
+    Recon (log):     0.1216
+  LR: 1.00e-04
+Epoch: 80, Alpha: 0.45
+  Train Loss:        3.3425
+    Contrastive:     6.4698
+    Recon (all):     0.7908
+    Recon (log):     0.1582
+  Valid Loss:        4.4084
+    Contrastive:     9.0652
+    Recon (all):     0.6087
+    Recon (log):     0.1217
+  LR: 1.00e-04
+Epoch: 81, Alpha: 0.44
+  Train Loss:        3.3132
+    Contrastive:     6.4645
+    Recon (all):     0.7879
+    Recon (log):     0.1576
+  Valid Loss:        4.3674
+    Contrastive:     9.0637
+    Recon (all):     0.6041
+    Recon (log):     0.1208
+  LR: 1.00e-04
+Epoch: 82, Alpha: 0.44
+  Train Loss:        3.2840
+    Contrastive:     6.4586
+    Recon (all):     0.7853
+    Recon (log):     0.1571
+  Valid Loss:        4.3402
+    Contrastive:     9.0872
+    Recon (all):     0.6038
+    Recon (log):     0.1208
+  LR: 1.00e-04
+Epoch: 83, Alpha: 0.44
+  Train Loss:        3.2550
+    Contrastive:     6.4519
+    Recon (all):     0.7831
+    Recon (log):     0.1566
+  Valid Loss:        4.2935
+    Contrastive:     9.0682
+    Recon (all):     0.6016
+    Recon (log):     0.1203
+  LR: 1.00e-04
+Epoch: 84, Alpha: 0.43
+  Train Loss:        3.2269
+    Contrastive:     6.4478
+    Recon (all):     0.7801
+    Recon (log):     0.1560
+  Valid Loss:        4.2747
+    Contrastive:     9.1044
+    Recon (all):     0.6057
+    Recon (log):     0.1211
+  LR: 1.00e-04
+Epoch: 85, Alpha: 0.43
+  Train Loss:        3.1983
+    Contrastive:     6.4413
+    Recon (all):     0.7775
+    Recon (log):     0.1555
+  Valid Loss:        4.2335
+    Contrastive:     9.1043
+    Recon (all):     0.5976
+    Recon (log):     0.1195
+  LR: 1.00e-04
+Epoch: 86, Alpha: 0.42
+  Train Loss:        3.1708
+    Contrastive:     6.4359
+    Recon (all):     0.7755
+    Recon (log):     0.1551
+  Valid Loss:        4.1821
+    Contrastive:     9.0600
+    Recon (all):     0.6037
+    Recon (log):     0.1207
+  LR: 1.00e-04
+Epoch: 87, Alpha: 0.42
+  Train Loss:        3.1437
+    Contrastive:     6.4309
+    Recon (all):     0.7736
+    Recon (log):     0.1547
+  Valid Loss:        4.1413
+    Contrastive:     9.0544
+    Recon (all):     0.5989
+    Recon (log):     0.1198
+  LR: 1.00e-04
+Epoch: 88, Alpha: 0.41
+  Train Loss:        3.1149
+    Contrastive:     6.4226
+    Recon (all):     0.7706
+    Recon (log):     0.1541
+  Valid Loss:        4.1235
+    Contrastive:     9.0914
+    Recon (all):     0.6024
+    Recon (log):     0.1205
+  LR: 1.00e-04
+Epoch: 89, Alpha: 0.41
+  Train Loss:        3.0898
+    Contrastive:     6.4209
+    Recon (all):     0.7686
+    Recon (log):     0.1537
+  Valid Loss:        4.0716
+    Contrastive:     9.0647
+    Recon (all):     0.5925
+    Recon (log):     0.1185
+  LR: 1.00e-04
+Epoch: 90, Alpha: 0.41
+  Train Loss:        3.0634
+    Contrastive:     6.4158
+    Recon (all):     0.7667
+    Recon (log):     0.1533
+  Valid Loss:        4.0508
+    Contrastive:     9.0915
+    Recon (all):     0.5972
+    Recon (log):     0.1194
+  LR: 1.00e-04
+Epoch: 91, Alpha: 0.40
+  Train Loss:        3.0365
+    Contrastive:     6.4088
+    Recon (all):     0.7645
+    Recon (log):     0.1529
+  Valid Loss:        4.0039
+    Contrastive:     9.0740
+    Recon (all):     0.5881
+    Recon (log):     0.1176
+  LR: 1.00e-04
+Epoch: 92, Alpha: 0.40
+  Train Loss:        3.0108
+    Contrastive:     6.4043
+    Recon (all):     0.7624
+    Recon (log):     0.1525
+  Valid Loss:        3.9651
+    Contrastive:     9.0485
+    Recon (all):     0.5970
+    Recon (log):     0.1194
+  LR: 1.00e-04
+Epoch: 93, Alpha: 0.39
+  Train Loss:        2.9855
+    Contrastive:     6.4001
+    Recon (all):     0.7602
+    Recon (log):     0.1520
+  Valid Loss:        3.9151
+    Contrastive:     9.0205
+    Recon (all):     0.5880
+    Recon (log):     0.1176
+  LR: 1.00e-04
+Epoch: 94, Alpha: 0.39
+  Train Loss:        2.9597
+    Contrastive:     6.3939
+    Recon (all):     0.7583
+    Recon (log):     0.1517
+  Valid Loss:        3.8954
+    Contrastive:     9.0622
+    Recon (all):     0.5832
+    Recon (log):     0.1166
+  LR: 1.00e-04
+Epoch: 95, Alpha: 0.39
+  Train Loss:        2.9350
+    Contrastive:     6.3903
+    Recon (all):     0.7561
+    Recon (log):     0.1512
+  Valid Loss:        3.8508
+    Contrastive:     9.0289
+    Recon (all):     0.5854
+    Recon (log):     0.1171
+  LR: 1.00e-04
+Epoch: 96, Alpha: 0.38
+  Train Loss:        2.9112
+    Contrastive:     6.3880
+    Recon (all):     0.7540
+    Recon (log):     0.1508
+  Valid Loss:        3.8282
+    Contrastive:     9.0616
+    Recon (all):     0.5811
+    Recon (log):     0.1162
+  LR: 1.00e-04
+Epoch: 97, Alpha: 0.38
+  Train Loss:        2.8867
+    Contrastive:     6.3828
+    Recon (all):     0.7522
+    Recon (log):     0.1504
+  Valid Loss:        3.7986
+    Contrastive:     9.0637
+    Recon (all):     0.5841
+    Recon (log):     0.1168
+  LR: 1.00e-04
+Epoch: 98, Alpha: 0.38
+  Train Loss:        2.8609
+    Contrastive:     6.3740
+    Recon (all):     0.7501
+    Recon (log):     0.1500
+  Valid Loss:        3.7513
+    Contrastive:     9.0324
+    Recon (all):     0.5785
+    Recon (log):     0.1157
+  LR: 1.00e-04
+Epoch: 99, Alpha: 0.37
+  Train Loss:        2.8387
+    Contrastive:     6.3732
+    Recon (all):     0.7488
+    Recon (log):     0.1498
+  Valid Loss:        3.7322
+    Contrastive:     9.0586
+    Recon (all):     0.5828
+    Recon (log):     0.1166
+  LR: 1.00e-04
+Epoch: 100, Alpha: 0.37
+  Train Loss:        2.8154
+    Contrastive:     6.3692
+    Recon (all):     0.7471
+    Recon (log):     0.1494
+  Valid Loss:        3.6897
+    Contrastive:     9.0297
+    Recon (all):     0.5820
+    Recon (log):     0.1164
+  LR: 1.00e-04
+Epoch: 101, Alpha: 0.36
+  Train Loss:        2.7923
+    Contrastive:     6.3657
+    Recon (all):     0.7451
+    Recon (log):     0.1490
+  Valid Loss:        3.6668
+    Contrastive:     9.0525
+    Recon (all):     0.5816
+    Recon (log):     0.1163
+  LR: 1.00e-04
+Epoch: 102, Alpha: 0.36
+  Train Loss:        2.7688
+    Contrastive:     6.3602
+    Recon (all):     0.7434
+    Recon (log):     0.1487
+  Valid Loss:        3.6431
+    Contrastive:     9.0625
+    Recon (all):     0.5868
+    Recon (log):     0.1174
+  LR: 1.00e-04
+Epoch: 103, Alpha: 0.36
+  Train Loss:        2.7463
+    Contrastive:     6.3565
+    Recon (all):     0.7418
+    Recon (log):     0.1484
+  Valid Loss:        3.5996
+    Contrastive:     9.0427
+    Recon (all):     0.5774
+    Recon (log):     0.1155
+  LR: 1.00e-04
+Epoch: 104, Alpha: 0.35
+  Train Loss:        2.7239
+    Contrastive:     6.3527
+    Recon (all):     0.7401
+    Recon (log):     0.1480
+  Valid Loss:        3.5750
+    Contrastive:     9.0552
+    Recon (all):     0.5791
+    Recon (log):     0.1158
+  LR: 1.00e-04
+Epoch: 105, Alpha: 0.35
+  Train Loss:        2.7013
+    Contrastive:     6.3473
+    Recon (all):     0.7387
+    Recon (log):     0.1477
+  Valid Loss:        3.5316
+    Contrastive:     9.0225
+    Recon (all):     0.5758
+    Recon (log):     0.1152
+  LR: 1.00e-04
+Epoch: 106, Alpha: 0.35
+  Train Loss:        2.6798
+    Contrastive:     6.3444
+    Recon (all):     0.7371
+    Recon (log):     0.1474
+  Valid Loss:        3.5030
+    Contrastive:     9.0312
+    Recon (all):     0.5725
+    Recon (log):     0.1145
+  LR: 1.00e-04
+Epoch: 107, Alpha: 0.34
+  Train Loss:        2.6579
+    Contrastive:     6.3405
+    Recon (all):     0.7352
+    Recon (log):     0.1470
+  Valid Loss:        3.4731
+    Contrastive:     9.0303
+    Recon (all):     0.5718
+    Recon (log):     0.1144
+  LR: 1.00e-04
+Epoch: 108, Alpha: 0.34
+  Train Loss:        2.6375
+    Contrastive:     6.3390
+    Recon (all):     0.7340
+    Recon (log):     0.1468
+  Valid Loss:        3.4517
+    Contrastive:     9.0425
+    Recon (all):     0.5768
+    Recon (log):     0.1154
+  LR: 1.00e-04
+Epoch: 109, Alpha: 0.34
+  Train Loss:        2.6158
+    Contrastive:     6.3347
+    Recon (all):     0.7321
+    Recon (log):     0.1464
+  Valid Loss:        3.4192
+    Contrastive:     9.0361
+    Recon (all):     0.5742
+    Recon (log):     0.1148
+  LR: 1.00e-04
+Epoch: 110, Alpha: 0.33
+  Train Loss:        2.5946
+    Contrastive:     6.3297
+    Recon (all):     0.7309
+    Recon (log):     0.1462
+  Valid Loss:        3.3866
+    Contrastive:     9.0254
+    Recon (all):     0.5732
+    Recon (log):     0.1146
+  LR: 1.00e-04
+Epoch: 111, Alpha: 0.33
+  Train Loss:        2.5742
+    Contrastive:     6.3269
+    Recon (all):     0.7295
+    Recon (log):     0.1459
+  Valid Loss:        3.3707
+    Contrastive:     9.0560
+    Recon (all):     0.5761
+    Recon (log):     0.1152
+  LR: 1.00e-04
+Epoch: 112, Alpha: 0.33
+  Train Loss:        2.5545
+    Contrastive:     6.3256
+    Recon (all):     0.7282
+    Recon (log):     0.1456
+  Valid Loss:        3.3368
+    Contrastive:     9.0367
+    Recon (all):     0.5764
+    Recon (log):     0.1153
+  LR: 1.00e-04
+Epoch: 113, Alpha: 0.32
+  Train Loss:        2.5343
+    Contrastive:     6.3220
+    Recon (all):     0.7269
+    Recon (log):     0.1454
+  Valid Loss:        3.2967
+    Contrastive:     9.0136
+    Recon (all):     0.5688
+    Recon (log):     0.1138
+  LR: 1.00e-04
+Epoch: 114, Alpha: 0.32
+  Train Loss:        2.5132
+    Contrastive:     6.3156
+    Recon (all):     0.7252
+    Recon (log):     0.1450
+  Valid Loss:        3.2680
+    Contrastive:     9.0136
+    Recon (all):     0.5664
+    Recon (log):     0.1133
+  LR: 1.00e-04
+Epoch: 115, Alpha: 0.32
+  Train Loss:        2.4948
+    Contrastive:     6.3166
+    Recon (all):     0.7240
+    Recon (log):     0.1448
+  Valid Loss:        3.2471
+    Contrastive:     9.0262
+    Recon (all):     0.5693
+    Recon (log):     0.1139
+  LR: 1.00e-04
+Epoch: 116, Alpha: 0.31
+  Train Loss:        2.4750
+    Contrastive:     6.3127
+    Recon (all):     0.7225
+    Recon (log):     0.1445
+  Valid Loss:        3.2072
+    Contrastive:     9.0026
+    Recon (all):     0.5608
+    Recon (log):     0.1122
+  LR: 1.00e-04
+Epoch: 117, Alpha: 0.31
+  Train Loss:        2.4558
+    Contrastive:     6.3104
+    Recon (all):     0.7211
+    Recon (log):     0.1442
+  Valid Loss:        3.1926
+    Contrastive:     9.0246
+    Recon (all):     0.5680
+    Recon (log):     0.1136
+  LR: 1.00e-04
+Epoch: 118, Alpha: 0.31
+  Train Loss:        2.4362
+    Contrastive:     6.3049
+    Recon (all):     0.7201
+    Recon (log):     0.1440
+  Valid Loss:        3.1659
+    Contrastive:     9.0148
+    Recon (all):     0.5715
+    Recon (log):     0.1143
+  LR: 1.00e-04
+Epoch: 119, Alpha: 0.30
+  Train Loss:        2.4176
+    Contrastive:     6.3030
+    Recon (all):     0.7188
+    Recon (log):     0.1438
+  Valid Loss:        3.1384
+    Contrastive:     9.0201
+    Recon (all):     0.5666
+    Recon (log):     0.1133
+  LR: 1.00e-04
+Epoch: 120, Alpha: 0.30
+  Train Loss:        2.3994
+    Contrastive:     6.3007
+    Recon (all):     0.7178
+    Recon (log):     0.1436
+  Valid Loss:        3.1094
+    Contrastive:     9.0173
+    Recon (all):     0.5630
+    Recon (log):     0.1126
+  LR: 1.00e-04
+Epoch: 121, Alpha: 0.30
+  Train Loss:        2.3806
+    Contrastive:     6.2966
+    Recon (all):     0.7167
+    Recon (log):     0.1433
+  Valid Loss:        3.0839
+    Contrastive:     9.0180
+    Recon (all):     0.5625
+    Recon (log):     0.1125
+  LR: 1.00e-04
+Epoch: 122, Alpha: 0.30
+  Train Loss:        2.3614
+    Contrastive:     6.2910
+    Recon (all):     0.7153
+    Recon (log):     0.1431
+  Valid Loss:        3.0624
+    Contrastive:     9.0258
+    Recon (all):     0.5643
+    Recon (log):     0.1129
+  LR: 1.00e-04
+Epoch: 123, Alpha: 0.29
+  Train Loss:        2.3447
+    Contrastive:     6.2932
+    Recon (all):     0.7139
+    Recon (log):     0.1428
+  Valid Loss:        3.0368
+    Contrastive:     9.0230
+    Recon (all):     0.5644
+    Recon (log):     0.1129
+  LR: 1.00e-04
+Epoch: 124, Alpha: 0.29
+  Train Loss:        2.3264
+    Contrastive:     6.2892
+    Recon (all):     0.7127
+    Recon (log):     0.1425
+  Valid Loss:        3.0187
+    Contrastive:     9.0356
+    Recon (all):     0.5684
+    Recon (log):     0.1137
+  LR: 1.00e-04
+Epoch: 125, Alpha: 0.29
+  Train Loss:        2.3096
+    Contrastive:     6.2880
+    Recon (all):     0.7120
+    Recon (log):     0.1424
+  Valid Loss:        2.9835
+    Contrastive:     9.0199
+    Recon (all):     0.5596
+    Recon (log):     0.1119
+  LR: 1.00e-04
+Epoch: 126, Alpha: 0.28
+  Train Loss:        2.2912
+    Contrastive:     6.2829
+    Recon (all):     0.7106
+    Recon (log):     0.1421
+  Valid Loss:        2.9651
+    Contrastive:     9.0339
+    Recon (all):     0.5621
+    Recon (log):     0.1124
+  LR: 1.00e-04
+Epoch: 127, Alpha: 0.28
+  Train Loss:        2.2743
+    Contrastive:     6.2811
+    Recon (all):     0.7097
+    Recon (log):     0.1419
+  Valid Loss:        2.9387
+    Contrastive:     9.0253
+    Recon (all):     0.5619
+    Recon (log):     0.1124
+  LR: 1.00e-04
+Epoch: 128, Alpha: 0.28
+  Train Loss:        2.2574
+    Contrastive:     6.2792
+    Recon (all):     0.7085
+    Recon (log):     0.1417
+  Valid Loss:        2.9110
+    Contrastive:     9.0158
+    Recon (all):     0.5600
+    Recon (log):     0.1120
+  LR: 1.00e-04
+Epoch: 129, Alpha: 0.28
+  Train Loss:        2.2410
+    Contrastive:     6.2775
+    Recon (all):     0.7078
+    Recon (log):     0.1416
+  Valid Loss:        2.8949
+    Contrastive:     9.0298
+    Recon (all):     0.5647
+    Recon (log):     0.1129
+  LR: 1.00e-04
+Epoch: 130, Alpha: 0.27
+  Train Loss:        2.2243
+    Contrastive:     6.2757
+    Recon (all):     0.7065
+    Recon (log):     0.1413
+  Valid Loss:        2.8584
+    Contrastive:     8.9955
+    Recon (all):     0.5593
+    Recon (log):     0.1119
+  LR: 1.00e-04
+Epoch: 131, Alpha: 0.27
+  Train Loss:        2.2077
+    Contrastive:     6.2728
+    Recon (all):     0.7055
+    Recon (log):     0.1411
+  Valid Loss:        2.8451
+    Contrastive:     9.0305
+    Recon (all):     0.5594
+    Recon (log):     0.1119
+  LR: 1.00e-04
+Epoch: 132, Alpha: 0.27
+  Train Loss:        2.1912
+    Contrastive:     6.2692
+    Recon (all):     0.7047
+    Recon (log):     0.1409
+  Valid Loss:        2.8174
+    Contrastive:     9.0111
+    Recon (all):     0.5598
+    Recon (log):     0.1120
+  LR: 1.00e-04
+Epoch: 133, Alpha: 0.26
+  Train Loss:        2.1749
+    Contrastive:     6.2675
+    Recon (all):     0.7033
+    Recon (log):     0.1407
+  Valid Loss:        2.7968
+    Contrastive:     9.0228
+    Recon (all):     0.5581
+    Recon (log):     0.1116
+  LR: 1.00e-04
+Epoch: 134, Alpha: 0.26
+  Train Loss:        2.1594
+    Contrastive:     6.2657
+    Recon (all):     0.7028
+    Recon (log):     0.1406
+  Valid Loss:        2.7718
+    Contrastive:     9.0204
+    Recon (all):     0.5553
+    Recon (log):     0.1111
+  LR: 1.00e-04
+Epoch: 135, Alpha: 0.26
+  Train Loss:        2.1437
+    Contrastive:     6.2642
+    Recon (all):     0.7016
+    Recon (log):     0.1403
+  Valid Loss:        2.7535
+    Contrastive:     9.0273
+    Recon (all):     0.5579
+    Recon (log):     0.1116
+  LR: 1.00e-04
+Epoch: 136, Alpha: 0.26
+  Train Loss:        2.1286
+    Contrastive:     6.2638
+    Recon (all):     0.7008
+    Recon (log):     0.1402
+  Valid Loss:        2.7333
+    Contrastive:     9.0322
+    Recon (all):     0.5584
+    Recon (log):     0.1117
+  LR: 1.00e-04
+Epoch: 137, Alpha: 0.25
+  Train Loss:        2.1118
+    Contrastive:     6.2568
+    Recon (all):     0.6997
+    Recon (log):     0.1399
+  Valid Loss:        2.7029
+    Contrastive:     9.0057
+    Recon (all):     0.5557
+    Recon (log):     0.1111
+  LR: 1.00e-04
+Epoch: 138, Alpha: 0.25
+  Train Loss:        2.0964
+    Contrastive:     6.2544
+    Recon (all):     0.6987
+    Recon (log):     0.1397
+  Valid Loss:        2.6794
+    Contrastive:     9.0114
+    Recon (all):     0.5510
+    Recon (log):     0.1102
+  LR: 1.00e-04
+Epoch: 139, Alpha: 0.25
+  Train Loss:        2.0824
+    Contrastive:     6.2553
+    Recon (all):     0.6983
+    Recon (log):     0.1397
+  Valid Loss:        2.6665
+    Contrastive:     9.0326
+    Recon (all):     0.5549
+    Recon (log):     0.1110
+  LR: 1.00e-04
+Epoch: 140, Alpha: 0.25
+  Train Loss:        2.0669
+    Contrastive:     6.2520
+    Recon (all):     0.6970
+    Recon (log):     0.1394
+  Valid Loss:        2.6406
+    Contrastive:     9.0204
+    Recon (all):     0.5524
+    Recon (log):     0.1105
+  LR: 1.00e-04
+Epoch: 141, Alpha: 0.24
+  Train Loss:        2.0522
+    Contrastive:     6.2503
+    Recon (all):     0.6963
+    Recon (log):     0.1393
+  Valid Loss:        2.6273
+    Contrastive:     9.0503
+    Recon (all):     0.5526
+    Recon (log):     0.1105
+  LR: 1.00e-04
+Epoch: 142, Alpha: 0.24
+  Train Loss:        2.0377
+    Contrastive:     6.2483
+    Recon (all):     0.6955
+    Recon (log):     0.1391
+  Valid Loss:        2.6040
+    Contrastive:     9.0433
+    Recon (all):     0.5514
+    Recon (log):     0.1103
+  LR: 1.00e-04
+Epoch: 143, Alpha: 0.24
+  Train Loss:        2.0237
+    Contrastive:     6.2486
+    Recon (all):     0.6946
+    Recon (log):     0.1389
+  Valid Loss:        2.5830
+    Contrastive:     9.0323
+    Recon (all):     0.5540
+    Recon (log):     0.1108
+  LR: 1.00e-04
+Epoch: 144, Alpha: 0.24
+  Train Loss:        2.0096
+    Contrastive:     6.2469
+    Recon (all):     0.6939
+    Recon (log):     0.1388
+  Valid Loss:        2.5605
+    Contrastive:     9.0265
+    Recon (all):     0.5529
+    Recon (log):     0.1106
+  LR: 1.00e-04
+Epoch: 145, Alpha: 0.23
+  Train Loss:        1.9944
+    Contrastive:     6.2410
+    Recon (all):     0.6930
+    Recon (log):     0.1386
+  Valid Loss:        2.5470
+    Contrastive:     9.0482
+    Recon (all):     0.5547
+    Recon (log):     0.1109
+  LR: 1.00e-04
+Epoch: 146, Alpha: 0.23
+  Train Loss:        1.9806
+    Contrastive:     6.2398
+    Recon (all):     0.6923
+    Recon (log):     0.1385
+  Valid Loss:        2.5282
+    Contrastive:     9.0562
+    Recon (all):     0.5536
+    Recon (log):     0.1107
+  LR: 1.00e-04
+Epoch: 147, Alpha: 0.23
+  Train Loss:        1.9666
+    Contrastive:     6.2375
+    Recon (all):     0.6914
+    Recon (log):     0.1383
+  Valid Loss:        2.5049
+    Contrastive:     9.0491
+    Recon (all):     0.5510
+    Recon (log):     0.1102
+  LR: 1.00e-04
+Epoch: 148, Alpha: 0.23
+  Train Loss:        1.9533
+    Contrastive:     6.2377
+    Recon (all):     0.6906
+    Recon (log):     0.1381
+  Valid Loss:        2.4868
+    Contrastive:     9.0519
+    Recon (all):     0.5519
+    Recon (log):     0.1104
+  LR: 1.00e-04
+Epoch: 149, Alpha: 0.23
+  Train Loss:        1.9398
+    Contrastive:     6.2363
+    Recon (all):     0.6898
+    Recon (log):     0.1380
+  Valid Loss:        2.4647
+    Contrastive:     9.0357
+    Recon (all):     0.5529
+    Recon (log):     0.1106
+  LR: 1.00e-04
+Epoch: 150, Alpha: 0.22
+  Train Loss:        1.9261
+    Contrastive:     6.2326
+    Recon (all):     0.6892
+    Recon (log):     0.1378
+  Valid Loss:        2.4456
+    Contrastive:     9.0510
+    Recon (all):     0.5484
+    Recon (log):     0.1097
+  LR: 1.00e-04
+Epoch: 151, Alpha: 0.22
+  Train Loss:        1.9127
+    Contrastive:     6.2298
+    Recon (all):     0.6886
+    Recon (log):     0.1377
+  Valid Loss:        2.4299
+    Contrastive:     9.0525
+    Recon (all):     0.5520
+    Recon (log):     0.1104
+  LR: 1.00e-04
+Epoch: 152, Alpha: 0.22
+  Train Loss:        1.8999
+    Contrastive:     6.2299
+    Recon (all):     0.6877
+    Recon (log):     0.1375
+  Valid Loss:        2.4045
+    Contrastive:     9.0312
+    Recon (all):     0.5494
+    Recon (log):     0.1099
+  LR: 1.00e-04
+Epoch: 153, Alpha: 0.22
+  Train Loss:        1.8868
+    Contrastive:     6.2288
+    Recon (all):     0.6868
+    Recon (log):     0.1374
+  Valid Loss:        2.3883
+    Contrastive:     9.0448
+    Recon (all):     0.5486
+    Recon (log):     0.1097
+  LR: 1.00e-04
+Epoch: 154, Alpha: 0.21
+  Train Loss:        1.8737
+    Contrastive:     6.2258
+    Recon (all):     0.6861
+    Recon (log):     0.1372
+  Valid Loss:        2.3741
+    Contrastive:     9.0506
+    Recon (all):     0.5522
+    Recon (log):     0.1104
+  LR: 1.00e-04
+Epoch: 155, Alpha: 0.21
+  Train Loss:        1.8611
+    Contrastive:     6.2244
+    Recon (all):     0.6855
+    Recon (log):     0.1371
+  Valid Loss:        2.3504
+    Contrastive:     9.0264
+    Recon (all):     0.5517
+    Recon (log):     0.1103
+  LR: 1.00e-04
+Epoch: 156, Alpha: 0.21
+  Train Loss:        1.8486
+    Contrastive:     6.2233
+    Recon (all):     0.6847
+    Recon (log):     0.1369
+  Valid Loss:        2.3339
+    Contrastive:     9.0365
+    Recon (all):     0.5507
+    Recon (log):     0.1101
+  LR: 1.00e-04
+Epoch: 157, Alpha: 0.21
+  Train Loss:        1.8368
+    Contrastive:     6.2239
+    Recon (all):     0.6844
+    Recon (log):     0.1369
+  Valid Loss:        2.3207
+    Contrastive:     9.0625
+    Recon (all):     0.5496
+    Recon (log):     0.1099
+  LR: 1.00e-04
+Epoch: 158, Alpha: 0.21
+  Train Loss:        1.8239
+    Contrastive:     6.2200
+    Recon (all):     0.6835
+    Recon (log):     0.1367
+  Valid Loss:        2.3001
+    Contrastive:     9.0548
+    Recon (all):     0.5478
+    Recon (log):     0.1096
+  LR: 1.00e-04
+Epoch: 159, Alpha: 0.20
+  Train Loss:        1.8111
+    Contrastive:     6.2171
+    Recon (all):     0.6825
+    Recon (log):     0.1365
+  Valid Loss:        2.2863
+    Contrastive:     9.0657
+    Recon (all):     0.5497
+    Recon (log):     0.1099
+  LR: 1.00e-04
+Epoch: 160, Alpha: 0.20
+  Train Loss:        1.7994
+    Contrastive:     6.2161
+    Recon (all):     0.6821
+    Recon (log):     0.1364
+  Valid Loss:        2.2610
+    Contrastive:     9.0463
+    Recon (all):     0.5446
+    Recon (log):     0.1089
+  LR: 1.00e-04
+Epoch: 161, Alpha: 0.20
+  Train Loss:        1.7882
+    Contrastive:     6.2172
+    Recon (all):     0.6817
+    Recon (log):     0.1363
+  Valid Loss:        2.2542
+    Contrastive:     9.0750
+    Recon (all):     0.5502
+    Recon (log):     0.1100
+  LR: 1.00e-04
+Epoch: 162, Alpha: 0.20
+  Train Loss:        1.7758
+    Contrastive:     6.2140
+    Recon (all):     0.6808
+    Recon (log):     0.1362
+  Valid Loss:        2.2274
+    Contrastive:     9.0387
+    Recon (all):     0.5468
+    Recon (log):     0.1094
+  LR: 1.00e-04
+Epoch: 163, Alpha: 0.20
+  Train Loss:        1.7643
+    Contrastive:     6.2128
+    Recon (all):     0.6804
+    Recon (log):     0.1361
+  Valid Loss:        2.2150
+    Contrastive:     9.0558
+    Recon (all):     0.5481
+    Recon (log):     0.1096
+  LR: 1.00e-04
+Epoch: 164, Alpha: 0.19
+  Train Loss:        1.7525
+    Contrastive:     6.2109
+    Recon (all):     0.6795
+    Recon (log):     0.1359
+  Valid Loss:        2.1989
+    Contrastive:     9.0661
+    Recon (all):     0.5463
+    Recon (log):     0.1093
+  LR: 1.00e-04
+Epoch: 165, Alpha: 0.19
+  Train Loss:        1.7412
+    Contrastive:     6.2096
+    Recon (all):     0.6791
+    Recon (log):     0.1358
+  Valid Loss:        2.1870
+    Contrastive:     9.0713
+    Recon (all):     0.5506
+    Recon (log):     0.1101
+  LR: 1.00e-04
+Epoch: 166, Alpha: 0.19
+  Train Loss:        1.7302
+    Contrastive:     6.2102
+    Recon (all):     0.6784
+    Recon (log):     0.1357
+  Valid Loss:        2.1597
+    Contrastive:     9.0401
+    Recon (all):     0.5443
+    Recon (log):     0.1089
+  LR: 1.00e-04
+Epoch: 167, Alpha: 0.19
+  Train Loss:        1.7181
+    Contrastive:     6.2049
+    Recon (all):     0.6777
+    Recon (log):     0.1355
+  Valid Loss:        2.1440
+    Contrastive:     9.0403
+    Recon (all):     0.5447
+    Recon (log):     0.1089
+  LR: 1.00e-04
+Epoch: 168, Alpha: 0.19
+  Train Loss:        1.7071
+    Contrastive:     6.2036
+    Recon (all):     0.6771
+    Recon (log):     0.1354
+  Valid Loss:        2.1326
+    Contrastive:     9.0549
+    Recon (all):     0.5470
+    Recon (log):     0.1094
+  LR: 1.00e-04
+Epoch: 169, Alpha: 0.18
+  Train Loss:        1.6967
+    Contrastive:     6.2055
+    Recon (all):     0.6765
+    Recon (log):     0.1353
+  Valid Loss:        2.1154
+    Contrastive:     9.0627
+    Recon (all):     0.5434
+    Recon (log):     0.1087
+  LR: 1.00e-04
+Epoch: 170, Alpha: 0.18
+  Train Loss:        1.6852
+    Contrastive:     6.2015
+    Recon (all):     0.6758
+    Recon (log):     0.1352
+  Valid Loss:        2.1012
+    Contrastive:     9.0649
+    Recon (all):     0.5447
+    Recon (log):     0.1089
+  LR: 1.00e-04
+Epoch: 171, Alpha: 0.18
+  Train Loss:        1.6747
+    Contrastive:     6.2027
+    Recon (all):     0.6749
+    Recon (log):     0.1350
+  Valid Loss:        2.0833
+    Contrastive:     9.0677
+    Recon (all):     0.5411
+    Recon (log):     0.1082
+  LR: 1.00e-04
+Epoch: 172, Alpha: 0.18
+  Train Loss:        1.6638
+    Contrastive:     6.1976
+    Recon (all):     0.6748
+    Recon (log):     0.1350
+  Valid Loss:        2.0697
+    Contrastive:     9.0588
+    Recon (all):     0.5452
+    Recon (log):     0.1090
+  LR: 1.00e-04
+Epoch: 173, Alpha: 0.18
+  Train Loss:        1.6537
+    Contrastive:     6.1997
+    Recon (all):     0.6741
+    Recon (log):     0.1348
+  Valid Loss:        2.0583
+    Contrastive:     9.0782
+    Recon (all):     0.5456
+    Recon (log):     0.1091
+  LR: 1.00e-04
+Epoch: 174, Alpha: 0.18
+  Train Loss:        1.6429
+    Contrastive:     6.1971
+    Recon (all):     0.6734
+    Recon (log):     0.1347
+  Valid Loss:        2.0364
+    Contrastive:     9.0638
+    Recon (all):     0.5404
+    Recon (log):     0.1081
+  LR: 1.00e-04
+Epoch: 175, Alpha: 0.17
+  Train Loss:        1.6325
+    Contrastive:     6.1932
+    Recon (all):     0.6733
+    Recon (log):     0.1347
+  Valid Loss:        2.0334
+    Contrastive:     9.1002
+    Recon (all):     0.5471
+    Recon (log):     0.1094
+  LR: 1.00e-04
+Epoch: 176, Alpha: 0.17
+  Train Loss:        1.6226
+    Contrastive:     6.1953
+    Recon (all):     0.6725
+    Recon (log):     0.1345
+  Valid Loss:        2.0151
+    Contrastive:     9.0830
+    Recon (all):     0.5464
+    Recon (log):     0.1093
+  LR: 1.00e-04
+Epoch: 177, Alpha: 0.17
+  Train Loss:        1.6122
+    Contrastive:     6.1925
+    Recon (all):     0.6719
+    Recon (log):     0.1344
+  Valid Loss:        2.0022
+    Contrastive:     9.0939
+    Recon (all):     0.5463
+    Recon (log):     0.1093
+  LR: 1.00e-04
+Epoch: 178, Alpha: 0.17
+  Train Loss:        1.6022
+    Contrastive:     6.1912
+    Recon (all):     0.6714
+    Recon (log):     0.1343
+  Valid Loss:        1.9837
+    Contrastive:     9.0815
+    Recon (all):     0.5440
+    Recon (log):     0.1088
+  LR: 1.00e-04
+Epoch: 179, Alpha: 0.17
+  Train Loss:        1.5921
+    Contrastive:     6.1899
+    Recon (all):     0.6706
+    Recon (log):     0.1341
+  Valid Loss:        1.9655
+    Contrastive:     9.0684
+    Recon (all):     0.5419
+    Recon (log):     0.1084
+  LR: 1.00e-04
+Epoch: 180, Alpha: 0.17
+  Train Loss:        1.5832
+    Contrastive:     6.1920
+    Recon (all):     0.6705
+    Recon (log):     0.1341
+  Valid Loss:        1.9481
+    Contrastive:     9.0650
+    Recon (all):     0.5388
+    Recon (log):     0.1078
+  LR: 1.00e-04
+Epoch: 181, Alpha: 0.16
+  Train Loss:        1.5728
+    Contrastive:     6.1883
+    Recon (all):     0.6697
+    Recon (log):     0.1339
+  Valid Loss:        1.9414
+    Contrastive:     9.0941
+    Recon (all):     0.5417
+    Recon (log):     0.1083
+  LR: 1.00e-04
+Epoch: 182, Alpha: 0.16
+  Train Loss:        1.5638
+    Contrastive:     6.1895
+    Recon (all):     0.6694
+    Recon (log):     0.1339
+  Valid Loss:        1.9248
+    Contrastive:     9.0780
+    Recon (all):     0.5417
+    Recon (log):     0.1083
+  LR: 1.00e-04
+Epoch: 183, Alpha: 0.16
+  Train Loss:        1.5538
+    Contrastive:     6.1861
+    Recon (all):     0.6688
+    Recon (log):     0.1338
+  Valid Loss:        1.9111
+    Contrastive:     9.0852
+    Recon (all):     0.5404
+    Recon (log):     0.1081
+  LR: 1.00e-04
+Epoch: 184, Alpha: 0.16
+  Train Loss:        1.5445
+    Contrastive:     6.1853
+    Recon (all):     0.6683
+    Recon (log):     0.1337
+  Valid Loss:        1.8950
+    Contrastive:     9.0832
+    Recon (all):     0.5378
+    Recon (log):     0.1076
+  LR: 1.00e-04
+Epoch: 185, Alpha: 0.16
+  Train Loss:        1.5351
+    Contrastive:     6.1828
+    Recon (all):     0.6679
+    Recon (log):     0.1336
+  Valid Loss:        1.8859
+    Contrastive:     9.0885
+    Recon (all):     0.5420
+    Recon (log):     0.1084
+  LR: 1.00e-04
+Epoch: 186, Alpha: 0.16
+  Train Loss:        1.5263
+    Contrastive:     6.1844
+    Recon (all):     0.6675
+    Recon (log):     0.1335
+  Valid Loss:        1.8689
+    Contrastive:     9.0890
+    Recon (all):     0.5377
+    Recon (log):     0.1075
+  LR: 1.00e-04
+Epoch: 187, Alpha: 0.15
+  Train Loss:        1.5165
+    Contrastive:     6.1793
+    Recon (all):     0.6669
+    Recon (log):     0.1334
+  Valid Loss:        1.8565
+    Contrastive:     9.0861
+    Recon (all):     0.5392
+    Recon (log):     0.1078
+  LR: 1.00e-04
+Epoch: 188, Alpha: 0.15
+  Train Loss:        1.5077
+    Contrastive:     6.1807
+    Recon (all):     0.6663
+    Recon (log):     0.1333
+  Valid Loss:        1.8495
+    Contrastive:     9.1196
+    Recon (all):     0.5404
+    Recon (log):     0.1081
+  LR: 1.00e-04
+Epoch: 189, Alpha: 0.15
+  Train Loss:        1.4988
+    Contrastive:     6.1787
+    Recon (all):     0.6660
+    Recon (log):     0.1332
+  Valid Loss:        1.8380
+    Contrastive:     9.1142
+    Recon (all):     0.5431
+    Recon (log):     0.1086
+  LR: 1.00e-04
+Epoch: 190, Alpha: 0.15
+  Train Loss:        1.4899
+    Contrastive:     6.1781
+    Recon (all):     0.6654
+    Recon (log):     0.1331
+  Valid Loss:        1.8188
+    Contrastive:     9.0760
+    Recon (all):     0.5424
+    Recon (log):     0.1085
+  LR: 1.00e-04
+Epoch: 191, Alpha: 0.15
+  Train Loss:        1.4815
+    Contrastive:     6.1782
+    Recon (all):     0.6651
+    Recon (log):     0.1330
+  Valid Loss:        1.8074
+    Contrastive:     9.0966
+    Recon (all):     0.5403
+    Recon (log):     0.1081
+  LR: 1.00e-04
+Epoch: 192, Alpha: 0.15
+  Train Loss:        1.4726
+    Contrastive:     6.1757
+    Recon (all):     0.6646
+    Recon (log):     0.1329
+  Valid Loss:        1.7949
+    Contrastive:     9.1004
+    Recon (all):     0.5399
+    Recon (log):     0.1080
+  LR: 1.00e-04
+Epoch: 193, Alpha: 0.15
+  Train Loss:        1.4639
+    Contrastive:     6.1738
+    Recon (all):     0.6642
+    Recon (log):     0.1328
+  Valid Loss:        1.7779
+    Contrastive:     9.1020
+    Recon (all):     0.5343
+    Recon (log):     0.1069
+  LR: 1.00e-04
+Epoch: 194, Alpha: 0.14
+  Train Loss:        1.4557
+    Contrastive:     6.1763
+    Recon (all):     0.6635
+    Recon (log):     0.1327
+  Valid Loss:        1.7677
+    Contrastive:     9.0977
+    Recon (all):     0.5376
+    Recon (log):     0.1075
+  LR: 1.00e-04
+Epoch: 195, Alpha: 0.14
+  Train Loss:        1.4472
+    Contrastive:     6.1741
+    Recon (all):     0.6632
+    Recon (log):     0.1326
+  Valid Loss:        1.7597
+    Contrastive:     9.1024
+    Recon (all):     0.5417
+    Recon (log):     0.1083
+  LR: 1.00e-04
+Epoch: 196, Alpha: 0.14
+  Train Loss:        1.4386
+    Contrastive:     6.1718
+    Recon (all):     0.6626
+    Recon (log):     0.1325
+  Valid Loss:        1.7484
+    Contrastive:     9.1185
+    Recon (all):     0.5401
+    Recon (log):     0.1080
+  LR: 1.00e-04
+Epoch: 197, Alpha: 0.14
+  Train Loss:        1.4304
+    Contrastive:     6.1712
+    Recon (all):     0.6621
+    Recon (log):     0.1324
+  Valid Loss:        1.7356
+    Contrastive:     9.1068
+    Recon (all):     0.5410
+    Recon (log):     0.1082
+  LR: 1.00e-04
+Epoch: 198, Alpha: 0.14
+  Train Loss:        1.4225
+    Contrastive:     6.1704
+    Recon (all):     0.6619
+    Recon (log):     0.1324
+  Valid Loss:        1.7169
+    Contrastive:     9.0900
+    Recon (all):     0.5358
+    Recon (log):     0.1072
+  LR: 1.00e-04
+Epoch: 199, Alpha: 0.14
+  Train Loss:        1.4143
+    Contrastive:     6.1687
+    Recon (all):     0.6614
+    Recon (log):     0.1323
+  Valid Loss:        1.7119
+    Contrastive:     9.1318
+    Recon (all):     0.5370
+    Recon (log):     0.1074
+  LR: 1.00e-04
+Epoch: 200, Alpha: 0.14
+  Train Loss:        1.4062
+    Contrastive:     6.1682
+    Recon (all):     0.6609
+    Recon (log):     0.1322
+  Valid Loss:        1.6961
+    Contrastive:     9.1131
+    Recon (all):     0.5352
+    Recon (log):     0.1070
+  LR: 1.00e-04
+Epoch: 201, Alpha: 0.13
+  Train Loss:        1.3982
+    Contrastive:     6.1688
+    Recon (all):     0.6601
+    Recon (log):     0.1320
+  Valid Loss:        1.6829
+    Contrastive:     9.0936
+    Recon (all):     0.5363
+    Recon (log):     0.1073
+  LR: 1.00e-04
+Epoch: 202, Alpha: 0.13
+  Train Loss:        1.3908
+    Contrastive:     6.1691
+    Recon (all):     0.6600
+    Recon (log):     0.1320
+  Valid Loss:        1.6743
+    Contrastive:     9.1109
+    Recon (all):     0.5369
+    Recon (log):     0.1074
+  LR: 1.00e-04
+Epoch: 203, Alpha: 0.13
+  Train Loss:        1.3829
+    Contrastive:     6.1669
+    Recon (all):     0.6596
+    Recon (log):     0.1319
+  Valid Loss:        1.6622
+    Contrastive:     9.1083
+    Recon (all):     0.5364
+    Recon (log):     0.1073
+  LR: 1.00e-04
+Epoch: 204, Alpha: 0.13
+  Train Loss:        1.3756
+    Contrastive:     6.1672
+    Recon (all):     0.6594
+    Recon (log):     0.1319
+  Valid Loss:        1.6555
+    Contrastive:     9.1279
+    Recon (all):     0.5387
+    Recon (log):     0.1077
+  LR: 1.00e-04
+Epoch: 205, Alpha: 0.13
+  Train Loss:        1.3680
+    Contrastive:     6.1653
+    Recon (all):     0.6591
+    Recon (log):     0.1318
+  Valid Loss:        1.6429
+    Contrastive:     9.1327
+    Recon (all):     0.5362
+    Recon (log):     0.1072
+  LR: 1.00e-04
+Epoch: 206, Alpha: 0.13
+  Train Loss:        1.3597
+    Contrastive:     6.1620
+    Recon (all):     0.6583
+    Recon (log):     0.1317
+  Valid Loss:        1.6344
+    Contrastive:     9.1455
+    Recon (all):     0.5373
+    Recon (log):     0.1075
+  LR: 1.00e-04
+Epoch: 207, Alpha: 0.13
+  Train Loss:        1.3524
+    Contrastive:     6.1607
+    Recon (all):     0.6580
+    Recon (log):     0.1316
+  Valid Loss:        1.6201
+    Contrastive:     9.1429
+    Recon (all):     0.5337
+    Recon (log):     0.1067
+  LR: 1.00e-04
+Epoch: 208, Alpha: 0.12
+  Train Loss:        1.3456
+    Contrastive:     6.1619
+    Recon (all):     0.6580
+    Recon (log):     0.1316
+  Valid Loss:        1.6102
+    Contrastive:     9.1511
+    Recon (all):     0.5336
+    Recon (log):     0.1067
+  LR: 1.00e-04
+Epoch: 209, Alpha: 0.12
+  Train Loss:        1.3383
+    Contrastive:     6.1625
+    Recon (all):     0.6574
+    Recon (log):     0.1315
+  Valid Loss:        1.5961
+    Contrastive:     9.1206
+    Recon (all):     0.5341
+    Recon (log):     0.1068
+  LR: 1.00e-04
+Epoch: 210, Alpha: 0.12
+  Train Loss:        1.3308
+    Contrastive:     6.1597
+    Recon (all):     0.6570
+    Recon (log):     0.1314
+  Valid Loss:        1.5845
+    Contrastive:     9.1307
+    Recon (all):     0.5315
+    Recon (log):     0.1063
+  LR: 1.00e-04
+Epoch: 211, Alpha: 0.12
+  Train Loss:        1.3233
+    Contrastive:     6.1588
+    Recon (all):     0.6562
+    Recon (log):     0.1312
+  Valid Loss:        1.5876
+    Contrastive:     9.1703
+    Recon (all):     0.5415
+    Recon (log):     0.1083
+  LR: 1.00e-04
+Epoch: 212, Alpha: 0.12
+  Train Loss:        1.3165
+    Contrastive:     6.1576
+    Recon (all):     0.6561
+    Recon (log):     0.1312
+  Valid Loss:        1.5641
+    Contrastive:     9.1317
+    Recon (all):     0.5318
+    Recon (log):     0.1064
+  LR: 1.00e-04
+Epoch: 213, Alpha: 0.12
+  Train Loss:        1.3094
+    Contrastive:     6.1564
+    Recon (all):     0.6557
+    Recon (log):     0.1311
+  Valid Loss:        1.5629
+    Contrastive:     9.1322
+    Recon (all):     0.5421
+    Recon (log):     0.1084
+  LR: 1.00e-04
+Epoch: 214, Alpha: 0.12
+  Train Loss:        1.3030
+    Contrastive:     6.1587
+    Recon (all):     0.6556
+    Recon (log):     0.1311
+  Valid Loss:        1.5485
+    Contrastive:     9.1421
+    Recon (all):     0.5359
+    Recon (log):     0.1072
+  LR: 1.00e-04
+Epoch: 215, Alpha: 0.12
+  Train Loss:        1.2956
+    Contrastive:     6.1552
+    Recon (all):     0.6549
+    Recon (log):     0.1310
+  Valid Loss:        1.5408
+    Contrastive:     9.1508
+    Recon (all):     0.5375
+    Recon (log):     0.1075
+  LR: 1.00e-04
+Epoch: 216, Alpha: 0.12
+  Train Loss:        1.2889
+    Contrastive:     6.1543
+    Recon (all):     0.6547
+    Recon (log):     0.1309
+  Valid Loss:        1.5341
+    Contrastive:     9.1466
+    Recon (all):     0.5417
+    Recon (log):     0.1083
+  LR: 1.00e-04
+Epoch: 217, Alpha: 0.11
+  Train Loss:        1.2823
+    Contrastive:     6.1551
+    Recon (all):     0.6542
+    Recon (log):     0.1308
+  Valid Loss:        1.5145
+    Contrastive:     9.1342
+    Recon (all):     0.5324
+    Recon (log):     0.1065
+  LR: 1.00e-04
+Epoch: 218, Alpha: 0.11
+  Train Loss:        1.2755
+    Contrastive:     6.1522
+    Recon (all):     0.6539
+    Recon (log):     0.1308
+  Valid Loss:        1.5100
+    Contrastive:     9.1600
+    Recon (all):     0.5350
+    Recon (log):     0.1070
+  LR: 1.00e-04
+Epoch: 219, Alpha: 0.11
+  Train Loss:        1.2689
+    Contrastive:     6.1520
+    Recon (all):     0.6535
+    Recon (log):     0.1307
+  Valid Loss:        1.4908
+    Contrastive:     9.1256
+    Recon (all):     0.5287
+    Recon (log):     0.1057
+  LR: 1.00e-04
+Epoch: 220, Alpha: 0.11
+  Train Loss:        1.2625
+    Contrastive:     6.1516
+    Recon (all):     0.6532
+    Recon (log):     0.1306
+  Valid Loss:        1.4872
+    Contrastive:     9.1400
+    Recon (all):     0.5335
+    Recon (log):     0.1067
+  LR: 1.00e-04
+Epoch: 221, Alpha: 0.11
+  Train Loss:        1.2560
+    Contrastive:     6.1508
+    Recon (all):     0.6529
+    Recon (log):     0.1306
+  Valid Loss:        1.4767
+    Contrastive:     9.1421
+    Recon (all):     0.5322
+    Recon (log):     0.1064
+  LR: 1.00e-04
+Epoch: 222, Alpha: 0.11
+  Train Loss:        1.2499
+    Contrastive:     6.1502
+    Recon (all):     0.6528
+    Recon (log):     0.1306
+  Valid Loss:        1.4738
+    Contrastive:     9.1813
+    Recon (all):     0.5347
+    Recon (log):     0.1069
+  LR: 1.00e-04
+Epoch: 223, Alpha: 0.11
+  Train Loss:        1.2431
+    Contrastive:     6.1505
+    Recon (all):     0.6518
+    Recon (log):     0.1304
+  Valid Loss:        1.4575
+    Contrastive:     9.1653
+    Recon (all):     0.5288
+    Recon (log):     0.1058
+  LR: 1.00e-04
+Epoch: 224, Alpha: 0.11
+  Train Loss:        1.2371
+    Contrastive:     6.1491
+    Recon (all):     0.6519
+    Recon (log):     0.1304
+  Valid Loss:        1.4466
+    Contrastive:     9.1579
+    Recon (all):     0.5279
+    Recon (log):     0.1056
+  LR: 1.00e-04
+Epoch: 225, Alpha: 0.11
+  Train Loss:        1.2308
+    Contrastive:     6.1483
+    Recon (all):     0.6514
+    Recon (log):     0.1303
+  Valid Loss:        1.4359
+    Contrastive:     9.1398
+    Recon (all):     0.5283
+    Recon (log):     0.1057
+  LR: 1.00e-04
+Epoch: 226, Alpha: 0.10
+  Train Loss:        1.2247
+    Contrastive:     6.1483
+    Recon (all):     0.6511
+    Recon (log):     0.1302
+  Valid Loss:        1.4274
+    Contrastive:     9.1489
+    Recon (all):     0.5278
+    Recon (log):     0.1056
+  LR: 1.00e-04
+Epoch: 227, Alpha: 0.10
+  Train Loss:        1.2190
+    Contrastive:     6.1486
+    Recon (all):     0.6510
+    Recon (log):     0.1302
+  Valid Loss:        1.4300
+    Contrastive:     9.1919
+    Recon (all):     0.5357
+    Recon (log):     0.1071
+  LR: 1.00e-04
+Epoch: 228, Alpha: 0.10
+  Train Loss:        1.2125
+    Contrastive:     6.1472
+    Recon (all):     0.6502
+    Recon (log):     0.1300
+  Valid Loss:        1.4144
+    Contrastive:     9.1590
+    Recon (all):     0.5320
+    Recon (log):     0.1064
+  LR: 1.00e-04
+Epoch: 229, Alpha: 0.10
+  Train Loss:        1.2062
+    Contrastive:     6.1441
+    Recon (all):     0.6498
+    Recon (log):     0.1300
+  Valid Loss:        1.4061
+    Contrastive:     9.1607
+    Recon (all):     0.5324
+    Recon (log):     0.1065
+  LR: 1.00e-04
+Epoch: 230, Alpha: 0.10
+  Train Loss:        1.2006
+    Contrastive:     6.1447
+    Recon (all):     0.6497
+    Recon (log):     0.1299
+  Valid Loss:        1.3948
+    Contrastive:     9.1613
+    Recon (all):     0.5294
+    Recon (log):     0.1059
+  LR: 1.00e-04
+Epoch: 231, Alpha: 0.10
+  Train Loss:        1.1948
+    Contrastive:     6.1455
+    Recon (all):     0.6492
+    Recon (log):     0.1298
+  Valid Loss:        1.3898
+    Contrastive:     9.1843
+    Recon (all):     0.5309
+    Recon (log):     0.1062
+  LR: 1.00e-04
+Epoch: 232, Alpha: 0.10
+  Train Loss:        1.1890
+    Contrastive:     6.1430
+    Recon (all):     0.6491
+    Recon (log):     0.1298
+  Valid Loss:        1.3785
+    Contrastive:     9.1667
+    Recon (all):     0.5297
+    Recon (log):     0.1059
+  LR: 1.00e-04
+Epoch: 233, Alpha: 0.10
+  Train Loss:        1.1835
+    Contrastive:     6.1450
+    Recon (all):     0.6488
+    Recon (log):     0.1298
+  Valid Loss:        1.3701
+    Contrastive:     9.1765
+    Recon (all):     0.5288
+    Recon (log):     0.1058
+  LR: 1.00e-04
+Epoch: 234, Alpha: 0.10
+  Train Loss:        1.1776
+    Contrastive:     6.1407
+    Recon (all):     0.6485
+    Recon (log):     0.1297
+  Valid Loss:        1.3704
+    Contrastive:     9.2134
+    Recon (all):     0.5343
+    Recon (log):     0.1069
+  LR: 1.00e-04
+Epoch: 235, Alpha: 0.10
+  Train Loss:        1.1724
+    Contrastive:     6.1432
+    Recon (all):     0.6483
+    Recon (log):     0.1297
+  Valid Loss:        1.3532
+    Contrastive:     9.1629
+    Recon (all):     0.5298
+    Recon (log):     0.1060
+  LR: 1.00e-04
+Epoch: 236, Alpha: 0.09
+  Train Loss:        1.1662
+    Contrastive:     6.1406
+    Recon (all):     0.6475
+    Recon (log):     0.1295
+  Valid Loss:        1.3438
+    Contrastive:     9.1813
+    Recon (all):     0.5267
+    Recon (log):     0.1053
+  LR: 1.00e-04
+Epoch: 237, Alpha: 0.09
+  Train Loss:        1.1608
+    Contrastive:     6.1392
+    Recon (all):     0.6474
+    Recon (log):     0.1295
+  Valid Loss:        1.3415
+    Contrastive:     9.2017
+    Recon (all):     0.5310
+    Recon (log):     0.1062
+  LR: 1.00e-04
+Epoch: 238, Alpha: 0.09
+  Train Loss:        1.1559
+    Contrastive:     6.1417
+    Recon (all):     0.6474
+    Recon (log):     0.1295
+  Valid Loss:        1.3332
+    Contrastive:     9.1934
+    Recon (all):     0.5315
+    Recon (log):     0.1063
+  LR: 1.00e-04
+Epoch: 239, Alpha: 0.09
+  Train Loss:        1.1502
+    Contrastive:     6.1413
+    Recon (all):     0.6467
+    Recon (log):     0.1293
+  Valid Loss:        1.3189
+    Contrastive:     9.1821
+    Recon (all):     0.5257
+    Recon (log):     0.1051
+  LR: 1.00e-04
+Epoch: 240, Alpha: 0.09
+  Train Loss:        1.1449
+    Contrastive:     6.1385
+    Recon (all):     0.6467
+    Recon (log):     0.1293
+  Valid Loss:        1.3091
+    Contrastive:     9.1633
+    Recon (all):     0.5255
+    Recon (log):     0.1051
+  LR: 1.00e-04
+Epoch: 241, Alpha: 0.09
+  Train Loss:        1.1396
+    Contrastive:     6.1372
+    Recon (all):     0.6465
+    Recon (log):     0.1293
+  Valid Loss:        1.3087
+    Contrastive:     9.2166
+    Recon (all):     0.5283
+    Recon (log):     0.1057
+  LR: 1.00e-04
+Epoch: 242, Alpha: 0.09
+  Train Loss:        1.1343
+    Contrastive:     6.1380
+    Recon (all):     0.6459
+    Recon (log):     0.1292
+  Valid Loss:        1.2983
+    Contrastive:     9.1934
+    Recon (all):     0.5277
+    Recon (log):     0.1055
+  LR: 1.00e-04
+Epoch: 243, Alpha: 0.09
+  Train Loss:        1.1294
+    Contrastive:     6.1384
+    Recon (all):     0.6458
+    Recon (log):     0.1292
+  Valid Loss:        1.2922
+    Contrastive:     9.2055
+    Recon (all):     0.5283
+    Recon (log):     0.1057
+  LR: 1.00e-04
+Epoch: 244, Alpha: 0.09
+  Train Loss:        1.1242
+    Contrastive:     6.1367
+    Recon (all):     0.6456
+    Recon (log):     0.1291
+  Valid Loss:        1.2832
+    Contrastive:     9.1830
+    Recon (all):     0.5289
+    Recon (log):     0.1058
+  LR: 1.00e-04
+Epoch: 245, Alpha: 0.09
+  Train Loss:        1.1191
+    Contrastive:     6.1370
+    Recon (all):     0.6452
+    Recon (log):     0.1290
+  Valid Loss:        1.2762
+    Contrastive:     9.1927
+    Recon (all):     0.5285
+    Recon (log):     0.1057
+  LR: 1.00e-04
+Epoch: 246, Alpha: 0.09
+  Train Loss:        1.1139
+    Contrastive:     6.1354
+    Recon (all):     0.6448
+    Recon (log):     0.1290
+  Valid Loss:        1.2678
+    Contrastive:     9.2259
+    Recon (all):     0.5244
+    Recon (log):     0.1049
+  LR: 1.00e-04
+Epoch: 247, Alpha: 0.08
+  Train Loss:        1.1094
+    Contrastive:     6.1375
+    Recon (all):     0.6448
+    Recon (log):     0.1290
+  Valid Loss:        1.2663
+    Contrastive:     9.2369
+    Recon (all):     0.5298
+    Recon (log):     0.1060
+  LR: 1.00e-04
+Epoch: 248, Alpha: 0.08
+  Train Loss:        1.1042
+    Contrastive:     6.1367
+    Recon (all):     0.6443
+    Recon (log):     0.1289
+  Valid Loss:        1.2549
+    Contrastive:     9.2148
+    Recon (all):     0.5274
+    Recon (log):     0.1055
+  LR: 1.00e-04
+Epoch: 249, Alpha: 0.08
+  Train Loss:        1.0992
+    Contrastive:     6.1340
+    Recon (all):     0.6440
+    Recon (log):     0.1288
+  Valid Loss:        1.2483
+    Contrastive:     9.2291
+    Recon (all):     0.5268
+    Recon (log):     0.1054
+  LR: 1.00e-04
+Starting Downstream Task
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.00287, Valid Loss: 0.00230, EPS: 0.991
+Epoch: 1, Train Loss: 0.00218, Valid Loss: 0.00227, EPS: 0.982
+Epoch: 2, Train Loss: 0.00216, Valid Loss: 0.00225, EPS: 0.973
+Epoch: 3, Train Loss: 0.00215, Valid Loss: 0.00224, EPS: 0.964
+Epoch: 4, Train Loss: 0.00214, Valid Loss: 0.00221, EPS: 0.955
+Epoch: 5, Train Loss: 0.00212, Valid Loss: 0.00222, EPS: 0.946
+Epoch: 6, Train Loss: 0.00212, Valid Loss: 0.00220, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00211, Valid Loss: 0.00220, EPS: 0.928
+Epoch: 8, Train Loss: 0.00210, Valid Loss: 0.00218, EPS: 0.919
+Epoch: 9, Train Loss: 0.00209, Valid Loss: 0.00221, EPS: 0.91
+Epoch: 10, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.901
+Epoch: 11, Train Loss: 0.00209, Valid Loss: 0.00220, EPS: 0.892
+Epoch: 12, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.883
+Epoch: 13, Train Loss: 0.00208, Valid Loss: 0.00219, EPS: 0.874
+Epoch: 14, Train Loss: 0.00209, Valid Loss: 0.00220, EPS: 0.865
+Epoch: 15, Train Loss: 0.00208, Valid Loss: 0.00219, EPS: 0.856
+Epoch: 16, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.847
+Epoch: 17, Train Loss: 0.00208, Valid Loss: 0.00219, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00208, Valid Loss: 0.00220, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00194, Valid Loss: 0.00201, EPS: 0.811
+Epoch: 21, Train Loss: 0.00186, Valid Loss: 0.00199, EPS: 0.802
+Epoch: 22, Train Loss: 0.00184, Valid Loss: 0.00198, EPS: 0.793
+Epoch: 23, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.784
+Epoch: 24, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.775
+Epoch: 25, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.766
+Epoch: 26, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.757
+Epoch: 27, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.748
+Epoch: 28, Train Loss: 0.00181, Valid Loss: 0.00196, EPS: 0.739
+Epoch: 29, Train Loss: 0.00180, Valid Loss: 0.00193, EPS: 0.73
+Epoch: 30, Train Loss: 0.00178, Valid Loss: 0.00194, EPS: 0.721
+Epoch: 31, Train Loss: 0.00177, Valid Loss: 0.00192, EPS: 0.712
+Epoch: 32, Train Loss: 0.00175, Valid Loss: 0.00189, EPS: 0.703
+Epoch: 33, Train Loss: 0.00173, Valid Loss: 0.00189, EPS: 0.694
+Epoch: 34, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.685
+Epoch: 35, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.676
+Epoch: 36, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.667
+Epoch: 37, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.658
+Epoch: 38, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.649
+Epoch: 39, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.64
+Epoch: 40, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.559
+Epoch: 49, Train Loss: 0.00169, Valid Loss: 0.00187, EPS: 0.55
+Epoch: 50, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.541
+Epoch: 51, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.532
+Epoch: 52, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.523
+Epoch: 53, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.514
+Epoch: 54, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.505
+Epoch: 55, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.496
+Epoch: 56, Train Loss: 0.00169, Valid Loss: 0.00187, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00168, Valid Loss: 0.00187, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00168, Valid Loss: 0.00186, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00169, Valid Loss: 0.00187, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00168, Valid Loss: 0.00186, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00168, Valid Loss: 0.00187, EPS: 0.406
+Epoch: 66, Train Loss: 0.00168, Valid Loss: 0.00187, EPS: 0.397
+Epoch: 67, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.388
+Epoch: 68, Train Loss: 0.00162, Valid Loss: 0.00183, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00162, Valid Loss: 0.00183, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00162, Valid Loss: 0.00183, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00162, Valid Loss: 0.00183, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.343
+Epoch: 73, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.334
+Epoch: 74, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.325
+Epoch: 75, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.316
+Epoch: 76, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.307
+Epoch: 77, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.298
+Epoch: 78, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.289
+Epoch: 79, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00162, Valid Loss: 0.00184, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.199
+Epoch: 89, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.19
+Epoch: 90, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.181
+Epoch: 91, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.172
+Epoch: 92, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00161, Valid Loss: 0.00184, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00161, Valid Loss: 0.00183, EPS: 0.1
+Test Loss: 0.00183
+Test Loss: 0.00181
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.00283, Valid Loss: 0.00228, EPS: 0.991
+Epoch: 1, Train Loss: 0.00217, Valid Loss: 0.00226, EPS: 0.982
+Epoch: 2, Train Loss: 0.00215, Valid Loss: 0.00224, EPS: 0.973
+Epoch: 3, Train Loss: 0.00215, Valid Loss: 0.00223, EPS: 0.964
+Epoch: 4, Train Loss: 0.00212, Valid Loss: 0.00222, EPS: 0.955
+Epoch: 5, Train Loss: 0.00212, Valid Loss: 0.00223, EPS: 0.946
+Epoch: 6, Train Loss: 0.00211, Valid Loss: 0.00221, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00210, Valid Loss: 0.00220, EPS: 0.928
+Epoch: 8, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.919
+Epoch: 9, Train Loss: 0.00209, Valid Loss: 0.00217, EPS: 0.91
+Epoch: 10, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.901
+Epoch: 11, Train Loss: 0.00209, Valid Loss: 0.00220, EPS: 0.892
+Epoch: 12, Train Loss: 0.00209, Valid Loss: 0.00217, EPS: 0.883
+Epoch: 13, Train Loss: 0.00208, Valid Loss: 0.00220, EPS: 0.874
+Epoch: 14, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.865
+Epoch: 15, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.856
+Epoch: 16, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.847
+Epoch: 17, Train Loss: 0.00207, Valid Loss: 0.00219, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.811
+Epoch: 21, Train Loss: 0.00194, Valid Loss: 0.00201, EPS: 0.802
+Epoch: 22, Train Loss: 0.00186, Valid Loss: 0.00198, EPS: 0.793
+Epoch: 23, Train Loss: 0.00184, Valid Loss: 0.00198, EPS: 0.784
+Epoch: 24, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.775
+Epoch: 25, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.766
+Epoch: 26, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.757
+Epoch: 27, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.748
+Epoch: 28, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.739
+Epoch: 29, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.73
+Epoch: 30, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.721
+Epoch: 31, Train Loss: 0.00181, Valid Loss: 0.00196, EPS: 0.712
+Epoch: 32, Train Loss: 0.00181, Valid Loss: 0.00196, EPS: 0.703
+Epoch: 33, Train Loss: 0.00181, Valid Loss: 0.00196, EPS: 0.694
+Epoch: 34, Train Loss: 0.00180, Valid Loss: 0.00195, EPS: 0.685
+Epoch: 35, Train Loss: 0.00179, Valid Loss: 0.00193, EPS: 0.676
+Epoch: 36, Train Loss: 0.00178, Valid Loss: 0.00192, EPS: 0.667
+Epoch: 37, Train Loss: 0.00176, Valid Loss: 0.00191, EPS: 0.658
+Epoch: 38, Train Loss: 0.00175, Valid Loss: 0.00191, EPS: 0.649
+Epoch: 39, Train Loss: 0.00174, Valid Loss: 0.00189, EPS: 0.64
+Epoch: 40, Train Loss: 0.00173, Valid Loss: 0.00189, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00173, Valid Loss: 0.00188, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00173, Valid Loss: 0.00188, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00171, Valid Loss: 0.00188, EPS: 0.559
+Epoch: 49, Train Loss: 0.00171, Valid Loss: 0.00188, EPS: 0.55
+Epoch: 50, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.541
+Epoch: 51, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.532
+Epoch: 52, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.523
+Epoch: 53, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.514
+Epoch: 54, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.505
+Epoch: 55, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.496
+Epoch: 56, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.406
+Epoch: 66, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.397
+Epoch: 67, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.388
+Epoch: 68, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00166, Valid Loss: 0.00184, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.343
+Epoch: 73, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.334
+Epoch: 74, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.325
+Epoch: 75, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.316
+Epoch: 76, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.307
+Epoch: 77, Train Loss: 0.00164, Valid Loss: 0.00185, EPS: 0.298
+Epoch: 78, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.289
+Epoch: 79, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00164, Valid Loss: 0.00185, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00164, Valid Loss: 0.00185, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00164, Valid Loss: 0.00184, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.199
+Epoch: 89, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.19
+Epoch: 90, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.181
+Epoch: 91, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.172
+Epoch: 92, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00163, Valid Loss: 0.00184, EPS: 0.1
+Test Loss: 0.00184
+Test Loss: 0.00182
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.00280, Valid Loss: 0.00227, EPS: 0.991
+Epoch: 1, Train Loss: 0.00217, Valid Loss: 0.00225, EPS: 0.982
+Epoch: 2, Train Loss: 0.00216, Valid Loss: 0.00225, EPS: 0.973
+Epoch: 3, Train Loss: 0.00214, Valid Loss: 0.00222, EPS: 0.964
+Epoch: 4, Train Loss: 0.00213, Valid Loss: 0.00220, EPS: 0.955
+Epoch: 5, Train Loss: 0.00211, Valid Loss: 0.00220, EPS: 0.946
+Epoch: 6, Train Loss: 0.00210, Valid Loss: 0.00218, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00210, Valid Loss: 0.00218, EPS: 0.928
+Epoch: 8, Train Loss: 0.00209, Valid Loss: 0.00222, EPS: 0.919
+Epoch: 9, Train Loss: 0.00209, Valid Loss: 0.00219, EPS: 0.91
+Epoch: 10, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.901
+Epoch: 11, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.892
+Epoch: 12, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.883
+Epoch: 13, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.874
+Epoch: 14, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.865
+Epoch: 15, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.856
+Epoch: 16, Train Loss: 0.00207, Valid Loss: 0.00218, EPS: 0.847
+Epoch: 17, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00208, Valid Loss: 0.00218, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00208, Valid Loss: 0.00219, EPS: 0.811
+Epoch: 21, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.802
+Epoch: 22, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.793
+Epoch: 23, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.784
+Epoch: 24, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.775
+Epoch: 25, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.766
+Epoch: 26, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.757
+Epoch: 27, Train Loss: 0.00207, Valid Loss: 0.00215, EPS: 0.748
+Epoch: 28, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.739
+Epoch: 29, Train Loss: 0.00207, Valid Loss: 0.00218, EPS: 0.73
+Epoch: 30, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.721
+Epoch: 31, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.712
+Epoch: 32, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.703
+Epoch: 33, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.694
+Epoch: 34, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.685
+Epoch: 35, Train Loss: 0.00207, Valid Loss: 0.00214, EPS: 0.676
+Epoch: 36, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.667
+Epoch: 37, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.658
+Epoch: 38, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.649
+Epoch: 39, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.64
+Epoch: 40, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00206, Valid Loss: 0.00218, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00207, Valid Loss: 0.00215, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00207, Valid Loss: 0.00216, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00207, Valid Loss: 0.00218, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00194, Valid Loss: 0.00202, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00186, Valid Loss: 0.00199, EPS: 0.559
+Epoch: 49, Train Loss: 0.00184, Valid Loss: 0.00198, EPS: 0.55
+Epoch: 50, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.541
+Epoch: 51, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.532
+Epoch: 52, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.523
+Epoch: 53, Train Loss: 0.00183, Valid Loss: 0.00197, EPS: 0.514
+Epoch: 54, Train Loss: 0.00182, Valid Loss: 0.00197, EPS: 0.505
+Epoch: 55, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.496
+Epoch: 56, Train Loss: 0.00182, Valid Loss: 0.00196, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00181, Valid Loss: 0.00196, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00181, Valid Loss: 0.00195, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00181, Valid Loss: 0.00195, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00180, Valid Loss: 0.00194, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00179, Valid Loss: 0.00193, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00178, Valid Loss: 0.00192, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00176, Valid Loss: 0.00191, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00175, Valid Loss: 0.00190, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00174, Valid Loss: 0.00189, EPS: 0.406
+Epoch: 66, Train Loss: 0.00174, Valid Loss: 0.00188, EPS: 0.397
+Epoch: 67, Train Loss: 0.00173, Valid Loss: 0.00188, EPS: 0.388
+Epoch: 68, Train Loss: 0.00172, Valid Loss: 0.00188, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00172, Valid Loss: 0.00187, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00172, Valid Loss: 0.00187, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.343
+Epoch: 73, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.334
+Epoch: 74, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.325
+Epoch: 75, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.316
+Epoch: 76, Train Loss: 0.00171, Valid Loss: 0.00187, EPS: 0.307
+Epoch: 77, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.298
+Epoch: 78, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.289
+Epoch: 79, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00170, Valid Loss: 0.00187, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.199
+Epoch: 89, Train Loss: 0.00170, Valid Loss: 0.00185, EPS: 0.19
+Epoch: 90, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.181
+Epoch: 91, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.172
+Epoch: 92, Train Loss: 0.00170, Valid Loss: 0.00186, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00169, Valid Loss: 0.00185, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00169, Valid Loss: 0.00185, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00169, Valid Loss: 0.00186, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00169, Valid Loss: 0.00185, EPS: 0.1
+Test Loss: 0.00186
+Test Loss: 0.00184
+torch.Size([2806, 5, 64, 32])
+torch.Size([935, 5, 64, 32])
+torch.Size([937, 5, 64, 32])
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.00272, Valid Loss: 0.00226, EPS: 0.991
+Epoch: 1, Train Loss: 0.00217, Valid Loss: 0.00223, EPS: 0.982
+Epoch: 2, Train Loss: 0.00213, Valid Loss: 0.00218, EPS: 0.973
+Epoch: 3, Train Loss: 0.00210, Valid Loss: 0.00219, EPS: 0.964
+Epoch: 4, Train Loss: 0.00209, Valid Loss: 0.00218, EPS: 0.955
+Epoch: 5, Train Loss: 0.00208, Valid Loss: 0.00217, EPS: 0.946
+Epoch: 6, Train Loss: 0.00207, Valid Loss: 0.00217, EPS: 0.9369999999999999
+Epoch: 7, Train Loss: 0.00207, Valid Loss: 0.00214, EPS: 0.928
+Epoch: 8, Train Loss: 0.00206, Valid Loss: 0.00215, EPS: 0.919
+Epoch: 9, Train Loss: 0.00205, Valid Loss: 0.00215, EPS: 0.91
+Epoch: 10, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.901
+Epoch: 11, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.892
+Epoch: 12, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.883
+Epoch: 13, Train Loss: 0.00206, Valid Loss: 0.00214, EPS: 0.874
+Epoch: 14, Train Loss: 0.00205, Valid Loss: 0.00213, EPS: 0.865
+Epoch: 15, Train Loss: 0.00205, Valid Loss: 0.00212, EPS: 0.856
+Epoch: 16, Train Loss: 0.00204, Valid Loss: 0.00213, EPS: 0.847
+Epoch: 17, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.8380000000000001
+Epoch: 18, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.8290000000000001
+Epoch: 19, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.8200000000000001
+Epoch: 20, Train Loss: 0.00205, Valid Loss: 0.00213, EPS: 0.811
+Epoch: 21, Train Loss: 0.00204, Valid Loss: 0.00215, EPS: 0.802
+Epoch: 22, Train Loss: 0.00205, Valid Loss: 0.00212, EPS: 0.793
+Epoch: 23, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.784
+Epoch: 24, Train Loss: 0.00204, Valid Loss: 0.00214, EPS: 0.775
+Epoch: 25, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.766
+Epoch: 26, Train Loss: 0.00205, Valid Loss: 0.00213, EPS: 0.757
+Epoch: 27, Train Loss: 0.00205, Valid Loss: 0.00213, EPS: 0.748
+Epoch: 28, Train Loss: 0.00205, Valid Loss: 0.00214, EPS: 0.739
+Epoch: 29, Train Loss: 0.00204, Valid Loss: 0.00212, EPS: 0.73
+Epoch: 30, Train Loss: 0.00204, Valid Loss: 0.00214, EPS: 0.721
+Epoch: 31, Train Loss: 0.00205, Valid Loss: 0.00212, EPS: 0.712
+Epoch: 32, Train Loss: 0.00204, Valid Loss: 0.00214, EPS: 0.703
+Epoch: 33, Train Loss: 0.00204, Valid Loss: 0.00214, EPS: 0.694
+Epoch: 34, Train Loss: 0.00193, Valid Loss: 0.00200, EPS: 0.685
+Epoch: 35, Train Loss: 0.00186, Valid Loss: 0.00198, EPS: 0.676
+Epoch: 36, Train Loss: 0.00184, Valid Loss: 0.00197, EPS: 0.667
+Epoch: 37, Train Loss: 0.00184, Valid Loss: 0.00196, EPS: 0.658
+Epoch: 38, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.649
+Epoch: 39, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.64
+Epoch: 40, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.6310000000000001
+Epoch: 41, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.6220000000000001
+Epoch: 42, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.6130000000000001
+Epoch: 43, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.6040000000000001
+Epoch: 44, Train Loss: 0.00183, Valid Loss: 0.00196, EPS: 0.5950000000000001
+Epoch: 45, Train Loss: 0.00183, Valid Loss: 0.00195, EPS: 0.5860000000000001
+Epoch: 46, Train Loss: 0.00182, Valid Loss: 0.00195, EPS: 0.5770000000000001
+Epoch: 47, Train Loss: 0.00182, Valid Loss: 0.00195, EPS: 0.5680000000000001
+Epoch: 48, Train Loss: 0.00182, Valid Loss: 0.00195, EPS: 0.559
+Epoch: 49, Train Loss: 0.00182, Valid Loss: 0.00194, EPS: 0.55
+Epoch: 50, Train Loss: 0.00182, Valid Loss: 0.00194, EPS: 0.541
+Epoch: 51, Train Loss: 0.00182, Valid Loss: 0.00195, EPS: 0.532
+Epoch: 52, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.523
+Epoch: 53, Train Loss: 0.00182, Valid Loss: 0.00194, EPS: 0.514
+Epoch: 54, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.505
+Epoch: 55, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.496
+Epoch: 56, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.4870000000000001
+Epoch: 57, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.4780000000000001
+Epoch: 58, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.4690000000000001
+Epoch: 59, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.4600000000000001
+Epoch: 60, Train Loss: 0.00181, Valid Loss: 0.00195, EPS: 0.45100000000000007
+Epoch: 61, Train Loss: 0.00181, Valid Loss: 0.00195, EPS: 0.44200000000000006
+Epoch: 62, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.43300000000000005
+Epoch: 63, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.42400000000000004
+Epoch: 64, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.41500000000000004
+Epoch: 65, Train Loss: 0.00181, Valid Loss: 0.00194, EPS: 0.406
+Epoch: 66, Train Loss: 0.00179, Valid Loss: 0.00194, EPS: 0.397
+Epoch: 67, Train Loss: 0.00179, Valid Loss: 0.00193, EPS: 0.388
+Epoch: 68, Train Loss: 0.00179, Valid Loss: 0.00193, EPS: 0.3790000000000001
+Epoch: 69, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.3700000000000001
+Epoch: 70, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.3610000000000001
+Epoch: 71, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.3520000000000001
+Epoch: 72, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.343
+Epoch: 73, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.334
+Epoch: 74, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.325
+Epoch: 75, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.316
+Epoch: 76, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.307
+Epoch: 77, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.298
+Epoch: 78, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.289
+Epoch: 79, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.27999999999999997
+Epoch: 80, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.27099999999999996
+Epoch: 81, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.26200000000000007
+Epoch: 82, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.25300000000000006
+Epoch: 83, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.24400000000000005
+Epoch: 84, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.23500000000000004
+Epoch: 85, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.22600000000000003
+Epoch: 86, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.21700000000000003
+Epoch: 87, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.20800000000000002
+Epoch: 88, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.199
+Epoch: 89, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.19
+Epoch: 90, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.181
+Epoch: 91, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.172
+Epoch: 92, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.16299999999999998
+Epoch: 93, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.15400000000000005
+Epoch: 94, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.14500000000000005
+Epoch: 95, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.13600000000000004
+Epoch: 96, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.12700000000000003
+Epoch: 97, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.11800000000000002
+Epoch: 98, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.10900000000000001
+Epoch: 99, Train Loss: 0.00178, Valid Loss: 0.00193, EPS: 0.1
+Test Loss: 0.00192
+Test Loss: 0.00191
+Training Decoder
+Traceback (most recent call last):
+  File "/homes/nb324/Documents/masters_project_multi_modal/simclr_multi_branch/main.py", line 157, in <module>
+    main()
+  File "/homes/nb324/Documents/masters_project_multi_modal/simclr_multi_branch/main.py", line 138, in main
+    train_decoder(
+  File "/homes/nb324/Documents/masters_project_multi_modal/simclr_multi_branch/train_decoder.py", line 26, in train_decoder
+    model.model.eval()
+    ^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1928, in __getattr__
+    raise AttributeError(
+AttributeError: 'SIMCLR' object has no attribute 'encoder'. Did you mean: 'encode'?
+Train: torch.Size([14031, 5, 64, 32]), Valid: torch.Size([4677, 5, 64, 32]), Test: torch.Size([4678, 5, 64, 32])
+Starting Downstream Task
+Running context window: 5 with stride: 5 with seed: 0
+Traceback (most recent call last):
+  File "/homes/nb324/Documents/masters_project_multi_modal/simclr_multi_branch/downstream_seed.py", line 66, in <module>
+    main()
+  File "/homes/nb324/Documents/masters_project_multi_modal/simclr_multi_branch/downstream_seed.py", line 53, in main
+    encoder_model=model_decoder.model.encoder,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/bitbucket/nb324/masters_project/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1928, in __getattr__
+    raise AttributeError(
+AttributeError: 'SIMCLR' object has no attribute 'encoder'. Did you mean: 'encode'?
