@@ -1,0 +1,1100 @@
+nohup: ignoring input
+[I 2025-04-29 08:26:30,479] A new study created in memory with name: no-name-2dc337e9-16b4-4e1d-a6a7-6f9e51e77576
+lr=0.0001_latent_dim=128_temperature=0.02
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.85, Validation Loss: 0.53, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.15, Validation Loss: 0.35, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.09, Validation Loss: 0.26, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.07, Validation Loss: 0.22, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.05, Validation Loss: 0.19, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.04, Validation Loss: 0.16, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.04, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.03, Validation Loss: 0.14, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.03, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.03, Validation Loss: 0.11, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.03, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.02, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.02, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.02, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.01, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.02, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.02, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9958290683812109
+Negative Mean Cosine similarity: 0.680765478775419
+Mean Variance of Embeddings 0.29001669842621375
+torch.Size([20])
+Mean Euclidean Distance: 2.164227247238159
+Max Euclidean Distance: 4.858166217803955
+Min Euclidean Distance: 0.5364722609519958
+torch.Size([20])
+Mean Euclidean Distance: 22.119762420654297
+Max Euclidean Distance: 32.280311584472656
+Min Euclidean Distance: 1.6044704914093018
+torch.Size([20])
+Mean cosine similarity: 0.9968744516372681
+Min: 0.9884846806526184
+Max: 0.9997947216033936
+torch.Size([20])
+Mean cosine similarity: 0.6785557866096497
+Min: 0.4547266960144043
+Max: 0.9976328611373901
+0.2812208831310272
+lr=0.0001_latent_dim=128_temperature=0.1
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.93, Validation Loss: 0.67, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.25, Validation Loss: 0.47, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.18, Validation Loss: 0.38, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.14, Validation Loss: 0.31, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.12, Validation Loss: 0.28, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.11, Validation Loss: 0.23, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.09, Validation Loss: 0.21, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.09, Validation Loss: 0.19, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.08, Validation Loss: 0.19, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.07, Validation Loss: 0.15, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.07, Validation Loss: 0.15, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.06, Validation Loss: 0.15, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.06, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.06, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.06, Validation Loss: 0.11, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.05, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.05, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.05, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.05, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.04, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.04, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.04, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.04, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.04, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.04, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.04, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.04, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.04, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.03, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.03, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.03, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.03, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.03, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.03, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.02, Validation Loss: 0.02, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9987438321113586
+Negative Mean Cosine similarity: 0.5643877099300253
+Mean Variance of Embeddings 0.3017129671984705
+torch.Size([20])
+Mean Euclidean Distance: 1.3726284503936768
+Max Euclidean Distance: 2.1137962341308594
+Min Euclidean Distance: 0.5945190787315369
+torch.Size([20])
+Mean Euclidean Distance: 23.38284683227539
+Max Euclidean Distance: 29.22149658203125
+Min Euclidean Distance: 17.192523956298828
+torch.Size([20])
+Mean cosine similarity: 0.9984860420227051
+Min: 0.9962372183799744
+Max: 0.9996378421783447
+torch.Size([20])
+Mean cosine similarity: 0.6109861731529236
+Min: 0.3593465983867645
+Max: 0.8188750743865967
+0.3022739291191101
+lr=0.0001_latent_dim=128_temperature=0.5
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 3.86, Validation Loss: 3.72, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 3.63, Validation Loss: 3.66, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 3.61, Validation Loss: 3.64, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 3.59, Validation Loss: 3.63, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 3.58, Validation Loss: 3.63, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 3.58, Validation Loss: 3.62, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 3.58, Validation Loss: 3.62, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 3.57, Validation Loss: 3.62, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 3.57, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 3.57, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 3.57, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 3.57, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 3.57, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 3.56, Validation Loss: 3.61, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 3.56, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 3.55, Validation Loss: 3.60, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 3.56, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 3.55, Validation Loss: 3.59, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 3.55, Validation Loss: 3.58, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9996239686834401
+Negative Mean Cosine similarity: 0.3033709608275315
+Mean Variance of Embeddings 0.904029315915601
+torch.Size([20])
+Mean Euclidean Distance: 1.0963242053985596
+Max Euclidean Distance: 2.839818239212036
+Min Euclidean Distance: 0.3494926393032074
+torch.Size([20])
+Mean Euclidean Distance: 42.297725677490234
+Max Euclidean Distance: 50.402366638183594
+Min Euclidean Distance: 34.42267990112305
+torch.Size([20])
+Mean cosine similarity: 0.9993253946304321
+Min: 0.9970287084579468
+Max: 0.9999625086784363
+torch.Size([20])
+Mean cosine similarity: 0.30581408739089966
+Min: 0.10584504902362823
+Max: 0.9998151063919067
+0.8622992634773254
+lr=0.0001_latent_dim=128_temperature=0.05
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.67, Validation Loss: 0.47, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.13, Validation Loss: 0.28, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.08, Validation Loss: 0.24, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.06, Validation Loss: 0.22, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.05, Validation Loss: 0.15, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.04, Validation Loss: 0.15, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.04, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.03, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.03, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.02, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.02, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.02, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.02, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9959437456624262
+Negative Mean Cosine similarity: 0.7853393513580849
+Mean Variance of Embeddings 0.13048862691583304
+torch.Size([20])
+Mean Euclidean Distance: 1.9835172891616821
+Max Euclidean Distance: 3.7786176204681396
+Min Euclidean Distance: 0.6041776537895203
+torch.Size([20])
+Mean Euclidean Distance: 16.104480743408203
+Max Euclidean Distance: 23.57245445251465
+Min Euclidean Distance: 11.275171279907227
+torch.Size([20])
+Mean cosine similarity: 0.9961035847663879
+Min: 0.9859094023704529
+Max: 0.9995900392532349
+torch.Size([20])
+Mean cosine similarity: 0.7754369974136353
+Min: 0.6424205899238586
+Max: 0.9981129169464111
+0.12997260689735413
+lr=0.0001_latent_dim=128_temperature=0.03
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.73, Validation Loss: 0.47, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.13, Validation Loss: 0.33, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.08, Validation Loss: 0.23, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.06, Validation Loss: 0.19, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.05, Validation Loss: 0.18, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.04, Validation Loss: 0.14, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.04, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.03, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.03, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.03, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.02, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.02, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.02, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.01, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.01, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9955907237940821
+Negative Mean Cosine similarity: 0.7192662954330444
+Mean Variance of Embeddings 0.21645799638896152
+torch.Size([20])
+Mean Euclidean Distance: 2.5958902835845947
+Max Euclidean Distance: 4.235319137573242
+Min Euclidean Distance: 1.001697301864624
+torch.Size([20])
+Mean Euclidean Distance: 19.865558624267578
+Max Euclidean Distance: 28.372526168823242
+Min Euclidean Distance: 1.9914357662200928
+torch.Size([20])
+Mean cosine similarity: 0.9949501752853394
+Min: 0.9850515723228455
+Max: 0.9992849826812744
+torch.Size([20])
+Mean cosine similarity: 0.7157320380210876
+Min: 0.5531800985336304
+Max: 0.9383887052536011
+0.22300776839256287
+lr=0.0001_latent_dim=128_temperature=0.3
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 2.99, Validation Loss: 2.73, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 2.52, Validation Loss: 2.61, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 2.46, Validation Loss: 2.57, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 2.43, Validation Loss: 2.54, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 2.41, Validation Loss: 2.53, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 2.40, Validation Loss: 2.52, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 2.39, Validation Loss: 2.50, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 2.38, Validation Loss: 2.49, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 2.38, Validation Loss: 2.49, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 2.38, Validation Loss: 2.48, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 2.37, Validation Loss: 2.48, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 2.37, Validation Loss: 2.47, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 2.37, Validation Loss: 2.47, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 2.36, Validation Loss: 2.46, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 2.36, Validation Loss: 2.46, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 2.36, Validation Loss: 2.46, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 2.36, Validation Loss: 2.45, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 2.36, Validation Loss: 2.45, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 2.36, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 2.36, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 2.35, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 2.35, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 2.35, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 2.35, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 2.35, Validation Loss: 2.43, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 2.35, Validation Loss: 2.44, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 2.35, Validation Loss: 2.43, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 2.35, Validation Loss: 2.43, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 2.35, Validation Loss: 2.43, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 2.35, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 2.35, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 2.34, Validation Loss: 2.42, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 2.34, Validation Loss: 2.41, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 2.33, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 2.33, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 2.34, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 2.33, Validation Loss: 2.40, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 2.34, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 2.33, Validation Loss: 2.39, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 2.33, Validation Loss: 2.38, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 2.33, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 2.32, Validation Loss: 2.36, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 2.32, Validation Loss: 2.37, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 2.32, Validation Loss: 2.36, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9994698516253767
+Negative Mean Cosine similarity: 0.29639008435709724
+Mean Variance of Embeddings 0.684780673734073
+torch.Size([20])
+Mean Euclidean Distance: 1.0159237384796143
+Max Euclidean Distance: 1.4300484657287598
+Min Euclidean Distance: 0.5480486750602722
+torch.Size([20])
+Mean Euclidean Distance: 34.58753204345703
+Max Euclidean Distance: 42.21544647216797
+Min Euclidean Distance: 0.8932141661643982
+torch.Size([20])
+Mean cosine similarity: 0.9994414448738098
+Min: 0.9986830949783325
+Max: 0.9998785853385925
+torch.Size([20])
+Mean cosine similarity: 0.2470364272594452
+Min: -0.06139680743217468
+Max: 0.6663833260536194
+0.6748758554458618
+lr=0.0001_latent_dim=128_temperature=0.04
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.76, Validation Loss: 0.57, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.15, Validation Loss: 0.35, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.10, Validation Loss: 0.29, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.07, Validation Loss: 0.23, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.06, Validation Loss: 0.18, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.04, Validation Loss: 0.16, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.04, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.03, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.03, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.03, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.02, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9952053715442789
+Negative Mean Cosine similarity: 0.7709740544187611
+Mean Variance of Embeddings 0.1261260460676818
+torch.Size([20])
+Mean Euclidean Distance: 1.8167505264282227
+Max Euclidean Distance: 4.126214981079102
+Min Euclidean Distance: 0.5354945063591003
+torch.Size([20])
+Mean Euclidean Distance: 16.71796417236328
+Max Euclidean Distance: 25.7680721282959
+Min Euclidean Distance: 10.49556827545166
+torch.Size([20])
+Mean cosine similarity: 0.9958419799804688
+Min: 0.9770084023475647
+Max: 0.9997766017913818
+torch.Size([20])
+Mean cosine similarity: 0.7511196136474609
+Min: 0.6498447060585022
+Max: 0.8660517930984497
+0.13570156693458557
+lr=0.0001_latent_dim=128_temperature=0.01
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 1.12, Validation Loss: 0.66, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.19, Validation Loss: 0.45, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.12, Validation Loss: 0.38, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.09, Validation Loss: 0.36, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.07, Validation Loss: 0.29, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.06, Validation Loss: 0.26, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.05, Validation Loss: 0.23, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.05, Validation Loss: 0.21, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.05, Validation Loss: 0.18, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.04, Validation Loss: 0.16, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.03, Validation Loss: 0.16, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.03, Validation Loss: 0.14, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.03, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.03, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.03, Validation Loss: 0.11, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.02, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.02, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.02, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.02, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.05, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.01, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.00, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.01, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9969781390551863
+Negative Mean Cosine similarity: 0.5794717546167045
+Mean Variance of Embeddings 0.39578969211413945
+torch.Size([20])
+Mean Euclidean Distance: 2.208611249923706
+Max Euclidean Distance: 4.697346210479736
+Min Euclidean Distance: 0.5367040038108826
+torch.Size([20])
+Mean Euclidean Distance: 27.824573516845703
+Max Euclidean Distance: 45.74925994873047
+Min Euclidean Distance: 2.3763058185577393
+torch.Size([20])
+Mean cosine similarity: 0.9959800839424133
+Min: 0.9819114208221436
+Max: 0.9997966885566711
+torch.Size([20])
+Mean cosine similarity: 0.5809869766235352
+Min: 0.21741336584091187
+Max: 0.9994231462478638
+0.38977566361427307
+lr=0.0001_latent_dim=128_temperature=0.08
+Shape: (5, 144, 72)
+Epoch: 0, Train Loss: 0.86, Validation Loss: 0.55, Learning Rate: 0.0001
+Epoch: 1, Train Loss: 0.18, Validation Loss: 0.33, Learning Rate: 0.0001
+Epoch: 2, Train Loss: 0.11, Validation Loss: 0.26, Learning Rate: 0.0001
+Epoch: 3, Train Loss: 0.09, Validation Loss: 0.21, Learning Rate: 0.0001
+Epoch: 4, Train Loss: 0.07, Validation Loss: 0.18, Learning Rate: 0.0001
+Epoch: 5, Train Loss: 0.06, Validation Loss: 0.14, Learning Rate: 0.0001
+Epoch: 6, Train Loss: 0.05, Validation Loss: 0.13, Learning Rate: 0.0001
+Epoch: 7, Train Loss: 0.04, Validation Loss: 0.12, Learning Rate: 0.0001
+Epoch: 8, Train Loss: 0.04, Validation Loss: 0.10, Learning Rate: 0.0001
+Epoch: 9, Train Loss: 0.03, Validation Loss: 0.09, Learning Rate: 0.0001
+Epoch: 10, Train Loss: 0.03, Validation Loss: 0.08, Learning Rate: 0.0001
+Epoch: 11, Train Loss: 0.03, Validation Loss: 0.07, Learning Rate: 0.0001
+Epoch: 12, Train Loss: 0.03, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 13, Train Loss: 0.02, Validation Loss: 0.06, Learning Rate: 0.0001
+Epoch: 14, Train Loss: 0.02, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 15, Train Loss: 0.02, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 16, Train Loss: 0.02, Validation Loss: 0.04, Learning Rate: 0.0001
+Epoch: 17, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 18, Train Loss: 0.02, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 19, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 20, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 21, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 22, Train Loss: 0.01, Validation Loss: 0.03, Learning Rate: 0.0001
+Epoch: 23, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 24, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 25, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 26, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 27, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 28, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 29, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 30, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 31, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 32, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 33, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 34, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 35, Train Loss: 0.01, Validation Loss: 0.02, Learning Rate: 0.0001
+Epoch: 36, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 37, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 38, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 39, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 40, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 41, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 42, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 43, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 44, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 45, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 46, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 47, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 48, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 49, Train Loss: 0.01, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 50, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 51, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 52, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 53, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 54, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 55, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 56, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 57, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 58, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 59, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 60, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 61, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 62, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 63, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 64, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 65, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 66, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 67, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 68, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 69, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 70, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 71, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 72, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 73, Train Loss: 0.00, Validation Loss: 0.01, Learning Rate: 0.0001
+Epoch: 74, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 75, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 76, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 77, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 78, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 79, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 80, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 81, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 82, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 83, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 84, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 85, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 86, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 87, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 88, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 89, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 90, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 91, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 92, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 93, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 94, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 95, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 96, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 97, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 98, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Epoch: 99, Train Loss: 0.00, Validation Loss: 0.00, Learning Rate: 0.0001
+Mean Cosine similarity: 0.9977849845228524
+Negative Mean Cosine similarity: 0.675564496681608
+Mean Variance of Embeddings 0.16366935238755984
+torch.Size([20])
+Mean Euclidean Distance: 1.5835793018341064
+Max Euclidean Distance: 2.3018345832824707
+Min Euclidean Distance: 0.5693843960762024
+torch.Size([20])
+Mean Euclidean Distance: 17.414623260498047
+Max Euclidean Distance: 24.51386070251465
+Min Euclidean Distance: 1.7730368375778198
+torch.Size([20])
+Mean cosine similarity: 0.9972603917121887
+Min: 0.9954721927642822
+Max: 0.9995830655097961
+torch.Size([20])
+Mean cosine similarity: 0.6505375504493713
+Min: 0.4215947091579437
+Max: 0.8517012000083923
+0.17556335031986237
