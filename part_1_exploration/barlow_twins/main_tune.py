@@ -120,12 +120,6 @@ def objective(trial):
     print("Negative Mean Cosine similarity:", rand_cos_sim)
     print("Mean Variance of Embeddings", mean_var)
 
-    test_data = torch.load("/vol/bitbucket/nb324/CL_X_test_full.pt")
-    # print('Starting Downstream Task')
-    # test_error = downstream_task(num_epochs=50, data=test_data, encoder_model=model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=1)
-    # return test_error
-
-
 def main():
     param_grid = {
         "lr": [1e-3],

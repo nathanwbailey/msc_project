@@ -18,8 +18,6 @@ from tsne import plot_tsne
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 )
-# from downstream_task_transformer.downstream_task_transformer_main import downstream_task
-
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -112,18 +110,7 @@ def objective(trial):
         model=model,
     )
 
-    # test_data = torch.load('/vol/bitbucket/nb324/CL_X_test_full.pt')
-    # print('Starting Downstream Task')
-    # test_error = downstream_task(num_epochs=50, data=test_data, encoder_model=model, latent_dim=1000, context_window=30, target_length=1, stride=1)
-    # return test_error
-
-
 def main():
-    # param_grid = {
-    #     "lr": [1e-5, 1e-4, 1e-3],
-    #     "latent_dim": [128, 256],
-    #     "temperature": [0.01, 0.05, 0.08, 0.1, 0.3, 0.5],
-    # }
     param_grid = {
         "lr": [1e-4],
         "latent_dim": [128],

@@ -131,16 +131,10 @@ def objective(trial):
 
 
 def main():
-    # param_grid = {
-    #     "lr": [1e-5, 1e-4, 1e-3],
-    #     "latent_dim": [128, 256],
-    #     "temperature": [0.01, 0.05, 0.08, 0.1, 0.3, 0.5],
-    # }
-
     param_grid = {
         "lr": [1e-4],
         "latent_dim": [128],
-        "temperature": [0.08],
+        "temperature": [0.01, 0.03, 0.05, 0.08, 0.1, 0.3],
     }
     sampler = GridSampler(param_grid)
     study = optuna.create_study(sampler=sampler, direction="minimize")
