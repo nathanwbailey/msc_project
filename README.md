@@ -67,9 +67,24 @@ This repository contains code and experiments for an MSc thesis focused on contr
     pip install -r requirements.txt
     ```
 
+
+## Details on Folder Structure
+
+Each model in the directories have correpsonding files for training and testing that are self explanatory.
+
+Each model has a number of notebooks that inform results in the report:
+
+- eval.ipynb - **Evaluates the model for single-step forecasting**
+- eval_autoregressive.ipynb - **Evaluates the model for autoregressive forecasting**
+- eval_autoregressive_seed_avg.ipynb -  **Evaluates the model for autoregressive forecasting for strided data**
+- eval_latent.ipynb - **Evaluates the model for conditional latent diffusion**
+- visual.ipynb - **Visualises the latent space and computes smoothness metrics**
+- visual_window_next_t.ipynb - **Plots trajectories of context windows with the next step**
+
+
 ## Notes
 
-- Each subfolder contains scripts and modules for specific experiments or model variants.
+- Each subfolder contains scripts and modules for the specific experiments and model variants.
 
 ---
 For questions or collaboration, please get in touch with me
