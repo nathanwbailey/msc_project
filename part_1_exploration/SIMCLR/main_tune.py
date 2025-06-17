@@ -125,9 +125,9 @@ def main():
     #     "temperature": [0.01, 0.05, 0.08, 0.1, 0.3, 0.5],
     # }
     param_grid = {
-        "lr": [1e-4, 1e-3],
+        "lr": [1e-4],
         "latent_dim": [128],
-        "temperature": [0.01, 0.02, 0.03, 0.04, 0.05, 0.08, 0.1, 0.3, 0.5],
+        "temperature": [0.01, 0.02, 0.03, 0.04, 0.05, 0.08, 0.1, 0.3],
     }
 
     sampler = GridSampler(param_grid)

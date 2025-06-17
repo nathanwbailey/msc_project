@@ -138,7 +138,7 @@ def main():
     # }
 
     param_grid = {
-        "lr": [1e-3],
+        "lr": [1e-4],
         "latent_dim": [128],
         "temperature": [0.08],
     }

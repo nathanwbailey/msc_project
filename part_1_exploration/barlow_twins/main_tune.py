@@ -14,8 +14,6 @@ sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 )
 import optuna
-from downstream_task_transformer.downstream_task_transformer_main import \
-    downstream_task
 from eval_sim import eval_model
 from optuna.samplers import GridSampler
 
@@ -130,7 +128,7 @@ def objective(trial):
 
 def main():
     param_grid = {
-        "lr": [1e-4, 1e-3],
+        "lr": [1e-3],
         "latent_dim": [128],
         "lambd": [0.001, 0.01, 0.1],
     }

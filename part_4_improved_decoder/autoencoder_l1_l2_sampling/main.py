@@ -7,7 +7,7 @@ from model_decoder import SIMCLR, SIMCLRDecoder
 from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 from torch.utils.data import DataLoader
 from torchsummary import summary
-from train_decoder import train_decoder, train_encoder_decoder
+from train_decoder import train_decoder
 
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -94,7 +94,7 @@ def main():
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)
 
-    # Freeze the projector for now
+    # Freeze the projector
     for param in model_decoder.model.projector.parameters():
         param.requires_grad = False
 
@@ -109,40 +109,19 @@ def main():
 
     print("Training Decoder")
 
-    # train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
+    train_decoder(model=model_decoder, num_epochs=180, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', add_l1=True, l1_lambda=1e-6)
 
-    # print('Starting Downstream Task')
-    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_s_10_cw_30.pth', weight_decay=1e-5)
+    print('Starting Downstream Task')
+    downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=1, model_save_path='downstream_model_no_decoder_weight_decay.pth', weight_decay=1e-5)
 
-    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_s_10_cw_5.pth', weight_decay=1e-5)
-
-    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
-
-    print("Starting Downstream Task")
-    # downstream_task_lstm(
-    #     num_epochs=100,
-    #     data=test_data,
-    #     encoder_model=model_decoder.model.encoder,
-    #     latent_dim=1000,
-    #     context_window=30,
-    #     target_length=1,
-    #     stride=1,
-    #     model_save_path="downstream_model_no_decoder_weight_decay_autoencoder_cw_30_3.pth",
-    #     weight_decay=1e-5,
-    # )
-
-    # print('Starting Downstream Task')
-    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_5_cw_5.pth', weight_decay=1e-5)
-
-    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=30, target_length=1, stride=10, model_save_path='downstream_model_no_decoder_weight_decay_autoencoder_s_10_cw_30.pth', weight_decay=1e-5)
 
     print("Starting Latent Downstream Task")
-    # downstream_task_latent_diffusion_conditional_attn(
-    #     num_epochs=300,
-    #     data=test_data,
-    #     model_encoder=model_decoder.model.encoder,
-    #     model_decoder=model_decoder.decoder,
-    # )
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model_decoder.model.encoder,
+        model_decoder=model_decoder.decoder,
+    )
     downstream_task_latent_classification(
         num_epochs=100,
         data=test_data,
