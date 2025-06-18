@@ -19,12 +19,6 @@ from latent_diffusion_model_conditional_attn.latent_model_main import \
     downstream_task as downstream_task_latent_diffusion_conditional_attn
 
 
-def reserve_memory(gb=5):
-    bytes_to_reserve = gb * 1024 ** 3
-    num_floats = bytes_to_reserve // 4
-    dummy = torch.zeros(int(num_floats), dtype=torch.float32, device='cuda')
-    return dummy
-
 def main():
     # --- Data Loading and Preprocessing ---
     BATCH_SIZE = 128 // 3
@@ -82,13 +76,11 @@ def main():
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
 
     # --- Pretrain Encoder (SimCLR) ---
-    # dummy = reserve_memory(gb=4)
-    # train_model(
-    #     model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-    #     loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
-    # )
-    # del dummy
-    # model = torch.load('simclr.pth', weights_only=False)
+    train_model(
+        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
+        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+    )
+    model = torch.load('simclr.pth', weights_only=False)
     torch.cuda.empty_cache()
     gc.collect()
 
@@ -98,19 +90,19 @@ def main():
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
 
     print("Fine Tuning Both")
-    # train_encoder_decoder(
-    #     model=model_decoder,
-    #     num_epochs=num_epochs,
-    #     trainloader=trainloader,
-    #     testloader=validloader,
-    #     optimizer=optimizer,
-    #     scheduler=scheduler,
-    #     device=DEVICE,
-    #     loss_fn_contrastive=loss_fn_contrastive,
-    #     loss_fn_reconstruct=loss_fn_reconstruct,
-    #     cycle_loss=cycle_loss,
-    #     model_save_path="simclr_decoder.pth",
-    # )
+    train_encoder_decoder(
+        model=model_decoder,
+        num_epochs=num_epochs,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        device=DEVICE,
+        loss_fn_contrastive=loss_fn_contrastive,
+        loss_fn_reconstruct=loss_fn_reconstruct,
+        cycle_loss=cycle_loss,
+        model_save_path="simclr_decoder.pth",
+    )
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
     torch.cuda.empty_cache()
     gc.collect()
@@ -120,20 +112,20 @@ def main():
     downstream_configs = [
         {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
     ]
-    # for cfg in downstream_configs:
-    #     downstream_task_lstm(
-    #         num_epochs=100,
-    #         data=test_data,
-    #         encoder_model=model_decoder.model,
-    #         latent_dim=1000,
-    #         context_window=cfg["context_window"],
-    #         target_length=1,
-    #         stride=cfg["stride"],
-    #         model_save_path=cfg["save"],
-    #         weight_decay=1e-5,
-    #     )
-    #     torch.cuda.empty_cache()
-    #     gc.collect()
+    for cfg in downstream_configs:
+        downstream_task_lstm(
+            num_epochs=100,
+            data=test_data,
+            encoder_model=model_decoder.model,
+            latent_dim=1000,
+            context_window=cfg["context_window"],
+            target_length=1,
+            stride=cfg["stride"],
+            model_save_path=cfg["save"],
+            weight_decay=1e-5,
+        )
+        torch.cuda.empty_cache()
+        gc.collect()
 
     # --- Freeze Encoder, Train Decoder Only ---
     for param in model_decoder.model.parameters():
@@ -145,29 +137,29 @@ def main():
     torch.cuda.empty_cache()
     gc.collect()
     print("Training Decoder")
-    # train_decoder(
-    #     model=model_decoder,
-    #     num_epochs=200,
-    #     trainloader=trainloader,
-    #     testloader=validloader,
-    #     optimizer=optimizer,
-    #     scheduler=scheduler,
-    #     device=DEVICE,
-    #     loss_fn_reconstruct=loss_fn_reconstruct,
-    #     model_save_path="simclr_decoder_freeze.pth",
-    # )
+    train_decoder(
+        model=model_decoder,
+        num_epochs=200,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        device=DEVICE,
+        loss_fn_reconstruct=loss_fn_reconstruct,
+        model_save_path="simclr_decoder_freeze.pth",
+    )
     model_decoder = torch.load("simclr_decoder_freeze.pth", weights_only=False)
     print("Starting Latent Downstream Task")
 
-    # downstream_task_latent_classification(
-    #     num_epochs=100,
-    #     data=test_data,
-    #     labels=test_labels,
-    #     model_encoder=model_decoder.model,
-    #     mask_prob_low=0.2,
-    #     mask_prob_high=0.9,
-    #     learning_rate=1e-3,
-    # )
+    downstream_task_latent_classification(
+        num_epochs=100,
+        data=test_data,
+        labels=test_labels,
+        model_encoder=model_decoder.model,
+        mask_prob_low=0.2,
+        mask_prob_high=0.9,
+        learning_rate=1e-3,
+    )
     downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model, model_decoder=model_decoder.decoder)
 
 
