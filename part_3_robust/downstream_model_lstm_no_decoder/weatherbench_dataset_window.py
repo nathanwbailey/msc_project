@@ -48,21 +48,23 @@ class WeatherBenchDatasetWindow(Dataset):
         ) // self.stride + 1
 
     def __getitem__(self, idx):
-        x = random_mask(
-            resize_encoder(self.data[idx : idx + self.context_length]),
-            mask_prob_low=self.mask_prob_low,
-            mask_prob_high=self.mask_prob_high,
-        )
-        y = random_mask(
-            resize_encoder(
-                self.data[
-                    idx
-                    + self.context_length : idx
-                    + self.context_length
-                    + self.target_length
-                ]
-            ),
-            mask_prob_low=self.mask_prob_low,
-            mask_prob_high=self.mask_prob_high,
-        )
+        start = idx * self.stride
+        end_context = start + self.context_length
+        end_target = end_context + self.target_length
+
+        if self.mask_prob_low == self.mask_prob_high == 0.0:
+            x = resize_encoder(self.data[start:end_context])
+            y = resize_encoder(self.data[end_context:end_target])
+        else:
+            x = random_mask(
+                resize_encoder(self.data[start:end_context]),
+                mask_prob_low=self.mask_prob_low,
+                mask_prob_high=self.mask_prob_high,
+            )
+            y = random_mask(
+                resize_encoder(self.data[end_context:end_target]),
+                mask_prob_low=self.mask_prob_low,
+                mask_prob_high=self.mask_prob_high,
+            )
+
         return x, y

@@ -104,7 +104,6 @@ def downstream_task(
         prefetch_factor=3,
         multiprocessing_context="forkserver",
     )
-    # learning_rate = learning_rate
 
     DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
     DEVICE = torch.device(DEVICE)

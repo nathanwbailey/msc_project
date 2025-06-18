@@ -45,9 +45,9 @@ def train_diffusion_model(
     latent_dim,
     model_save_path="latent_model.pth",
 ):
+    train_losses = []
+    mse_losses = []
     for epoch in range(1, num_epochs):
-        train_losses = []
-        mse_losses = []
         ddpm.train()
         for batch in trainloader:
             optimizer.zero_grad()
