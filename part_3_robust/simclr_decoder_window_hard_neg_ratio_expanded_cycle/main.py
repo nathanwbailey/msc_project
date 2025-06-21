@@ -105,7 +105,7 @@ def main():
         cycle_loss,
         model_save_path="simclr.pth",
     )
-    # model = torch.load('simclr.pth', weights_only=False)
+    model = torch.load('simclr.pth', weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)
@@ -133,7 +133,7 @@ def main():
         alpha=0.1,
     )
 
-    # model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
+    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     print("Starting Downstream Task")
     downstream_task_lstm(

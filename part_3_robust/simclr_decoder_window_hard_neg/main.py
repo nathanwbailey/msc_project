@@ -101,9 +101,9 @@ def main():
         scheduler,
         DEVICE,
         loss_fn_contrastive,
-        model_save_path="simclr_change2.pth",
+        model_save_path="simclr.pth",
     )
-    # model = torch.load('simclr.pth', weights_only=False)
+    model = torch.load('simclr.pth', weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)
@@ -126,11 +126,11 @@ def main():
         device=DEVICE,
         loss_fn_contrastive=loss_fn_contrastive,
         loss_fn_reconstruct=loss_fn_reconstruct,
-        model_save_path="simclr_decoder_change2.pth",
+        model_save_path="simclr_decoder.pth",
         alpha=0.1,
     )
 
-    # model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
+    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     print("Starting Downstream Task")
     downstream_task_lstm(
@@ -141,7 +141,7 @@ def main():
         context_window=30,
         target_length=1,
         stride=1,
-        model_save_path="downstream_model_no_decoder_change2.pth",
+        model_save_path="downstream_model_no_decoder.pth",
     )
 
     for param in model_decoder.model.parameters():
@@ -168,7 +168,7 @@ def main():
         scheduler=scheduler,
         device=DEVICE,
         loss_fn_reconstruct=loss_fn_reconstruct,
-        model_save_path="simclr_decoder_freeze_change2.pth",
+        model_save_path="simclr_decoder_freeze.pth",
     )
 
 

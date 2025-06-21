@@ -13,7 +13,7 @@ def resize_encoder(sample):
 
 
 def random_mask(
-    sample, mask_prob_low=0.7, mask_prob_high=0.7, mode_drop=None
+    sample, mask_prob_low=0.7, mask_prob_high=0.7
 ):
     if mask_prob_low == mask_prob_high:
         mask_prob = mask_prob_low

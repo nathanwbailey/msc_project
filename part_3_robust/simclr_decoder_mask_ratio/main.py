@@ -128,21 +128,9 @@ def main():
         model_save_path="simclr_decoder.pth",
         alpha=0.1,
     )
-    # model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
+    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     print("Starting Downstream Task")
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model_decoder.model.encoder,
-        latent_dim=1000,
-        context_window=30,
-        target_length=1,
-        stride=1,
-        model_save_path="downstream_model_no_decoder_variable_mask.pth",
-        mask_prob_low=0.5,
-        mask_prob_high=0.9,
-    )
 
     downstream_task_lstm(
         num_epochs=100,

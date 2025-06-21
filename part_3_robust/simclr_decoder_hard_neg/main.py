@@ -34,11 +34,7 @@ def main():
     train_data = (train_data - mean) / std
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
-
-    print(train_data.shape)
-    print(valid_data.shape)
-    print(test_data.shape)
-
+    
     train_dataset = WeatherBenchDataset(
         data=train_data, augment_sample_random_mask=0.7
     )
@@ -92,7 +88,7 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    # train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='simclr.pth')
+    train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='simclr.pth')
     model = torch.load("simclr.pth", weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
@@ -106,7 +102,7 @@ def main():
     )
     print("Fine Tuning Both")
 
-    # train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', alpha=0.1)
+    train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder.pth', alpha=0.1)
 
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
@@ -117,9 +113,9 @@ def main():
         encoder_model=model_decoder.model.encoder,
         latent_dim=1000,
         context_window=30,
-        target_length=5,
+        target_length=1,
         stride=1,
-        model_save_path="downstream_model_no_decoder_5.pth",
+        model_save_path="downstream_model_no_decoder.pth",
     )
 
     for param in model_decoder.model.parameters():
@@ -137,7 +133,7 @@ def main():
 
     print("Training Decoder")
 
-    # train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
+    train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
 
 
 if __name__ == "__main__":
