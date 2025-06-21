@@ -129,7 +129,7 @@ def main():
         alpha=0.1,
     )
 
-    # model_decoder = torch.load("barlow_decoder_fine_tuned.pth", weights_only=False)
+    model_decoder = torch.load("barlow_decoder_fine_tuned.pth", weights_only=False)
 
     # cos_sim, rand_cos_sim, mean_var = eval_model(model_decoder.model.encoder, validloader, DEVICE)
 

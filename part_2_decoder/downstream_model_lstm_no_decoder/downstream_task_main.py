@@ -29,34 +29,29 @@ def downstream_task(
     valid_data = data[n_train : n_train + n_valid]
     test_data = data[n_train + n_valid :]
 
-    mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
-    std = train_data.std(dim=(0, 2, 3), keepdim=True)
-
-    train_data = (train_data - mean) / std
-    valid_data = (valid_data - mean) / std
-    test_data = (test_data - mean) / std
-
-    print(train_data.shape)
-    print(valid_data.shape)
-    print(test_data.shape)
-
     train_dataset = WeatherBenchDatasetWindow(
         data=train_data,
         context_length=context_window,
         target_length=target_length,
         stride=stride,
+        mask_prob_low=0.7,
+        mask_prob_high=0.7
     )
     valid_dataset = WeatherBenchDatasetWindow(
         data=valid_data,
         context_length=context_window,
         target_length=target_length,
         stride=stride,
+        mask_prob_low=0.7,
+        mask_prob_high=0.7
     )
     test_dataset = WeatherBenchDatasetWindow(
         data=test_data,
         context_length=context_window,
         target_length=target_length,
         stride=stride,
+        mask_prob_low=0.7,
+        mask_prob_high=0.7
     )
     trainloader = DataLoader(
         train_dataset,

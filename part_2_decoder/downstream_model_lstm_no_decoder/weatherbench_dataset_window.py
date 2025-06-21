@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 from augment_functions import random_mask
 from torch.utils.data import Dataset
-
+import random
 
 def resize_encoder(sample):
     sample = F.interpolate(
@@ -11,7 +11,13 @@ def resize_encoder(sample):
     return sample
 
 
-def random_mask(sample, mask_prob=0.7):
+def random_mask(
+    sample, mask_prob_low=0.7, mask_prob_high=0.7
+):
+    if mask_prob_low == mask_prob_high:
+        mask_prob = mask_prob_low
+    else:
+        mask_prob = random.uniform(mask_prob_low, mask_prob_high)
     random_tensor = torch.rand(sample.shape, device=sample.device)
     mask = (random_tensor > mask_prob).float()
     masked_image = sample * mask
@@ -19,11 +25,13 @@ def random_mask(sample, mask_prob=0.7):
 
 
 class WeatherBenchDatasetWindow(Dataset):
-    def __init__(self, data, context_length, target_length, stride=1):
+    def __init__(self, data, context_length, target_length, mask_prob_low, mask_prob_high, stride=1):
         self.data = data
         self.context_length = context_length
         self.target_length = target_length
         self.stride = stride
+        self.mask_prob_low = mask_prob_low
+        self.mask_prob_high = mask_prob_high
 
     def __len__(self):
         return (

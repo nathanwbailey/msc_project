@@ -32,10 +32,6 @@ def main():
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
 
-    print(train_data.shape)
-    print(valid_data.shape)
-    print(test_data.shape)
-
     train_dataset = WeatherBenchDataset(data=train_data, mask_prob=0.7)
     valid_dataset = WeatherBenchDataset(data=valid_data, mask_prob=0.7)
     trainloader = DataLoader(
