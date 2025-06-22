@@ -95,52 +95,15 @@ def main():
         data=test_data,
         encoder_model=model.encoder,
         latent_dim=1000,
-        context_window=5,
+        context_window=30,
         target_length=1,
-        stride=5,
-        model_save_path="downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
-        weight_decay=1e-5,
-    )
-
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model.encoder,
-        latent_dim=1000,
-        context_window=5,
-        target_length=1,
-        stride=10,
-        model_save_path="downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
-        weight_decay=1e-5,
-    )
-
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model.encoder,
-        latent_dim=1000,
-        context_window=3,
-        target_length=1,
-        stride=5,
-        model_save_path="downstream_model_no_decoder_weight_decay_cw_3.pth",
-        weight_decay=1e-5,
-    )
-
-    downstream_task_lstm(
-        num_epochs=100,
-        data=test_data,
-        encoder_model=model.encoder,
-        latent_dim=1000,
-        context_window=1,
-        target_length=1,
-        stride=10,
-        model_save_path="downstream_model_no_decoder_weight_decay_cw_1.pth",
+        stride=1,
+        model_save_path="downstream_model_no_decoder_weight_decay.pth",
         weight_decay=1e-5,
     )
 
     print("Starting Latent Downstream Task")
-    # downstream_task_latent_diffusion(num_epochs=100, data=test_data, model=model)
-    # downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model.encoder, model_decoder=model.decoder)
+    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model.encoder, model_decoder=model.decoder)
 
 
 if __name__ == "__main__":

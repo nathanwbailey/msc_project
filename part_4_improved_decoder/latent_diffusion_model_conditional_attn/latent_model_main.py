@@ -29,10 +29,6 @@ def downstream_task(
     n_train = int(n_samples * 0.6)
     train_data = data[:n_train]
     valid_data = data[n_train:]
-    mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
-    std = train_data.std(dim=(0, 2, 3), keepdim=True)
-    train_data = (train_data - mean) / std
-    valid_data = (valid_data - mean) / std
 
     train_dataset = WeatherBenchDataset(
         data=train_data,
@@ -92,7 +88,7 @@ def downstream_task(
         param.requires_grad = False
     model_decoder.eval()
 
-    mse_losses, train_losses = train_diffusion_model(
+    train_diffusion_model(
         ddpm=ddpm,
         num_epochs=num_epochs,
         device=DEVICE,
@@ -105,23 +101,3 @@ def downstream_task(
         optimizer=optimizer,
         scheduler=scheduler,
     )
-
-    epochs = range(1, len(mse_losses) + 1)
-
-    plt.clf()
-    plt.plot(epochs, mse_losses)
-    plt.xlabel("Epoch")
-    plt.ylabel("MSE Loss")
-    plt.title("Generative MSE Loss vs Epochs")
-    plt.legend()
-    plt.grid(True)
-    plt.savefig("latent_model_mse_losses.png")
-
-    plt.clf()
-    plt.plot(epochs, train_losses)
-    plt.xlabel("Epoch")
-    plt.ylabel("MSE Loss")
-    plt.title("Noise Prediction MSE Loss vs Epochs")
-    plt.legend()
-    plt.grid(True)
-    plt.savefig("latent_model_training_losses.png")

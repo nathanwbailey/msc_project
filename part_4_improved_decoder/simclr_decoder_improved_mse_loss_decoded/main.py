@@ -117,22 +117,21 @@ def main():
 
     # train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder.pth')
 
-    # model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
+    model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # print('Starting Downstream Task')
-    # downstream_task_lstm(num_epochs=100, data=test_data, encoder_model=model_decoder.model.encoder, latent_dim=1000, context_window=5, target_length=1, stride=5, model_save_path='downstream_model_no_decoder_weight_decay_s_5_cw_5.pth', weight_decay=1e-5)
 
-    # downstream_task_lstm(
-    #     num_epochs=100,
-    #     data=test_data,
-    #     encoder_model=model_decoder.model.encoder,
-    #     latent_dim=1000,
-    #     context_window=5,
-    #     target_length=1,
-    #     stride=10,
-    #     model_save_path="downstream_model_no_decoder_s_10_cw_5_2.pth",
-    #     weight_decay=1e-5,
-    # )
+    downstream_task_lstm(
+        num_epochs=100,
+        data=test_data,
+        encoder_model=model_decoder.model.encoder,
+        latent_dim=1000,
+        context_window=30,
+        target_length=1,
+        stride=1,
+        model_save_path="downstream_model_no_decoder_weight_decay.pth",
+        weight_decay=1e-5,
+    )
 
     model_decoder = torch.load(
         "simclr_decoder_freeze.pth", weights_only=False

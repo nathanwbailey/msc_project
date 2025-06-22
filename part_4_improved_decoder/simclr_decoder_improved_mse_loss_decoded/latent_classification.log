@@ -1,167 +1,102 @@
-nohup: ignoring input
-torch.Size([14031, 5, 64, 32])
-torch.Size([4677, 5, 64, 32])
-torch.Size([4678, 5, 64, 32])
-Shape: (5, 144, 72)
-Fine Tuning Both
 Starting Latent Downstream Task
-4
-Epoch: 1, Train Loss: 0.2760, Valid Loss: 0.3249, LR: 0.01
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 78 leaked semaphore objects to clean up at shutdown
-  warnings.warn('resource_tracker: There appear to be %d '
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-uzfvc0q9': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-wi24fzda': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-mb9936qg': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-q89b7wsc': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-x33vf3i4': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-uebajs_d': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-pb5xtv39': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-e7uylg3a': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-ur7jsin7': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-jv3fwxav': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-f5sip69i': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-yotal2ce': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-j31dzwb2': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-4k29rpdy': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-ae03di6f': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-yemyebo2': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-z0sg5af8': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-_m5tldu1': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-wzrbvzw7': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-dynzmcpe': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-tr9nshlr': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-shv1jtqi': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-i08fn_6a': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-a3p_4mjo': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-fbcfonro': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-w3vxom6j': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-0ngn08o3': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-50q4fpmk': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-mql8x7oj': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-0ist85ms': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-59mg6ypw': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-y78_zikv': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-_dj4kxon': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-rftq2c4d': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-f8ee6fql': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-jdh8eox0': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-dam9r0eh': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-r87ymlbp': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-4a0e4zvn': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-e0pd00qq': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-k4fv7ryp': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-plrl01h3': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-n0t1eb_8': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-_xuenycz': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-szamg24j': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-njpsz7iq': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-6diydcez': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-tynql__z': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-5mxah85o': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-qf2zsgs3': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-13eu8rxz': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-kls5sehr': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-3a6dxpdw': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-q91o980v': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-wpj8zxc4': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-_yn11afe': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-xfyswtif': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-1_ts6mbc': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-3bmlzahj': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-1ltjhd60': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-9d8ua9mn': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-lx_frfau': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-mrkifszx': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-zxg9z6y0': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-4gqwbp7c': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-bre8ajjc': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-ppzbcouu': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-qokcaclw': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-1jav2_y9': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-vsder1d1': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-3msw297s': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-i1uop5ri': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-vvb9ix_0': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-munnmfwf': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-ukdksa1j': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-1vldogql': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-n918_346': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:267: UserWarning: resource_tracker: '/mp-d455zt__': [Errno 2] No such file or directory
-  warnings.warn('resource_tracker: %r: %s' % (name, e))
+Epoch: 1, Train Loss: 0.2930, Valid Loss: 0.2887, LR: 0.01
+Epoch: 2, Train Loss: 0.2210, Valid Loss: 0.2069, LR: 0.01
+Epoch: 3, Train Loss: 0.2380, Valid Loss: 0.2246, LR: 0.01
+Epoch: 4, Train Loss: 0.2309, Valid Loss: 0.1900, LR: 0.01
+Epoch: 5, Train Loss: 0.2464, Valid Loss: 0.2398, LR: 0.01
+Epoch: 6, Train Loss: 0.2447, Valid Loss: 0.1400, LR: 0.01
+Epoch: 7, Train Loss: 0.2597, Valid Loss: 0.2649, LR: 0.01
+Epoch: 8, Train Loss: 0.2549, Valid Loss: 0.2021, LR: 0.01
+Epoch: 9, Train Loss: 0.2543, Valid Loss: 0.1548, LR: 0.01
+Epoch: 10, Train Loss: 0.2517, Valid Loss: 0.1676, LR: 0.01
+Epoch: 11, Train Loss: 0.2656, Valid Loss: 0.2241, LR: 0.01
+Epoch: 12, Train Loss: 0.2626, Valid Loss: 0.2253, LR: 0.01
+Epoch: 13, Train Loss: 0.2717, Valid Loss: 0.1577, LR: 0.01
+Epoch: 14, Train Loss: 0.2535, Valid Loss: 0.1902, LR: 0.01
+Epoch: 15, Train Loss: 0.2258, Valid Loss: 0.2448, LR: 0.01
+Epoch: 16, Train Loss: 0.2597, Valid Loss: 0.1617, LR: 0.01
+Epoch: 17, Train Loss: 0.2615, Valid Loss: 0.2196, LR: 0.001
+Epoch: 18, Train Loss: 0.2024, Valid Loss: 0.1443, LR: 0.001
+Epoch: 19, Train Loss: 0.1552, Valid Loss: 0.1457, LR: 0.001
+Epoch: 20, Train Loss: 0.1229, Valid Loss: 0.1410, LR: 0.001
+Epoch: 21, Train Loss: 0.1236, Valid Loss: 0.1340, LR: 0.001
+Epoch: 22, Train Loss: 0.1215, Valid Loss: 0.1351, LR: 0.001
+Epoch: 23, Train Loss: 0.1283, Valid Loss: 0.1368, LR: 0.001
+Epoch: 24, Train Loss: 0.1174, Valid Loss: 0.1587, LR: 0.001
+Epoch: 25, Train Loss: 0.1172, Valid Loss: 0.1359, LR: 0.001
+Epoch: 26, Train Loss: 0.1103, Valid Loss: 0.1414, LR: 0.001
+Epoch: 27, Train Loss: 0.1164, Valid Loss: 0.1485, LR: 0.001
+Epoch: 28, Train Loss: 0.1206, Valid Loss: 0.1454, LR: 0.001
+Epoch: 29, Train Loss: 0.1038, Valid Loss: 0.1445, LR: 0.001
+Epoch: 30, Train Loss: 0.1108, Valid Loss: 0.1352, LR: 0.001
+Epoch: 31, Train Loss: 0.1223, Valid Loss: 0.1347, LR: 0.001
+Epoch: 32, Train Loss: 0.1067, Valid Loss: 0.1361, LR: 0.0001
+Epoch: 33, Train Loss: 0.0940, Valid Loss: 0.1322, LR: 0.0001
+Epoch: 34, Train Loss: 0.0934, Valid Loss: 0.1328, LR: 0.0001
+Epoch: 35, Train Loss: 0.0830, Valid Loss: 0.1298, LR: 0.0001
+Epoch: 36, Train Loss: 0.0802, Valid Loss: 0.1270, LR: 0.0001
+Epoch: 37, Train Loss: 0.0768, Valid Loss: 0.1330, LR: 0.0001
+Epoch: 38, Train Loss: 0.0690, Valid Loss: 0.1419, LR: 0.0001
+Epoch: 39, Train Loss: 0.0738, Valid Loss: 0.1353, LR: 0.0001
+Epoch: 40, Train Loss: 0.0754, Valid Loss: 0.1318, LR: 0.0001
+Epoch: 41, Train Loss: 0.0720, Valid Loss: 0.1322, LR: 0.0001
+Epoch: 42, Train Loss: 0.0647, Valid Loss: 0.1340, LR: 0.0001
+Epoch: 43, Train Loss: 0.0664, Valid Loss: 0.1334, LR: 0.0001
+Epoch: 44, Train Loss: 0.0631, Valid Loss: 0.1376, LR: 0.0001
+Epoch: 45, Train Loss: 0.0650, Valid Loss: 0.1353, LR: 0.0001
+Epoch: 46, Train Loss: 0.0614, Valid Loss: 0.1344, LR: 0.0001
+Epoch: 47, Train Loss: 0.0686, Valid Loss: 0.1510, LR: 1e-05
+Epoch: 48, Train Loss: 0.0596, Valid Loss: 0.1408, LR: 1e-05
+Epoch: 49, Train Loss: 0.0619, Valid Loss: 0.1431, LR: 1e-05
+Epoch: 50, Train Loss: 0.0701, Valid Loss: 0.1372, LR: 1e-05
+Epoch: 51, Train Loss: 0.0634, Valid Loss: 0.1395, LR: 1e-05
+Epoch: 52, Train Loss: 0.0610, Valid Loss: 0.1413, LR: 1e-05
+Epoch: 53, Train Loss: 0.0578, Valid Loss: 0.1370, LR: 1e-05
+Epoch: 54, Train Loss: 0.0629, Valid Loss: 0.1260, LR: 1e-05
+Epoch: 55, Train Loss: 0.0605, Valid Loss: 0.1359, LR: 1e-05
+Epoch: 56, Train Loss: 0.0558, Valid Loss: 0.1386, LR: 1e-05
+Epoch: 57, Train Loss: 0.0585, Valid Loss: 0.1350, LR: 1e-05
+Epoch: 58, Train Loss: 0.0584, Valid Loss: 0.1402, LR: 1e-05
+Epoch: 59, Train Loss: 0.0611, Valid Loss: 0.1354, LR: 1e-05
+Epoch: 60, Train Loss: 0.0607, Valid Loss: 0.1386, LR: 1e-05
+Epoch: 61, Train Loss: 0.0582, Valid Loss: 0.1390, LR: 1e-05
+Epoch: 62, Train Loss: 0.0576, Valid Loss: 0.1441, LR: 1e-05
+Epoch: 63, Train Loss: 0.0569, Valid Loss: 0.1385, LR: 1e-05
+Epoch: 64, Train Loss: 0.0588, Valid Loss: 0.1411, LR: 1e-05
+Epoch: 65, Train Loss: 0.0559, Valid Loss: 0.1331, LR: 1.0000000000000002e-06
+Epoch: 66, Train Loss: 0.0578, Valid Loss: 0.1333, LR: 1.0000000000000002e-06
+Epoch: 67, Train Loss: 0.0572, Valid Loss: 0.1329, LR: 1.0000000000000002e-06
+Epoch: 68, Train Loss: 0.0601, Valid Loss: 0.1310, LR: 1.0000000000000002e-06
+Epoch: 69, Train Loss: 0.0617, Valid Loss: 0.1349, LR: 1.0000000000000002e-06
+Epoch: 70, Train Loss: 0.0560, Valid Loss: 0.1319, LR: 1.0000000000000002e-06
+Epoch: 71, Train Loss: 0.0578, Valid Loss: 0.1399, LR: 1.0000000000000002e-06
+Epoch: 72, Train Loss: 0.0589, Valid Loss: 0.1338, LR: 1.0000000000000002e-06
+Epoch: 73, Train Loss: 0.0579, Valid Loss: 0.1384, LR: 1.0000000000000002e-06
+Epoch: 74, Train Loss: 0.0577, Valid Loss: 0.1322, LR: 1.0000000000000002e-06
+Epoch: 75, Train Loss: 0.0540, Valid Loss: 0.1369, LR: 1.0000000000000002e-06
+Epoch: 76, Train Loss: 0.0583, Valid Loss: 0.1436, LR: 1.0000000000000002e-07
+Epoch: 77, Train Loss: 0.0603, Valid Loss: 0.1425, LR: 1.0000000000000002e-07
+Epoch: 78, Train Loss: 0.0544, Valid Loss: 0.1398, LR: 1.0000000000000002e-07
+Epoch: 79, Train Loss: 0.0551, Valid Loss: 0.1350, LR: 1.0000000000000002e-07
+Epoch: 80, Train Loss: 0.0585, Valid Loss: 0.1368, LR: 1.0000000000000002e-07
+Epoch: 81, Train Loss: 0.0555, Valid Loss: 0.1372, LR: 1.0000000000000002e-07
+Epoch: 82, Train Loss: 0.0614, Valid Loss: 0.1409, LR: 1.0000000000000002e-07
+Epoch: 83, Train Loss: 0.0563, Valid Loss: 0.1433, LR: 1.0000000000000002e-07
+Epoch: 84, Train Loss: 0.0580, Valid Loss: 0.1400, LR: 1.0000000000000002e-07
+Epoch: 85, Train Loss: 0.0586, Valid Loss: 0.1362, LR: 1.0000000000000002e-07
+Epoch: 86, Train Loss: 0.0577, Valid Loss: 0.1354, LR: 1.0000000000000002e-07
+Epoch: 87, Train Loss: 0.0549, Valid Loss: 0.1384, LR: 1.0000000000000004e-08
+Epoch: 88, Train Loss: 0.0572, Valid Loss: 0.1336, LR: 1.0000000000000004e-08
+Epoch: 89, Train Loss: 0.0587, Valid Loss: 0.1338, LR: 1.0000000000000004e-08
+Epoch: 90, Train Loss: 0.0555, Valid Loss: 0.1332, LR: 1.0000000000000004e-08
+Epoch: 91, Train Loss: 0.0645, Valid Loss: 0.1356, LR: 1.0000000000000004e-08
+Epoch: 92, Train Loss: 0.0595, Valid Loss: 0.1468, LR: 1.0000000000000004e-08
+Epoch: 93, Train Loss: 0.0615, Valid Loss: 0.1362, LR: 1.0000000000000004e-08
+Epoch: 94, Train Loss: 0.0538, Valid Loss: 0.1323, LR: 1.0000000000000004e-08
+Epoch: 95, Train Loss: 0.0617, Valid Loss: 0.1393, LR: 1.0000000000000004e-08
+Epoch: 96, Train Loss: 0.0568, Valid Loss: 0.1379, LR: 1.0000000000000004e-08
+Epoch: 97, Train Loss: 0.0573, Valid Loss: 0.1419, LR: 1.0000000000000004e-08
+Epoch: 98, Train Loss: 0.0567, Valid Loss: 0.1354, LR: 1.0000000000000004e-08
+Epoch: 99, Train Loss: 0.0554, Valid Loss: 0.1408, LR: 1.0000000000000004e-08
+Epoch: 100, Train Loss: 0.0593, Valid Loss: 0.1356, LR: 1.0000000000000004e-08
+Test Loss: 0.1399

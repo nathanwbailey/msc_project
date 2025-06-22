@@ -74,7 +74,7 @@ def main():
     print(f"Shape: {C, H, W}")
     model = AutoEncoder(C, latent_dim)
     model = model.to(DEVICE)
-    summary(model, (C, H, W), depth=10)
+    # summary(model, (C, H, W), depth=10)
     loss_fn = torch.nn.MSELoss()
 
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
@@ -82,18 +82,18 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    train_autoencoder(
-        model,
-        num_epochs,
-        trainloader,
-        testloader,
-        optimizer,
-        scheduler,
-        DEVICE,
-        loss_fn,
-        model_save_path="det_autoencoder.pth",
-    )
-    # model = torch.load("det_autoencoder.pth", weights_only=False)
+    # train_autoencoder(
+    #     model,
+    #     num_epochs,
+    #     trainloader,
+    #     testloader,
+    #     optimizer,
+    #     scheduler,
+    #     DEVICE,
+    #     loss_fn,
+    #     model_save_path="det_autoencoder.pth",
+    # )
+    model = torch.load("det_autoencoder.pth", weights_only=False)
 
     print("Starting Downstream Task")
     downstream_task_lstm(

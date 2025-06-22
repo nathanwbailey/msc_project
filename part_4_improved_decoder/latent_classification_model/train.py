@@ -14,7 +14,7 @@ def train_classification_model(
     loss_fn,
     model_save_path="latent_model.pth",
 ):
-    for epoch in range(1, num_epochs):
+    for epoch in range(1, num_epochs+1):
         train_losses = []
         valid_losses = []
         model.train()

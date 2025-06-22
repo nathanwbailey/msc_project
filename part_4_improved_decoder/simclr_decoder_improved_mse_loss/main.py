@@ -114,19 +114,17 @@ def main():
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     print("Starting Downstream Task")
-    # downstream_task_lstm(
-    #     num_epochs=100,
-    #     data=test_data,
-    #     encoder_model=model_decoder.model.encoder,
-    #     latent_dim=1000,
-    #     context_window=30,
-    #     target_length=1,
-    #     stride=1,
-    #     model_save_path="downstream_model_no_decoder_weight_decay_h_256_l_4.pth",
-    #     weight_decay=1e-5,
-    #     num_layers=4,
-    #     hidden_size=256,
-    # )
+    downstream_task_lstm(
+        num_epochs=100,
+        data=test_data,
+        encoder_model=model_decoder.model.encoder,
+        latent_dim=1000,
+        context_window=30,
+        target_length=1,
+        stride=1,
+        model_save_path="downstream_model_no_decoder_weight_decay.pth",
+        weight_decay=1e-5,
+    )
 
     # for param in model_decoder.model.parameters():
     #     param.requires_grad = False
