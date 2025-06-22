@@ -112,20 +112,7 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        # {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
-        # {"context_window": 5, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_5.pth"},
-        {
-            "context_window": 5,
-            "stride": 5,
-            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 10,
-            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth",
-        },
-        # {"context_window": 3, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_3.pth"},
-        # {"context_window": 1, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_1.pth"},
+        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(

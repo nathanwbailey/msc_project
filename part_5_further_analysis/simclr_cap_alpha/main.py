@@ -94,19 +94,19 @@ def main():
     )
 
     print("Fine Tuning Both")
-    train_encoder_decoder(
-        model=model_decoder,
-        num_epochs=num_epochs,
-        trainloader=trainloader,
-        testloader=validloader,
-        optimizer=optimizer,
-        scheduler=scheduler,
-        device=DEVICE,
-        loss_fn_contrastive=loss_fn_contrastive,
-        loss_fn_reconstruct=loss_fn_reconstruct,
-        cycle_loss=cycle_loss,
-        model_save_path="simclr_decoder.pth",
-    )
+    # train_encoder_decoder(
+    #     model=model_decoder,
+    #     num_epochs=num_epochs,
+    #     trainloader=trainloader,
+    #     testloader=validloader,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler,
+    #     device=DEVICE,
+    #     loss_fn_contrastive=loss_fn_contrastive,
+    #     loss_fn_reconstruct=loss_fn_reconstruct,
+    #     cycle_loss=cycle_loss,
+    #     model_save_path="simclr_decoder.pth",
+    # )
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # --- Downstream Tasks ---
@@ -116,32 +116,7 @@ def main():
             "context_window": 30,
             "stride": 1,
             "save": "downstream_model_no_decoder_weight_decay.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_5.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 5,
-            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 10,
-            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
-        },
-        {
-            "context_window": 3,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_3.pth",
-        },
-        {
-            "context_window": 1,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_1.pth",
-        },
+        }
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(
@@ -169,17 +144,17 @@ def main():
     )
 
     print("Training Decoder")
-    train_decoder(
-        model=model_decoder,
-        num_epochs=200,
-        trainloader=trainloader,
-        testloader=validloader,
-        optimizer=optimizer,
-        scheduler=scheduler,
-        device=DEVICE,
-        loss_fn_reconstruct=loss_fn_reconstruct,
-        model_save_path="simclr_decoder_freeze.pth",
-    )
+    # train_decoder(
+    #     model=model_decoder,
+    #     num_epochs=200,
+    #     trainloader=trainloader,
+    #     testloader=validloader,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler,
+    #     device=DEVICE,
+    #     loss_fn_reconstruct=loss_fn_reconstruct,
+    #     model_save_path="simclr_decoder_freeze.pth",
+    # )
 
 
 if __name__ == "__main__":

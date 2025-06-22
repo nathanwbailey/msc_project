@@ -118,29 +118,24 @@ def main():
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # --- Downstream Tasks ---
-    # print("Starting Downstream Task")
-    # downstream_configs = [
-    #     {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
-    #     {"context_window": 5, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_5.pth"},
-    #     {"context_window": 5, "stride": 5, "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth"},
-    #     {"context_window": 5, "stride": 10, "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth"},
-    #     {"context_window": 3, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_3.pth"},
-    #     {"context_window": 1, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_cw_1.pth"},
-    # ]
-    # for cfg in downstream_configs:
-    #     torch.cuda.empty_cache()
-    #     gc.collect()
-    #     downstream_task_lstm(
-    #         num_epochs=100,
-    #         data=test_data,
-    #         encoder_model=model_decoder.model.encoder,
-    #         latent_dim=1000,
-    #         context_window=cfg["context_window"],
-    #         target_length=1,
-    #         stride=cfg["stride"],
-    #         model_save_path=cfg["save"],
-    #         weight_decay=1e-5,
-    #     )
+    print("Starting Downstream Task")
+    downstream_configs = [
+        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
+    ]
+    for cfg in downstream_configs:
+        torch.cuda.empty_cache()
+        gc.collect()
+        downstream_task_lstm(
+            num_epochs=100,
+            data=test_data,
+            encoder_model=model_decoder.model.encoder,
+            latent_dim=1000,
+            context_window=cfg["context_window"],
+            target_length=1,
+            stride=cfg["stride"],
+            model_save_path=cfg["save"],
+            weight_decay=1e-5,
+        )
 
     # --- Freeze Encoder, Train Decoder Only ---
     # for param in model_decoder.model.parameters():
@@ -167,21 +162,21 @@ def main():
         "simclr_decoder_freeze.pth", weights_only=False
     )
     print("Starting Latent Downstream Task")
+    downstream_task_latent_classification(
+        num_epochs=100,
+        data=test_data,
+        labels=test_labels,
+        model_encoder=model_decoder.model.encoder,
+        mask_prob_low=0.2,
+        mask_prob_high=0.9,
+        learning_rate=1e-3,
+    )
     downstream_task_latent_diffusion_conditional_attn(
         num_epochs=300,
         data=test_data,
         model_encoder=model_decoder.model.encoder,
         model_decoder=model_decoder.decoder,
     )
-    # downstream_task_latent_classification(
-    #     num_epochs=100,
-    #     data=test_data,
-    #     labels=test_labels,
-    #     model_encoder=model_decoder.model.encoder,
-    #     mask_prob_low=0.2,
-    #     mask_prob_high=0.9,
-    #     learning_rate=1e-3,
-    # )
 
 
 if __name__ == "__main__":

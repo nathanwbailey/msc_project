@@ -79,19 +79,19 @@ def main():
     )
 
     # Train autoencoder
-    train_autoencoder(
-        model,
-        NUM_EPOCHS,
-        trainloader,
-        testloader,
-        optimizer,
-        scheduler,
-        DEVICE,
-        loss_fn,
-        model_save_path=MODEL_SAVE_PATH,
-        add_l1=True,
-        l1_lambda=1e-6,
-    )
+    # train_autoencoder(
+    #     model,
+    #     NUM_EPOCHS,
+    #     trainloader,
+    #     testloader,
+    #     optimizer,
+    #     scheduler,
+    #     DEVICE,
+    #     loss_fn,
+    #     model_save_path=MODEL_SAVE_PATH,
+    #     add_l1=True,
+    #     l1_lambda=1e-6,
+    # )
     model = torch.load(MODEL_SAVE_PATH, weights_only=False)
 
     print("Starting Downstream Task")
@@ -100,32 +100,7 @@ def main():
             "context_window": 30,
             "stride": 1,
             "save": "downstream_model_no_decoder_weight_decay.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_5.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 5,
-            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 10,
-            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
-        },
-        {
-            "context_window": 3,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_3.pth",
-        },
-        {
-            "context_window": 1,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_1.pth",
-        },
+        }
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(
