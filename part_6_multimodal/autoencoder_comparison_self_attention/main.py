@@ -103,21 +103,6 @@ def main():
             "stride": 1,
             "save": "downstream_model_no_decoder_weight_decay.pth",
         },
-        {
-            "context_window": 5,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_5.pth",
-        },
-        {
-            "context_window": 3,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_3.pth",
-        },
-        {
-            "context_window": 1,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay_cw_1.pth",
-        },
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(

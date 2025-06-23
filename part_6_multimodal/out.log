@@ -1,0 +1,23 @@
+2025-06-21 18:32:17 - --- Starting script execution ---
+2025-06-21 18:32:17 - Processing directory: autoencoder_comparison_gnn
+2025-06-21 18:32:33 - --- Starting script execution ---
+2025-06-21 18:32:33 - Processing directory: autoencoder_comparison_gnn
+2025-06-21 18:43:19 - --- Starting script execution ---
+2025-06-21 18:43:19 - Processing directory: autoencoder_comparison_gnn
+2025-06-21 20:11:56 - Processing directory: autoencoder_comparison_self_attention
+2025-06-21 20:11:57 - Processing directory: simclr_multi_branch
+2025-06-21 20:12:16 - --- Starting script execution ---
+2025-06-21 20:12:16 - Processing directory: autoencoder_comparison_gnn
+2025-06-21 20:12:46 - Processing directory: simclr_multi_branch_gnn
+2025-06-21 20:12:47 - Processing directory: autoencoder_comparison_self_attention
+2025-06-21 20:12:47 - Processing directory: simclr_multi_branch_gnn_gat
+2025-06-21 20:12:48 - Processing directory: simclr_multi_branch
+2025-06-21 20:13:26 - Processing directory: simclr_multi_branch_self_attention
+2025-06-21 20:13:27 - --- Script execution finished ---
+2025-06-21 20:13:34 - --- Starting script execution ---
+2025-06-21 20:13:34 - Processing directory: autoencoder_comparison_gnn
+2025-06-21 22:21:09 - Processing directory: autoencoder_comparison_self_attention
+2025-06-22 00:07:54 - Processing directory: simclr_multi_branch
+2025-06-22 02:04:31 - Processing directory: simclr_multi_branch_gnn
+2025-06-22 04:13:53 - Processing directory: simclr_multi_branch_gnn_gat
+2025-06-22 06:22:40 - Processing directory: simclr_multi_branch_self_attention

@@ -81,19 +81,19 @@ def main():
     )
 
     # Train autoencoder
-    # train_autoencoder(
-    #     model,
-    #     NUM_EPOCHS,
-    #     trainloader,
-    #     testloader,
-    #     optimizer,
-    #     scheduler,
-    #     DEVICE,
-    #     loss_fn,
-    #     model_save_path=MODEL_SAVE_PATH,
-    #     add_l1=True,
-    #     l1_lambda=1e-6,
-    # )
+    train_autoencoder(
+        model,
+        NUM_EPOCHS,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path=MODEL_SAVE_PATH,
+        add_l1=True,
+        l1_lambda=1e-6,
+    )
     model = torch.load(MODEL_SAVE_PATH, weights_only=False)
 
     print("Starting Downstream Task")
@@ -104,18 +104,18 @@ def main():
             "save": "downstream_model_no_decoder_weight_decay.pth",
         },
     ]
-    # for cfg in downstream_configs:
-    #     downstream_task_lstm(
-    #         num_epochs=100,
-    #         data=test_data,
-    #         encoder_model=model,
-    #         latent_dim=1000,
-    #         context_window=cfg["context_window"],
-    #         target_length=1,
-    #         stride=cfg["stride"],
-    #         model_save_path=cfg["save"],
-    #         weight_decay=1e-5,
-    #     )
+    for cfg in downstream_configs:
+        downstream_task_lstm(
+            num_epochs=100,
+            data=test_data,
+            encoder_model=model,
+            latent_dim=1000,
+            context_window=cfg["context_window"],
+            target_length=1,
+            stride=cfg["stride"],
+            model_save_path=cfg["save"],
+            weight_decay=1e-5,
+        )
 
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(

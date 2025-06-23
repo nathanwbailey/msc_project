@@ -47,7 +47,8 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        # {"context_window": 5, "stride": 5, "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth"},
+        {"context_window": 5, "stride": 5, "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth"},
+        {"context_window": 5, "stride": 10, "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth"},
         {
             "context_window": 5,
             "stride": 20,

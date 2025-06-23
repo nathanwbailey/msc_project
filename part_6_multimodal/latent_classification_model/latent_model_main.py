@@ -38,11 +38,6 @@ def downstream_task(
     test_data = data[n_train + n_valid :]
     test_labels = labels[n_train + n_valid :]
 
-    mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
-    std = train_data.std(dim=(0, 2, 3), keepdim=True)
-    train_data = (train_data - mean) / std
-    valid_data = (valid_data - mean) / std
-    test_data = (test_data - mean) / std
 
     train_dataset = WeatherBenchDataset(
         data=train_data,
