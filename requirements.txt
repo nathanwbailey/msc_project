@@ -48,8 +48,6 @@ distributed==2025.3.0
 dnspython==2.7.0
 docopt==0.6.2
 donfig==0.8.1.post1
-# Editable install with no version control (early-stopping-pytorch==1.0.10)
--e /homes/nb324/Documents/masters_project_encoder_sparse_data_robust_imp_dec/early-stopping-pytorch
 email_validator==2.2.0
 executing==2.2.0
 fastavro==1.10.0
@@ -241,7 +239,6 @@ toolz==1.0.0
 torch==2.6.0
 torch-geometric==2.6.1
 torch-summary==1.4.5
-torchda @ git+https://github.com/acse-jm122/torchda.git@1b02e2990796d790a5cf4b46109d273aeb9ff892
 torchdiffeq==0.2.5
 torchmetrics==1.7.0
 torchvision==0.21.0
