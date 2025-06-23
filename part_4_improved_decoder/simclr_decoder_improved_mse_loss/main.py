@@ -95,7 +95,7 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    # train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, cycle_loss, model_save_path='simclr.pth')
+    train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, cycle_loss, model_save_path='simclr.pth')
     model = torch.load("simclr.pth", weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
@@ -109,7 +109,7 @@ def main():
     )
     print("Fine Tuning Both")
 
-    # train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder.pth', alpha=0.1)
+    train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, cycle_loss=cycle_loss, model_save_path='simclr_decoder.pth', alpha=0.1)
 
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
@@ -126,16 +126,16 @@ def main():
         weight_decay=1e-5,
     )
 
-    # for param in model_decoder.model.parameters():
-    #     param.requires_grad = False
-    # model_decoder.model.eval()
+    for param in model_decoder.model.parameters():
+        param.requires_grad = False
+    model_decoder.model.eval()
 
-    # optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder, weight_decay=0)
-    # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder, weight_decay=0)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
 
-    # print('Training Decoder')
+    print('Training Decoder')
 
-    # train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
+    train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
     model_decoder = torch.load(
         "simclr_decoder_freeze.pth", weights_only=False
     )

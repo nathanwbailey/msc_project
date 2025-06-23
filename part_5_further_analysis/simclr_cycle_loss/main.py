@@ -84,10 +84,10 @@ def main():
     )
 
     # --- Pretrain Encoder (SimCLR) ---
-    # train_model(
-    #     model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-    #     loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth", alpha_cycle=1
-    # )
+    train_model(
+        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
+        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth", alpha_cycle=1
+    )
     model = torch.load("simclr.pth", weights_only=False)
 
     # --- Fine-tune Encoder + Decoder ---
@@ -100,20 +100,20 @@ def main():
     )
 
     print("Fine Tuning Both")
-    # train_encoder_decoder(
-    #     model=model_decoder,
-    #     num_epochs=num_epochs,
-    #     trainloader=trainloader,
-    #     testloader=validloader,
-    #     optimizer=optimizer,
-    #     scheduler=scheduler,
-    #     device=DEVICE,
-    #     loss_fn_contrastive=loss_fn_contrastive,
-    #     loss_fn_reconstruct=loss_fn_reconstruct,
-    #     cycle_loss=cycle_loss,
-    #     model_save_path="simclr_decoder.pth",
-    #     alpha_cycle=1,
-    # )
+    train_encoder_decoder(
+        model=model_decoder,
+        num_epochs=num_epochs,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        device=DEVICE,
+        loss_fn_contrastive=loss_fn_contrastive,
+        loss_fn_reconstruct=loss_fn_reconstruct,
+        cycle_loss=cycle_loss,
+        model_save_path="simclr_decoder.pth",
+        alpha_cycle=1,
+    )
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # --- Downstream Tasks ---
@@ -147,17 +147,17 @@ def main():
     )
 
     print("Training Decoder")
-    # train_decoder(
-    #     model=model_decoder,
-    #     num_epochs=200,
-    #     trainloader=trainloader,
-    #     testloader=validloader,
-    #     optimizer=optimizer,
-    #     scheduler=scheduler,
-    #     device=DEVICE,
-    #     loss_fn_reconstruct=loss_fn_reconstruct,
-    #     model_save_path="simclr_decoder_freeze.pth",
-    # )
+    train_decoder(
+        model=model_decoder,
+        num_epochs=200,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        device=DEVICE,
+        loss_fn_reconstruct=loss_fn_reconstruct,
+        model_save_path="simclr_decoder_freeze.pth",
+    )
     model_decoder = torch.load(
         "simclr_decoder_freeze.pth", weights_only=False
     )

@@ -79,19 +79,19 @@ def main():
     )
 
     # Train autoencoder
-    # train_autoencoder(
-    #     model,
-    #     NUM_EPOCHS,
-    #     trainloader,
-    #     testloader,
-    #     optimizer,
-    #     scheduler,
-    #     DEVICE,
-    #     loss_fn,
-    #     model_save_path=MODEL_SAVE_PATH,
-    #     add_l1=True,
-    #     l1_lambda=1e-6,
-    # )
+    train_autoencoder(
+        model,
+        NUM_EPOCHS,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path=MODEL_SAVE_PATH,
+        add_l1=True,
+        l1_lambda=1e-6,
+    )
     model = torch.load(MODEL_SAVE_PATH, weights_only=False)
 
     print("Starting Downstream Task")
