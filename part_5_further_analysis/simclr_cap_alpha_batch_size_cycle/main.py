@@ -86,10 +86,10 @@ def main():
     )
 
     # --- Pretrain Encoder (SimCLR) ---
-    train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
-    )
+    # train_model(
+    #     model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
+    #     loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+    # )
     model = torch.load("simclr.pth", weights_only=False)
 
     # --- Fine-tune Encoder + Decoder ---
@@ -102,19 +102,19 @@ def main():
     )
 
     print("Fine Tuning Both")
-    train_encoder_decoder(
-        model=model_decoder,
-        num_epochs=num_epochs,
-        trainloader=trainloader,
-        testloader=validloader,
-        optimizer=optimizer,
-        scheduler=scheduler,
-        device=DEVICE,
-        loss_fn_contrastive=loss_fn_contrastive,
-        loss_fn_reconstruct=loss_fn_reconstruct,
-        cycle_loss=cycle_loss,
-        model_save_path="simclr_decoder.pth",
-    )
+    # train_encoder_decoder(
+    #     model=model_decoder,
+    #     num_epochs=num_epochs,
+    #     trainloader=trainloader,
+    #     testloader=validloader,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler,
+    #     device=DEVICE,
+    #     loss_fn_contrastive=loss_fn_contrastive,
+    #     loss_fn_reconstruct=loss_fn_reconstruct,
+    #     cycle_loss=cycle_loss,
+    #     model_save_path="simclr_decoder.pth",
+    # )
     model_decoder = torch.load("simclr_decoder.pth", weights_only=False)
 
     # --- Downstream Tasks ---
@@ -122,20 +122,20 @@ def main():
     downstream_configs = [
         {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
     ]
-    for cfg in downstream_configs:
-        torch.cuda.empty_cache()
-        gc.collect()
-        downstream_task_lstm(
-            num_epochs=100,
-            data=test_data,
-            encoder_model=model_decoder.model.encoder,
-            latent_dim=1000,
-            context_window=cfg["context_window"],
-            target_length=1,
-            stride=cfg["stride"],
-            model_save_path=cfg["save"],
-            weight_decay=1e-5,
-        )
+    # for cfg in downstream_configs:
+    #     torch.cuda.empty_cache()
+    #     gc.collect()
+    #     downstream_task_lstm(
+    #         num_epochs=100,
+    #         data=test_data,
+    #         encoder_model=model_decoder.model.encoder,
+    #         latent_dim=1000,
+    #         context_window=cfg["context_window"],
+    #         target_length=1,
+    #         stride=cfg["stride"],
+    #         model_save_path=cfg["save"],
+    #         weight_decay=1e-5,
+    #     )
 
     # --- Freeze Encoder, Train Decoder Only ---
     for param in model_decoder.model.parameters():
@@ -147,17 +147,17 @@ def main():
     torch.cuda.empty_cache()
     gc.collect()
     print("Training Decoder")
-    train_decoder(
-        model=model_decoder,
-        num_epochs=200,
-        trainloader=trainloader,
-        testloader=validloader,
-        optimizer=optimizer,
-        scheduler=scheduler,
-        device=DEVICE,
-        loss_fn_reconstruct=loss_fn_reconstruct,
-        model_save_path="simclr_decoder_freeze.pth",
-    )
+    # train_decoder(
+    #     model=model_decoder,
+    #     num_epochs=200,
+    #     trainloader=trainloader,
+    #     testloader=validloader,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler,
+    #     device=DEVICE,
+    #     loss_fn_reconstruct=loss_fn_reconstruct,
+    #     model_save_path="simclr_decoder_freeze.pth",
+    # )
     model_decoder = torch.load(
         "simclr_decoder_freeze.pth", weights_only=False
     )
