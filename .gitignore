@@ -7,3 +7,4 @@ slurm*
 .DS_Store
 files_to_delete.txt
 del_files.sh
+*.pth
