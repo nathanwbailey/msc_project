@@ -24,9 +24,9 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 - **Part 2: Decoder**
     - Adds a decoder to the contrastive learning methods to provide a direct comparison to the autoencoder approach
-    - Contrasts 2 methods of adding the decoder
+    - Contrasts two methods of adding the decoder
     - Compares Instance Norm and Batch Norm Approaches
-    - Evaluates the approaches on the task of downstream weather forecasting
+    - Evaluates the approaches to the task of downstream weather forecasting
 
 - **Part 3: Robust**
     - Attempts to make the chosen SIMCLR approach more robust and have better downstream performance
@@ -34,26 +34,26 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 - **Part 4: Improved Decoder**
     - Final decoder architecture improvements
-    - Contrasts final approach with a more representative autoencoder
+    - Contrasts the final approach with a more representative autoencoder
     - Adds additional tasks of data assimilation and conditional latent diffusion models
     - Expands the downstream task of forecasting with added stride and changing context windows 
 
 - **Part 5: Further Analysis**
-    - Analysis on the latent space to link smoothness and forecasting peformance
+    - Analysis on the latent space to link smoothness and forecasting performance
     - Implements changes to batch size, cycle loss and alpha decay based on findings
 
 
 - **Part 6: Multimodal**
     - Implements several Multimodal late fusion methods
     - Average Pooling
-    - Self Attention
+    - Self-Attention
     - GNN
 
 ## Getting Started
 
 1. **Clone the repository**
     ```
-    GIT_LFS_SKIP_SMUDGE=1 git clone <repo-url> (skips .pth files)
+    git clone <repo-url>
     ```
 
 2. **Create and activate a virtual environment**
@@ -70,9 +70,9 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 ## Details on Folder Structure
 
-Each model in the directories have correpsonding files for training and testing that are self explanatory.
+Each model in the directories has corresponding files for training and testing that are self-explanatory.
 
-Each model has a number of notebooks that inform results in the report:
+Each model has several notebooks that provide results in the report:
 
 - eval.ipynb - **Evaluates the model for single-step forecasting**
 - eval_autoregressive.ipynb - **Evaluates the model for autoregressive forecasting**
