@@ -159,7 +159,6 @@ class Decoder(nn.Module):
 class AutoEncoder(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
-        super().__init__()
         self.in_channels = in_channels
         # Modal Shared Encoders
         encoders = []
