@@ -133,6 +133,19 @@ def main():
         weight_decay=1e-5,
     )
 
+
+    for param in model_decoder.model.parameters():
+        param.requires_grad = False
+    model_decoder.model.eval()
+
+    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder, weight_decay=0)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+
+    print('Training Decoder')
+
+    train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
+
+
     model_decoder = torch.load(
         "simclr_decoder_freeze.pth", weights_only=False
     )
@@ -152,18 +165,6 @@ def main():
         mask_prob_high=0.9,
         learning_rate=1e-2,
     )
-
-    for param in model_decoder.model.parameters():
-        param.requires_grad = False
-    model_decoder.model.eval()
-
-    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder, weight_decay=0)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
-
-    print('Training Decoder')
-
-    train_decoder(model=model_decoder, num_epochs=200, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='simclr_decoder_freeze.pth')
-
 
 if __name__ == "__main__":
     main()
