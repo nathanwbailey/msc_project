@@ -36,6 +36,7 @@ class Decoder(nn.Module):
         hidden_size,
         num_layers,
         bidirectional=False,
+        dropout=0.0,
         *args,
         **kwargs
     ):
@@ -48,9 +49,11 @@ class Decoder(nn.Module):
             bidirectional=bidirectional,
         )
         self.fc = nn.Linear(in_features=hidden_size, out_features=input_size)
+        self.dropout = nn.Dropout(p=dropout)
 
     def forward(self, input, hidden, cell):
         out, (hidden, cell) = self.lstm(input, (hidden, cell))
+        out = self.dropout(out)
         prediction = self.fc(out.squeeze(0))
         return prediction, hidden, cell
 
@@ -63,6 +66,7 @@ class Seq2SeqModel(nn.Module):
         num_layers,
         output_len,
         bidirectional=False,
+        dropout=0.0,
         *args,
         **kwargs
     ):
@@ -71,7 +75,7 @@ class Seq2SeqModel(nn.Module):
             input_size, hidden_size, num_layers, bidirectional
         )
         self.decoder = Decoder(
-            input_size, hidden_size, num_layers, bidirectional
+            input_size, hidden_size, num_layers, bidirectional, dropout
         )
         self.output_len = output_len
 
