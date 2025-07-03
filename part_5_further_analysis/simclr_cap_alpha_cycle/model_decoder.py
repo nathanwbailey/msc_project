@@ -5,6 +5,7 @@ from torch import nn
 
 
 def replace_bn_with_gn(module):
+    """Recursively replace all BatchNorm2d layers with GroupNorm."""
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
@@ -17,6 +18,8 @@ def replace_bn_with_gn(module):
 
 
 class ResNet18Encoder(nn.Module):
+    """ResNet18 encoder with configurable input channels and GroupNorm."""
+
     def __init__(self, in_channels):
         super().__init__()
         resnet = torchvision.models.resnet18()
@@ -48,20 +51,26 @@ class ResNet18Encoder(nn.Module):
 
 
 class ResidualBlock(nn.Module):
+    """A simple residual block with dropout."""
+
     def __init__(self, channels):
         super().__init__()
         self.block = nn.Sequential(
-            nn.Conv2d(channels, channels, kernel_size=3, padding=1),
+            nn.Conv2d(channels, channels * 2, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.Conv2d(channels, channels, kernel_size=3, padding=1),
+            nn.Dropout(p=0.1),
+            nn.Conv2d(channels * 2, channels, kernel_size=3, padding=1),
         )
         self.relu = nn.ReLU()
+        self.dropout = nn.Dropout(p=0.1)
 
     def forward(self, x):
-        return self.relu(x + self.block(x))
+        return self.dropout(self.relu(x + self.block(x)))
 
 
 class DecoderBlock(nn.Module):
+    """A decoder block with transposed convolution and a residual block."""
+
     def __init__(
         self,
         in_channels,
@@ -72,20 +81,15 @@ class DecoderBlock(nn.Module):
         output_padding=0,
     ):
         super().__init__()
-        self.block = nn.Sequential(
-            nn.ConvTranspose2d(
-                in_channels,
-                out_channels,
-                kernel_size=kernel_size,
-                stride=stride,
-                padding=padding,
-                output_padding=output_padding,
-            ),
-            # nn.BatchNorm2d(out_channels),
-            # nn.ReLU(),
+        self.block = nn.ConvTranspose2d(
+            in_channels,
+            out_channels,
+            kernel_size=kernel_size,
+            stride=stride,
+            padding=padding,
+            output_padding=output_padding,
         )
         self.res_block = ResidualBlock(out_channels)
-        self.activation = nn.ReLU()
 
     def forward(self, x):
         x = self.block(x)
@@ -94,30 +98,17 @@ class DecoderBlock(nn.Module):
 
 
 class Decoder(nn.Module):
-    def __init__(self, in_channels, latent_dim, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    """Decoder network for reconstructing from latent space."""
+
+    def __init__(self, in_channels, latent_dim):
+        super().__init__()
         self.project_dim = latent_dim // 2
         self.decoder = nn.Sequential(
-            DecoderBlock(
-                in_channels=self.project_dim,
-                out_channels=self.project_dim // 2,
-            ),  # 2x1 -> 4x2
-            DecoderBlock(
-                in_channels=self.project_dim // 2,
-                out_channels=self.project_dim // 4,
-            ),  # 4x2 -> 8x4
-            DecoderBlock(
-                in_channels=self.project_dim // 4,
-                out_channels=self.project_dim // 8,
-            ),  # 8x4 -> 16x8
-            DecoderBlock(
-                in_channels=self.project_dim // 8,
-                out_channels=self.project_dim // 16,
-            ),  # 16x8 -> 32x16
-            DecoderBlock(
-                in_channels=self.project_dim // 16,
-                out_channels=self.project_dim // 32,
-            ),  # 32x16 -> 64x32
+            DecoderBlock(self.project_dim, self.project_dim // 2),
+            DecoderBlock(self.project_dim // 2, self.project_dim // 4),
+            DecoderBlock(self.project_dim // 4, self.project_dim // 8),
+            DecoderBlock(self.project_dim // 8, self.project_dim // 16),
+            DecoderBlock(self.project_dim // 16, self.project_dim // 32),
         )
         self.channel_layer = nn.Conv2d(
             in_channels=self.project_dim // 32,
@@ -133,21 +124,43 @@ class Decoder(nn.Module):
         return x
 
 
-class AutoEncoder(nn.Module):
-    def __init__(self, in_channels):
+class SIMCLR(nn.Module):
+    """SIMCLR model with encoder and projection head."""
+
+    def __init__(self, in_channels, latent_dim):
         super().__init__()
-        self.encoder = ResNet18Encoder(in_channels=in_channels)
-        self.decoder = Decoder(in_channels=in_channels, latent_dim=1000)
+        self.encoder = ResNet18Encoder(in_channels)
+        self.projector = nn.Sequential(
+            nn.Linear(1000, latent_dim),
+            nn.BatchNorm1d(latent_dim, track_running_stats=False),
+            nn.ReLU(),
+            nn.Linear(latent_dim, latent_dim),
+            nn.BatchNorm1d(latent_dim, track_running_stats=False),
+            nn.ReLU(),
+            nn.Linear(latent_dim, latent_dim),
+        )
 
     def encode(self, x):
-        encoded_data, skip_connections = self.encoder(x)
-        return encoded_data, skip_connections
-
-    def decode(self, z):
-        z = self.decoder(z)
-        return z
+        z, skip = self.encoder(x)
+        return z, skip
 
     def forward(self, x):
-        z, _ = self.encode(x)
-        out = self.decode(z)
-        return out
+        z_x, _ = self.encode(x)
+        z = self.projector(z_x)
+        return z, z_x
+
+
+class SIMCLRDecoder(nn.Module):
+    """SIMCLR model with an attached decoder for reconstruction."""
+
+    def __init__(self, in_channels, model):
+        super().__init__()
+        self.model = model
+        self.in_channels = in_channels
+        self.decoder = Decoder(in_channels=in_channels, latent_dim=1000)
+
+    def forward(self, x):
+        z_x, _ = self.model.encode(x)
+        decoded_z = self.decoder(z_x)
+        z = self.model.projector(z_x)
+        return z, decoded_z, z_x

@@ -80,9 +80,11 @@ def random_mask(sample, mask_prob_low=0.5, mask_prob_high=0.9):
 
 def augment_sample_random_mask(sample, mask_prob_low=0.5, mask_prob_high=0.9):
     sample = random_crop(sample.unsqueeze(0)).squeeze(0)
-    sample = smooth(sample.unsqueeze(0)).squeeze(0)
+    sample_to_mask = smooth(sample.unsqueeze(0)).squeeze(0)
     sample = random_mask(
-        sample, mask_prob_low=mask_prob_low, mask_prob_high=mask_prob_high
+        sample_to_mask,
+        mask_prob_low=mask_prob_low,
+        mask_prob_high=mask_prob_high,
     )
     return sample
 

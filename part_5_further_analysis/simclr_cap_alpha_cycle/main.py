@@ -1,3 +1,4 @@
+import gc
 import os
 import sys
 
@@ -85,10 +86,10 @@ def main():
     )
 
     # --- Pretrain Encoder (SimCLR) ---
-    train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
-    )
+    # train_model(
+    #     model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
+    #     loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+    # )
     model = torch.load("simclr.pth", weights_only=False)
 
     # --- Fine-tune Encoder + Decoder ---
@@ -119,13 +120,11 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {
-            "context_window": 30,
-            "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay.pth",
-        }
+        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_6.pth"},
     ]
     for cfg in downstream_configs:
+        torch.cuda.empty_cache()
+        gc.collect()
         downstream_task_lstm(
             num_epochs=100,
             data=test_data,
@@ -135,7 +134,7 @@ def main():
             target_length=1,
             stride=cfg["stride"],
             model_save_path=cfg["save"],
-            weight_decay=1e-5,
+            weight_decay=1e-6,
         )
 
     # --- Freeze Encoder, Train Decoder Only ---
@@ -143,13 +142,10 @@ def main():
         param.requires_grad = False
     model_decoder.model.eval()
 
-    optimizer = torch.optim.Adam(
-        model_decoder.decoder.parameters(), lr=learning_rate_decoder
-    )
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, factor=0.1, patience=10, threshold=0.0001
-    )
-
+    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    torch.cuda.empty_cache()
+    gc.collect()
     print("Training Decoder")
     train_decoder(
         model=model_decoder,
@@ -181,6 +177,7 @@ def main():
         model_encoder=model_decoder.model.encoder,
         model_decoder=model_decoder.decoder,
     )
+
 
 if __name__ == "__main__":
     main()

@@ -5,7 +5,6 @@
 ```
 part_4_improved_decoder/
 ├── README.md
-├── autoencoder_batch_size/
 ├── autoencoder_hard_neg_batch_size/
 ├── downstream_model_lstm_no_decoder/
 ├── latent_classification_model
@@ -19,9 +18,6 @@ part_4_improved_decoder/
 ```
 
 ## Contents
-
-- **autoencoder_batch_size/**  
-  Autoencoder baseline with 256 batch size
 
 - **autoencoder_hard_neg_batch_size/**  
   Autoencoder baseline with 256 batch size and hard negative sampling approach
