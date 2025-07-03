@@ -19,7 +19,7 @@ def parse_log_file(filepath):
 
 
 log_file_2 = "latent_classification.log"
-log_file_1 = "../autoencoder_l1_l2_sampling/latent_classification.log"
+log_file_1 = "../autoencoder_sampling/latent_classification.log"
 
 train1, valid1 = parse_log_file(log_file_1)
 train2, valid2 = parse_log_file(log_file_2)
