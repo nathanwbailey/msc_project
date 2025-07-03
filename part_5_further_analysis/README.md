@@ -14,6 +14,7 @@ part_4_improved_decoder/
 ├── simclr_cap_alpha/
 ├── simclr_cap_alpha_batch_size/
 ├── simclr_cap_alpha_batch_size_cycle/
+├── simclr_cap_alpha_cycle/
 ├── simclr_cycle_loss/
 ```
 
@@ -45,6 +46,9 @@ part_4_improved_decoder/
 
 - **simclr_cap_alpha_batch_size_cycle/**  
   SIMCLR model with restricted alpha, 256 batch size and tweaked cycle loss
+
+- **simclr_cap_alpha/**  
+  SIMCLR model with restricted alpha, 128 batch size and tweaked cycle loss
 
 - **simclr_cycle_loss/**  
   SIMCLR model with 128 batch size and tweaked cycle loss
