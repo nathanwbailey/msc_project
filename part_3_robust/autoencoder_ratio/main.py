@@ -32,8 +32,12 @@ def main():
     valid_data = (valid_data - mean) / std
     test_data = (test_data - mean) / std
 
-    train_dataset = WeatherBenchDataset(data=train_data, mask_prob_low=0.5, mask_prob_high=0.9)
-    valid_dataset = WeatherBenchDataset(data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9)
+    train_dataset = WeatherBenchDataset(
+        data=train_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
+    valid_dataset = WeatherBenchDataset(
+        data=valid_data, mask_prob_low=0.5, mask_prob_high=0.9
+    )
     trainloader = DataLoader(
         train_dataset,
         batch_size=BATCH_SIZE,

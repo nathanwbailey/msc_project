@@ -27,7 +27,7 @@ def downstream_task(
     hidden_size=128,
     num_layers=1,
     batch_size=64,
-    dropout=0.0
+    dropout=0.0,
 ):
     BATCH_SIZE = batch_size
     n_samples = data.shape[0]
@@ -38,7 +38,6 @@ def downstream_task(
     train_data = data[:n_train]
     valid_data = data[n_train : n_train + n_valid]
     test_data = data[n_train + n_valid :]
-
 
     train_dataset = WeatherBenchDatasetWindow(
         data=train_data,
@@ -113,7 +112,7 @@ def downstream_task(
         num_layers=num_layers,
         output_len=target_length,
         bidirectional=False,
-        dropout=dropout
+        dropout=dropout,
     )
     seq2seq_model = seq2seq_model.to(DEVICE)
 

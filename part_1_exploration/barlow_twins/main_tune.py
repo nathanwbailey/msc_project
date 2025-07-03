@@ -120,6 +120,7 @@ def objective(trial):
     print("Negative Mean Cosine similarity:", rand_cos_sim)
     print("Mean Variance of Embeddings", mean_var)
 
+
 def main():
     param_grid = {
         "lr": [1e-3],

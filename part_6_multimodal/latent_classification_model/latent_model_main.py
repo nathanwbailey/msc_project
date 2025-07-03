@@ -38,7 +38,6 @@ def downstream_task(
     test_data = data[n_train + n_valid :]
     test_labels = labels[n_train + n_valid :]
 
-
     train_dataset = WeatherBenchDataset(
         data=train_data,
         labels=train_labels,

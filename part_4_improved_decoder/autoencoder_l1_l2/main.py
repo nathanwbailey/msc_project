@@ -86,7 +86,19 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    train_autoencoder(model, num_epochs, trainloader, testloader, optimizer, scheduler, DEVICE, loss_fn, model_save_path="det_autoencoder.pth", add_l1=True, l1_lambda=1e-6)
+    train_autoencoder(
+        model,
+        num_epochs,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path="det_autoencoder.pth",
+        add_l1=True,
+        l1_lambda=1e-6,
+    )
     model = torch.load("det_autoencoder.pth", weights_only=False)
 
     # print('Starting Downstream Task')
@@ -103,7 +115,12 @@ def main():
     )
 
     print("Starting Latent Downstream Task")
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model.encoder, model_decoder=model.decoder)
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model.encoder,
+        model_decoder=model.decoder,
+    )
 
 
 if __name__ == "__main__":

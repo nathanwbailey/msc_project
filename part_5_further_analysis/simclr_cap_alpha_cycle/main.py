@@ -120,7 +120,11 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay_6.pth"},
+        {
+            "context_window": 30,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay_6.pth",
+        },
     ]
     for cfg in downstream_configs:
         torch.cuda.empty_cache()
@@ -142,8 +146,12 @@ def main():
         param.requires_grad = False
     model_decoder.model.eval()
 
-    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
     torch.cuda.empty_cache()
     gc.collect()
     print("Training Decoder")

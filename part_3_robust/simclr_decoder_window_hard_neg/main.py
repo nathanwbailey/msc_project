@@ -103,7 +103,7 @@ def main():
         loss_fn_contrastive,
         model_save_path="simclr.pth",
     )
-    model = torch.load('simclr.pth', weights_only=False)
+    model = torch.load("simclr.pth", weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)

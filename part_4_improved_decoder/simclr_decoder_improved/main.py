@@ -93,7 +93,18 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, cycle_loss, model_save_path='simclr.pth')
+    train_model(
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
+    )
     model = torch.load("simclr.pth", weights_only=False)
 
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)

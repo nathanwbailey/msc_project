@@ -102,7 +102,17 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='barlow_twins_group.pth')
+    train_model(
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        model_save_path="barlow_twins_group.pth",
+    )
     model = torch.load("barlow_twins_group.pth", weights_only=False)
     print(model)
 
@@ -116,9 +126,23 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
     print("Fine Tuning Both")
-    train_encoder_decoder(model=model_decoder, num_epochs=num_epochs, trainloader=trainloader, testloader=validloader, optimizer=optimizer, scheduler=scheduler, device=DEVICE, loss_fn_contrastive=loss_fn_contrastive, loss_fn_reconstruct=loss_fn_reconstruct, model_save_path='barlow_decoder_fine_tuned_group.pth', alpha=0.1)
+    train_encoder_decoder(
+        model=model_decoder,
+        num_epochs=num_epochs,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        device=DEVICE,
+        loss_fn_contrastive=loss_fn_contrastive,
+        loss_fn_reconstruct=loss_fn_reconstruct,
+        model_save_path="barlow_decoder_fine_tuned_group.pth",
+        alpha=0.1,
+    )
 
-    model_decoder = torch.load("barlow_decoder_fine_tuned_group.pth", weights_only=False)
+    model_decoder = torch.load(
+        "barlow_decoder_fine_tuned_group.pth", weights_only=False
+    )
 
     # cos_sim, rand_cos_sim, mean_var = eval_model(model_decoder.model.encoder, validloader, DEVICE)
 

@@ -87,8 +87,16 @@ def main():
 
     # --- Pretrain Encoder (SimCLR) ---
     train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
     )
     model = torch.load("simclr.pth", weights_only=False)
     torch.cuda.empty_cache()
@@ -174,7 +182,12 @@ def main():
         "simclr_decoder_freeze.pth", weights_only=False
     )
     print("Starting Latent Downstream Task")
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model_decoder.model, model_decoder=model_decoder.decoder)
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model_decoder.model,
+        model_decoder=model_decoder.decoder,
+    )
     downstream_task_latent_classification(
         num_epochs=100,
         data=test_data,

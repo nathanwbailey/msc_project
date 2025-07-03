@@ -86,8 +86,16 @@ def main():
 
     # --- Pretrain Encoder (SimCLR) ---
     train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
     )
     model = torch.load("simclr.pth", weights_only=False)
 
@@ -181,6 +189,7 @@ def main():
         model_encoder=model_decoder.model.encoder,
         model_decoder=model_decoder.decoder,
     )
+
 
 if __name__ == "__main__":
     main()

@@ -85,11 +85,9 @@ def downstream_task(
         param.requires_grad = False
     model_encoder.eval()
 
-
     for param in model_decoder.parameters():
         param.requires_grad = False
     model_decoder.eval()
-
 
     train_diffusion_model(
         ddpm=ddpm,

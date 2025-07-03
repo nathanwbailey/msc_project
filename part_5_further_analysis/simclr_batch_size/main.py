@@ -79,8 +79,16 @@ def main():
 
     # --- Pretrain Encoder (SimCLR) ---
     train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
     )
     model = torch.load("simclr.pth", weights_only=False)
 
@@ -112,7 +120,11 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
+        {
+            "context_window": 30,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay.pth",
+        },
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(
@@ -132,8 +144,12 @@ def main():
         param.requires_grad = False
     model_decoder.model.eval()
 
-    optimizer = torch.optim.Adam(model_decoder.decoder.parameters(), lr=learning_rate_decoder)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, threshold=0.0001)
+    optimizer = torch.optim.Adam(
+        model_decoder.decoder.parameters(), lr=learning_rate_decoder
+    )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.1, patience=10, threshold=0.0001
+    )
 
     print("Training Decoder")
     train_decoder(

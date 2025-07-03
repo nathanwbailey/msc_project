@@ -35,7 +35,7 @@ def downstream_task(
         target_length=target_length,
         stride=stride,
         mask_prob_low=0.7,
-        mask_prob_high=0.7
+        mask_prob_high=0.7,
     )
     valid_dataset = WeatherBenchDatasetWindow(
         data=valid_data,
@@ -43,7 +43,7 @@ def downstream_task(
         target_length=target_length,
         stride=stride,
         mask_prob_low=0.7,
-        mask_prob_high=0.7
+        mask_prob_high=0.7,
     )
     test_dataset = WeatherBenchDatasetWindow(
         data=test_data,
@@ -51,7 +51,7 @@ def downstream_task(
         target_length=target_length,
         stride=stride,
         mask_prob_low=0.7,
-        mask_prob_high=0.7
+        mask_prob_high=0.7,
     )
     trainloader = DataLoader(
         train_dataset,

@@ -104,7 +104,6 @@ def main():
     #     model_save_path="simclr.pth",
     # )
 
-
     model_decoder = SIMCLRDecoder(in_channels=C, model=model)
     model_decoder = model_decoder.to(DEVICE)
 

@@ -47,7 +47,7 @@ def train_diffusion_model(
 ):
     train_losses = []
     mse_losses = []
-    for epoch in range(1, num_epochs+1):
+    for epoch in range(1, num_epochs + 1):
         ddpm.train()
         for batch in trainloader:
             optimizer.zero_grad()
