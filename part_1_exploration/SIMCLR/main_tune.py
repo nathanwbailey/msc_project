@@ -70,7 +70,7 @@ def objective(trial):
     testloader = DataLoader(
         valid_dataset,
         batch_size=BATCH_SIZE,
-        shuffle=True,
+        shuffle=False,
         pin_memory=True,
         num_workers=4,
         persistent_workers=True,

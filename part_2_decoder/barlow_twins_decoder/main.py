@@ -102,7 +102,7 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    # train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='barlow_twins.pth')
+    train_model(model, 100, trainloader, validloader, optimizer, scheduler, DEVICE, loss_fn_contrastive, model_save_path='barlow_twins.pth')
     model = torch.load("barlow_twins.pth", weights_only=False)
 
     model_decoder = BarlowTwinsDecoder(in_channels=C, model=model)
