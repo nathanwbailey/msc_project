@@ -49,11 +49,9 @@ class Decoder(nn.Module):
             bidirectional=bidirectional,
         )
         self.fc = nn.Linear(in_features=hidden_size, out_features=input_size)
-        self.dropout = nn.Dropout(p=dropout)
 
     def forward(self, input, hidden, cell):
         out, (hidden, cell) = self.lstm(input, (hidden, cell))
-        out = self.dropout(out)
         prediction = self.fc(out.squeeze(0))
         return prediction, hidden, cell
 

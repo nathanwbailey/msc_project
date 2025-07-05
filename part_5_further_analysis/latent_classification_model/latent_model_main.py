@@ -29,7 +29,6 @@ def downstream_task(
     n_valid = int(n_samples * 0.2)
 
     num_labels = torch.unique(labels).numel()
-    print(num_labels)
 
     train_data = data[:n_train]
     train_labels = labels[:n_train]
@@ -37,12 +36,6 @@ def downstream_task(
     valid_labels = labels[n_train : n_train + n_valid]
     test_data = data[n_train + n_valid :]
     test_labels = labels[n_train + n_valid :]
-
-    mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
-    std = train_data.std(dim=(0, 2, 3), keepdim=True)
-    train_data = (train_data - mean) / std
-    valid_data = (valid_data - mean) / std
-    test_data = (test_data - mean) / std
 
     train_dataset = WeatherBenchDataset(
         data=train_data,
@@ -87,6 +80,7 @@ def downstream_task(
         valid_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
+        drop_last=True,
         pin_memory=True,
         num_workers=6,
         persistent_workers=True,
@@ -108,18 +102,20 @@ def downstream_task(
         param.requires_grad = False
     model_encoder.eval()
 
-    train_classification_model(
-        model=latent_model,
-        encoder_model=model_encoder,
-        num_epochs=num_epochs,
-        trainloader=trainloader,
-        testloader=validloader,
-        optimizer=optimizer,
-        scheduler=scheduler,
-        loss_fn=loss_fn(),
-        model_save_path=model_save_path,
-        device=DEVICE,
-    )
+    # train_classification_model(
+    #     model=latent_model,
+    #     encoder_model=model_encoder,
+    #     num_epochs=num_epochs,
+    #     trainloader=trainloader,
+    #     testloader=validloader,
+    #     optimizer=optimizer,
+    #     scheduler=scheduler,
+    #     loss_fn=loss_fn(),
+    #     model_save_path=model_save_path,
+    #     device=DEVICE,
+    # )
+    latent_model = torch.load(model_save_path, weights_only=False)
+    latent_model.eval()
     test_classification_network(
         model=latent_model,
         encoder_model=model_encoder,

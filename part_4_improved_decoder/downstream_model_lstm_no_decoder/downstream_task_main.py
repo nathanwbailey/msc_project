@@ -78,6 +78,7 @@ def downstream_task(
         valid_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
+        drop_last=True,
         pin_memory=True,
         num_workers=2,
         persistent_workers=True,
