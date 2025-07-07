@@ -7,6 +7,8 @@ This folder contains experiments focused on improving the robustness and general
 ```
 part_3_robust/
 ├── README.md
+├── autoencoder_hard_neg/
+├── autoencoder_ratio/
 ├── downstream_model_lstm_no_decoder/
 ├── simclr_decoder_group_norm/
 ├── simclr_decoder_group_norm_hard_neg/
@@ -20,6 +22,12 @@ part_3_robust/
 
 ## Contents
 
+- **autoencoder_hard_neg/**  
+  Autoencoder with hard negative sampling approach and 50%-90% mask ratios.
+
+- **autoencoder_ratio/**  
+  Autoencoder with 50%-90% mask ratios.
+
 - **downstream_model_lstm_no_decoder/**  
   LSTM-based downstream models using encoder representations directly.
 
@@ -30,7 +38,7 @@ part_3_robust/
   Adds hard negative sampling to the baseline.
 
 - **simclr_decoder_mask_ratio/**  
-  Adds 50%-70% mask ratios to test robustness.
+  Adds 50%-90% mask ratios to test robustness.
 
 - **simclr_decoder_window/**  
   Uses positive samples at time t+delta to exploit temporal structure.

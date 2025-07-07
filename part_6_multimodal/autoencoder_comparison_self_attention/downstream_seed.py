@@ -45,30 +45,27 @@ def main():
     DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     model_decoder = torch.load("det_autoencoder.pth", weights_only=False)
-
-    # --- Downstream Tasks ---
-    print("Starting Downstream Task")
     downstream_configs = [
         {
             "context_window": 5,
             "stride": 5,
-            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth",
+            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
+            "dropout": 0.3
         },
         {
             "context_window": 5,
             "stride": 10,
-            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth",
-        },
-        {
-            "context_window": 5,
-            "stride": 20,
-            "save": "downstream_model_no_decoder_weight_decay_s_20_cw_5_2.pth",
+            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
+            "dropout": 0.0
         },
     ]
     seeds = [0, 42, 123]
     for seed in seeds:
         set_seed(seed)
         for cfg in downstream_configs:
+            print(
+                f"Running context window: {cfg["context_window"]} with stride: {cfg["stride"]} with seed: {seed}"
+            )
             downstream_task_lstm(
                 num_epochs=100,
                 data=test_data,
@@ -79,7 +76,9 @@ def main():
                 stride=cfg["stride"],
                 model_save_path=f"{seed}_" + cfg["save"],
                 weight_decay=1e-5,
+                dropout=cfg["dropout"],
             )
+
 
 
 if __name__ == "__main__":

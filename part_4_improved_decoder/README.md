@@ -8,6 +8,7 @@ part_4_improved_decoder/
 ├── autoencoder/
 ├── autoencoder_l1_l2/
 ├── autoencoder_l1_l2_sampling/
+├── autoencoder_sampling/
 ├── downstream_model_lstm_no_decoder/
 ├── latent_classification_model
 ├── latent_diffusion_model_conditional_attn/
@@ -29,6 +30,9 @@ part_4_improved_decoder/
 
 - **autoencoder_l1_l2_sampling/**  
   Autoencoder baseline with improved deocder with added L1 and L2 weight decay and hard negative sampling approach
+
+- **autoencoder_sampling/**  
+  Autoencoder baseline with improved deocder with hard negative sampling approach
 
 - **downstream_model_lstm_no_decoder/**  
   LSTM-based downstream model using encoder representations directly.
