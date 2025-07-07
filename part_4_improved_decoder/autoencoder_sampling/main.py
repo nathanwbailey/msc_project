@@ -13,10 +13,11 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
-from latent_diffusion_model_conditional_attn.latent_model_main import \
-    downstream_task as downstream_task_latent_diffusion_conditional_attn
 from latent_classification_model.latent_model_main import \
     downstream_task as downstream_task_latent_classification
+from latent_diffusion_model_conditional_attn.latent_model_main import \
+    downstream_task as downstream_task_latent_diffusion_conditional_attn
+
 
 def main():
     BATCH_SIZE = 128 // 3
@@ -84,14 +85,23 @@ def main():
     # summary(model, (C, H, W), depth=10)
     loss_fn = torch.nn.MSELoss()
 
-    optimizer = torch.optim.Adam(
-        model.parameters(), lr=learning_rate
-    )
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    train_autoencoder(model, num_epochs, trainloader, testloader, optimizer, scheduler, DEVICE, loss_fn, model_save_path="det_autoencoder.pth", add_l1=False)
+    train_autoencoder(
+        model,
+        num_epochs,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path="det_autoencoder.pth",
+        add_l1=False,
+    )
     model = torch.load("det_autoencoder.pth", weights_only=False)
 
     # print('Starting Downstream Task')
@@ -118,11 +128,16 @@ def main():
         stride=1,
         model_save_path="downstream_model_no_decoder_weight_decay_6.pth",
         weight_decay=1e-6,
-        dropout=0.0
+        dropout=0.0,
     )
 
     print("Starting Latent Downstream Task")
-    downstream_task_latent_diffusion_conditional_attn(num_epochs=300, data=test_data, model_encoder=model.encoder, model_decoder=model.decoder)
+    downstream_task_latent_diffusion_conditional_attn(
+        num_epochs=300,
+        data=test_data,
+        model_encoder=model.encoder,
+        model_decoder=model.decoder,
+    )
     downstream_task_latent_classification(
         num_epochs=100,
         data=test_data,
@@ -132,6 +147,7 @@ def main():
         mask_prob_high=0.9,
         learning_rate=1e-3,
     )
+
 
 if __name__ == "__main__":
     main()

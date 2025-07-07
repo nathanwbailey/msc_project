@@ -91,8 +91,16 @@ def main():
 
     # --- Pretrain Encoder (SimCLR) ---
     train_model(
-        model, 100, trainloader, validloader, optimizer, scheduler, DEVICE,
-        loss_fn_contrastive, cycle_loss, model_save_path="simclr.pth"
+        model,
+        100,
+        trainloader,
+        validloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn_contrastive,
+        cycle_loss,
+        model_save_path="simclr.pth",
     )
     model = torch.load("simclr.pth", weights_only=False)
     torch.cuda.empty_cache()
@@ -128,7 +136,11 @@ def main():
     # --- Downstream Tasks ---
     print("Starting Downstream Task")
     downstream_configs = [
-        {"context_window": 30, "stride": 1, "save": "downstream_model_no_decoder_weight_decay.pth"},
+        {
+            "context_window": 30,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay.pth",
+        },
     ]
     for cfg in downstream_configs:
         downstream_task_lstm(

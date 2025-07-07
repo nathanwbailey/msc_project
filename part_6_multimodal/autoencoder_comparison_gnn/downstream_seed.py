@@ -51,13 +51,13 @@ def main():
             "context_window": 5,
             "stride": 5,
             "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
-            "dropout": 0.3
+            "dropout": 0.3,
         },
         {
             "context_window": 5,
             "stride": 10,
             "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
-            "dropout": 0.0
+            "dropout": 0.0,
         },
     ]
     seeds = [0, 42, 123]

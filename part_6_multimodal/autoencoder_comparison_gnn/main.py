@@ -14,10 +14,11 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
-from latent_diffusion_model_conditional_attn.latent_model_main import \
-    downstream_task as downstream_task_latent_diffusion_conditional_attn
 from latent_classification_model.latent_model_main import \
     downstream_task as downstream_task_latent_classification
+from latent_diffusion_model_conditional_attn.latent_model_main import \
+    downstream_task as downstream_task_latent_diffusion_conditional_attn
+
 
 def main():
     # Hyperparameters
@@ -39,7 +40,6 @@ def main():
     valid_labels = labels[n_train : n_train + n_valid]
     test_data = data[n_train + n_valid :]
     test_labels = labels[n_train + n_valid :]
-
 
     # Normalization
     mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
@@ -79,15 +79,13 @@ def main():
 
     model = AutoEncoder(C).to(DEVICE)
     loss_fn = torch.nn.MSELoss()
-    optimizer = torch.optim.Adam(
-        model.parameters(), lr=LEARNING_RATE
-    )
+    optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
     # Train autoencoder
-    #train_autoencoder(
+    # train_autoencoder(
     #     model,
     #     NUM_EPOCHS,
     #     trainloader,
