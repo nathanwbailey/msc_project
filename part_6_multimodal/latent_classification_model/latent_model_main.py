@@ -78,7 +78,7 @@ def downstream_task(
         multiprocessing_context="forkserver",
     )
     testloader = DataLoader(
-        valid_dataset,
+        test_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
         drop_last=True,
@@ -115,6 +115,8 @@ def downstream_task(
         model_save_path=model_save_path,
         device=DEVICE,
     )
+    latent_model = torch.load(model_save_path, weights_only=False)
+    latent_model.eval()
     test_classification_network(
         model=latent_model,
         encoder_model=model_encoder,

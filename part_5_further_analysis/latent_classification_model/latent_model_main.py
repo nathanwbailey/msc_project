@@ -77,7 +77,7 @@ def downstream_task(
         multiprocessing_context="forkserver",
     )
     testloader = DataLoader(
-        valid_dataset,
+        test_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
         drop_last=True,
@@ -102,18 +102,18 @@ def downstream_task(
         param.requires_grad = False
     model_encoder.eval()
 
-    # train_classification_model(
-    #     model=latent_model,
-    #     encoder_model=model_encoder,
-    #     num_epochs=num_epochs,
-    #     trainloader=trainloader,
-    #     testloader=validloader,
-    #     optimizer=optimizer,
-    #     scheduler=scheduler,
-    #     loss_fn=loss_fn(),
-    #     model_save_path=model_save_path,
-    #     device=DEVICE,
-    # )
+    train_classification_model(
+        model=latent_model,
+        encoder_model=model_encoder,
+        num_epochs=num_epochs,
+        trainloader=trainloader,
+        testloader=validloader,
+        optimizer=optimizer,
+        scheduler=scheduler,
+        loss_fn=loss_fn(),
+        model_save_path=model_save_path,
+        device=DEVICE,
+    )
     latent_model = torch.load(model_save_path, weights_only=False)
     latent_model.eval()
     test_classification_network(

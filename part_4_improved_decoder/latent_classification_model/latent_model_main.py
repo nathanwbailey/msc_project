@@ -77,7 +77,7 @@ def downstream_task(
         multiprocessing_context="forkserver",
     )
     testloader = DataLoader(
-        valid_dataset,
+        test_dataset,
         batch_size=BATCH_SIZE,
         shuffle=False,
         drop_last=True,

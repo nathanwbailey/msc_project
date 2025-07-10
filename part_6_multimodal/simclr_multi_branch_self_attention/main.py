@@ -20,12 +20,6 @@ from latent_classification_model.latent_model_main import \
 from latent_diffusion_model_conditional_attn.latent_model_main import \
     downstream_task as downstream_task_latent_diffusion_conditional_attn
 
-"""
-See https://arxiv.org/pdf/2409.07402 for main idea
-Basic concept is to use a self attention module and the modes act as tokens to the module
-CLS token is applied to use an average output
-"""
-
 
 def main():
     # --- Data Loading and Preprocessing ---
