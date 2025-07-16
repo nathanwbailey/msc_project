@@ -15,7 +15,7 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
-
+# See https://github.com/MaxLikesMath/Barlow-Twins-Pytorch/blob/main/Twins/barlow.py for reference
 
 class test_model(torch.nn.Module):
     def __init__(self, model, *args, **kwargs):
