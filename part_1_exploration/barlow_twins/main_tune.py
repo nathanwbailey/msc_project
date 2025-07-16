@@ -18,7 +18,7 @@ from eval_sim import eval_model
 from optuna.samplers import GridSampler
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
+# See https://github.com/MaxLikesMath/Barlow-Twins-Pytorch/blob/main/Twins/barlow.py for reference
 
 def objective(trial):
 
