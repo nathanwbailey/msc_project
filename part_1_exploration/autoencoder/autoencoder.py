@@ -2,19 +2,47 @@ import torch
 import torchvision
 from torch import nn
 
+class ResidualBlock(nn.Module):
+    def __init__(self, channels):
+        super().__init__()
+        self.block = nn.Sequential(
+            nn.Conv2d(channels, channels, kernel_size=3, padding=1),
+            nn.ReLU(),
+            nn.Conv2d(channels, channels, kernel_size=3, padding=1),
+        )
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+        return self.relu(x + self.block(x))
+
 
 class DecoderBlock(nn.Module):
-    def __init__(self, in_channels, out_channels):
+    def __init__(
+        self,
+        in_channels,
+        out_channels,
+        kernel_size=2,
+        stride=2,
+        padding=0,
+        output_padding=0,
+    ):
         super().__init__()
         self.block = nn.Sequential(
             nn.ConvTranspose2d(
-                in_channels, out_channels, kernel_size=2, stride=2
+                in_channels,
+                out_channels,
+                kernel_size=kernel_size,
+                stride=stride,
+                padding=padding,
+                output_padding=output_padding,
             ),
-            nn.LeakyReLU(),
         )
+        self.res_block = ResidualBlock(out_channels)
 
     def forward(self, x):
-        return self.block(x)
+        x = self.block(x)
+        x = self.res_block(x)
+        return x
 
 
 class Decoder(nn.Module):
