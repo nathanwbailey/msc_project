@@ -8,3 +8,5 @@ slurm*
 files_to_delete.txt
 del_files.sh
 *.pth
+part_6_multimodal/autoencoder_comparison_gnn_old
+part_6_multimodal/autoencoder_comparison_self_attention_old
