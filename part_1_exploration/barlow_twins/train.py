@@ -8,7 +8,6 @@ def train_model(
     trainloader,
     testloader,
     optimizer,
-    scheduler,
     device,
     loss_fn,
     model_save_path="barlow_twins.pth",
@@ -41,4 +40,3 @@ def train_model(
         print(
             f"Epoch: {epoch}, Train Loss: {np.mean(train_loss):.2f}, Validation Loss: {np.mean(valid_loss):.2f}, Learning Rate: {lr}"
         )
-        # scheduler.step(np.mean(valid_loss))

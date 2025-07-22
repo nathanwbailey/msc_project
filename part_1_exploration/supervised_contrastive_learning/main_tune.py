@@ -17,7 +17,6 @@ from tsne import plot_tsne
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 )
-# from downstream_task_transformer.downstream_task_transformer_main import downstream_task
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -99,7 +98,6 @@ def objective(trial):
     model = model.to(DEVICE)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-    # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=20, threshold=0.0001)
 
     train_model(
         model, num_epochs, trainloader, testloader, optimizer, DEVICE, loss_fn
@@ -121,13 +119,7 @@ def objective(trial):
         filename=f"tsne_plots/{param_str}.png",
         decay=decay,
         model=model,
-    ),
-
-    test_data = torch.load("/vol/bitbucket/nb324/CL_X_test_full.pt")
-
-    print("Starting Downstream Task")
-    # test_error = downstream_task(num_epochs=50, data=test_data, encoder_model=model, latent_dim=1000, context_window=30, target_length=1, stride=1)
-    # return test_error
+    )
 
 
 def main():

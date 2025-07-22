@@ -78,6 +78,7 @@ def main():
                 stride=cfg["stride"],
                 model_save_path=f"{seed}_" + cfg["save"],
                 weight_decay=1e-5,
+                dropout=cfg["dropout"],
             )
 
 

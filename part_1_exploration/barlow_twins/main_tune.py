@@ -18,7 +18,10 @@ from eval_sim import eval_model
 from optuna.samplers import GridSampler
 
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
 # See https://github.com/MaxLikesMath/Barlow-Twins-Pytorch/blob/main/Twins/barlow.py for reference
+
 
 def objective(trial):
 
@@ -89,9 +92,6 @@ def objective(trial):
     optimizer = torch.optim.Adam(
         model.parameters(), lr=learning_rate, weight_decay=0
     )
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, factor=0.1, patience=10, threshold=0.0001
-    )
 
     train_model(
         model,
@@ -99,7 +99,6 @@ def objective(trial):
         trainloader,
         testloader,
         optimizer,
-        scheduler,
         DEVICE,
         loss_fn,
     )

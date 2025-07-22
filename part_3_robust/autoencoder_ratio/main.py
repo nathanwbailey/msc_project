@@ -78,17 +78,17 @@ def main():
         optimizer, factor=0.1, patience=10, threshold=0.0001
     )
 
-    # train_autoencoder(
-    #     model,
-    #     num_epochs,
-    #     trainloader,
-    #     testloader,
-    #     optimizer,
-    #     scheduler,
-    #     DEVICE,
-    #     loss_fn,
-    #     model_save_path="det_autoencoder.pth",
-    # )
+    train_autoencoder(
+        model,
+        num_epochs,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path="det_autoencoder.pth",
+    )
     model = torch.load("det_autoencoder.pth", weights_only=False)
 
     print("Starting Downstream Task")

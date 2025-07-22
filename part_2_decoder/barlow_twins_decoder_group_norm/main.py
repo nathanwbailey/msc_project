@@ -15,7 +15,9 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
+
 # See https://github.com/MaxLikesMath/Barlow-Twins-Pytorch/blob/main/Twins/barlow.py for reference
+
 
 class test_model(torch.nn.Module):
     def __init__(self, model, *args, **kwargs):
@@ -143,13 +145,6 @@ def main():
     model_decoder = torch.load(
         "barlow_decoder_fine_tuned_group.pth", weights_only=False
     )
-
-    # cos_sim, rand_cos_sim, mean_var = eval_model(model_decoder.model.encoder, validloader, DEVICE)
-
-    # print("Mean Cosine similarity:", cos_sim)#
-    # print("Negative Mean Cosine similarity:", rand_cos_sim)
-    # print("Mean Variance of Embeddings", mean_var)
-    # plot_tsne(train_data=train_data, valid_data=valid_data, filename='tsne_rand_mask.png', model=model_decoder.model.encoder)
 
     print("Starting Downstream Task")
     downstream_task_lstm(

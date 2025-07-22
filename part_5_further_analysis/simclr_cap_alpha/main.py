@@ -130,7 +130,7 @@ def main():
         {
             "context_window": 30,
             "stride": 1,
-            "save": "downstream_model_no_decoder_weight_decay.pth",
+            "save": "downstream_model_no_decoder_weight_decay_6.pth",
         }
     ]
     for cfg in downstream_configs:
@@ -143,7 +143,7 @@ def main():
             target_length=1,
             stride=cfg["stride"],
             model_save_path=cfg["save"],
-            weight_decay=1e-5,
+            weight_decay=1e-6,
         )
 
     # --- Freeze Encoder, Train Decoder Only ---

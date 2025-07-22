@@ -54,12 +54,14 @@ def main():
         {
             "context_window": 5,
             "stride": 5,
-            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5_2.pth",
+            "save": "downstream_model_no_decoder_weight_decay_s_5_cw_5.pth",
+            "dropout": 0.3,
         },
         {
             "context_window": 5,
             "stride": 10,
-            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5_2.pth",
+            "save": "downstream_model_no_decoder_weight_decay_s_10_cw_5.pth",
+            "dropout": 0.0,
         },
     ]
     seeds = [0, 42, 123]
@@ -79,6 +81,7 @@ def main():
                 stride=cfg["stride"],
                 model_save_path=f"{seed}_" + cfg["save"],
                 weight_decay=1e-5,
+                dropout=cfg["dropout"],
             )
 
 

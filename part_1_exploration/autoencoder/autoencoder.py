@@ -2,6 +2,7 @@ import torch
 import torchvision
 from torch import nn
 
+
 class ResidualBlock(nn.Module):
     def __init__(self, channels):
         super().__init__()

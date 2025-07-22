@@ -8,7 +8,7 @@ part_2_decoder/
 ├── autoencoder_MAE/
 ├── autoencoder_MAE_GN/
 ├── barlow_twins_decoder/
-├── barlow_twins_decoder_no_batch_norm_and_group_norm/
+├── barlow_twins_decoder_and_group_norm/
 ├── downstream_model_lstm_no_decoder/
 ├── simclr_decoder/
 ├── simclr_decoder_final_stage/
@@ -30,8 +30,8 @@ part_2_decoder/
 - **barlow_twins_decoder/**  
   Adds decoder to barlow twins that reconstructs masked data - uses BN. 
 
-- **barlow_twins_decoder_no_batch_norm_and_group_norm/**  
-  Switches Batch Norm in barlow_twins_decoder for none and group (instance) norm
+- **barlow_twins_decoder_group_norm/**  
+  Switches Batch Norm in barlow_twins_decoder for group (instance) norm
 
 - **downstream_model_lstm_no_decoder/**  
   LSTM-based downstream model to test encoder representations directly.

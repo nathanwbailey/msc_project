@@ -75,13 +75,8 @@ def main():
         multiprocessing_context="forkserver",
     )
 
-    loss_fn_contrastive = NTXentLoss(temperature=0.3)
-    loss_fn_contrastive = SelfSupervisedLoss(loss_fn_contrastive)
     loss_fn_reconstruct = torch.nn.MSELoss()
-    cycle_loss = torch.nn.MSELoss()
-    num_epochs = 180
     learning_rate_decoder = 1e-3
-    learning_rate_fine_tune = 1e-4
     latent_dim = 128
 
     DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"

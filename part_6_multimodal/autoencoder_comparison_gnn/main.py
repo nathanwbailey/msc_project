@@ -85,43 +85,42 @@ def main():
     )
 
     # Train autoencoder
-    # train_autoencoder(
-    #     model,
-    #     NUM_EPOCHS,
-    #     trainloader,
-    #     testloader,
-    #     optimizer,
-    #     scheduler,
-    #     DEVICE,
-    #     loss_fn,
-    #     model_save_path=MODEL_SAVE_PATH,
-    # )
+    train_autoencoder(
+        model,
+        NUM_EPOCHS,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path=MODEL_SAVE_PATH,
+    )
     model = torch.load(MODEL_SAVE_PATH, weights_only=False)
 
-    # print("Starting Downstream Task")
-    # downstream_configs = [
-
-    #     {
-    #         "context_window": 30,
-    #         "stride": 1,
-    #         "save": "downstream_model_no_decoder_weight_decay_6.pth",
-    #         "weight_decay": 1e-6,
-    #         "dropout": 0.0
-    #     }
-    # ]
-    # for cfg in downstream_configs:
-    #     downstream_task_lstm(
-    #         num_epochs=100,
-    #         data=test_data,
-    #         encoder_model=model,
-    #         latent_dim=1000,
-    #         context_window=cfg["context_window"],
-    #         target_length=1,
-    #         stride=cfg["stride"],
-    #         model_save_path=cfg["save"],
-    #         weight_decay=cfg["weight_decay"],
-    #         dropout=cfg["dropout"]
-    #     )
+    print("Starting Downstream Task")
+    downstream_configs = [
+        {
+            "context_window": 30,
+            "stride": 1,
+            "save": "downstream_model_no_decoder_weight_decay_6.pth",
+            "weight_decay": 1e-6,
+            "dropout": 0.0,
+        }
+    ]
+    for cfg in downstream_configs:
+        downstream_task_lstm(
+            num_epochs=100,
+            data=test_data,
+            encoder_model=model,
+            latent_dim=1000,
+            context_window=cfg["context_window"],
+            target_length=1,
+            stride=cfg["stride"],
+            model_save_path=cfg["save"],
+            weight_decay=cfg["weight_decay"],
+            dropout=cfg["dropout"],
+        )
 
     print("Starting Latent Downstream Task")
     downstream_task_latent_diffusion_conditional_attn(

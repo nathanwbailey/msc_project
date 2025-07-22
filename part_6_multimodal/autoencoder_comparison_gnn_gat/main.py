@@ -26,7 +26,6 @@ def main():
     NUM_EPOCHS = 180
     LEARNING_RATE = 1e-3
     MODEL_SAVE_PATH = "det_autoencoder.pth"
-    DATA_PATH = "/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt"
 
     # Load and split data
     data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")
@@ -85,28 +84,27 @@ def main():
     )
 
     # Train autoencoder
-    # train_autoencoder(
-    #     model,
-    #     NUM_EPOCHS,
-    #     trainloader,
-    #     testloader,
-    #     optimizer,
-    #     scheduler,
-    #     DEVICE,
-    #     loss_fn,
-    #     model_save_path=MODEL_SAVE_PATH,
-    # )
+    train_autoencoder(
+        model,
+        NUM_EPOCHS,
+        trainloader,
+        testloader,
+        optimizer,
+        scheduler,
+        DEVICE,
+        loss_fn,
+        model_save_path=MODEL_SAVE_PATH,
+    )
     model = torch.load(MODEL_SAVE_PATH, weights_only=False)
 
-    # print("Starting Downstream Task")
+    print("Starting Downstream Task")
     downstream_configs = [
-
         {
             "context_window": 30,
             "stride": 1,
             "save": "downstream_model_no_decoder_weight_decay_6.pth",
             "weight_decay": 1e-6,
-            "dropout": 0.0
+            "dropout": 0.0,
         }
     ]
     for cfg in downstream_configs:
@@ -120,7 +118,7 @@ def main():
             stride=cfg["stride"],
             model_save_path=cfg["save"],
             weight_decay=cfg["weight_decay"],
-            dropout=cfg["dropout"]
+            dropout=cfg["dropout"],
         )
 
     print("Starting Latent Downstream Task")
