@@ -6,7 +6,6 @@ import torch
 import torch.nn.functional as F
 from dataset import WeatherBenchDataset
 from sklearn import decomposition
-from sklearn.manifold import TSNE
 from torch.utils.data import DataLoader
 
 

@@ -3,14 +3,10 @@ import sys
 
 import torch
 from dataset import WeatherBenchDataset
-from eval_sim import eval_model
-from model_decoder import SIMCLR, SIMCLRDecoder
+from model_decoder import SIMCLR
 from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 from torch.utils.data import DataLoader
-from torchsummary import summary
-from train import train_model
 from train_decoder import train_decoder
-from tsne import plot_tsne
 
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))

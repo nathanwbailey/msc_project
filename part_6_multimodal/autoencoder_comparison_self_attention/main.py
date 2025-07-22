@@ -5,7 +5,6 @@ import torch
 from dataset import WeatherBenchDataset
 from model import AutoEncoder
 from torch.utils.data import DataLoader
-from torchsummary import summary
 from train import train_autoencoder
 
 # Add parent directory to sys.path for downstream imports
@@ -30,7 +29,6 @@ def main():
     NUM_EPOCHS = 180
     LEARNING_RATE = 1e-3
     MODEL_SAVE_PATH = "det_autoencoder.pth"
-    DATA_PATH = "/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt"
 
     # Load and split data
     data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")

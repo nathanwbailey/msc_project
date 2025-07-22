@@ -1,5 +1,4 @@
 import torch
-import torch.nn.functional as F
 from pytorch_metric_learning.losses import NTXentLoss
 from pytorch_metric_learning.utils import common_functions as c_f
 

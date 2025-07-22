@@ -3,11 +3,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import torch
-import torch.nn.functional as F
 from dataset import WeatherBenchDataset
 from model_decoder import SIMCLR
 from sklearn import decomposition
-from sklearn.manifold import TSNE
 from torch.utils.data import DataLoader
 
 

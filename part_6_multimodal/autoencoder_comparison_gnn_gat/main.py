@@ -5,7 +5,6 @@ import torch
 from dataset import WeatherBenchDataset
 from model import AutoEncoder
 from torch.utils.data import DataLoader
-from torchsummary import summary
 from train import train_autoencoder
 
 # Add parent directory to sys.path for downstream imports

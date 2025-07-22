@@ -1,5 +1,4 @@
 import torch
-import torch.nn.functional as F
 
 
 class SupConLoss(torch.nn.Module):
@@ -10,4 +9,4 @@ class SupConLoss(torch.nn.Module):
     def forward(self, features, labels):
         device = features.device
 
-        mask = torch.eq(labels, labels.T).float().to(device)
+        torch.eq(labels, labels.T).float().to(device)

@@ -78,9 +78,9 @@ def train_encoder_decoder(
             optimizer.zero_grad()
             X_augment = data[0].to(device)
             X_prime_augment = data[1].to(device)
-            X_orig = data[2].to(device)
+            data[2].to(device)
             X = data[4].to(device)
-            X_enc = data[3].to(device)
+            data[3].to(device)
             X_masked = data[5].to(device)
 
             z1, recon_X = model(X_augment)
@@ -104,9 +104,9 @@ def train_encoder_decoder(
             for data in testloader:
                 X_augment = data[0].to(device)
                 X_prime_augment = data[1].to(device)
-                X_orig = data[2].to(device)
+                data[2].to(device)
                 X = data[4].to(device)
-                X_enc = data[3].to(device)
+                data[3].to(device)
                 X_masked = data[5].to(device)
 
                 z1, recon_X = model(X_augment)

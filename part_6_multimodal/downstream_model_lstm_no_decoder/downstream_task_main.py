@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import torch
 from torch.utils.data import DataLoader
-from torchsummary import summary
 
 from .downstream_model_lstm import Seq2SeqModel
 from .downstream_model_lstm_test import test_lstm_model

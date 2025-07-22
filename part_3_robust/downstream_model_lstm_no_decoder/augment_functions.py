@@ -1,6 +1,4 @@
 import torch
-import torch.nn.functional as F
-import torchvision.transforms as T
 
 
 def random_mask(sample, mask_prob=0.7):

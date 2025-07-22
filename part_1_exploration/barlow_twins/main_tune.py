@@ -6,7 +6,6 @@ from dataset import WeatherBenchDataset
 from loss import BarlowTwinsLoss
 from model import BarlowTwins
 from torch.utils.data import DataLoader
-from torchsummary import summary
 from train import train_model
 from tsne import plot_tsne
 

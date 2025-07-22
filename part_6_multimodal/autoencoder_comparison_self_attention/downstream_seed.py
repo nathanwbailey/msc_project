@@ -22,7 +22,7 @@ def set_seed(seed):
 
 def main():
     # --- Data Loading and Preprocessing ---
-    BATCH_SIZE = 128 // 3
+    128 // 3
     data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")
     n_samples = data.shape[0]
     n_train = int(n_samples * 0.6)

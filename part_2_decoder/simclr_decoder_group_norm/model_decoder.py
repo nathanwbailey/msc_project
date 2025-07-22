@@ -1,10 +1,9 @@
 import torch
-import torch.nn.functional as F
 import torchvision
 from torch import nn
 
 
-def replace_bn_with_gn(module, num_groups=16):
+def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features
@@ -13,7 +12,7 @@ def replace_bn_with_gn(module, num_groups=16):
             )
             setattr(module, name, gn)
         else:
-            replace_bn_with_gn(child, num_groups)
+            replace_bn_with_gn(child)
 
 
 class ResNet18Encoder(nn.Module):
@@ -32,7 +31,7 @@ class ResNet18Encoder(nn.Module):
 
         self.avgpool = resnet.avgpool
         self.fc = resnet.fc
-        replace_bn_with_gn(resnet, num_groups=8)
+        replace_bn_with_gn(resnet)
 
     def forward(self, x):
         x0 = self.stem(x)

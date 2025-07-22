@@ -6,7 +6,6 @@ from dataset import WeatherBenchDataset
 from loss import BarlowTwinsLoss
 from model_decoder import BarlowTwins, BarlowTwinsDecoder
 from torch.utils.data import DataLoader
-from torchsummary import summary
 from train import train_model
 from train_decoder import train_encoder_decoder
 

@@ -1,5 +1,3 @@
-import numpy as np
-import torch
 from augment_functions import random_mask, resize_encoder
 from torch.utils.data import Dataset
 

@@ -1,6 +1,4 @@
 import numpy as np
-import pandas as pd
-import torch
 from augment_functions import augment_sample
 from torch.utils.data import Dataset
 

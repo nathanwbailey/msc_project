@@ -14,8 +14,6 @@ sys.path.append(
 )
 from downstream_model_lstm_no_decoder.downstream_task_main import \
     downstream_task as downstream_task_lstm
-from latent_classification_model.latent_model_main import \
-    downstream_task as downstream_task_latent_classification
 from latent_diffusion_model_conditional_attn.latent_model_main import \
     downstream_task as downstream_task_latent_diffusion_conditional_attn
 

@@ -66,7 +66,7 @@ def train_diffusion_model(
             os.makedirs(f"latent_saved/epoch_{epoch}", exist_ok=True)
             batch = random.choice(list(validloader))
             condition = batch[2].to(device)
-            condition_plot = condition[0].cpu().numpy()
+            condition[0].cpu().numpy()
             # plot_image(condition_plot, name=f'latent_saved/epoch_{epoch}/conditional_latent_diffusion_input_masked_epoch_{epoch}.png')
             x_full = batch[0].to(device)
             x_full_plot = x_full[0].cpu().numpy()

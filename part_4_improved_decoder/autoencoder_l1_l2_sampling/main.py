@@ -4,9 +4,7 @@ import sys
 import torch
 from dataset import WeatherBenchDataset
 from model_decoder import SIMCLR, SIMCLRDecoder
-from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 from torch.utils.data import DataLoader
-from torchsummary import summary
 from train_decoder import train_decoder
 
 sys.path.append(

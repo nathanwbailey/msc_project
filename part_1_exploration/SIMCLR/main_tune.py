@@ -1,7 +1,6 @@
 import os
 import sys
 
-import numpy as np
 import optuna
 import torch
 from dataset import WeatherBenchDataset
@@ -10,8 +9,7 @@ from model import SCL
 from optuna.samplers import GridSampler
 from pytorch_metric_learning.losses import NTXentLoss, SelfSupervisedLoss
 from torch import nn
-from torch.utils.data import DataLoader, random_split
-from torchsummary import summary
+from torch.utils.data import DataLoader
 from train import train_model
 from tsne import plot_tsne
 

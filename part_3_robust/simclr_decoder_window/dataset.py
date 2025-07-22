@@ -1,6 +1,4 @@
 import numpy as np
-import pandas as pd
-import torch
 from augment_functions import (augment_sample, augment_sample_random_mask,
                                random_mask, resize_encoder, resize_to_orig)
 from torch.utils.data import Dataset

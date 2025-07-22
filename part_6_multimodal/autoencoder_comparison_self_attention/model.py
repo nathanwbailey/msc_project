@@ -2,9 +2,7 @@ import torch
 import torch.nn.functional as F
 import torchvision
 from torch import nn
-from torch_geometric.data import Batch, Data
-from torch_geometric.nn import GCNConv, global_mean_pool
-from torch_geometric.utils import dense_to_sparse
+from torch_geometric.nn import GCNConv
 
 
 def replace_bn_with_gn(module):

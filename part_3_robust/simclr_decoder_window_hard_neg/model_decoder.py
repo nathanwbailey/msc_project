@@ -1,10 +1,9 @@
 import torch
-import torch.nn.functional as F
 import torchvision
 from torch import nn
 
 
-def replace_bn_with_gn(module, num_groups=16):
+def replace_bn_with_gn(module):
     for name, child in module.named_children():
         if isinstance(child, nn.BatchNorm2d):
             num_channels = child.num_features

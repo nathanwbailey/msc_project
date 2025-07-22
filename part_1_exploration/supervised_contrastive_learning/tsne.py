@@ -6,7 +6,6 @@ import torch
 import torch.nn.functional as F
 from dataset import WeatherBenchDataset
 from sklearn import decomposition
-from sklearn.manifold import TSNE
 from torch.utils.data import DataLoader
 
 
@@ -70,7 +69,7 @@ def plot_tsne(
 
     X = test_batch[0].to(DEVICE)
     X_prime = test_batch[1].to(DEVICE)
-    Y = test_batch[2].to(DEVICE)
+    test_batch[2].to(DEVICE)
 
     with torch.no_grad():
         embeddings_x = model(X).cpu()
