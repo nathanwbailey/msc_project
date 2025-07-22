@@ -15,7 +15,7 @@ from downstream_model_lstm_no_decoder.downstream_task_main import \
 
 
 def main():
-    BATCH_SIZE = 128
+    BATCH_SIZE = 128 // 3
     data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")
     n_samples = data.shape[0]
     n_train = int(n_samples * 0.6)
