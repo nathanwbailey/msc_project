@@ -5,8 +5,8 @@
 ```
 part_2_decoder/
 ├── save_data.py
-├── autoencoder_MAE/
-├── autoencoder_MAE_GN/
+├── autoencoder/
+├── autoencoder_GN/
 ├── barlow_twins_decoder/
 ├── barlow_twins_decoder_and_group_norm/
 ├── downstream_model_lstm_no_decoder/
@@ -21,11 +21,11 @@ part_2_decoder/
 - **save_data.py**  
   Utility script for saving ERA5 data to torch tensor.
 
-- **autoencoder_MAE/**  
-  Simple Masked Autoencoder (MAE) for comparison.
+- **autoencoder/**  
+  Simple Masked Autoencoder for comparison.
 
-- **autoencoder_MAE_GN/**  
-  Simple Masked Autoencoder (MAE) with group normalisation for comparison.
+- **autoencoder_GN/**  
+  Simple Masked Autoencoder with group normalisation for comparison.
 
 - **barlow_twins_decoder/**  
   Adds decoder to barlow twins that reconstructs masked data - uses BN. 
