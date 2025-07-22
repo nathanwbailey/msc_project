@@ -151,8 +151,8 @@ def main():
         context_window=30,
         target_length=1,
         stride=1,
-        model_save_path="downstream_model_no_decoder_weight_decay.pth",
-        weight_decay=1e-5,
+        model_save_path="downstream_model_no_decoder_weight_decay_6.pth",
+        weight_decay=1e-6,
     )
 
     for param in model_decoder.model.parameters():
