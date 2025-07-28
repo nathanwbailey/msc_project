@@ -25,12 +25,6 @@ def plot_tsne(
     decay=0.9,
 ):
 
-    mean = train_data.mean(dim=(0, 2, 3), keepdim=True)
-    std = train_data.std(dim=(0, 2, 3), keepdim=True)
-
-    train_data = (train_data - mean) / std
-    valid_data = (valid_data - mean) / std
-
     train_dataset = WeatherBenchDataset(
         data=train_data, labels=train_labels, decay=decay
     )
