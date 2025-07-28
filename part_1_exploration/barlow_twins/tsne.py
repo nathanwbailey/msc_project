@@ -61,36 +61,6 @@ def plot_tsne(
         embeddings_x = model(x)
         embeddings_x_prime = model(x_prime)
 
-    dist = torch.norm(embeddings_x - embeddings_x_prime, dim=1)
-    print(dist.shape)
-    print(f"Mean Euclidean Distance: {dist.mean().item()}")
-    print(f"Max Euclidean Distance: {dist.max().item()}")
-    print(f"Min Euclidean Distance: {dist.min().item()}")
-
-    rand_indices = torch.randperm(embeddings_x.shape[0])
-    dist = torch.norm(embeddings_x - embeddings_x_prime[rand_indices], dim=1)
-    print(dist.shape)
-    print(f"Mean Euclidean Distance: {dist.mean().item()}")
-    print(f"Max Euclidean Distance: {dist.max().item()}")
-    print(f"Min Euclidean Distance: {dist.min().item()}")
-
-    cos_sim = F.cosine_similarity(embeddings_x, embeddings_x_prime, dim=1)
-    print(cos_sim.shape)
-
-    print("Mean cosine similarity:", cos_sim.mean().item())
-    print("Min:", cos_sim.min().item())
-    print("Max:", cos_sim.max().item())
-
-    rand_indices = torch.randperm(embeddings_x.shape[0])
-    cos_sim = F.cosine_similarity(
-        embeddings_x, embeddings_x_prime[rand_indices], dim=1
-    )
-    print(cos_sim.shape)
-
-    print("Mean cosine similarity:", cos_sim.mean().item())
-    print("Min:", cos_sim.min().item())
-    print("Max:", cos_sim.max().item())
-
     embeddings_x = embeddings_x.cpu().numpy()
     embeddings_x_prime = embeddings_x_prime.cpu().numpy()
 
