@@ -11,9 +11,7 @@ part_2_decoder/
 ├── barlow_twins_decoder_and_group_norm/
 ├── downstream_model_lstm_no_decoder/
 ├── simclr_decoder/
-├── simclr_decoder_final_stage/
 ├── simclr_decoder_group_norm/
-├── simclr_decoder_group_norm_final_stage/
 ```
 
 ## Contents
@@ -37,16 +35,10 @@ part_2_decoder/
   LSTM-based downstream model to test encoder representations directly.
 
 - **simclr_decoder/**  
-  Adds decoder to SIMCLR that reconstructs masked data - uses BM. 
-
-- **simclr_decoder_final_stage/**  
-  Freezes encoder of simclr_decoder and trains encoder on top - for the final training stage
+  Adds decoder to SIMCLR that reconstructs masked data - uses BN.
 
 - **simclr_decoder_group_norm/**  
   Switches Batch Norm in barlow_twins_decoder for group (instance) norm
-
-- **simclr_decoder_group_norm_final_stage/**  
-  Freezes encoder of simclr_decoder_group_norm and trains encoder on top - for the final training stage
 
 ## Purpose
 
