@@ -23,8 +23,8 @@ def plot_tsne(
     decay=0.9,
 ):
 
-    train_dataset = WeatherBenchDataset(data=train_data, decay=decay)
-    valid_dataset = WeatherBenchDataset(data=valid_data, decay=decay)
+    train_dataset = WeatherBenchDataset(data=train_data)
+    valid_dataset = WeatherBenchDataset(data=valid_data)
 
     batch_size = 20
 

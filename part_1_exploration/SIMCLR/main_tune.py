@@ -51,8 +51,8 @@ def objective(trial):
     train_data = (train_data - mean) / std
     valid_data = (valid_data - mean) / std
 
-    train_dataset = WeatherBenchDataset(data=train_data, decay=decay)
-    valid_dataset = WeatherBenchDataset(data=valid_data, decay=decay)
+    train_dataset = WeatherBenchDataset(data=train_data)
+    valid_dataset = WeatherBenchDataset(data=valid_data)
 
     trainloader = DataLoader(
         train_dataset,
