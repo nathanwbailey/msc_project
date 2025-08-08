@@ -25,12 +25,6 @@ class ODEF(nn.Module):
             nn.Linear(128, dim),
         )
 
-    # def forward(self, t, z):
-    #     t_vec = t * torch.ones(z.shape[0], 1, device=z.device)
-    #     z_inp = torch.cat((z, t_vec), dim=1)
-    #     dz = self.net(z_inp)
-    #     return dz
-
     def forward(self, t, z):
         if z.dim() == 2:  # [B, D]
             B, D = z.shape
