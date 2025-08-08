@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 from torchdiffeq import odeint
 
 """
-see: https://github.com/rtqichen/torchdiffeq
+see: https://github.com/rtqichen/torchdiffeq and https://github.com/rtqichen/torchdiffeq/blob/master/examples/odenet_mnist.py for reference
 """
 
 
