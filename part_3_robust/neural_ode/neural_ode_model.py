@@ -37,10 +37,9 @@ class ODEF(nn.Module):
 
         elif z.dim() == 3:  # [B, T, D]
             B, T, D = z.shape
-            # t: [T] -> t_vec: [B, T, 1]
-            t_vec = t.unsqueeze(0).expand(B, T).unsqueeze(2)
+            t_vec = t.unsqueeze(0).expand(B, T).unsqueeze(2) # [B, T, 1]
             z_inp = torch.cat((z, t_vec), dim=-1)  # [B, T, D+1]
-            # flatten, push through MLP
+
             flat = z_inp.reshape(B * T, D + 1)
             out = self.net(flat)
             dz = out.reshape(B, T, D)
