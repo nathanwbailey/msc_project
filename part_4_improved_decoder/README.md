@@ -56,13 +56,13 @@ part_4_improved_decoder/
   Decodes the SIMCLR embeddings in the fine-tuning process as well as the MAE embeddings
 
 - **simclr_decoder_larger_improved_mse_loss_weighted_losses/**  
-  Weights losses for wind modes due to higher reconstruction loss.
+  Weight losses for wind modes due to higher reconstruction loss.
 
 - **simclr_decoder_weight_decay/**  
-  Adds weight decay to downstream LSTM model, keep model same as in part 3.
+  Adds weight decay to the downstream LSTM model, keeping the model the same as in part 3.
 
 
 ## Purpose
 
 - Develop and benchmark improved decoder architectures
-- Integrate new tasks such as data assimilation and conditional latent diffusion models for generation.
+- Integrate new tasks such as latent classification, autoregressive forecasting and conditional latent diffusion models for generation.
