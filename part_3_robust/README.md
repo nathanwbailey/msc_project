@@ -60,4 +60,3 @@ part_3_robust/
 
 - Test and improve the robustness of decoder models to noisy, masked, or missing data.
 - Evaluate the effect of hard negative sampling and windowing on contrastive learning.
-- Benchmark against downstream weather forecasting tasks in both latent and original space.
