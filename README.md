@@ -1,6 +1,6 @@
 # MSc Project: Multi-Modal Data Fusion Through Contrastive Learning in Geoscience
 
-This repository contains code and experiments for an MSc thesis focused on contrastive learning and decoder design for multi-modal geoscientific data.
+This repository contains code and experiments for an MSc thesis focused on contrastive learning for multi-modal ERA5 data.
 
 ## Repository Structure
 
