@@ -26,7 +26,7 @@ part_2_decoder/
   Simple Masked Autoencoder with group normalisation for comparison.
 
 - **barlow_twins_decoder/**  
-  Adds decoder to barlow twins that reconstructs masked data - uses BN. 
+  Adds decoder to Barlow Twins that reconstructs masked data - uses BN. 
 
 - **barlow_twins_decoder_group_norm/**  
   Switches Batch Norm in barlow_twins_decoder for group (instance) norm
@@ -43,10 +43,10 @@ part_2_decoder/
 ## Purpose
 
 - Provides a direct comparison between autoencoder and contrastive learning approaches.
-- Evaluates downstream forecasting performance of different approaches.
-- Explore the impact of normalization (batch, group, layer, or none) on downstream task.
+- Evaluates the downstream forecasting performance of different approaches.
+- Explore the impact of different normalisation techniques on the downstream task.
 
 
 ## Usage
 
-- Refer to the scripts and notebooks in each subfolder for specific experiments.
+- Please take a look at the scripts and notebooks in each subfolder for specific experiments.
