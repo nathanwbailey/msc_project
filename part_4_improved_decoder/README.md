@@ -23,16 +23,16 @@ part_4_improved_decoder/
 ## Contents
 
 - **autoencoder/**  
-  Autoencoder baseline with improved deocder
+  Autoencoder baseline with improved decoder
 
 - **autoencoder_l1_l2/**  
-  Autoencoder baseline with improved deocder with added L1 and L2 weight decay
+  Autoencoder baseline with improved decoder with added L1 and L2 weight decay
 
 - **autoencoder_l1_l2_sampling/**  
-  Autoencoder baseline with improved deocder with added L1 and L2 weight decay and hard negative sampling approach
+  Autoencoder baseline with improved decoder with added L1 and L2 weight decay and hard negative sampling approach
 
 - **autoencoder_sampling/**  
-  Autoencoder baseline with improved deocder with hard negative sampling approach
+  Autoencoder baseline with improved decoder with a hard negative sampling approach
 
 - **downstream_model_lstm_no_decoder/**  
   LSTM-based downstream model using encoder representations directly.
