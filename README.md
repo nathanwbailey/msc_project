@@ -24,7 +24,6 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 - **Part 2: Decoder**
     - Adds a decoder to the contrastive learning methods to provide a direct comparison to the autoencoder approach
-    - Contrasts two methods of adding the decoder
     - Compares Instance Norm and Batch Norm Approaches
     - Evaluates the approaches to the task of downstream weather forecasting
 
@@ -34,14 +33,11 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 - **Part 4: Improved Decoder**
     - Final decoder architecture improvements
-    - Contrasts the final approach with a more representative autoencoder
-    - Adds additional tasks of data assimilation and conditional latent diffusion models
-    - Expands the downstream task of forecasting with added stride and changing context windows 
+    - Adds additional tasks of autoregressive forecasting, latent classification, and conditional latent diffusion models
 
 - **Part 5: Further Analysis**
     - Analysis on the latent space to link smoothness and forecasting performance
     - Implements changes to batch size, cycle loss and alpha decay based on findings
-
 
 - **Part 6: Multimodal**
     - Implements several Multimodal late fusion methods
