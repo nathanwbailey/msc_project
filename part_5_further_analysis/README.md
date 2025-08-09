@@ -56,5 +56,5 @@ part_4_improved_decoder/
 
 ## Purpose
 
-- Analyse the latent space and confirm why certain models offer increased forecasting performance over others.
-- Implement changes based ont this analysis,
+- Analyse the smoothness of the latent space and confirm why certain models offer increased forecasting performance over others.
+- Implement changes based on this analysis,
