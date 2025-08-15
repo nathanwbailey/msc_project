@@ -32,7 +32,7 @@ part_4_improved_decoder/
   Autoencoder baseline with improved decoder with added L1 and L2 weight decay and hard negative sampling approach
 
 - **autoencoder_sampling/**  
-  Autoencoder baseline with improved decoder with a hard negative sampling approach
+  Autoencoder baseline with an improved decoder with a hard negative sampling approach
 
 - **downstream_model_lstm_no_decoder/**  
   LSTM-based downstream model using encoder representations directly.
@@ -41,7 +41,7 @@ part_4_improved_decoder/
   Latent Classification Model. 
 
 - **latent_diffusion_model_conditional_attn/**  
-  Conditional latent diffusion models for generative modelling. 
+  Conditional latent diffusion model. 
 
 - **neural_ode/**  
   Neural ODE-based latent model to evaluate the temporal smoothness of the latent space 
