@@ -30,7 +30,7 @@ part_4_improved_decoder/
   Latent Classification Model. 
 
 - **latent_diffusion_model_conditional_attn/**  
-  Conditional latent diffusion models for generative modelling. 
+  Conditional latent diffusion model. 
 
 - **neural_ode/**  
   Neural ODE-based latent model to evaluate the temporal smoothness of the latent space 
