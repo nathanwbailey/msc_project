@@ -29,10 +29,10 @@ part_3_robust/
   Autoencoder with 50%-90% mask ratios.
 
 - **downstream_model_lstm_no_decoder/**  
-  LSTM-based downstream models using encoder representations directly.
+  LSTM-based downstream model for forecasting in the latent space.
 
 - **simclr_decoder_group_norm/**  
-  Baseline SIMCLR model with group normalization.
+  Baseline SIMCLR model with group normalisation.
 
 - **simclr_decoder_group_norm_hard_neg/**  
   Adds hard negative sampling to the baseline.
@@ -50,13 +50,13 @@ part_3_robust/
   Combines windowing, hard negative sampling, and varying mask ratios.
 
 - **simclr_decoder_window_hard_neg_ratio_both/**  
-  Adds positive pairs at t+delta and t-delta in separate SIMCLR losses.
+  Adds positive pairs at t+delta and t-delta in separate SIMCLR losses with hard negative sampling.
 
 - **simclr_decoder_window_hard_neg_ratio_both_cycle/**  
-  Adds cycle consistency loss to SIMCLR projections.
+  Adds cycle consistency loss to the above model.
 
 
 ## Purpose
 
-- Test and improve the robustness of decoder models to noisy, masked, or missing data.
+- Test and improve the robustness and performance of the models using various methods.
 - Evaluate the effect of hard negative sampling and windowing on contrastive learning.
