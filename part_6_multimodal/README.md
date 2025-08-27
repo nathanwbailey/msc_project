@@ -12,7 +12,6 @@ part_4_improved_decoder/
 ├── latent_diffusion_model_conditional_attn/
 ├── neural_ode/
 ├── simclr_multi_branch
-├── simclr_multi_branch_cross_attention
 ├── simclr_multi_branch_gnn
 ├── simclr_multi_branch_gnn_gat
 ├── simclr_multi_branch_self_attention/
@@ -27,7 +26,7 @@ part_4_improved_decoder/
   Autoencoder comparison to Self-Attention fusion
 
 - **downstream_model_lstm_no_decoder/**  
-  LSTM-based downstream model using encoder representations directly.
+  LSTM-based downstream model for forecasting.
 
 - **latent_classification_model/**  
   Latent Classification Model. 
@@ -40,9 +39,6 @@ part_4_improved_decoder/
 
 - **simclr_multi_branch/**  
   Multimodal fusion method that uses average pooling
-
-- **simclr_multi_branch_cross_atttention/**  
-  Multimodal fusion method that uses cross-attention modules
 
 - **simclr_multi_branch_gnn/**  
   Multimodal fusion method that uses GNN
