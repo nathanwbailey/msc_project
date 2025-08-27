@@ -24,7 +24,7 @@ part_4_improved_decoder/
   Autoencoder baseline with 256 batch size and hard negative sampling approach
 
 - **downstream_model_lstm_no_decoder/**  
-  LSTM-based downstream model using encoder representations directly.
+  LSTM-based downstream model for forecasting.
 
 - **latent_classification_model/**  
   Latent Classification Model. 
