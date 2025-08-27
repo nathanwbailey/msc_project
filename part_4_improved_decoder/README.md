@@ -35,7 +35,7 @@ part_4_improved_decoder/
   Autoencoder baseline with an improved decoder with a hard negative sampling approach
 
 - **downstream_model_lstm_no_decoder/**  
-  LSTM-based downstream model using encoder representations directly.
+  LSTM-based downstream model for forecasting.
 
 - **latent_classification_model/**  
   Latent Classification Model. 
@@ -53,10 +53,10 @@ part_4_improved_decoder/
   Uses a larger SIMCLR decoder with MSE losses for each mode. 
 
 - **simclr_decoder_improved_mse_loss_decoded/**   
-  Decodes the SIMCLR embeddings in the fine-tuning process as well as the MAE embeddings
+  Decodes the SIMCLR embeddings in the fine-tuning process.
 
 - **simclr_decoder_larger_improved_mse_loss_weighted_losses/**  
-  Weight losses for wind modes due to higher reconstruction loss.
+  SIMCLR model with weighted losses for the wind modes.
 
 - **simclr_decoder_weight_decay/**  
   Adds weight decay to the downstream LSTM model, keeping the model the same as in part 3.
