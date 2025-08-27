@@ -16,8 +16,8 @@ part_1_exploration/
 - **save_data.py**  
   Utility script for saving ERA5 Dataset to torch tensor file.
 
-- **autoencoder/**  
-
+- **autoencoder/**
+  Comparative autoencoder to the contrastive learning approaches.
 
 - **barlow_twins/**  
   Experiments and scripts for the Barlow Twins contrastive learning method.
