@@ -24,7 +24,7 @@ This repository contains code and experiments for an MSc thesis focused on contr
 
 - **Part 2: Decoder**
     - Adds a decoder to the contrastive learning methods to provide a direct comparison to the autoencoder approach
-    - Compares Instance Norm and Batch Norm Approaches
+    - Compares Group Norm and Batch Norm Approaches
     - Evaluates the approaches to the task of downstream weather forecasting
 
 - **Part 3: Robust**
