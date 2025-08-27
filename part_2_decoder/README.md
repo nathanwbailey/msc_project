@@ -32,7 +32,7 @@ part_2_decoder/
   Switches Batch Norm in barlow_twins_decoder for group (instance) norm
 
 - **downstream_model_lstm_no_decoder/**  
-  LSTM-based downstream model to test encoder representations directly.
+  LSTM-based downstream model for forecasting.
 
 - **simclr_decoder/**  
   Adds decoder to SIMCLR that reconstructs masked data - uses BN.
@@ -42,7 +42,7 @@ part_2_decoder/
 
 ## Purpose
 
-- Provides a direct comparison between autoencoder and contrastive learning approaches.
+- Implements an end-to-end contrastive learning model.
 - Evaluates the downstream forecasting performance of different approaches.
 - Explore the impact of different normalisation techniques on the downstream task.
 
