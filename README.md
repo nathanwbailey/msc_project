@@ -63,6 +63,10 @@ This repository contains code and experiments for an MSc thesis focused on contr
     pip install -r requirements.txt
     ```
 
+4. **Download ERA5 data using e.g. `python3 save_data.py` in the part 1 and part 2 directories.**
+
+5. **Replace any paths in main.py to your local ERA5 Pytorch data file**
+    e.g. replace `data = torch.load("/vol/bitbucket/nb324/ERA5_64x32_daily_850.pt")`
 
 ## Details on Folder Structure
 
