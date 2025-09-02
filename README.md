@@ -40,7 +40,7 @@ This repository contains code and experiments for an MSc thesis focused on contr
     - Implements changes to batch size, cycle loss and alpha decay based on findings
 
 - **Part 6: Multimodal**
-    - Implements several Multimodal late fusion methods
+    - Implements several multimodal late fusion methods
     - Average Pooling
     - Self-Attention
     - GNN
@@ -83,4 +83,4 @@ Each model has several notebooks that provide results in the report:
 - Each subfolder contains scripts and modules for the specific experiments and model variants.
 
 ---
-For questions or collaboration, please get in touch with me
+If you have any questions or collaboration, please feel free to reach out to me.
